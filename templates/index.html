@@ -128,12 +128,12 @@
           <div class="week-selector-icon">🎯</div>
           <div>
             <h4 class="week-selector-title">Practice Important Questions by Week</h4>
-            <p class="week-selector-desc">Select an individual module (Week 0 to Week 12) to practice the 12 targeted questions for that specific topic.</p>
+            <p class="week-selector-desc">Select an individual module (Week 1 to Week 12) to practice the 10 targeted questions for that specific topic.</p>
           </div>
         </div>
         <div class="week-selector-action">
           <select id="select-important-week" class="form-select" aria-label="Select Week for Important Questions">
-            <option value="" disabled selected>Choose a Week (0–12)...</option>
+            <option value="" disabled selected>Choose a Week (1–12)...</option>
             {% for iw in important_weeks %}
             <option value="{{ iw.week }}">{{ iw.topic }} ({{ iw.count }} Qs)</option>
             {% endfor %}
@@ -149,20 +149,12 @@
       </div>
 
       <div class="practice-options-grid">
-        <div class="practice-card" onclick="startImportantQuiz(50)">
+        <div class="practice-card" onclick="startImportantQuiz(60)">
           <div class="practice-card-icon">⚡</div>
-          <h3>50 Questions</h3>
-          <p class="practice-meta">Quick practice session</p>
-          <div class="practice-info">50 distinct questions randomly sampled from the Important Questions bank.</div>
-          <button class="btn btn-primary btn-block">Start 50 Qs</button>
-        </div>
-
-        <div class="practice-card" onclick="startImportantQuiz(100)">
-          <div class="practice-card-icon">🎯</div>
-          <h3>100 Questions</h3>
-          <p class="practice-meta">Standard mock exam</p>
-          <div class="practice-info">100 distinct questions randomly sampled from the Important Questions bank.</div>
-          <button class="btn btn-primary btn-block">Start 100 Qs</button>
+          <h3>60 Questions</h3>
+          <p class="practice-meta">Focused practice session</p>
+          <div class="practice-info">60 distinct questions randomly sampled from the Important Questions bank.</div>
+          <button class="btn btn-primary btn-block">Start 60 Qs</button>
         </div>
 
         <div class="practice-card featured" onclick="startImportantQuiz({{ total_important }})">

@@ -1,0 +1,3047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>120 Predicted Examination MCQs - Performance and Reward Management</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --secondary: #0284c7;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --accent-badge: #eff6ff;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header {
+      background: white;
+      border-radius: 12px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border-top: 6px solid var(--primary);
+    }
+    h1 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--secondary);
+      margin-bottom: 1.25rem;
+    }
+    .exam-notice {
+      background: #f0fdf4;
+      border-left: 4px solid #22c55e;
+      padding: 1rem 1.25rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      color: #166534;
+      line-height: 1.5;
+    }
+    .exam-instructions {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .exam-instruction-badge {
+      background: #f1f5f9;
+      padding: 0.35rem 0.75rem;
+      border-radius: 20px;
+      font-weight: 600;
+      color: #334155;
+    }
+    .week-header {
+      background: linear-gradient(135deg, #1e3a8a, #0369a1);
+      color: white;
+      padding: 1.25rem 1.75rem;
+      border-radius: 10px;
+      margin: 2.5rem 0 1.25rem 0;
+      box-shadow: 0 4px 6px -1px rgba(30, 58, 138, 0.15);
+    }
+    .week-header h2 {
+      font-size: 1.35rem;
+      margin-bottom: 0.25rem;
+      letter-spacing: 0.5px;
+    }
+    .week-header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    .question-card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .question-card:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    }
+    .q-number-badge {
+      display: inline-block;
+      background: var(--accent-badge);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+      border: 1px solid #bfdbfe;
+    }
+    .q-text {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #0f172a;
+      margin-bottom: 1.25rem;
+      line-height: 1.55;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .option-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      background: #fafafa;
+      font-size: 0.98rem;
+    }
+    .option-letter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      min-width: 26px;
+      border-radius: 50%;
+      background: #e2e8f0;
+      color: #334155;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    .option-text {
+      flex: 1;
+      line-height: 1.45;
+      color: #334155;
+    }
+    .print-btn {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.85rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      z-index: 100;
+    }
+    .print-btn:hover {
+      background: #172554;
+    }
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .print-btn {
+        display: none;
+      }
+      header {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+      }
+      .week-header {
+        background: #1e3a8a !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        page-break-before: always;
+      }
+      .question-card {
+        page-break-inside: avoid;
+        border: 1px solid #ddd;
+        box-shadow: none;
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="print-btn" onclick="window.print()">
+    🖨️ Print / Save as PDF
+  </button>
+  <div class="container">
+    <header>
+      <h1>120 Predicted Examination MCQs</h1>
+      <div class="subtitle">Performance and Reward Management (NPTEL Weeks 1–12)</div>
+      <div class="exam-notice">
+        <strong>Examiner Prediction Paper:</strong> These 120 questions have been authored by systematically modeling examiner-level question design, reversing logic, testing conceptual boundaries, and transforming scenarios from the original assessment. They serve as a realistic, high-standard mock examination.
+      </div>
+      <div class="exam-instructions">
+        <span class="exam-instruction-badge">Total Questions: 120</span>
+        <span class="exam-instruction-badge">Format: Single Best Answer (A, B, C, D)</span>
+        <span class="exam-instruction-badge">Coverage: Weeks 1 through 12 (10 Questions/Week)</span>
+        <span class="exam-instruction-badge">Time Recommended: 180 Minutes</span>
+      </div>
+    </header>
+
+    <div class="week-header">
+      <h2>WEEK 1 — Predicted Examination Questions</h2>
+      <p>Foundations of Performance Management & Strategic Integration</p>
+    </div>
+
+    <div class="question-card" id="q1">
+      <span class="q-number-badge">QUESTION 1</span>
+      <div class="q-text">Apex Global Solutions conducts a formal, confidential evaluation meeting once every December where managers complete a standardized rating form to decide annual salary increments. Throughout the remaining eleven months, supervisors rarely discuss performance, objectives, or coaching needs with their teams. When an external HR audit was conducted, the consultant reported that the organization was merely practicing performance appraisal rather than genuine performance management. Which of the following best justifies the auditor&#x27;s conclusion?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Performance appraisal is exclusively focused on identifying training needs, whereas performance management is strictly used for compensation decisions.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Performance appraisal is a discrete, periodic, and largely backward-looking evaluation event, whereas performance management is an ongoing, continuous process of goal alignment, coaching, and development.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Performance management is strictly an HR-administered compliance ritual, while performance appraisal is owned exclusively by departmental line managers.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Performance appraisal evaluates future employee potential, whereas performance management measures only past task completion.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q2">
+      <span class="q-number-badge">QUESTION 2</span>
+      <div class="q-text">In a manufacturing enterprise, line managers frequently complain that completing annual performance appraisals is an administrative burden imposed by the HR department that adds little value to their daily operational work. The CHRO wants to redesign the system so that line managers take genuine ownership of employee development. According to sound performance management governance, what should be the fundamental division of responsibility between line managers and the HR department?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">The HR department should evaluate all employee performance directly, while line managers only approve the final bonus payouts.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Line managers should design the appraisal forms and rating methodologies, while the HR department conducts the performance review meetings.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Both line managers and HR should independently grade each employee, with the average score determining the final appraisal rating.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Line managers must own and drive the daily process of goal setting, coaching, and evaluation, while the HR department designs the framework, provides tools, and facilitates system integrity.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q3">
+      <span class="q-number-badge">QUESTION 3</span>
+      <div class="q-text">A leading logistics enterprise established an aggressive strategic corporate goal to reduce delivery transit times and improve customer satisfaction ratings by 25%. However, warehouse supervisors are evaluated and incentivized solely on reducing labor costs and delaying dispatches until delivery trucks are 100% full. Although warehouse managers consistently hit their cost-cutting targets and earn bonuses, overall corporate delivery times lengthen and customer complaints surge. What fundamental flaw in performance management does this scenario demonstrate?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Excessive employee empowerment without managerial supervision</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Poor vertical and horizontal strategic alignment of performance goals</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Inadequacy of financial incentives provided to warehouse supervisors</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Excessive reliance on non-financial recognition programs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q4">
+      <span class="q-number-badge">QUESTION 4</span>
+      <div class="q-text">At the start of the operating cycle, Shreya and her reporting manager sit together to review the organization&#x27;s strategic priorities. Together, they formulate key result areas (KRAs), determine specific deliverables, agree upon the required behavioral competencies, and identify developmental activities needed to bridge Shreya&#x27;s skill gaps. Which stage of the performance management process are Shreya and her manager actively engaged in?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Performance planning</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Performance execution</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Performance assessment</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Performance renewal and recontracting</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q5">
+      <span class="q-number-badge">QUESTION 5</span>
+      <div class="q-text">Four months into the fiscal year, an IT project manager notices that two software engineers are struggling with newly adopted microservices frameworks, threatening project delivery milestones. Rather than waiting until the year-end annual appraisal to document this failure, the manager schedules bi-weekly check-ins, provides constructive guidance, reallocates minor workload items, and arranges peer-mentoring sessions. Which critical element of the performance management execution phase is being demonstrated?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Disciplinary surveillance</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Forced distribution ranking</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Continuous feedback and developmental coaching</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Administrative performance appraisal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q6">
+      <span class="q-number-badge">QUESTION 6</span>
+      <div class="q-text">A fintech enterprise provides its senior product development engineers with immense autonomy, allowing them to choose their project methodologies, work hours, and problem-solving frameworks. However, the organization mandates that every sprint end with a public demonstration of working software where engineers must present results, justify design trade-offs, and account for any deviations from sprint goals. This management philosophy is best described as:</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Centralized bureaucratic control</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Laissez-faire management without governance</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Autocratic supervision with forced accountability</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Empowerment with accountability</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q7">
+      <span class="q-number-badge">QUESTION 7</span>
+      <div class="q-text">Which of the following models represents the classic, continuous cycle of performance management, ensuring that performance insights from the concluding review inform the objectives of the subsequent period?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Plan - Act - Monitor - Review</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Evaluate - Punish - Compensate - Plan</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Review - Dismiss - Contract - Monitor</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Contract - Benchmark - Audit - Terminate</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q8">
+      <span class="q-number-badge">QUESTION 8</span>
+      <div class="q-text">A modern engineering consultancy redesigns its total reward framework. While basic salary and statutory allowances are maintained at market medians, the firm introduces high-visibility project assignments, executive mentorship programs, public peer-recognition awards, and flexible remote-work options. Why does the integration of both financial and non-financial rewards make strategic sense according to reward management theory?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Financial rewards are legally prohibited from influencing employee performance in professional services.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Non-financial rewards completely eliminate the necessity of paying competitive market wages.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Financial rewards satisfy baseline economic needs and prevent dissatisfaction, while non-financial rewards drive higher-order intrinsic motivation, engagement, and retention.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Non-financial rewards are effective only for underperforming employees who are ineligible for cash bonuses.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q9">
+      <span class="q-number-badge">QUESTION 9</span>
+      <div class="q-text">Vikram and Aditi both exceeded their annual research milestones in a pharmaceutical laboratory. Vikram received a cash incentive of Rs. 2,00,000 transferred to his bank account. Aditi was appointed to chair the company&#x27;s prestigious Scientific Innovation Council and was sponsored to present her findings at an international symposium in Boston. Which statement accurately categorizes the nature of their rewards?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Both Vikram and Aditi received purely transactional financial rewards.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Vikram received a transactional financial reward, whereas Aditi received relational non-financial rewards focused on recognition and career growth.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Aditi received a financial reward, whereas Vikram received a non-financial reward.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Neither reward has any motivational impact on employee retention according to reward theory.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q10">
+      <span class="q-number-badge">QUESTION 10</span>
+      <div class="q-text">An executive committee member argues that the sole purpose of implementing a formal performance management system is to generate written documentation to legally protect the company when terminating low performers. How should an HR strategist critique this narrow perspective?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">The critique is incorrect because legal defense is indeed the only valid organizational objective of performance management.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Performance management should never be documented in writing to avoid legal scrutiny in labor courts.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Performance management exists solely to distribute the annual corporate bonus pool without managerial discretion.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">While administrative and legal documentation is a secondary function, the primary purpose of PMS is developmental and strategic—aligning individual efforts with enterprise vision and cultivating organizational capabilities.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-header">
+      <h2>WEEK 2 — Predicted Examination Questions</h2>
+      <p>Strategic Planning, Goal Cascading & Environmental Analysis</p>
+    </div>
+
+    <div class="question-card" id="q11">
+      <span class="q-number-badge">QUESTION 11</span>
+      <div class="q-text">When formulating an organization-wide performance management architecture, leadership must distinguish between the corporate Mission and Vision statements before cascading objectives to functional teams. What is the precise functional difference between a Mission statement and a Vision statement in strategic performance planning?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">A Mission statement defines the organization&#x27;s current purpose, core customers, and operational scope, whereas a Vision statement articulates an inspiring aspirational future state that the firm seeks to attain.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">A Mission statement describes the future five-year financial targets, whereas a Vision statement lists the job descriptions of frontline personnel.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">A Mission statement is created exclusively for external regulatory compliance, whereas a Vision statement is used only for executive compensation benchmarking.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">A Mission statement focuses solely on employee welfare, while a Vision statement outlines short-term quarterly operational quotas.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q12">
+      <span class="q-number-badge">QUESTION 12</span>
+      <div class="q-text">A solar energy startup possesses cutting-edge, patented photovoltaic cell technology and an elite team of scientists, but it operates in a market where government subsidies are being abruptly withdrawn and cheap imported solar panels are flooding the market. In a SWOT matrix, which strategic quadrant does this organization occupy, and what type of performance objectives should the leadership prioritize?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Weakness-Threat (WT) quadrant; prioritizing immediate asset liquidation and bankruptcy protection.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Weakness-Opportunity (WO) quadrant; focusing exclusively on internal employee training programs.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Strength-Threat (ST) quadrant; leveraging internal technological strengths and patents to differentiate from cheap competitors and mitigate external regulatory threats.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Strength-Opportunity (SO) quadrant; aggressively expanding production without competitive differentiation.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q13">
+      <span class="q-number-badge">QUESTION 13</span>
+      <div class="q-text">A traditional regional department store chain observes a rapid demographic shift toward mobile e-commerce among younger shoppers (an external market trend). However, an internal assessment reveals that the store&#x27;s IT systems are antiquated, warehouse staff lack digital fulfillment skills, and the inventory tracking software is prone to severe errors. Under the SWOT framework, what strategic posture (WO / Mini-Maxi) should the company&#x27;s performance management system support?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Overcoming internal operational and technical weaknesses by establishing developmental and hiring targets to exploit the emerging digital commerce opportunity.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Relying on existing store layout strengths to ignore e-commerce competitors completely.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Immediately firing all retail employees to minimize operational costs in the short run.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Allocating 100% of executive bonuses to preserving existing legacy offline retail practices.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q14">
+      <span class="q-number-badge">QUESTION 14</span>
+      <div class="q-text">A hospital network wants to cascade its annual strategic goals down to nursing supervisors and ward technicians. Instead of imposing unilateral, rigid departmental quotas from executive suites, executive leadership engages in a bidirectional dialogue (&#x27;catchball&#x27; process) where unit heads and staff discuss local operational realities, negotiate achievable milestones, and mutually agree on quality-of-care targets. What is the primary advantage of this participative goal-setting approach over rigid top-down cascading?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">It eliminates the need for leadership to define any organizational vision or direction.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">It fosters higher psychological ownership, enhances goal commitment, and surfaces ground-level operational constraints that top leadership might overlook.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">It guarantees that no employee will ever fall short of their performance standards.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">It replaces formal performance reviews with informal peer popularity rankings.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q15">
+      <span class="q-number-badge">QUESTION 15</span>
+      <div class="q-text">Consider the following performance objective assigned to a customer service executive: &#x27;Work diligently to handle incoming customer calls as courteously and efficiently as possible.&#x27; Why does this objective fail to meet the established criteria of a SMART goal?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">It is excessively difficult and demands impossible levels of intellectual effort.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">It focuses on customers rather than internal cost-reduction metrics.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">It lacks quantifiable measurement metrics, specific performance thresholds, and a defined time horizon for achievement.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">It was drafted by a line manager rather than an external management consultant.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q16">
+      <span class="q-number-badge">QUESTION 16</span>
+      <div class="q-text">Which of the following revised objectives best transforms the vague goal &#x27;Improve software quality&#x27; into a fully compliant SMART performance objective for a quality assurance team?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Reduce post-release critical bug defect rates from 4.2 to below 1.5 per 1,000 lines of code across all mobile releases by the end of Q3.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Strive to test every single software build whenever time permits during the coming months.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Ensure that software bugs are minimized whenever engineers write code.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Encourage the development team to be more careful with software releases throughout their career.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q17">
+      <span class="q-number-badge">QUESTION 17</span>
+      <div class="q-text">In strategic human resource management, what does the concept of &#x27;Strategic Congruence&#x27; in performance management specifically denote?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">The degree to which all competitors in an industry adopt the exact same appraisal forms.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The extent to which an organization maintains completely identical salaries across all job families.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The requirement that all employee performance goals must be calculated using mathematical algorithms.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The extent to which the performance management system elicits job behaviors and outcomes that are directly aligned with and supportive of the organization&#x27;s strategic priorities.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q18">
+      <span class="q-number-badge">QUESTION 18</span>
+      <div class="q-text">An electric utility company formulates an ambitious corporate sustainability strategy to reduce carbon emissions by 40% over four years. However, power plant station managers continue to receive 90% of their annual performance bonuses based solely on short-term coal burn efficiency and maximizing daily megawatt output, regardless of emissions. What is the predictable organizational outcome?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Plant managers will voluntarily sacrifice their bonuses to achieve corporate carbon reduction goals.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The corporate sustainability strategy will fail because operational behavior will follow the financial incentives of the existing reward system rather than executive pronouncements.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The plant managers will spontaneously adopt renewable energy sources without organizational support.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The organization&#x27;s environmental performance will improve dramatically within six months.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q19">
+      <span class="q-number-badge">QUESTION 19</span>
+      <div class="q-text">When building a Balanced Scorecard framework for strategic performance management, Kaplan and Norton emphasized balancing &#x27;lagging indicators&#x27; with &#x27;leading indicators&#x27;. Why is evaluating organizational or departmental performance exclusively on lagging indicators (such as net quarterly profit or annual return on equity) strategically inadequate?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Lagging financial indicators are illegal to disclose to departmental employees under company law.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Lagging indicators are subjective opinions that cannot be measured mathematically.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Leading indicators focus only on past operational failures that cannot be changed.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Lagging indicators reflect historical outcomes after activities have concluded, offering no timely diagnostic feedback to alter operational processes before strategic targets are missed.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q20">
+      <span class="q-number-badge">QUESTION 20</span>
+      <div class="q-text">A corporate committee conducting an environmental scan uses the PESTEL framework prior to formulating annual performance targets. If the central bank unexpectedly raises benchmark interest rates by 250 basis points and inflation surges, which external macro-environmental dimension has shifted, and how should a resilient PMS respond?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Sociocultural dimension; performance standards should be frozen permanently.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Technological dimension; employees should be required to work overtime without pay.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Economic dimension; management should review financial assumptions and adjust operational performance baselines to reflect uncontrollable macroeconomic constraints.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Legal dimension; the organization must immediately terminate its performance appraisal process.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-header">
+      <h2>WEEK 3 — Predicted Examination Questions</h2>
+      <p>Defining & Measuring Performance, Competencies & Rater Biases</p>
+    </div>
+
+    <div class="question-card" id="q21">
+      <span class="q-number-badge">QUESTION 21</span>
+      <div class="q-text">According to John P. Campbell&#x27;s foundational model of job performance, individual performance is determined by the multiplicative interaction: Performance = Declarative Knowledge × Procedural Knowledge &amp; Skill × Motivation. An aerospace technician knows all safety regulations and maintenance manuals by heart (Declarative Knowledge) and possesses the physical dexterity and diagnostic expertise to repair aircraft engines flawlessly (Procedural Knowledge). However, the technician consistently fails to complete routine daily safety checklists on time due to apathy and disengagement. Which component of Campbell&#x27;s model is deficient?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Declarative Knowledge</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Motivation (choice to expend effort, level of effort, and persistence)</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Cognitive ability</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Contextual performance capability</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q22">
+      <span class="q-number-badge">QUESTION 22</span>
+      <div class="q-text">In a software development company, Kabir writes clean, bug-free code strictly within his assigned modules. However, whenever younger developers ask him questions, he refuses to assist, rarely speaks in team brainstorming sessions, and never volunteers to assist when the department faces critical delivery crunches. Conversely, his colleague Radhika meets her standard coding targets and also voluntarily mentors interns, coordinates team knowledge-sharing sessions, and stays late to help colleagues resolve production outages. According to Borman and Motowidlo&#x27;s taxonomy, how do Kabir and Radhika differ?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Kabir exhibits high Contextual Performance, while Radhika exhibits high Task Performance.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Both Kabir and Radhika exhibit identical levels of Contextual Performance.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Neither Kabir nor Radhika exhibits acceptable Task Performance.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Both exhibit acceptable Task Performance, but Radhika exhibits significantly superior Contextual Performance (Organizational Citizenship Behavior).</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q23">
+      <span class="q-number-badge">QUESTION 23</span>
+      <div class="q-text">Under which of the following operational circumstances is adopting a &#x27;Behavior Approach&#x27; to performance measurement distinctly superior and more defensible than relying solely on a &#x27;Results Approach&#x27;?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">When the link between specific employee behaviors and end-results is not obvious, results are achieved only in the distant future, or outcomes are heavily contaminated by external economic factors beyond the worker&#x27;s control.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">When workers assemble identical standardized mechanical parts on a high-speed moving conveyor belt.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">When independent real estate agents sell residential apartments on pure commission.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">When the organization wants to minimize administrative costs and avoid observing employee actions.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q24">
+      <span class="q-number-badge">QUESTION 24</span>
+      <div class="q-text">Why is the &#x27;Trait Approach&#x27; (evaluating employees on general personality dimensions such as &#x27;loyalty&#x27;, &#x27;friendliness&#x27;, &#x27;integrity&#x27;, or &#x27;enthusiasm&#x27;) widely discouraged by performance management experts and courts of law?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Because personality traits are completely unmeasurable by modern psychological sciences.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Because trait evaluations can only be conducted by external clinical psychiatrists.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Because traits are subjective, highly vulnerable to rater bias, poorly correlated with actual job performance, and fail to provide employees with clear behavioral feedback on how to improve.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Because labor laws require that only financial metrics can be included on performance appraisal forms.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q25">
+      <span class="q-number-badge">QUESTION 25</span>
+      <div class="q-text">In competency modeling, competencies are traditionally categorized into &#x27;Threshold Competencies&#x27; and &#x27;Differentiating Competencies&#x27;. Which of the following is the best example of a &#x27;Differentiating Competency&#x27; in a corporate legal advisory firm?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Possessing a recognized Bachelor of Laws (LL.B.) degree and valid bar enrollment.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The rare ability to structure unprecedented cross-border mergers and acquisitions that anticipate and bypass complex multi-jurisdictional antitrust hurdles, consistently winning high-stakes deals for clients.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The ability to read and draft standard non-disclosure agreements in the English language.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Punctually attending scheduled morning client meetings during regular business hours.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q26">
+      <span class="q-number-badge">QUESTION 26</span>
+      <div class="q-text">A project manager observes that a senior data analyst arrived 20 minutes late to two internal team standups during the first week of the quarter. In the subsequent performance appraisal, the manager rates the analyst as &#x27;Unacceptable&#x27; across every single performance domain, including mathematical modeling accuracy, code efficiency, report writing, and client communication—despite all objective analytics delivered by the analyst being flawless. What rating error has the manager committed?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Leniency error</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Central tendency error</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Spillover effect</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Horns error (Negative Halo)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q27">
+      <span class="q-number-badge">QUESTION 27</span>
+      <div class="q-text">During an annual performance calibration session, an evaluator reviews three consecutive employees whose work has been disastrously deficient, disorganized, and riddled with client complaints. The fourth employee evaluated is a thoroughly average worker who meets basic standards but demonstrates no extraordinary initiative. Relieved by the contrast, the evaluator awards the fourth employee an &#x27;Outstanding - Top Performer&#x27; rating. What cognitive distortion has occurred?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Strictness error</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Contrast error</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Primacy error</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Similar-to-me error</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q28">
+      <span class="q-number-badge">QUESTION 28</span>
+      <div class="q-text">In performance planning, what is the critical conceptual distinction between a &#x27;Performance Standard&#x27; and a &#x27;Performance Objective&#x27;?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">A performance standard defines the baseline threshold of acceptable quality or routine behavior expected for ongoing core responsibilities, whereas a performance objective specifies a distinct, targeted outcome or stretch goal to be accomplished within a specific time frame.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">A performance standard applies only to executive directors, while a performance objective applies exclusively to manual factory workers.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">A performance standard is always financial, whereas a performance objective can never include numerical values.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Performance standards are negotiated annually, while performance objectives never change throughout an employee&#x27;s career.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q29">
+      <span class="q-number-badge">QUESTION 29</span>
+      <div class="q-text">Many global enterprises utilize 360-degree multi-source feedback systems (gathering inputs from supervisors, peers, subordinates, and customers). Organizational research indicates that 360-degree feedback is highly effective for leadership development and personal coaching, but severely dysfunctional when tied directly to salary increments and promotional decisions. Why does linking 360-degree feedback directly to high-stakes administrative decisions undermine its validity?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Because subordinates are legally barred from writing evaluations about supervisors.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Because peer feedback can only be processed using manual pen-and-paper appraisal forms.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Because high-stakes administrative consequences incentivize peers to engage in political collusion (&#x27;log-rolling&#x27;), reciprocal score inflation, or vindictive score deflation, destroying honest, candid developmental feedback.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Because customers refuse to evaluate employees who receive monetary bonuses.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q30">
+      <span class="q-number-badge">QUESTION 30</span>
+      <div class="q-text">To reduce cognitive rating biases (such as halo, leniency, and central tendency) across a large managerial workforce, an enterprise implements &#x27;Frame-of-Reference (FOR) Training&#x27; for all supervisory evaluators. How does Frame-of-Reference training work to enhance rater accuracy?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">It instructs managers to automatically assign a failing grade to 10% of their staff regardless of performance.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">It mandates that all employee evaluations must be performed by an automated AI chatbot without managerial input.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">It requires managers to conduct appraisal meetings exclusively in the presence of corporate defense attorneys.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">It exposes raters to realistic behavioral vignettes of varied performance levels, discusses the multidimensional criteria, and calibrates raters until they share a common standard of what constitutes poor, average, and superior performance.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-header">
+      <h2>WEEK 4 — Predicted Examination Questions</h2>
+      <p>Performance Appraisal Methods, Systems & Rating Instruments</p>
+    </div>
+
+    <div class="question-card" id="q31">
+      <span class="q-number-badge">QUESTION 31</span>
+      <div class="q-text">An elite research and development facility employs 30 top-tier geneticists who were hired from the top 1% of global applicants. The HR department imposes a mandatory &#x27;Forced Distribution&#x27; (Bell Curve) appraisal system, requiring each department manager to categorize exactly 10% of their staff as &#x27;Top Performers&#x27;, 70% as &#x27;Average&#x27;, and 20% as &#x27;Underperformers&#x27; facing performance improvement plans. What critical dysfunction is this policy most likely to trigger within this high-caliber research team?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Artificial downgrading of genuinely superior contributors, destruction of collaborative peer teamwork, destructive internal rivalry, and the demoralization and turnover of valuable talent.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">An automatic increase in peer-reviewed scientific publications and international patent filings.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Complete elimination of all cognitive rating biases among supervisory managers.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">An immediate 20% reduction in laboratory operational expenses without any loss of employee trust.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q32">
+      <span class="q-number-badge">QUESTION 32</span>
+      <div class="q-text">Peter Drucker formulated &#x27;Management by Objectives&#x27; (MBO) as a holistic managerial philosophy. Which of the following features represents the essential core of MBO that prevents it from degenerating into a coercive, authoritarian, top-down quota system?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">The strict requirement that all performance objectives must be kept confidential from employees until year-end.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The unilateral determination of annual production targets solely by corporate finance controllers.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The joint, collaborative establishment of clear, mutually agreed-upon objectives between the supervisor and employee, coupled with periodic self-monitoring and open review.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The exclusive reliance on punitive disciplinary actions whenever monthly sales quotas are missed.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q33">
+      <span class="q-number-badge">QUESTION 33</span>
+      <div class="q-text">A manufacturing supervisor maintains a structured daily logbook throughout the year. Whenever a machine operator discovers a novel safety hazard and initiates an emergency shutdown preventing equipment damage, or conversely, bypasses a safety protocol resulting in material scrap, the supervisor records the exact context, the specific employee action, and the resulting consequence. What performance appraisal technique is being applied?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Graphic Rating Scale</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Critical Incident Technique (CIT)</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Paired Comparison Method</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Confidential Report System</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q34">
+      <span class="q-number-badge">QUESTION 34</span>
+      <div class="q-text">When designing behavioral rating scales, what is the fundamental structural and operational difference between Behaviorally Anchored Rating Scales (BARS) and Behavioral Observation Scales (BOS)?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">BARS measures personality traits, whereas BOS measures financial profit margins.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">BARS can only be used for blue-collar workers, while BOS is restricted to Chief Executive Officers.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">BARS is completed by the employee&#x27;s peers, whereas BOS must be completed by external labor arbitrators.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">BARS requires the rater to choose the single behavioral description that best anchors the employee&#x27;s typical performance level, whereas BOS requires the rater to evaluate the frequency (e.g. from &#x27;Almost Never&#x27; to &#x27;Almost Always&#x27;) with which the employee exhibits each specific behavior.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q35">
+      <span class="q-number-badge">QUESTION 35</span>
+      <div class="q-text">A commercial bank evaluates branch managers on a standard &#x27;Graphic Rating Scale&#x27; featuring categories like &#x27;Dependability&#x27;, &#x27;Leadership&#x27;, and &#x27;Communication&#x27;, scored from 1 (&#x27;Poor&#x27;) to 5 (&#x27;Excellent&#x27;) with no explanatory behavioral descriptors attached to the numbers. Why is this unanchored rating instrument highly susceptible to psychometric failure?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">It suffers from severe ambiguity because different raters interpret rating numbers and broad trait categories idiosyncratically, making evaluations subjective and vulnerable to leniency and halo biases.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">It is overly complex and requires managers to spend months calculating mathematical logarithms.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">It is too objective and prevents managers from exercising personal human judgment.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">It violates international accounting standards for financial assets.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q36">
+      <span class="q-number-badge">QUESTION 36</span>
+      <div class="q-text">An enterprise establishes an &#x27;Assessment Centre&#x27; to identify managerial potential and evaluate senior leadership candidates. Candidates spend two intensive days participating in in-basket exercises, leaderless group discussions, mock crisis simulations, and structured behavioral interviews, observed by multiple trained industrial psychologists and senior executives. What is the primary methodological reason Assessment Centres achieve high predictive validity?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">They rely exclusively on multiple-choice personality surveys that can be graded instantly.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">They allow candidates to negotiate their appraisal ratings directly with company board members.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">They combine multiple standardized job-simulation exercises with multiple independent trained assessors, minimizing individual rater bias and capturing comprehensive behavioral competency data.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">They replace the necessity of evaluating past work experience or technical qualifications.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q37">
+      <span class="q-number-badge">QUESTION 37</span>
+      <div class="q-text">In the Indian civil services and public sector enterprises, the traditional &#x27;Annual Confidential Report&#x27; (ACR) system was historically criticized for its high secrecy, where officers were unaware of adverse assessments until promotional opportunities were denied. Under judicial directions and administrative reforms, the system was transitioned to the &#x27;Annual Performance Assessment Report&#x27; (APAR). What is the paramount ethical and procedural reform embodied in the APAR framework?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Full disclosure of the entire assessment, including numerical gradings and narrative remarks, giving the officer the legal right to submit representation against adverse entries before finalization.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The complete abolition of all annual performance records in government administration.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The transfer of all appraisal authority from government secretaries to private recruitment agencies.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Restricting performance reporting solely to the number of casual leaves taken by the employee.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q38">
+      <span class="q-number-badge">QUESTION 38</span>
+      <div class="q-text">A new department head wants to build immediate popularity among team members and avoid awkward confrontations. In his first appraisal cycle, he awards all 18 subordinates a rating of &#x27;Far Exceeds Expectations&#x27; (5 out of 5), regardless of their demonstrable differences in project delivery, attendance, and work quality. What appraisal error has this manager committed, and what is its organizational impact?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Strictness error; it motivates employees to work significantly longer hours.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Leniency error; it destroys performance differentiation, renders appraisal data useless for compensation or promotions, and deeply demotivates true high performers.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Central tendency error; it clusters all employees around the midpoint score of 3.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Contrast error; it exaggerates minor performance flaws.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q39">
+      <span class="q-number-badge">QUESTION 39</span>
+      <div class="q-text">If an organization implements a pure Results-Based appraisal system that measures only quantitative financial outputs (e.g. quarterly revenue generated) while completely ignoring the behavioral competencies and ethical methods used by employees, which organizational culture pathology is most likely to emerge?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Excessive employee focus on long-term corporate governance and philanthropy.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Total elimination of workplace stress and burnout.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">An &#x27;ends justify the means&#x27; culture where employees may cut safety corners, engage in aggressive accounting, alienate clients, or undermine colleagues to hit short-term targets.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">A complete refusal of employees to accept variable incentive compensation.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q40">
+      <span class="q-number-badge">QUESTION 40</span>
+      <div class="q-text">In an effort to eradicate rater leniency, an organization introduces the &#x27;Forced-Choice Rating Method&#x27;. In this system, the appraisal form presents raters with sets of four descriptive behavioral statements that appear equally favorable (or equally unfavorable), and the supervisor must select the one statement &#x27;most descriptive&#x27; and the one &#x27;least descriptive&#x27; of the employee. What is the primary psychometric mechanism by which this method prevents conscious rater bias?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">The supervisor is given a calculator to compute the employee&#x27;s net market value.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The supervisor is forced to rate employees in a public town hall meeting.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The supervisor can easily identify which options give the employee a high score.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The scoring key is kept hidden from the rater, making all statements appear equally desirable so the rater cannot deliberately manipulate the final rating score.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-header">
+      <h2>WEEK 5 — Predicted Examination Questions</h2>
+      <p>Developmental Planning, Coaching, Feedforward & Team Dynamics</p>
+    </div>
+
+    <div class="question-card" id="q41">
+      <span class="q-number-badge">QUESTION 41</span>
+      <div class="q-text">An HR director reviews the documentation generated during the annual review cycle and notices that several managers confuse a &#x27;Personal Development Plan&#x27; (PDP) with a &#x27;Performance Improvement Plan&#x27; (PIP). What is the primary conceptual distinction between a PDP and a PIP in employee development?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">A PDP is a punitive disciplinary mechanism designed to dismiss employees, whereas a PIP is a fast-track promotion program.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">A PDP is forward-looking and growth-oriented, focusing on career aspirations, continuous learning, and future competencies, whereas a PIP is remedial, focusing on correcting documented short-term performance deficiencies within a defined probationary timeline.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">A PDP applies only to manual laborers, while a PIP is reserved exclusively for the Chief Executive Officer.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">A PDP requires judicial approval in labor courts, while a PIP is managed by external headhunters.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q42">
+      <span class="q-number-badge">QUESTION 42</span>
+      <div class="q-text">An engineering enterprise provides various developmental interventions for its technical workforce. To optimize talent management, HR differentiates between Coaching, Mentoring, and Counseling. Which of the following scenarios best exemplifies managerial &#x27;Coaching&#x27;?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">A functional supervisor conducts regular, structured dialogues with a newly appointed tech lead, analyzing recent sprint roadblocks, offering real-time feedback, and co-creating behavioral tactics to improve sprint delivery and team facilitation.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">A retired board director meets a young engineer once a year over lunch to share broad life wisdom and career philosophy unconnected to daily operations.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">A licensed clinical psychologist helps an employee navigate severe personal marital distress and anxiety.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">An administrative clerk audits time-and-attendance records to deduct casual leave balances.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q43">
+      <span class="q-number-badge">QUESTION 43</span>
+      <div class="q-text">In designing team-based performance systems, organizational theorists distinguish between different types of teams. A consumer electronics multinational creates a team comprising software architects, industrial designers, battery chemists, and marketing strategists for a strict nine-month assignment to build a next-generation smart wearable. Once the product launches into commercial production, the team will disband, and members will return to their functional homes. Which team type does this represent?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Permanent manufacturing work team</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Self-managed maintenance crew</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Cross-functional project team</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Virtual administrative support cell</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q44">
+      <span class="q-number-badge">QUESTION 44</span>
+      <div class="q-text">A pharmaceutical research unit transitions from individual bonuses to an entirely equal team-based bonus where all eight scientists in a drug discovery laboratory receive an identical financial payout if a molecule passes clinical trials. Within a year, team productivity slumps, high-performing researchers express bitter resentment, and two junior scientists contribute almost zero experimental bench work while still collecting full bonuses. What organizational pathology has emerged, and how could reward architecture prevent it?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Job enrichment; prevent it by eliminating all project milestones.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Role-to-grade analytical matching; prevent it by increasing base pay.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Strategic congruence; prevent it by banning team collaboration entirely.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Social loafing (free-riding); prevent it by introducing a hybrid reward design that measures identifiable individual contributions alongside team achievement.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q45">
+      <span class="q-number-badge">QUESTION 45</span>
+      <div class="q-text">Executive coach Marshall Goldsmith advocates &#x27;Feedforward&#x27; as a powerful alternative to traditional backward-looking feedback during developmental performance discussions. What makes Feedforward particularly effective in motivating behavior change?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">It compiles a permanent historical record of past failures to ensure employees cannot deny previous mistakes.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">It focuses on providing positive, practical suggestions and behavioral options for the future rather than debating and criticizing unchangeable past events.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">It eliminates all performance standards and allows employees to rate themselves without managerial review.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">It forces employees to pay financial penalties in advance of committing performance errors.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q46">
+      <span class="q-number-badge">QUESTION 46</span>
+      <div class="q-text">A manager utilizes the widely acclaimed &#x27;GROW Model&#x27; during structured developmental coaching conversations with team members. In this framework, what does the &#x27;R&#x27; stage specifically require the manager and employee to explore?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Remuneration: Negotiating the exact cash bonus percentage for the quarter.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Retaliation: Discussing grievances against rival departments.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Current Reality: Examining the current situation objectively, identifying existing obstacles, self-limitations, and performance gaps without defensive distortion.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Recontracting: Rewriting the legal employment contract through corporate legal counsel.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q47">
+      <span class="q-number-badge">QUESTION 47</span>
+      <div class="q-text">A corporate consulting firm designs an incentive system for its agile delivery pods. The bonus structure allocates 60% of the potential bonus based on overall client satisfaction and on-time delivery of the pod&#x27;s collective project, while 40% is based on the individual consultant&#x27;s billable contribution and peer-rated collaboration. Why is this hybrid compensation structure strategically sound?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">It fosters necessary team interdependence and shared mission while preserving individual accountability, preventing both destructive internal rivalry and social loafing.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">It proves that team performance can never be measured quantitatively.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">It is mandated by the International Labour Organization for knowledge workers.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">It completely removes the necessity of conducting individual performance reviews.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q48">
+      <span class="q-number-badge">QUESTION 48</span>
+      <div class="q-text">According to Edward Deci and Richard Ryan&#x27;s Self-Determination Theory (SDT), what psychological hazard, known as the &#x27;Overjustification Effect&#x27;, can occur when an employer introduces a controlling, extrinsic financial micro-incentive for a creative task that employees previously performed with deep passion, intrinsic curiosity, and pride?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Employees will spontaneously demand that all financial wages be replaced with stock options.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The employees will develop unmanageable levels of extrinsic motivation that enhance creativity.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The employees&#x27; declarative knowledge will instantly transform into procedural skill.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The extrinsic reward shifts the perceived locus of causality from internal enjoyment to external compliance, eroding genuine intrinsic motivation and causing performance to plummet if the reward is removed.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q49">
+      <span class="q-number-badge">QUESTION 49</span>
+      <div class="q-text">During an annual performance review meeting, an employee reacts with shock and defensiveness to an average appraisal score, claiming that their contribution was outstanding and presenting email snippets to dispute the rating. According to best practices in performance review facilitation, how should the reviewing manager handle this conflict?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Immediately threaten the employee with disciplinary termination for insubordination.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Listen actively without interruption, acknowledge the employee&#x27;s perspective, examine concrete behavioral evidence collaboratively, and focus the discussion on diagnostic problem-solving and mutual alignment for the future.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Instantly surrender and change the rating to top-tier to maintain social peace.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Walk out of the meeting room and instruct HR to finalize the score without further discussion.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q50">
+      <span class="q-number-badge">QUESTION 50</span>
+      <div class="q-text">With the rise of geographically dispersed virtual teams operating across multiple time zones, managers cannot physically observe daily working behaviors or keystrokes. How must the performance management system adapt to measure and manage virtual team performance effectively?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Install invasive webcam surveillance software to track continuous eye movement.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Abolish all performance expectations and rely entirely on unverified trust.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Shift performance criteria from physical presence and visual activity to clearly defined deliverables, measurable milestone outcomes, output quality, and proactive digital communication responsiveness.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Require all remote workers to relocate immediately to company headquarters.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-header">
+      <h2>WEEK 6 — Predicted Examination Questions</h2>
+      <p>Strategic Reward Management, Total Rewards Architecture & Justice</p>
+    </div>
+
+    <div class="question-card" id="q51">
+      <span class="q-number-badge">QUESTION 51</span>
+      <div class="q-text">In the WorldatWork Total Rewards framework, rewards are categorized into &#x27;Transactional&#x27; rewards and &#x27;Relational&#x27; rewards. Why do organizational strategists consider relational rewards (such as inspiring leadership, learning culture, work autonomy, and public recognition) to provide a more sustainable, difficult-to-imitate competitive advantage than transactional rewards (such as base pay and statutory allowances)?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Because financial transactional rewards can be easily matched or outbid by well-funded competitors overnight, whereas relational rewards are deeply embedded in unique organizational culture, social relationships, and human capital architecture that cannot be easily copied.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Because relational rewards are free of cost and require zero managerial effort to implement.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Because labor legislation strictly prohibits competitors from poaching employees using financial incentives.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Because employees universally prefer public certificates over cash compensation in all circumstances.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q52">
+      <span class="q-number-badge">QUESTION 52</span>
+      <div class="q-text">Due to a severe industry-wide macroeconomic downturn, Zenith Technologies announces that annual performance bonuses will be reduced across all departments by 50%. However, executive leadership holds open town hall meetings, transparently shares full financial audits, clearly demonstrates that senior vice presidents took even steeper bonus cuts (75%), and strictly applies the same mathematical reduction formula across the entire organization. Although employees are disappointed with their bonus checks, employee engagement surveys reveal that trust in management remains remarkably resilient. Which organizational justice dynamic explains this outcome?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Distributive justice was high, but procedural justice was completely absent.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Distributive justice was low (unfavorable economic outcome), but Procedural and Informational justice were high (fair, transparent, consistent, and respectful process), which powerfully buffered employee trust.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Employees never care about financial rewards as long as they have a job.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The organization violated international accounting standards of corporate governance.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q53">
+      <span class="q-number-badge">QUESTION 53</span>
+      <div class="q-text">Organizational justice researchers Robert Bies and Joseph Moag identified &#x27;Interactional Justice&#x27; as a critical dimension of workplace fairness, comprising two sub-facets: &#x27;Interpersonal Justice&#x27; and &#x27;Informational Justice&#x27;. How is Informational Justice specifically demonstrated by a manager during a performance and reward discussion?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">By giving every employee identical financial bonuses regardless of performance.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">By strictly withholding performance data from employees to prevent conflict.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">By using legal jargon and threat of disciplinary action to silence employee questions.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">By providing candid, timely, comprehensive, and truthful explanations of how appraisal ratings and reward decisions were reached, backed by relevant facts.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q54">
+      <span class="q-number-badge">QUESTION 54</span>
+      <div class="q-text">In international reward management, multinational corporations frequently use the &#x27;Balance Sheet Approach&#x27; (Home-Based approach) to compensate expatriate managers on multi-year foreign assignments. What is the central economic objective of the Balance Sheet Approach?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">To ensure the expatriate maintains equivalent purchasing power and standard of living comparable to their home country, while receiving incentives for international mobility and protection against host-country cost-of-living and tax differentials.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">To permanently reduce the expatriate&#x27;s base salary to match the lowest-paid worker in the host country.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">To force the expatriate to pay double income tax in both home and host jurisdictions without compensation.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">To replace all monetary salary with local supermarket discount coupons.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q55">
+      <span class="q-number-badge">QUESTION 55</span>
+      <div class="q-text">The Hay Group Model of Engaged Performance identifies six foundational pillars of the work experience: Tangible Rewards, Quality of Work, Work-Life Balance, Inspiring Leadership, Future Growth Opportunity, and Enabling Environment. Which pillar focuses on employee confidence in senior executive vision, ethical leadership, mutual trust, and clear organizational direction?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Tangible Rewards</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Enabling Environment</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Inspiring Leadership</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Work-Life Balance</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q56">
+      <span class="q-number-badge">QUESTION 56</span>
+      <div class="q-text">A specialized enterprise discovers that an internal job evaluation using the point-factor method places the job of &#x27;Chief Cyber Security Architect&#x27; in Grade 5 (with a salary cap of Rs. 25,00,000) based on internal compensable factors. However, due to a severe national cyber talent shortage, competitors are aggressively poaching these professionals at market salaries of Rs. 45,00,000. What strategic reward dilemma is the enterprise facing?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">A direct conflict between Internal Equity (preserving the internally evaluated job hierarchy) and External Competitiveness (matching market rates to attract and retain critical talent).</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">A failure of the company to conduct employee background verification.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">An ethical violation of employee privacy under cybersecurity regulations.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">An administrative requirement to eliminate all cyber security operations.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q57">
+      <span class="q-number-badge">QUESTION 57</span>
+      <div class="q-text">Beyond written legal employment contracts, employee attitudes and discretionary effort are powerfully governed by the &#x27;Psychological Contract&#x27;. What does a perceived breach of the psychological contract regarding rewards entail?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">A formal civil lawsuit filed in the high court for breach of written lease agreements.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">A mechanical breakdown in computerized payroll processing hardware.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">An increase in employee voluntary contributions to company-sponsored charity.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">A profound sense of betrayal when an employer fails to fulfill unwritten, implicit promises regarding career progression, fair recognition, and developmental support, leading to cynicism, reduced effort, and turnover.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q58">
+      <span class="q-number-badge">QUESTION 58</span>
+      <div class="q-text">A progressive technology company transitions from a &#x27;Closed Pay System&#x27; (strict secrecy where salaries are confidential) to an &#x27;Open Pay System&#x27; (publishing pay grades, salary ranges, and explicit merit-increase formulas). What is the primary organizational benefit of pay transparency, and what critical precondition must exist for it to succeed?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">It eliminates the need for managers to review employee work; precondition is that all employees must receive identical salaries.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">It fosters trust, eliminates suspicions of discriminatory bias, and reinforces equity; precondition is that the organization must have an objective, defensible, and robust job evaluation and performance measurement system to justify pay differences.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">It prevents employees from ever leaving the organization; precondition is that all salaries must remain frozen.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">It guarantees that no employee will ever ask for a pay raise; precondition is that all profits must be donated.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q59">
+      <span class="q-number-badge">QUESTION 59</span>
+      <div class="q-text">According to J. Stacy Adams&#x27; Equity Theory, an individual evaluates compensation fairness by comparing their ratio of perceived outcomes to inputs with that of a referent other (Outcome_self / Input_self vs Outcome_referent / Input_referent). If Ananya discovers she is experiencing &#x27;Underpayment Inequity&#x27; compared to her peer who performs equal work with less effort, which behavioral response is predicted by Equity Theory?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Ananya will voluntarily increase her work hours and output without demanding a raise.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Ananya will donate her annual bonus to her peer.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Ananya will immediately convince management to double her coworker&#x27;s workload.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Ananya will experience cognitive distress and attempt to restore equity by reducing her inputs (exerting less effort, arriving late, withholding discretionary help) or seeking to increase her outcomes (demanding a raise) or quitting.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q60">
+      <span class="q-number-badge">QUESTION 60</span>
+      <div class="q-text">In strategic compensation architecture, what is meant by establishing an effective &#x27;Line of Sight&#x27; for employees?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Installing optical biometric eye-scanners at all factory entrance gates.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Ensuring all employees have a direct physical view of the CEO&#x27;s office from their desks.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The degree of clarity with which an employee can understand how their specific daily work activities directly impact organizational performance and how achieving those goals will translate into personal rewards.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The optical distance required between computer monitors and employee workstations for ergonomic safety.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-header">
+      <h2>WEEK 7 — Predicted Examination Questions</h2>
+      <p>Compensation Theories, Incentive Systems & Statutory Benefits</p>
+    </div>
+
+    <div class="question-card" id="q61">
+      <span class="q-number-badge">QUESTION 61</span>
+      <div class="q-text">A heavy engineering workshop currently uses Taylor&#x27;s Differential Piece Rate System, where workers who fall even slightly below standard output are penalized with a low piece rate and earn no guaranteed baseline wage, causing labor unrest. Management wishes to transition to an incentive scheme that guarantees a standard time wage to protect workers, while paying a bonus on time saved. Which classic incentive plan guarantees the time wage and splits the monetary value of time saved (usually 50-50) between the worker and employer?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Taylor&#x27;s Differential Piece Rate Plan</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Halsey Premium Plan</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Merrick Multiple Piece Rate Plan</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Emerson Efficiency Plan</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q62">
+      <span class="q-number-badge">QUESTION 62</span>
+      <div class="q-text">In the Rowan Premium Plan, the bonus payable to a worker for completing an assigned job in less than standard time is calculated using the formula: Bonus = (Time Saved / Time Allowed) × Time Taken × Hourly Wage Rate. What unique mathematical safeguard does this formula provide to employers compared to other piece-rate systems as workers become exceptionally fast?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">The bonus increases infinitely with no ceiling, bankrupting the company.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The bonus rate automatically drops to zero if the worker saves any time.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">As time taken approaches zero, the proportion (Time Saved / Time Allowed) increases but multiplies by a decreasing &#x27;Time Taken&#x27;, ensuring that total bonus can never exceed 100% of standard time wages and preventing runaway bonus inflation.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The formula requires approval from the central government&#x27;s ministry of labor for every shift.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q63">
+      <span class="q-number-badge">QUESTION 63</span>
+      <div class="q-text">An industrial manufacturing facility wants to implement a factory-wide gainsharing plan. The plant manager is deciding between the classic &#x27;Scanlon Plan&#x27; and the &#x27;Rucker Plan&#x27;. What is the critical distinction in how productivity gains are measured between these two gainsharing models?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">The Scanlon Plan measures labor savings relative to the total sales value of production (SVOP), whereas the Rucker Plan measures labor savings relative to the &#x27;value added&#x27; (sales value minus the cost of purchased raw materials and outside services).</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The Scanlon Plan applies only to executives, while the Rucker Plan applies only to seasonal apprentices.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The Scanlon Plan distributes stock options, whereas the Rucker Plan pays wages exclusively in physical gold coins.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The Scanlon Plan does not permit employee suggestion committees, while the Rucker Plan mandates them.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q64">
+      <span class="q-number-badge">QUESTION 64</span>
+      <div class="q-text">Victor Vroom&#x27;s Expectancy Theory of Motivation is expressed as: Motivation (Force) = Expectancy × Instrumentality × Valence. An enterprise offers a lavish cash bonus of Rs. 10,00,000 for achieving a 40% growth in quarterly sales. Sales representative Rohan desperately wants the money (High Valence) and knows that if he achieves the 40% growth, the company will definitely pay the bonus without hesitation (High Instrumentality). However, because the market is experiencing a severe depression, Rohan believes that no matter how hard he works, achieving 40% growth is physically impossible. According to Vroom&#x27;s theory, what is Rohan&#x27;s level of motivation, and why?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Rohan&#x27;s motivation will be exceptionally high because the money is attractive.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Rohan&#x27;s motivation will be moderate because Instrumentality compensates for lack of confidence.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Rohan&#x27;s motivation will be zero (or near zero) because Expectancy (the subjective probability that effort leads to successful performance) is zero, and the model is multiplicative.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Rohan&#x27;s motivation will be governed entirely by social comparison with his peers.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q65">
+      <span class="q-number-badge">QUESTION 65</span>
+      <div class="q-text">Joseph Stiglitz and Carl Shapiro&#x27;s economic model of &#x27;Efficiency Wage Theory&#x27; demonstrates that paying employees wages significantly above the market-clearing equilibrium is economically rational for firms. Beyond reducing costly employee turnover, what primary economic mechanism explains why above-market wages increase firm productivity?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Higher wages force competitors to declare bankruptcy immediately.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Higher wages eliminate the need to purchase capital machinery and software.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Higher wages prevent trade unions from holding democratic elections.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">It creates a high cost of job loss for employees, discouraging shirking and moral hazard, while simultaneously solving adverse selection by attracting a higher-quality applicant pool.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q66">
+      <span class="q-number-badge">QUESTION 66</span>
+      <div class="q-text">In designing an Employee Stock Option Plan (ESOP) for key technical talent, what does the &#x27;Vesting Period&#x27; specifically designate?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">The minimum stipulated period of service an employee must complete with the organization before the legal right to purchase (exercise) the granted stock options becomes actionable.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The time period an employee is granted to submit a formal resignation without notice.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The duration of annual paid sick leave guaranteed under state factory rules.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The window of time during which an employee must surrender company equipment upon retirement.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q67">
+      <span class="q-number-badge">QUESTION 67</span>
+      <div class="q-text">An organization introduces a flexible &#x27;Cafeteria Benefit Plan&#x27; (Flex-Fund Plan) where each employee receives an annual credits allowance to allocate among various insurance, childcare, retirement, and wellness options. What actuarial and administrative risk known as &#x27;Adverse Selection&#x27; must the HR benefits team actively manage?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Healthy employees choosing childcare benefits rather than retirement.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">High-risk employees disproportionately selecting high-coverage healthcare options while healthy employees opt out, driving up the average claim cost and insurance premiums per covered person.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Employees attempting to sell their benefit credits on public stock exchanges.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Trade unions demanding that cafeteria food be served free of charge.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q68">
+      <span class="q-number-badge">QUESTION 68</span>
+      <div class="q-text">What is the fundamental organizational and operational difference between an enterprise-wide &#x27;Profit-Sharing Plan&#x27; and a plant-level &#x27;Gainsharing Plan&#x27;?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Profit-sharing plans are illegal in listed corporations, whereas gainsharing is required by company law.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Profit-sharing pays out monthly, while gainsharing pays out only upon retirement.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Gainsharing is linked solely to executive stock price movements, while profit sharing is linked to frontline worker attendance.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Profit sharing distributes rewards based on overall organizational accounting profits (resulting in a weak employee line-of-sight), whereas gainsharing rewards specific operational improvements, scrap reductions, or cost-savings within a specific plant or department (creating a strong line-of-sight).</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q69">
+      <span class="q-number-badge">QUESTION 69</span>
+      <div class="q-text">Gary Becker&#x27;s Nobel prize-winning Human Capital Theory draws a sharp distinction between &#x27;General Human Capital&#x27; and &#x27;Firm-Specific Human Capital&#x27;. Why are rational corporate employers typically willing to finance training in firm-specific skills, but reluctant to finance general human capital training without employee cost-sharing or retention bonds?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Because firm-specific skills are legally non-tax-deductible under corporate tax codes.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Because general human capital skills are equally valuable to competing firms in the open market (allowing competitors to poach the trained worker without incurring training costs), whereas firm-specific skills have value only within the sponsoring firm.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Because employees forget firm-specific skills faster than general skills.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Because general human capital training can only be taught at overseas universities.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q70">
+      <span class="q-number-badge">QUESTION 70</span>
+      <div class="q-text">In the Indian industrial relations and compensation regulatory framework, which of the following represents a legally mandatory &#x27;Statutory Benefit&#x27; that an employer must provide by law, rather than a voluntary fringe benefit?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Subsidized executive corporate gym memberships</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">On-site barista coffee lounges</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Gratuity payable upon completion of five years of continuous service under the Payment of Gratuity Act, 1972</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Annual international vacation airline ticket reimbursements</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-header">
+      <h2>WEEK 8 — Predicted Examination Questions</h2>
+      <p>Job Evaluation, Grade Structures, Pay Compression & Benchmarking</p>
+    </div>
+
+    <div class="question-card" id="q71">
+      <span class="q-number-badge">QUESTION 71</span>
+      <div class="q-text">Job evaluation techniques are broadly bifurcated into &#x27;Non-Analytical Methods&#x27; and &#x27;Analytical Methods&#x27;. What is the defining methodological difference between these two methodological categories?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Non-analytical methods (such as Job Ranking and Job Classification) evaluate and compare the job as an entire whole, whereas analytical methods (such as the Point-Factor Method and Factor Comparison) break jobs down into distinct compensable factors and evaluate each factor independently.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Non-analytical methods are computed by artificial intelligence algorithms, while analytical methods rely solely on supervisory intuition.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Analytical methods ignore job descriptions completely and focus exclusively on employee age.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Non-analytical methods are legally required for private firms, while analytical methods are restricted to government ministries.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q72">
+      <span class="q-number-badge">QUESTION 72</span>
+      <div class="q-text">Eugene Benge developed the &#x27;Factor Comparison Method&#x27; of job evaluation. How does the Factor Comparison Method evaluate jobs in a manner distinct from the classic Point-Factor method?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">It asks employees to vote democratically on who should receive the highest pay.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">It classifies all jobs based purely on the physical weight of equipment used by employees.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">It selects key benchmark jobs, ranks them factor-by-factor, and directly allocates portions of the current monetary wage rate of those benchmark jobs across the compensable factors, creating a comparative monetary scale for evaluating other jobs.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">It forces all jobs into a rigid bell-curve distribution based on educational degrees.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q73">
+      <span class="q-number-badge">QUESTION 73</span>
+      <div class="q-text">An organization consolidates its traditional hierarchy of 16 narrow salary grades into 4 &#x27;Broad Bands&#x27; with salary range spreads exceeding 100%. While this broad-banded structure provides immense operational flexibility for lateral career moves and cross-functional skill development, what significant administrative risk does HR face?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Employees will be legally prohibited from receiving salary increases.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The organization will be forced to eliminate all performance appraisals.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Total managerial administrative paperwork will increase tenfold.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Risk of &#x27;pay drift&#x27; and uncontrolled salary escalation, lack of clear promotional milestones for employees, and the potential for subjective pay inequities to develop due to wide managerial discretion within the band.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q74">
+      <span class="q-number-badge">QUESTION 74</span>
+      <div class="q-text">When establishing a Point-Factor rating matrix, an enterprise identifies four universal compensable factors: Skill, Effort, Responsibility, and Working Conditions. Why is assigning deliberate mathematical percentage weights (e.g. allocating 40% weight to Responsibility, 30% to Skill, 20% to Effort, and 10% to Working Conditions) a crucial strategic exercise?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Because the weighting matrix mathematically operationalizes the organization&#x27;s strategic values and organizational culture, ensuring that factors critical to business success contribute more heavily to relative job worth and grade placement.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Because international trade law mandates that all organizations use the exact same factor weightings.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Because factor weights are used to calculate the corporate income tax liability of the firm.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Because without factor weighting, all employees would receive zero points on every factor.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q75">
+      <span class="q-number-badge">QUESTION 75</span>
+      <div class="q-text">In compensation benchmarking and salary survey administration, what constitutes a valid &#x27;Benchmark Job&#x27;?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">A job newly invented within the firm that has never existed in any other organization in the world.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">A job that has stable, well-defined, and standardized job content, is common across multiple industry employers, employs a substantial number of workers, and has a transparent, verifiable market rate.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The unique personal job profile created specifically for the company founder&#x27;s relative.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Any job that is currently facing a labor union strike.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q76">
+      <span class="q-number-badge">QUESTION 76</span>
+      <div class="q-text">Due to rapid inflation and a sudden shortage of entry-level cybersecurity technicians, an IT firm raises starting salaries by 30% to attract campus recruits. However, salaries for existing mid-level cybersecurity analysts who have worked diligently at the firm for four years remain unchanged. As a result, brand-new, inexperienced recruits earn virtually the same salary as their experienced senior colleagues who are training them. What compensation dysfunction has occurred?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">External benchmarking expansion</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Broad-banding divergence</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Golden handcuffs phenomenon</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Pay compression (Wage compression)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q77">
+      <span class="q-number-badge">QUESTION 77</span>
+      <div class="q-text">In compensation design, what does the &#x27;Pay Policy Line&#x27; (or Wage Curve) represent when plotted on a Cartesian coordinate graph following a job evaluation exercise?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">The mathematical relationship (regression trend line) between job evaluation point scores on the horizontal X-axis and current or targeted market wage rates on the vertical Y-axis.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The rate at which employees are dismissed from the company over a decade.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The legal minimum wage mandated by the municipal municipal corporation.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The percentage of corporate revenue allocated to executive corporate travel.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q78">
+      <span class="q-number-badge">QUESTION 78</span>
+      <div class="q-text">In a traditional graded salary structure, adjacent pay grades almost always feature an intentional &#x27;Range Overlap&#x27; (typically 20% to 50% between successive grades). What is the operational justification for having salary overlap between adjacent pay grades?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">To confuse trade union representatives during annual collective bargaining.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">It allows a highly experienced, high-performing employee positioned near the top of a lower pay grade to earn more than an inexperienced, newly hired employee positioned at the entry rate of the next higher pay grade.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">To ensure that all employees in the organization eventually receive the identical salary.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">It is an accidental mathematical error that compensation analysts strive to eliminate.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q79">
+      <span class="q-number-badge">QUESTION 79</span>
+      <div class="q-text">What is the core principle of the legal and compensation doctrine of &#x27;Comparable Worth&#x27; (Equal Pay for Work of Equal Value)?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Every citizen in a nation must be paid the exact same hourly wage regardless of occupation.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Employees with the same job title must be paid identically regardless of individual performance.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Jobs that are substantively dissimilar in content and duties, but require equivalent levels of skill, effort, responsibility, and working conditions as determined by objective analytical job evaluation, should receive equal remuneration.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Executive compensation must be equal to the entry-level salary of factory workers.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q80">
+      <span class="q-number-badge">QUESTION 80</span>
+      <div class="q-text">A compensation specialist receives a comprehensive market salary survey report that was collected by a consulting firm 12 months ago. To use this survey data to establish salary ranges for the upcoming fiscal year that begins 6 months from now, what statistical technique must the analyst apply?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Factor comparison matching</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Central tendency reduction</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Paired comparison ranking</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Aging (or Trending) the salary survey data by multiplying historical wage figures by an annualized market movement percentage factor to adjust for the 18-month time lag.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-header">
+      <h2>WEEK 9 — Predicted Examination Questions</h2>
+      <p>Executive Compensation, Corporate Governance & Knowledge Workers</p>
+    </div>
+
+    <div class="question-card" id="q81">
+      <span class="q-number-badge">QUESTION 81</span>
+      <div class="q-text">In corporate governance, what is the primary regulatory purpose of incorporating &#x27;Clawback Provisions&#x27; and &#x27;Malus Clauses&#x27; into senior executive compensation contracts?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">To ensure that all executive bonuses are paid in physical cash rather than bank deposits.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">To legally empower the board of directors to recover already-paid incentive compensation (clawback) or cancel unvested deferred awards (malus) if financial statements are subsequently restated due to accounting errors, fraud, or serious executive misconduct.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">To automatically double executive salaries whenever the stock market index declines.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">To prevent executive directors from purchasing personal health insurance.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q82">
+      <span class="q-number-badge">QUESTION 82</span>
+      <div class="q-text">Under corporate governance reforms such as the Dodd-Frank Act in the United States and global governance codes, publicly listed companies are required to implement &#x27;Say-on-Pay&#x27;. What does Say-on-Pay grant to corporate shareholders?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">The legal right for individual retail shareholders to dictate the hourly wage of factory workers.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The authority of shareholders to physically attend daily executive board meetings.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The right to eliminate all corporate executive compensation.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The formal right of shareholders to cast an advisory (or binding) vote on executive compensation packages, holding the board&#x27;s compensation committee accountable for aligning executive pay with shareholder performance.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q83">
+      <span class="q-number-badge">QUESTION 83</span>
+      <div class="q-text">Edward Lazear and Sherwin Rosen formulated &#x27;Tournament Theory&#x27; to explain why the compensation gap between the Chief Executive Officer and senior vice presidents is often gigantic. While Tournament Theory argues that massive prize differentials motivate all contestants below to exert maximum effort, what severe organizational pathology can occur if the prize differential is excessively large?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Contestants will lose interest in money and refuse all future promotions.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Contestants (rival vice presidents) may engage in destructive workplace politics, refuse to share vital operational information, and sabotage each other&#x27;s projects to eliminate rivals rather than cooperating for the firm&#x27;s overall good.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The organization will be legally forced to shut down executive operations.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Senior executives will demand to be reclassified as manual laborers.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q84">
+      <span class="q-number-badge">QUESTION 84</span>
+      <div class="q-text">A corporate enterprise manufactures multi-million-dollar MRI scanners for healthcare chains. The sales cycle takes 18 to 24 months, requires cross-functional technical presentations by teams of biomedical engineers, software experts, and radiologists, and demands intensive multi-year after-sales servicing. Why is a &#x27;Straight Salary&#x27; or a &#x27;High-Base Salary with Moderate Team Bonus&#x27; distinctly superior to a &#x27;Commission-Only Plan&#x27; in this commercial environment?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Because high-pressure commission-only plans encourage aggressive, transactional hard-selling, neglect of long-term client relationships, and internal friction among collaborating technical specialists, whereas complex consultative sales demand patience, teamwork, and client trust.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Because medical equipment salespeople are legally prohibited from receiving commissions under pharmaceutical law.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Because hospital administrators refuse to negotiate with employees who earn base salaries.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Because straight commission plans are mathematically impossible to calculate for technical equipment.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q85">
+      <span class="q-number-badge">QUESTION 85</span>
+      <div class="q-text">In his seminal empirical research on the motivation of &#x27;Knowledge Workers&#x27; (e.g. data scientists, research chemists, software architects), Maury Tampoe identified four primary motivators: Personal Growth, Operational Autonomy, Task Achievement, and Material Gain. What was Tampoe&#x27;s central conclusion regarding the role of Material Gain (money) in motivating knowledge workers?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Money is the single most powerful driver of creative innovation and outranks all other factors combined.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Knowledge workers refuse to accept any form of financial compensation.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Material rewards should be distributed entirely based on physical seniority and age.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Material gain is an essential threshold requirement (a baseline &#x27;satisfier&#x27; that must be fair and competitive), but beyond this baseline, peak intellectual engagement and discretionary effort are driven primarily by autonomy, achievement, and personal growth.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q86">
+      <span class="q-number-badge">QUESTION 86</span>
+      <div class="q-text">In long-term equity incentive design, what is the critical structural difference between &#x27;Restricted Stock Units&#x27; (RSUs) and traditional &#x27;Stock Options&#x27; from the perspective of an executive&#x27;s downside risk?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Stock options are never taxable, whereas RSUs are taxed at 100% of corporate profits.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">RSUs require the employee to purchase the shares at full market price on day one.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Stock options possess financial value only if the company&#x27;s stock price rises above the grant/exercise price (otherwise becoming worthless or &#x27;underwater&#x27;), whereas RSUs represent actual shares that always retain intrinsic value upon vesting unless the stock price drops to zero.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Stock options can only be granted to external independent directors.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q87">
+      <span class="q-number-badge">QUESTION 87</span>
+      <div class="q-text">In piece-rate and payment-by-results (PBR) systems, industrial sociologists frequently observe the &#x27;Ratchet Effect&#x27;. What does the Ratchet Effect refer to, and what worker behavior does it inevitably trigger?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Workers spontaneously purchasing company shares on the stock exchange.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Management raising the output quota (or lowering the piece rate per unit) whenever workers exert high effort and earn high wages, which causes workers to intentionally restrict output and maintain informal production ceilings to protect their rates.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The mechanical failure of industrial factory machinery due to continuous operation.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The automatic conversion of piece-rate wages into defined-benefit pensions.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q88">
+      <span class="q-number-badge">QUESTION 88</span>
+      <div class="q-text">In his classic organizational analysis titled &#x27;On the Folly of Rewarding A, while Hoping for B&#x27;, Steven Kerr highlighted a pervasive management dysfunction. Which of the following examples perfectly illustrates Kerr&#x27;s dilemma in performance management?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">An executive committee repeatedly emphasizes the vital importance of teamwork, long-term customer relationships, and product quality in speeches, but distributes 100% of quarterly bonuses based strictly on individual sales volume and immediate short-term cost cuts.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">An organization pays higher wages to experienced engineers than to fresh campus graduates.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">A company requires all employees to participate in mandatory fire drills once a year.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">A university awards doctoral degrees based on original dissertation research.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q89">
+      <span class="q-number-badge">QUESTION 89</span>
+      <div class="q-text">In modern Short-Term Incentive Plan (STIP) design, a bonus formula typically establishes three performance levels: Threshold, Target, and Cap (or Maximum Payout Ceiling, e.g. 150% or 200% of target). What is the strategic rationale for establishing a strict &#x27;Cap&#x27; on annual incentive payouts?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">To force employees to resign before the end of the fiscal year.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">To ensure that corporate tax auditors cannot inspect company payroll files.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">To prevent high performers from earning higher wages than underperformers.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">To protect the organization from runaway compensation costs during unexpected macroeconomic windfall surges and discourage reckless risk-taking by employees attempting to generate massive one-off bonuses.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q90">
+      <span class="q-number-badge">QUESTION 90</span>
+      <div class="q-text">A leading biotechnology company struggles with high turnover among senior molecular biologists who leave because the only way to earn higher compensation and prestige is to abandon laboratory bench research and accept administrative managerial roles. To retain top technical talent without forcing them into management, what reward architecture should HR establish?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">A single-grade system where all employees are paid the entry-level salary.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">A piece-rate wage system based on the number of test tubes washed daily.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">A Dual-Career Ladder (Technical Career Path) providing parallel tracks of advancement, status, and compensation for individual technical contributors equal to executive managerial ranks.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">A mandatory retirement policy for all scientists reaching the age of 40.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-header">
+      <h2>WEEK 10 — Predicted Examination Questions</h2>
+      <p>Wage Concepts, Central Pay Commissions & Pension Systems in India</p>
+    </div>
+
+    <div class="question-card" id="q91">
+      <span class="q-number-badge">QUESTION 91</span>
+      <div class="q-text">The landmark Committee on Fair Wages (1948) in India established a classical three-tier hierarchy of wage concepts that forms the foundation of Indian labor jurisprudence. What is the precise conceptual hierarchy among Minimum Wage, Fair Wage, and Living Wage?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Minimum Wage provides bare subsistence and preservation of worker efficiency; Fair Wage is above the minimum wage bounded upward by the industry&#x27;s capacity to pay; Living Wage represents the ultimate socio-economic ideal providing frugal comfort, education, health, and old-age security.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Living Wage is lower than Minimum Wage, while Fair Wage is an informal bonus.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Minimum Wage applies only to senior civil servants, while Living Wage applies to casual labor.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Fair Wage is determined by international lottery, while Living Wage is determined by municipal police.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q92">
+      <span class="q-number-badge">QUESTION 92</span>
+      <div class="q-text">The 7th Central Pay Commission determined the minimum monthly basic pay of Rs. 18,000 for central government employees using the scientific formula formulated by Dr. Wallace Aykroyd and endorsed by the 15th Indian Labour Conference (ILC, 1957). What nutritional benchmark does the Aykroyd formula prescribe as the baseline daily requirement per standard adult working consumption unit?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">1,200 calories per day with vegetarian protein only</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">4,500 calories per day including luxury desserts</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">2,700 calories per day, balanced across cereals, pulses, vegetables, milk, sugar, and fats</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">1,800 calories per day for manual workers and 3,200 calories for office staff</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q93">
+      <span class="q-number-badge">QUESTION 93</span>
+      <div class="q-text">In the Indian public sector, Central Government, and organized industries, &#x27;Dearness Allowance&#x27; (DA) is paid to employees and pensioners to protect real wages against inflationary erosion. Which statistical index, compiled monthly by the Labour Bureau, Ministry of Labour and Employment, is used as the statutory basis to calculate revisions in DA?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">All India Consumer Price Index for Industrial Workers (AICPI-IW)</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Wholesale Price Index for Primary Agricultural Commodities (WPI)</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Bombay Stock Exchange SENSEX Index</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Foreign Exchange Currency Reserves Index</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q94">
+      <span class="q-number-badge">QUESTION 94</span>
+      <div class="q-text">In August 2024, the Government of India approved the &#x27;Unified Pension Scheme&#x27; (UPS) for central government employees as a major reform addressing employee concerns regarding the National Pension System (NPS). What landmark feature distinguishes the UPS from the pure Defined Contribution model of the NPS?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Employees are no longer required to contribute any portion of their salary to retirement.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Retirement pensions are paid exclusively in foreign currency vouchers.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">An assured pension guaranteed by the government equal to 50% of the average basic pay drawn over the last 12 months prior to superannuation, subject to a minimum of 25 years of qualifying service.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The immediate privatization of all government retirement funds into global venture capital.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q95">
+      <span class="q-number-badge">QUESTION 95</span>
+      <div class="q-text">Under the Payment of Gratuity Act, 1972, what is the statutory mathematical formula for calculating gratuity payable to an employee in an establishment working regular monthly shifts upon superannuation, after completing at least five years of continuous service?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Gratuity = (15 × Last Drawn Salary × Number of Completed Years of Service) / 26</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Gratuity = (30 × Last Drawn Salary × Number of Completed Years of Service) / 365</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Gratuity = (7 × Basic Pay × Age of Employee) / 100</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Gratuity = (Total Lifetime Earnings × 10) / 1000</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q96">
+      <span class="q-number-badge">QUESTION 96</span>
+      <div class="q-text">Under the Employees&#x27; Provident Funds and Miscellaneous Provisions Act, 1952, an employer contributes 12% of the employee&#x27;s basic wages, dearness allowance, and retaining allowance. How is this employer&#x27;s 12% statutory contribution divided between the Employee Provident Fund (EPF) and the Employees&#x27; Pension Scheme (EPS)?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">12% goes entirely to the Employees&#x27; Pension Scheme (EPS).</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">6% goes to EPF and 6% goes to EPS.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">10% goes to EPF and 2% goes to EPS.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">8.33% is allocated to the Employees&#x27; Pension Scheme (EPS) (up to the statutory wage ceiling), and the remaining 3.67% is credited to the Employee Provident Fund (EPF) account.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q97">
+      <span class="q-number-badge">QUESTION 97</span>
+      <div class="q-text">When transitioning central government pay scales from the 6th Central Pay Commission to the 7th Central Pay Commission, the Commission recommended a uniform &#x27;Fitment Factor&#x27; of 2.57. What did this fitment factor represent mathematically?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">The annual inflation rate over the preceding decade.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The uniform multiplier applied to an employee&#x27;s existing Basic Pay (including Grade Pay) under the 6th CPC to determine their revised initial entry placement within the new Pay Matrix of the 7th CPC.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The percentage deduction made from employee salaries for national defense funds.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The ratio of executive officers to clerical staff in central ministries.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q98">
+      <span class="q-number-badge">QUESTION 98</span>
+      <div class="q-text">The Atal Pension Yojana (APY) was launched by the Government of India to provide social security and guaranteed pensions primarily to unorganized sector workers. What are the eligible entry age criteria and the range of guaranteed monthly pension options available to subscribers under APY upon reaching age 60?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Entry age 25 to 55 years; monthly pension of Rs. 10,000 to Rs. 25,000.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Entry age 18 to 60 years; monthly pension of Rs. 500 to Rs. 1,500.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Entry age 18 to 40 years; guaranteed monthly pension options of Rs. 1,000, Rs. 2,000, Rs. 3,000, Rs. 4,000, or Rs. 5,000 based on contribution.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Entry age 60 years and above; monthly pension linked entirely to corporate dividend payouts.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q99">
+      <span class="q-number-badge">QUESTION 99</span>
+      <div class="q-text">In the National Pension System (NPS), a subscriber who does not wish to manually allocate their investment percentages across Equity (Asset Class E), Corporate Debt (Asset Class C), and Government Securities (Asset Class G) can opt for &#x27;Auto Choice&#x27; (Lifecycle Fund). How does the Lifecycle Fund manage investment asset allocation over time?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">It invests 100% of the funds in high-risk foreign equities regardless of age.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">It locks the portfolio into fixed-rate gold bullion certificates until retirement.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">It randomly rebalances funds every week based on algorithmic currency trading.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">It maintains higher equity exposure during younger years to maximize compounding capital growth, and automatically decreases equity exposure while increasing government securities as the subscriber ages to de-risk capital approaching retirement.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q100">
+      <span class="q-number-badge">QUESTION 100</span>
+      <div class="q-text">Under the Payment of Bonus Act, 1965 in India, what are the statutory minimum and maximum bonus percentages payable by an employer to an eligible employee on their earned wages, irrespective of whether the establishment has an allocable surplus in a given accounting year?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Minimum bonus is 0% and maximum bonus is 100% of annual salary.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Statutory minimum bonus is 8.33% (or Rs. 100, whichever is higher), and the statutory maximum bonus is 20% of wages earned during the accounting year.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Minimum bonus is 15% and maximum bonus is 50% of basic pay.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Bonus is entirely discretionary and has no statutory minimum or maximum limits under Indian law.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-header">
+      <h2>WEEK 11 — Predicted Examination Questions</h2>
+      <p>Reward System Design, Pay Administration & Workforce Analytics</p>
+    </div>
+
+    <div class="question-card" id="q101">
+      <span class="q-number-badge">QUESTION 101</span>
+      <div class="q-text">During a compensation restructuring, an analytical job evaluation places a department technician&#x27;s role into Grade 4, which has a newly established salary range of Rs. 40,000 (minimum) to Rs. 60,000 (maximum). However, the technician&#x27;s current pay is only Rs. 32,000 per month. In compensation administration terminology, what is this employee&#x27;s pay status called, and what is the standard administrative remedy?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Red-circled employee; immediately freeze all pay increases for five years.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Green-circled employee; accelerate salary increases or immediately bring the employee&#x27;s pay up to the pay grade minimum of Rs. 40,000.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Broad-banded employee; demote the employee to an apprentice tier.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Outlier anomaly; terminate employment to preserve pay curve symmetry.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q102">
+      <span class="q-number-badge">QUESTION 102</span>
+      <div class="q-text">An organization uses a standard salary grade structure where the midpoint for Grade 6 is Rs. 1,00,000 per month. Kabir&#x27;s current basic salary is Rs. 80,000 per month. In his annual performance appraisal, Kabir achieves the highest possible rating of &#x27;Exceptional Performer&#x27;. When HR applies the dual-axis Merit Increase Matrix (combining Performance Rating and Compa-Ratio Quartile), what percentage merit increase will Kabir receive relative to a peer in the same grade who earned the same &#x27;Exceptional&#x27; rating but whose current salary is Rs. 1,20,000?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Kabir will receive zero increase because his salary is below midpoint.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Both Kabir and his peer will receive identical percentage raises regardless of their salary position.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Kabir will receive a smaller percentage increase because his base pay is lower.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Kabir will receive a significantly higher percentage merit increase (e.g. 12%) than his peer (e.g. 6%) because the merit matrix is specifically designed to accelerate pay progression for high performers positioned in lower compa-ratio quartiles toward the policy midpoint.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q103">
+      <span class="q-number-badge">QUESTION 103</span>
+      <div class="q-text">A manufacturing enterprise consciously adopts a &#x27;Lag&#x27; pay posture (setting base pay ranges approximately 10% to 15% below the external labor market median). What is the primary corporate motivation for adopting a Lag pay posture, and what operational penalty must the enterprise be prepared to manage?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Motivation is controlling fixed labor costs and overheads; penalty is higher employee turnover, increased recruitment difficulty, and potential shortages of specialized talent.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Motivation is attracting Nobel-prize winning scientists; penalty is paying double corporate tax.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Motivation is eliminating all managerial supervision; penalty is trade union expansion.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Motivation is complying with international monetary treaty obligations; penalty is zero.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q104">
+      <span class="q-number-badge">QUESTION 104</span>
+      <div class="q-text">In salary grade design, the &#x27;Range Spread&#x27; (or range width) is calculated as: Range Spread = [(Maximum - Minimum) / Minimum] × 100. In professional grade structures, why do senior managerial and technical specialist grades typically feature wide range spreads (e.g. 50% to 80% or more), whereas entry-level clerical grades feature narrow spreads (e.g. 20% to 25%)?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Because clerical workers are legally barred from receiving salary increases.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Because senior managers refuse to accept mathematical formulas.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Because higher-level roles exhibit far wider variance in individual performance, contribution, and potential, and senior employees tend to spend longer career tenures within the same grade without promotion, requiring wider room for salary growth.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Because entry-level workers have higher cost of living expenses than senior executives.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q105">
+      <span class="q-number-badge">QUESTION 105</span>
+      <div class="q-text">An IT consulting enterprise hires a specialist in cloud cybersecurity during an intense, temporary talent crunch and provides an extra &#x27;Market Supplement&#x27; of Rs. 30,000 per month above the standard grade maximum. Two years later, the national shortage ends and market rates for cloud security normalize. According to best practices in compensation administration, why must market supplements always be accounted for as distinct, separate, and non-consolidated allowances rather than integrated into base salary?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Because base salary can never be deposited into commercial banks.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Because base salaries cannot easily or legally be reduced when market demand cools, whereas a separate, time-bound market supplement can be reviewed, adjusted, or phased out without disrupting the permanent base pay structure.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Because market supplements are exempt from all federal and state taxation.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Because employee labor unions mandate that market supplements must be paid in gold coins.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q106">
+      <span class="q-number-badge">QUESTION 106</span>
+      <div class="q-text">In establishing a multi-grade compensation structure, what does &#x27;Midpoint Progression&#x27; refer to?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">The number of hours an employee works between 9:00 AM and noon.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The rate at which inflation increases during the middle of the calendar year.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The percentage of employees who receive an average rating during the annual appraisal.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The percentage increase from the salary midpoint of one pay grade to the salary midpoint of the immediately next higher pay grade.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q107">
+      <span class="q-number-badge">QUESTION 107</span>
+      <div class="q-text">In human capital analytics and workforce planning, why is analyzing &#x27;Total Cost of Workforce&#x27; (TCOW) significantly more strategic and accurate for corporate leadership than merely tracking total basic payroll expenses?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Because TCOW is an informal estimate that does not require financial auditing.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Because TCOW captures the full economic burden of human capital, including not only direct salaries, but also employer statutory retirement contributions, healthcare premiums, variable bonuses, overtime, training, contingent/gig labor, and HR administrative overhead.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Because basic payroll numbers are kept secret from corporate Chief Financial Officers.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Because TCOW excludes all taxes and employee insurance costs.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q108">
+      <span class="q-number-badge">QUESTION 108</span>
+      <div class="q-text">A corporate enterprise prepares and distributes individualized &#x27;Total Reward Statements&#x27; (TRS) to every employee annually. What is the primary communication objective of issuing Total Reward Statements?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">To illuminate the &#x27;hidden paycheck&#x27; by making transparent the complete financial value of the entire employment package—including employer contributions to PF, gratuity, group health insurance, paid leave, wellness, and subsidized learning—which employees frequently overlook.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">To publicly disclose every employee&#x27;s personal bank account number on the corporate intranet.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">To serve legal notice of impending salary reductions for underperforming staff.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">To replace annual performance appraisals with financial balance sheets.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q109">
+      <span class="q-number-badge">QUESTION 109</span>
+      <div class="q-text">How does a dual-axis Merit Increase Matrix (combining an employee&#x27;s appraisal rating on the vertical axis and their compa-ratio quartile on the horizontal axis) function as an effective financial control mechanism for the Chief Financial Officer?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">It mandates that all salary increases must be paid in cryptocurrency.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">It automatically fires employees who request a salary increase.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">It guarantees that total company payroll expenditure will decline by 20% every year.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">It controls payroll budget inflation by systematically awarding smaller percentage increases to employees who are already high in their pay range (reducing pay drift), while targeting the largest percentage increases to top performers who are low in their range.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q110">
+      <span class="q-number-badge">QUESTION 110</span>
+      <div class="q-text">After implementing a costly enterprise-wide performance-related pay (PRP) scheme, how should an HR analytics team evaluate the &#x27;Return on Reward&#x27; (RoR) to determine whether the incentive scheme was genuinely effective?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">By verifying whether the payroll software processed bonus transfers on the scheduled date.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">By confirming that 100% of employees received the maximum bonus payout.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">By evaluating whether the incremental financial and operational gains (e.g. productivity growth, defect reductions, revenue increase) exceeded the total cost of bonus payouts, accompanied by improved retention of critical high-performing talent.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">By conducting a single informal poll during the annual holiday party.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-header">
+      <h2>WEEK 12 — Predicted Examination Questions</h2>
+      <p>Ethics, Fairness, Legal Safeguards & Governance in Performance & Reward</p>
+    </div>
+
+    <div class="question-card" id="q111">
+      <span class="q-number-badge">QUESTION 111</span>
+      <div class="q-text">In organizational ethics and performance management, moral philosophers contrast &#x27;Deontological (Kantian) Ethics&#x27; with &#x27;Utilitarian Ethics&#x27;. An HR director must decide whether to terminate a struggling employee who made an honest, good-faith operational error while upholding rigorous safety procedures, versus an employee who met their sales target by cutting ethical corners and misrepresenting facts to clients. According to Kantian (Deontological) ethics, how would these two cases be evaluated?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Kantian ethics judges moral worth strictly by the purity of intentions, moral duty, and adherence to ethical principles rather than end consequences; hence, the employee guided by ethical duty is morally defensible, while the corner-cutting employee is morally culpable regardless of targets achieved.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Kantian ethics judges people solely by the net financial revenue generated for shareholders.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Kantian ethics dictates that all employees must be terminated whenever errors occur.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Kantian ethics requires that performance must be evaluated purely by market supply and demand.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q112">
+      <span class="q-number-badge">QUESTION 112</span>
+      <div class="q-text">Under employment jurisprudence and international standards of natural justice, what constitutes essential &#x27;Procedural Due Process&#x27; before an organization can legally and ethically terminate an employee for alleged chronic poor performance?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Immediate verbal termination announced during a public team meeting.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Unilaterally locking the employee out of the building without explanation.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Clear advance notice of performance expectations, documented objective evidence of performance gaps, a reasonable opportunity and timeframe to remediate performance with coaching support, and an impartial hearing or appeal mechanism.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Requiring the employee&#x27;s peers to sign an anonymous expulsion petition.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q113">
+      <span class="q-number-badge">QUESTION 113</span>
+      <div class="q-text">A corporate consulting enterprise institutes an appraisal rule requiring all consultants to log at least 75 billable hours per week on client sites to be eligible for promotion to Partner. Although the rule appears neutral on its surface, statistical analysis demonstrates that it disproportionately excludes female consultants with caregiving responsibilities, while having no demonstrable correlation with client project success or analytical rigor. In employment discrimination law, what doctrine does this scenario illustrate?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Disparate Impact (Adverse Impact)</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Disparate Treatment with overt malice</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Bona Fide Occupational Qualification (BFOQ)</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Kantian Categorical Imperative</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q114">
+      <span class="q-number-badge">QUESTION 114</span>
+      <div class="q-text">In the 1980s and 1990s, Jack Welch&#x27;s &#x27;Vitality Curve&#x27; (popularly called &#x27;Rank-and-Yank&#x27; or forced firing of the bottom 10% annually) was widely adopted. In recent decades, Microsoft, General Electric, and many global leaders completely abandoned this practice. What was the primary ethical and organizational psychology rationale for abandoning forced terminations of the bottom 10%?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Governments banned all forms of employee performance evaluation worldwide.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">It cultivated a toxic culture of cutthroat fear, destroyed collaborative knowledge sharing, disincentivized high-risk breakthrough innovation, and became statistically irrational in highly curated, elite talent pools where the bottom 10% were still high performers.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Companies realized that paying salaries was cheaper than paying severance packages.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Employees began demanding that all performance appraisals be replaced with video gaming tournaments.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q115">
+      <span class="q-number-badge">QUESTION 115</span>
+      <div class="q-text">A senior internal auditor uncovers systemic bribery and kickbacks paid to government officials by her company&#x27;s regional sales division and formally reports the findings to the audit committee. Two weeks later, her direct supervisor—who was implicated in the scheme—gives her an &#x27;Unacceptable&#x27; appraisal rating, cancels her pre-approved training, and reassigns her to a remote archiving basement, citing &#x27;poor teamwork and uncooperative attitude&#x27;. In legal ethics, what violation has occurred?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Standard merit-based performance calibration</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Procedural justice optimization</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Broad-banding career progression</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Unlawful retaliatory performance appraisal against a protected whistleblower</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q116">
+      <span class="q-number-badge">QUESTION 116</span>
+      <div class="q-text">During an annual performance calibration and compensation committee meeting, a senior vice president realizes that one of the candidates under review for an accelerated promotion and a large equity grant is his immediate son-in-law. What is the mandatory ethical standard required by corporate governance and conflict-of-interest policies?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">The vice president should stay silent and vote to award his relative the highest possible bonus.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">The vice president should actively argue that familial loyalty enhances corporate profitability.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The vice president must immediately disclose the conflict of interest and fully recuse himself from all discussions, deliberations, scoring, and decision-making regarding that candidate.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">The vice president should privately instruct other committee members to support his son-in-law.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q117">
+      <span class="q-number-badge">QUESTION 117</span>
+      <div class="q-text">Charles Goodhart formulated the eponymous principle: &#x27;When a measure becomes a target, it ceases to be a good measure.&#x27; How does &#x27;Goodhart&#x27;s Law&#x27; manifest as an ethical pathology in performance and reward systems when excessive financial incentives are tied to narrow quantitative metrics?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Employees systematically optimize, game, or corrupt the specific metric through manipulative or unethical shortcuts to maximize personal bonus payouts, while ignoring or actively destroying the genuine underlying business objective the metric was meant to reflect.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Employees stop caring about money and focus entirely on philosophical reading.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">The organization&#x27;s accounting software automatically corrects all human errors.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Performance metrics become more mathematically accurate over time.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q118">
+      <span class="q-number-badge">QUESTION 118</span>
+      <div class="q-text">An organization discovers that while Manager A in the Finance department rates 80% of his staff as &#x27;Outstanding&#x27; (extreme leniency), Manager B in the Operations department rates only 5% as &#x27;Outstanding&#x27; and 40% as &#x27;Below Average&#x27; (extreme strictness) for comparable performance standards. To eliminate cross-departmental discrepancies and ensure fairness before ratings impact salary increases, what structural governance mechanism should HR institute?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Allow employees from different departments to engage in physical boxing matches.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Performance Calibration Committees (Moderation Panels) where managers present, compare, and defend their rating distributions against standardized organizational behavioral benchmarks with peer review.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Abolish the Finance department entirely.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Instruct Manager B to adopt Manager A&#x27;s ratings without review.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q119">
+      <span class="q-number-badge">QUESTION 119</span>
+      <div class="q-text">With the deployment of algorithmic monitoring technologies (e.g. continuous keystroke logging, employee webcam capture, AI productivity tracking), what is the primary ethical and psychological hazard regarding employee dignity and organizational trust?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">Computer hardware will overheat and cause office electrical fires.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">Employees will spontaneously develop superior computer programming capabilities.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">Managers will have too much leisure time during the working day.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">Invasive digital surveillance commodifies employees into mechanical units, destroys psychological safety and interpersonal trust, induces chronic anxiety, and violates human dignity and privacy rights.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q120">
+      <span class="q-number-badge">QUESTION 120</span>
+      <div class="q-text">In organizational justice theory, distribution of rewards can follow three distinct principles: the Equity rule, the Equality rule, or the Need rule. Under what organizational circumstances is deliberately choosing the &#x27;Need Rule&#x27; or &#x27;Equality Rule&#x27; over the strict &#x27;Equity Rule&#x27; (which distributes based on individual output) ethically and strategically superior?</div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-letter">A</span>
+          <span class="option-text">When competing for short-term speculative Wall Street stock trading.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">B</span>
+          <span class="option-text">When evaluating which executive should receive the largest yacht bonus.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">C</span>
+          <span class="option-text">When allocating baseline emergency relief, basic healthcare benefits, bereavement assistance, or fostering deep social cohesion, mutual solidarity, and psychological safety in highly interdependent teams where individual contribution cannot be isolated.</span>
+        </div>
+        <div class="option-item">
+          <span class="option-letter">D</span>
+          <span class="option-text">When an organization wants to encourage intense individual competition among coworkers.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

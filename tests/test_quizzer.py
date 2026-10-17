@@ -1,9 +1,9 @@
 """
 Comprehensive Test Suite for NPTEL Quizzer
 Tests:
-1. Data Integrity & Completeness (436 questions across all three banks: 130 weekly + 156 important + 150 additional)
+1. Data Integrity & Completeness (400 questions across all three banks: 130 weekly + 120 important + 150 additional)
 2. Week 0-12 structure (exactly 10 questions per week = 130 total)
-3. Important Questions subsets (50, 100, 156 questions, uniqueness, randomization)
+3. Important Questions subsets (60, 120 questions, uniqueness, randomization)
 4. Additional Practice Questions subsets (50, 100, 150 questions, uniqueness, randomization)
 5. Combined Mode endpoint (436 questions, shuffle toggling, predictable order when disabled)
 6. Answer key validity & option membership for every single question
@@ -37,8 +37,15 @@ class TestNPTELQuizzer(unittest.TestCase):
             self.assertEqual(q_nums, list(range(1, 11)))
 
     def test_02_bank_a_important_questions_count_and_structure(self):
-        """Test that Important Questions bank has 156 questions with valid options and keys."""
-        self.assertEqual(len(bank_a_questions), 156)
+        """Test that Important Questions bank has 120 questions with valid options, keys, and 10 questions across Weeks 1-12."""
+        self.assertEqual(len(bank_a_questions), 120)
+        weeks = set(q["week"] for q in bank_a_questions)
+        self.assertEqual(weeks, set(range(1, 13)))  # Weeks 1 through 12
+
+        for w in range(1, 13):
+            w_qs = [q for q in bank_a_questions if q["week"] == w]
+            self.assertEqual(len(w_qs), 10, f"Important week {w} must have exactly 10 questions")
+
         for q in bank_a_questions:
             self.assertEqual(len(q["options"]), 4, f"Question {q['id']} must have exactly 4 options")
             self.assertIn(q["correct_answer"], q["options"], 
@@ -63,9 +70,9 @@ class TestNPTELQuizzer(unittest.TestCase):
         data = res.get_json()
         self.assertEqual(data["status"], "success")
         self.assertEqual(data["total_weekly_questions"], 130)
-        self.assertEqual(data["total_important_questions"], 156)
+        self.assertEqual(data["total_important_questions"], 120)
         self.assertEqual(data["total_additional_questions"], 150)
-        self.assertEqual(data["total_combined_questions"], 436)
+        self.assertEqual(data["total_combined_questions"], 400)
         self.assertEqual(data["questions_requiring_review"], 0)
         self.assertTrue(data["all_answers_verified"])
 
@@ -83,8 +90,8 @@ class TestNPTELQuizzer(unittest.TestCase):
         self.assertEqual(res.status_code, 404)
 
     def test_07_api_important_endpoint_subsets(self):
-        """Verify /api/questions/important returns requested counts without duplicates."""
-        for count in [50, 100, 156]:
+        """Verify /api/questions/important returns requested counts (60, 120) without duplicates."""
+        for count in [60, 120]:
             res = self.client.get(f"/api/questions/important?count={count}")
             self.assertEqual(res.status_code, 200)
             data = res.get_json()
@@ -97,26 +104,26 @@ class TestNPTELQuizzer(unittest.TestCase):
             self.assertEqual(len(ids), len(set(ids)), f"Duplicate questions found in important count={count}")
 
     def test_07b_api_important_by_individual_week(self):
-        """Verify /api/questions/important?week=<W> returns exactly 12 questions for each week 0-12."""
-        for w in range(13):
+        """Verify /api/questions/important?week=<W> returns exactly 10 questions for each week 1-12."""
+        for w in range(1, 13):
             res = self.client.get(f"/api/questions/important?week={w}")
             self.assertEqual(res.status_code, 200)
             data = res.get_json()
             self.assertEqual(data["status"], "success")
-            self.assertEqual(data["total"], 12)
+            self.assertEqual(data["total"], 10)
             self.assertEqual(data["week"], w)
-            self.assertEqual(len(data["questions"]), 12)
+            self.assertEqual(len(data["questions"]), 10)
             self.assertTrue(all(q["week"] == w for q in data["questions"]))
 
         # Invalid week returns 404
         res = self.client.get("/api/questions/important?week=99")
         self.assertEqual(res.status_code, 404)
 
-        # Verify dropdown element and all weeks are rendered in index.html
+        # Verify dropdown element and all weeks (1-12) are rendered in index.html
         home_res = self.client.get("/")
         html = home_res.get_data(as_text=True)
         self.assertIn("select-important-week", html)
-        for w in range(13):
+        for w in range(1, 13):
             self.assertIn(f'value="{w}"', html)
 
     def test_08_api_additional_endpoint_subsets(self):

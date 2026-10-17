@@ -144,113 +144,123 @@ def extract_weekly_questions(pdf_dir: str):
     return weekly_questions, review_items
 
 
-def extract_bank_a_questions(pdf_dir: str):
+def extract_bank_a_questions(questions_dir: str):
     """
-    Extracts Question Bank A (Important Questions) from bank_a_important.pdf.
-    Contains 156 questions (Weeks 0-12) with full answer key at the end.
+    Extracts Question Bank A (Important Questions) from:
+    1. nptel_prm_120_predicted_mcqs.html
+    2. nptel_prm_120_answer_key_and_explanations.html
+    Contains 120 questions across Weeks 1-12 (10 questions each) with verified answer keys & detailed rationales.
     """
-    pdf_path = os.path.join(pdf_dir, "bank_a_important.pdf")
-    doc = pymupdf.open(pdf_path)
-    full_text = "\n".join(page.get_text() for page in doc)
+    import html as html_lib
 
-    ak_pos = full_text.find("ANSWER KEY")
-    q_text = full_text[:ak_pos]
-    ak_text = full_text[ak_pos:]
+    q_html_path = os.path.join(questions_dir, "nptel_prm_120_predicted_mcqs.html")
+    a_html_path = os.path.join(questions_dir, "nptel_prm_120_answer_key_and_explanations.html")
 
-    # Parse answer key
-    ans_dict = {}
-    for q_num, ans in re.findall(r"Q(\d+):\s*([A-D])", ak_text):
-        ans_dict[int(q_num)] = ans
+    with open(q_html_path, "r", encoding="utf-8") as f:
+        text_q = f.read()
 
-    week_titles = {
-        0: "Week 0 - Introduction to PM & Rewards",
-        1: "Week 1 - PM Process & Reward Basics",
-        2: "Week 2 - Strategic Alignment & SWOT",
-        3: "Week 3 - Performance Measurement Approaches",
-        4: "Week 4 - Appraisal Methods & Errors",
-        5: "Week 5 - Development, Teams & Coaching",
-        6: "Week 6 - Total Rewards & Fairness",
-        7: "Week 7 - Incentive Theories & Pay Plans",
-        8: "Week 8 - Job Evaluation & Pay Structures",
-        9: "Week 9 - Executive Pay & Incentive Design",
-        10: "Week 10 - Government Pay & Pension",
-        11: "Week 11 - Reward System Design",
-        12: "Week 12 - Ethics in PM & Rewards",
-    }
+    with open(a_html_path, "r", encoding="utf-8") as f:
+        text_a = f.read()
 
-    lines = [clean_text(l) for l in q_text.split("\n")]
+    # 1. Parse Answer Key and Explanations
+    ans_pattern = re.compile(
+        r'<div class="explanation-card"[^>]*id="ans(\d+)"[^>]*>'
+        r'.*?<span class="correct-badge"[^>]*>Correct Answer:\s*([A-D])<'
+        r'.*?<div class="rationale-text"[^>]*>(.*?)</div>',
+        re.DOTALL
+    )
+
+    answers = {}
+    for m in ans_pattern.finditer(text_a):
+        q_num = int(m.group(1))
+        key = m.group(2)
+        rat = html_lib.unescape(clean_text(m.group(3)))
+        answers[q_num] = {"key": key, "explanation": rat}
+
+    # Extract concept tags
+    for m in re.finditer(r'<div class="explanation-card"[^>]*id="ans(\d+)".*?<span class="concept-tag"[^>]*>(.*?)</span>', text_a, re.DOTALL):
+        q_num = int(m.group(1))
+        tag = html_lib.unescape(clean_text(m.group(2)))
+        if q_num in answers and tag:
+            answers[q_num]["concept"] = tag
+
+    # 2. Extract Week Topic Headings from answers document
+    week_topics = {}
+    wh_matches = re.finditer(r'<div class="week-header">\s*<h2>WEEK\s+(\d+)[^<]*</h2>\s*<p>(.*?)</p>', text_a, re.DOTALL)
+    for wm in wh_matches:
+        w_num = int(wm.group(1))
+        w_top = html_lib.unescape(clean_text(wm.group(2)))
+        week_topics[w_num] = f"Week {w_num} - {w_top}"
+
+    # 3. Parse Question Cards using slice-based approach
+    week_splits = list(re.finditer(r'<div class="week-header">\s*<h2>WEEK\s+(\d+)', text_q))
     questions = []
-    curr_q = None
-    curr_week = 0
     review_items = []
 
-    for line in lines:
-        if not line:
-            continue
-        wm = re.match(r"^WEEK\s+(\d+)\s*[-–]\s*(.*)", line, re.IGNORECASE)
-        if wm:
-            curr_week = int(wm.group(1))
-            continue
-        qm = re.match(r"^Q(\d+)\.\s*(.*)", line)
-        if qm:
-            if curr_q:
-                questions.append(curr_q)
-            q_num = int(qm.group(1))
-            curr_q = {
+    for i, wm in enumerate(week_splits):
+        w_num = int(wm.group(1))
+        start_pos = wm.end()
+        end_pos = week_splits[i + 1].start() if i + 1 < len(week_splits) else len(text_q)
+        sec_text = text_q[start_pos:end_pos]
+
+        card_starts = [m.start() for m in re.finditer(r'<div class="question-card"', sec_text)]
+        card_starts.append(len(sec_text))
+
+        for c_idx in range(len(card_starts) - 1):
+            card_html = sec_text[card_starts[c_idx]:card_starts[c_idx + 1]]
+
+            q_num_m = re.search(r'id="q(\d+)"', card_html)
+            if not q_num_m:
+                continue
+            q_num = int(q_num_m.group(1))
+
+            q_text_m = re.search(r'<div class="q-text">(.*?)</div>', card_html, re.DOTALL)
+            q_text = html_lib.unescape(clean_text(q_text_m.group(1))) if q_text_m else ""
+
+            opts = {}
+            for opt_m in re.finditer(r'<div class="option-item"[^>]*>\s*<span class="option-letter">([A-D])</span>\s*<span class="option-text">(.*?)</span>\s*</div>', card_html, re.DOTALL):
+                letter = opt_m.group(1)
+                opt_str = html_lib.unescape(clean_text(opt_m.group(2)))
+                opts[letter] = opt_str
+
+            ans_info = answers.get(q_num, {})
+            correct_key = ans_info.get("key")
+            explanation = ans_info.get("explanation", "")
+            if ans_info.get("concept"):
+                explanation = f"[{ans_info['concept']}] {explanation}"
+
+            if len(opts) != 4:
+                review_items.append({
+                    "source": "Question Bank A (Important Questions)",
+                    "question_num": q_num,
+                    "issue": f"Expected 4 options, found {len(opts)}: {list(opts.keys())}",
+                    "question": q_text
+                })
+
+            if not correct_key:
+                review_items.append({
+                    "source": "Question Bank A (Important Questions)",
+                    "question_num": q_num,
+                    "issue": "Missing correct answer in answer key HTML",
+                    "question": q_text
+                })
+            elif correct_key not in opts:
+                review_items.append({
+                    "source": "Question Bank A (Important Questions)",
+                    "question_num": q_num,
+                    "issue": f"Answer key '{correct_key}' not in options",
+                    "question": q_text
+                })
+
+            questions.append({
                 "id": f"BANK_A_Q{q_num}",
                 "question_number": q_num,
-                "week": curr_week,
-                "topic": week_titles.get(curr_week, f"Week {curr_week}"),
-                "question": qm.group(2).strip(),
-                "options": {},
-                "curr_opt": None,
-                "correct_answer": ans_dict.get(q_num),
-                "explanation": ""
-            }
-            continue
-
-        opt_m = re.match(r"^([A-D])\.\s*(.*)", line)
-        if opt_m and curr_q:
-            curr_q["curr_opt"] = opt_m.group(1)
-            curr_q["options"][opt_m.group(1)] = opt_m.group(2).strip()
-            continue
-
-        if curr_q:
-            if curr_q["curr_opt"]:
-                curr_q["options"][curr_q["curr_opt"]] += " " + line
-            else:
-                curr_q["question"] += (" " if curr_q["question"] else "") + line
-
-    if curr_q:
-        questions.append(curr_q)
-
-    # Clean and validate
-    for q in questions:
-        q.pop("curr_opt", None)
-        q["question"] = clean_text(q["question"])
-        for k in list(q["options"].keys()):
-            q["options"][k] = clean_text(q["options"][k])
-
-        if len(q["options"]) != 4:
-            review_items.append({
-                "source": "Question Bank A (Important Questions)",
-                "question_num": q["question_number"],
-                "issue": f"Expected 4 options, found {len(q['options'])}",
-                "question": q["question"]
-            })
-        if not q["correct_answer"]:
-            review_items.append({
-                "source": "Question Bank A (Important Questions)",
-                "question_num": q["question_number"],
-                "issue": "Missing answer key in key section",
-                "question": q["question"]
-            })
-        elif q["correct_answer"] not in q["options"]:
-            review_items.append({
-                "source": "Question Bank A (Important Questions)",
-                "question_num": q["question_number"],
-                "issue": f"Answer key {q['correct_answer']} not in options",
-                "question": q["question"]
+                "week": w_num,
+                "topic": week_topics.get(w_num, f"Week {w_num}"),
+                "question": q_text,
+                "options": opts,
+                "correct_answer": correct_key,
+                "explanation": explanation
             })
 
     return questions, review_items
