@@ -242,16 +242,43 @@ function selectOption(key) {
   const q = quizState.questions[quizState.currentIndex];
   if (!q) return;
 
-  // If already evaluated, selecting a new option allows re-evaluating (retrying)
-  if (q.evaluated && q.selectedAnswer !== key) {
-    q.evaluated = false;
-    q.isCorrect = null;
-    recalculateScore();
+  const total = quizState.questions.length;
+  const isLast = quizState.currentIndex === total - 1;
+
+  // Record and immediately evaluate
+  q.selectedAnswer = key;
+  q.evaluated = true;
+  q.isCorrect = (key === q.correctAnswer);
+
+  recalculateScore();
+  saveState();
+
+  // Re-render question to display green/red feedback and banner
+  renderQuestion();
+  updateNavigatorBox(quizState.currentIndex);
+  updateScoreChips();
+
+  // Append 2-second countdown note in feedback banner
+  const fbText = document.getElementById("feedback-text");
+  if (fbText) {
+    const note = document.createElement("div");
+    note.className = "auto-advance-note";
+    note.textContent = isLast 
+      ? "Finishing quiz in 2 seconds..." 
+      : "Moving to next question in 2 seconds...";
+    fbText.appendChild(note);
   }
 
-  q.selectedAnswer = key;
-  saveState();
-  renderQuestion();
+  // Start 2-second auto-advance
+  autoAdvanceTimer = setTimeout(() => {
+    autoAdvanceTimer = null;
+    if (isLast) {
+      finishQuiz();
+    } else {
+      goToQuestion(quizState.currentIndex + 1);
+    }
+  }, 2000);
+
   updateButtons();
 }
 
@@ -264,104 +291,27 @@ function updateButtons() {
   const prevBtn = document.getElementById("btn-prev-q");
   prevBtn.disabled = quizState.currentIndex === 0;
 
-  // Action Primary Button
-  const actionBtn = document.getElementById("btn-action-primary");
-
-  if (!q.evaluated) {
-    if (q.selectedAnswer) {
-      actionBtn.textContent = isLast ? "Finish Quiz ✓" : "Next \u2192";
-      actionBtn.className = isLast ? "btn btn-success" : "btn btn-primary";
-    } else {
-      actionBtn.textContent = isLast ? "Finish Quiz \u2192" : "Next (Skip) \u2192";
-      actionBtn.className = "btn btn-secondary";
-    }
+  // Skip Button (no Next button - only Skip or auto-advance)
+  const skipBtn = document.getElementById("btn-action-primary");
+  if (isLast) {
+    skipBtn.textContent = autoAdvanceTimer ? "Finish Now ✓" : "Finish Quiz \u2192";
+    skipBtn.className = autoAdvanceTimer ? "btn btn-success" : "btn btn-secondary";
   } else {
-    if (autoAdvanceTimer) {
-      actionBtn.textContent = isLast ? "Finish Now ✓" : "Next Now \u2192";
-      actionBtn.className = isLast ? "btn btn-success" : "btn btn-primary";
-    } else {
-      if (isLast) {
-        actionBtn.textContent = "Finish Quiz ✓";
-        actionBtn.className = "btn btn-success";
-      } else {
-        actionBtn.textContent = "Next Question \u2192";
-        actionBtn.className = "btn btn-primary";
-      }
-    }
+    skipBtn.textContent = autoAdvanceTimer ? "Skip Now \u2192" : "Skip \u2192";
+    skipBtn.className = "btn btn-secondary";
   }
 }
 
-function handlePrimaryAction() {
-  const hadTimer = (autoAdvanceTimer !== null);
+function handleSkipAction() {
   clearAutoAdvance();
-
-  const q = quizState.questions[quizState.currentIndex];
   const total = quizState.questions.length;
   const isLast = quizState.currentIndex === total - 1;
 
-  // If user clicks while 2.5s countdown was in progress, advance immediately!
-  if (hadTimer) {
-    if (isLast) {
-      finishQuiz();
-    } else {
-      goToQuestion(quizState.currentIndex + 1);
-    }
-    return;
-  }
-
-  // Case 1: An option is selected and question is NOT evaluated yet ->
-  // Verify & display correct option, show feedback, and auto-advance after 2.5s!
-  if (!q.evaluated && q.selectedAnswer) {
-    evaluateCurrentQuestion();
-
-    const actionBtn = document.getElementById("btn-action-primary");
-    actionBtn.textContent = isLast ? "Finish Now ✓" : "Next Now \u2192";
-    actionBtn.className = isLast ? "btn btn-success" : "btn btn-primary";
-
-    // Append auto-advance notification inside feedback banner
-    const fbText = document.getElementById("feedback-text");
-    if (fbText) {
-      const note = document.createElement("div");
-      note.className = "auto-advance-note";
-      note.textContent = isLast ? "Finishing in ~2.5s (or click Finish Now)..." : "Advancing in ~2.5s (or click Next Now)...";
-      fbText.appendChild(note);
-    }
-
-    autoAdvanceTimer = setTimeout(() => {
-      autoAdvanceTimer = null;
-      if (isLast) {
-        finishQuiz();
-      } else {
-        goToQuestion(quizState.currentIndex + 1);
-      }
-    }, 2500);
-
-    return;
-  }
-
-  // Case 2: Already evaluated or skipping unanswered -> advance immediately
   if (isLast) {
     finishQuiz();
   } else {
     goToQuestion(quizState.currentIndex + 1);
   }
-}
-
-function evaluateCurrentQuestion() {
-  const q = quizState.questions[quizState.currentIndex];
-  if (!q || !q.selectedAnswer) return;
-
-  q.evaluated = true;
-  q.isCorrect = (q.selectedAnswer === q.correctAnswer);
-
-  recalculateScore();
-  saveState();
-
-  // Re-render question to display green/red feedback
-  renderQuestion();
-  // Update navigator box color
-  updateNavigatorBox(quizState.currentIndex);
-  updateScoreChips();
 }
 
 function recalculateScore() {
@@ -583,7 +533,7 @@ function setupEventListeners() {
   };
 
   document.getElementById("btn-action-primary").onclick = () => {
-    handlePrimaryAction();
+    handleSkipAction();
   };
 
   document.getElementById("btn-finish-early").onclick = () => {
@@ -663,14 +613,14 @@ function setupEventListeners() {
       }
     } else if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
-      handlePrimaryAction();
+      handleSkipAction();
     } else if (e.key === "ArrowLeft") {
       clearAutoAdvance();
       if (quizState.currentIndex > 0) {
         goToQuestion(quizState.currentIndex - 1);
       }
     } else if (e.key === "ArrowRight") {
-      handlePrimaryAction();
+      handleSkipAction();
     }
   });
 }
