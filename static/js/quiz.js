@@ -110,14 +110,24 @@ async function initQuiz() {
       apiUrl = `/api/questions/weekly/${week}`;
       quizState.modeTitle = `Week ${week} Assessment`;
     } else if (mode === "important") {
-      apiUrl = `/api/questions/important?count=${count}`;
-      quizState.modeTitle = `Important Questions (${count} Questions)`;
+      const weekParam = urlParams.get("week");
+      if (weekParam !== null && weekParam !== "") {
+        const targetWeek = parseInt(weekParam, 10);
+        apiUrl = `/api/questions/important?week=${targetWeek}`;
+        quizState.week = targetWeek;
+        quizState.isWeekSpecific = true;
+        quizState.modeTitle = `Important Questions - Week ${targetWeek}`;
+      } else {
+        apiUrl = `/api/questions/important?count=${count}`;
+        quizState.isWeekSpecific = false;
+        quizState.modeTitle = `Important Questions (${count} Questions)`;
+      }
     } else if (mode === "additional") {
       apiUrl = `/api/questions/additional?count=${count}`;
       quizState.modeTitle = `Additional Practice Questions (${count} Questions)`;
     } else if (mode === "all") {
       apiUrl = `/api/questions/all?shuffle_q=${shuffleQuestions ? 1 : 0}`;
-      quizState.modeTitle = `Practice All Questions`;
+      quizState.modeTitle = `Practice All Questions (Weeks 0–12)`;
     } else {
       // Fallback
       apiUrl = `/api/questions/weekly/0`;
@@ -134,7 +144,10 @@ async function initQuiz() {
     }
 
     if (mode === "all") {
-      quizState.modeTitle = `Practice All Questions (${data.total} Questions)`;
+      quizState.modeTitle = `Practice All Questions (Weeks 0–12)`;
+    } else if (mode === "important" && quizState.isWeekSpecific) {
+      quizState.modeTitle = data.mode_title || `Important Questions - Week ${quizState.week}`;
+      quizState.topic = data.topic;
     } else if (count >= data.total && (mode === "important" || mode === "additional")) {
       quizState.modeTitle = `${data.mode_title} (Full Bank • ${data.total} Qs)`;
     }
@@ -206,7 +219,12 @@ function renderQuizHeader() {
   if (quizState.mode === "weekly") {
     subEl.textContent = `NPTEL Performance & Reward Management • ${total} Questions`;
   } else if (quizState.mode === "important") {
-    subEl.textContent = `Focused Exam Preparation • ${total} Questions`;
+    if (quizState.isWeekSpecific) {
+      const topicText = quizState.topic || (quizState.questions[0] ? quizState.questions[0].topic : `Week ${quizState.week}`);
+      subEl.textContent = `Important Questions • ${topicText} • ${total} Questions`;
+    } else {
+      subEl.textContent = `Focused Exam Preparation • ${total} Questions`;
+    }
   } else if (quizState.mode === "additional") {
     subEl.textContent = `Expanded Practice Questions • ${total} Questions`;
   } else if (quizState.mode === "all") {

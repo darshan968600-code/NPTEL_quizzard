@@ -7,7 +7,7 @@ A fast, interactive, distraction-free practice portal built for NPTEL **Performa
 ## 1. Project Overview
 
 - **NPTEL Weekly Practice:** 130 authentic weekly assessment questions spanning **Week 0 through Week 12** (13 weeks &times; 10 questions each).
-- **Important Questions:** Dedicated question bank for focused exam preparation with choices for **50 Qs**, **100 Qs**, or **Full Bank (156 Qs)**.
+- **Important Questions:** Dedicated question bank for focused exam preparation with choices for **individual week modules (Weeks 0–12 dropdown, 12 Qs each)** as well as practice sets across all weeks for **50 Qs**, **100 Qs**, or **Full Bank (156 Qs)**.
 - **Additional Practice Questions:** Expanded practice question bank covering all course modules with choices for **50 Qs**, **100 Qs**, or **Full Bank (150 Qs)**.
 - **Combined Weekly Mode (Practice All Questions):** Practice session covering all **130 assessment questions** from Weeks 0 through 12 in one continuous session with configurable pre-quiz settings:
   - *Shuffle Questions* (toggleable randomization across Weeks 0–12)
@@ -88,7 +88,7 @@ python extract_data.py
 ### Practice Modes
 1. **Weekly Assignments:** Click any week card (Week 0 to Week 12) to start a 10-question practice set for that specific week.
 2. **Practice All Questions:** Click the prominent featured card in Section 1 to configure and launch a session with all 130 assessment questions (Weeks 0–12) with customizable Question and Option shuffling.
-3. **Important Questions:** Practice focused exam questions with options for 50 Qs, 100 Qs, or all 156 Qs.
+3. **Important Questions:** Practice focused exam questions by **individual week (Week 0 to Week 12 via the dropdown)**, or choose cross-week practice for 50 Qs, 100 Qs, or all 156 Qs.
 4. **Additional Practice Questions:** Practice additional questions with options for 50 Qs, 100 Qs, or all 150 Qs.
 
 ### Quiz Features

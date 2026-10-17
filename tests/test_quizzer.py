@@ -96,6 +96,29 @@ class TestNPTELQuizzer(unittest.TestCase):
             ids = [q["id"] for q in qs]
             self.assertEqual(len(ids), len(set(ids)), f"Duplicate questions found in important count={count}")
 
+    def test_07b_api_important_by_individual_week(self):
+        """Verify /api/questions/important?week=<W> returns exactly 12 questions for each week 0-12."""
+        for w in range(13):
+            res = self.client.get(f"/api/questions/important?week={w}")
+            self.assertEqual(res.status_code, 200)
+            data = res.get_json()
+            self.assertEqual(data["status"], "success")
+            self.assertEqual(data["total"], 12)
+            self.assertEqual(data["week"], w)
+            self.assertEqual(len(data["questions"]), 12)
+            self.assertTrue(all(q["week"] == w for q in data["questions"]))
+
+        # Invalid week returns 404
+        res = self.client.get("/api/questions/important?week=99")
+        self.assertEqual(res.status_code, 404)
+
+        # Verify dropdown element and all weeks are rendered in index.html
+        home_res = self.client.get("/")
+        html = home_res.get_data(as_text=True)
+        self.assertIn("select-important-week", html)
+        for w in range(13):
+            self.assertIn(f'value="{w}"', html)
+
     def test_08_api_additional_endpoint_subsets(self):
         """Verify /api/questions/additional returns requested counts without duplicates."""
         for count in [50, 100, 150]:

@@ -60,9 +60,25 @@ def home():
     total_additional = len(bank_b_questions)
     total_combined = total_weekly + total_important + total_additional
 
+    # Build list of available weeks for Important Questions
+    important_weeks_map = {}
+    for q in bank_a_questions:
+        w = q["week"]
+        if w not in important_weeks_map:
+            important_weeks_map[w] = {
+                "week": w,
+                "label": f"Week {w}",
+                "topic": q.get("topic", f"Week {w}"),
+                "count": 0
+            }
+        important_weeks_map[w]["count"] += 1
+
+    sorted_important_weeks = sorted(important_weeks_map.values(), key=lambda x: x["week"])
+
     return render_template(
         "index.html",
         weeks=sorted_weeks,
+        important_weeks=sorted_important_weeks,
         total_weekly=total_weekly,
         total_important=total_important,
         total_additional=total_additional,
@@ -124,7 +140,28 @@ def api_weekly_questions(week):
 
 @app.route("/api/questions/important")
 def api_important_questions():
-    """Important Questions Bank"""
+    """Important Questions Bank - supports both ?week=<int> and ?count=<int>"""
+    week_arg = request.args.get("week")
+    if week_arg is not None and week_arg != "":
+        try:
+            target_week = int(week_arg)
+            qs = [q for q in bank_a_questions if q["week"] == target_week]
+            if not qs:
+                return jsonify({"status": "error", "message": f"Week {target_week} not found in Important Questions"}), 404
+            qs_sorted = sorted(qs, key=lambda x: x["question_number"])
+            topic_title = qs_sorted[0].get("topic", f"Week {target_week}")
+            return jsonify({
+                "status": "success",
+                "mode": "important",
+                "mode_title": f"Important Questions - Week {target_week}",
+                "week": target_week,
+                "topic": topic_title,
+                "total": len(qs_sorted),
+                "questions": qs_sorted
+            })
+        except ValueError:
+            return jsonify({"status": "error", "message": "Invalid week parameter"}), 400
+
     try:
         count = int(request.args.get("count", 50))
     except ValueError:

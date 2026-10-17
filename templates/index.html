@@ -119,7 +119,33 @@
       <div class="section-header">
         <div class="mode-tag mode-tag-b">QUESTION BANK</div>
         <h2>Important Questions</h2>
-        <p class="section-desc">Practice the important questions selected for focused exam preparation. Select your practice length below.</p>
+        <p class="section-desc">Practice the important questions selected for focused exam preparation. Choose an individual week below or select a full practice session.</p>
+      </div>
+
+      <!-- Individual Week Selector Dropdown -->
+      <div class="week-selector-card">
+        <div class="week-selector-info">
+          <div class="week-selector-icon">🎯</div>
+          <div>
+            <h4 class="week-selector-title">Practice Important Questions by Week</h4>
+            <p class="week-selector-desc">Select an individual module (Week 0 to Week 12) to practice the 12 targeted questions for that specific topic.</p>
+          </div>
+        </div>
+        <div class="week-selector-action">
+          <select id="select-important-week" class="form-select" aria-label="Select Week for Important Questions">
+            <option value="" disabled selected>Choose a Week (0–12)...</option>
+            {% for iw in important_weeks %}
+            <option value="{{ iw.week }}">{{ iw.topic }} ({{ iw.count }} Qs)</option>
+            {% endfor %}
+          </select>
+          <button class="btn btn-primary" onclick="startImportantWeekQuiz()">
+            Start Week &rarr;
+          </button>
+        </div>
+      </div>
+
+      <div class="section-divider-label">
+        <span>OR PRACTICE ACROSS ALL WEEKS</span>
       </div>
 
       <div class="practice-options-grid">

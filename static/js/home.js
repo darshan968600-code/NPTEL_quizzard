@@ -78,6 +78,17 @@ function startImportantQuiz(count) {
   window.location.href = `/quiz?mode=important&count=${count}`;
 }
 
+function startImportantWeekQuiz() {
+  const select = document.getElementById("select-important-week");
+  const week = select ? select.value : "";
+  if (week === "" || week === null) {
+    alert("Please select a week to practice from the dropdown.");
+    return;
+  }
+  localStorage.removeItem(STORAGE_KEY);
+  window.location.href = `/quiz?mode=important&week=${week}`;
+}
+
 function startAdditionalQuiz(count) {
   localStorage.removeItem(STORAGE_KEY);
   window.location.href = `/quiz?mode=additional&count=${count}`;

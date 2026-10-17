@@ -497,6 +497,99 @@ body {
   color: var(--primary);
 }
 
+/* ================= Week-Specific Selector Card ================= */
+.week-selector-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.week-selector-card:hover {
+  border-color: var(--primary-border);
+}
+
+.week-selector-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.week-selector-icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.week-selector-title {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.2rem;
+}
+
+.week-selector-desc {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.week-selector-action {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.form-select {
+  background-color: var(--bg-elevated);
+  color: var(--text-main);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 1rem;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  min-width: 320px;
+  max-width: 100%;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.section-divider-label {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0 1.25rem;
+}
+
+.section-divider-label::before,
+.section-divider-label::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.section-divider-label span {
+  padding: 0 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-light);
+}
+
 /* Practice Options Grid (For Important and Additional banks) */
 .practice-options-grid {
   display: grid;
