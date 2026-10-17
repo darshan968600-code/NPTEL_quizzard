@@ -2,12 +2,14 @@
 Extraction script for NPTEL Quizzer.
 Extracts questions from:
 1. questions/NPTEL Assessment Question Bank - Weeks 0-12.pdf
-   and questions/NPTEL Assessment Answer Key - Weeks 0-12.pdf
-2. questions/NPTEL_PRM_180_MCQ_Combined.pdf
+   and questions/NPTEL Assessment Answer Key - Weeks 0-12.pdf -> data/weekly_questions.json
+2. questions/bank_a_important.pdf -> data/bank_a_questions.json (Important Questions)
+3. questions/bank_b_additional.pdf -> data/bank_b_questions.json (Additional Practice Questions)
 
 Outputs:
-- data/weekly_questions.json
-- data/pyq_questions.json
+- data/weekly_questions.json (130 questions)
+- data/bank_a_questions.json (156 questions)
+- data/bank_b_questions.json (150 questions)
 - data/review_required.json
 """
 
@@ -142,111 +144,233 @@ def extract_weekly_questions(pdf_dir: str):
     return weekly_questions, review_items
 
 
-def extract_pyq_questions(pdf_dir: str):
-    pyq_path = os.path.join(pdf_dir, "NPTEL_PRM_180_MCQ_Combined.pdf")
-    doc = pymupdf.open(pyq_path)
+def extract_bank_a_questions(pdf_dir: str):
+    """
+    Extracts Question Bank A (Important Questions) from bank_a_important.pdf.
+    Contains 156 questions (Weeks 0-12) with full answer key at the end.
+    """
+    pdf_path = os.path.join(pdf_dir, "bank_a_important.pdf")
+    doc = pymupdf.open(pdf_path)
+    full_text = "\n".join(page.get_text() for page in doc)
 
-    # Week headers map
+    ak_pos = full_text.find("ANSWER KEY")
+    q_text = full_text[:ak_pos]
+    ak_text = full_text[ak_pos:]
+
+    # Parse answer key
+    ans_dict = {}
+    for q_num, ans in re.findall(r"Q(\d+):\s*([A-D])", ak_text):
+        ans_dict[int(q_num)] = ans
+
     week_titles = {
-        0: "Week 0 - Introduction to Performance & Reward Management",
-        1: "Week 1 - The Performance-Management Process",
-        2: "Week 2 - Strategic Planning, SWOT & SMART Goals",
-        3: "Week 3 - Performance Dimensions, Competencies & Measurement",
-        4: "Week 4 - Appraisal Methods, Rating Errors & Implementation",
-        5: "Week 5 - Development, Coaching, Teams & Recognition",
-        6: "Week 6 - Total Rewards, Fairness & Engagement",
-        7: "Week 7 - Incentive Plans & Reward Theories",
+        0: "Week 0 - Introduction to PM & Rewards",
+        1: "Week 1 - PM Process & Reward Basics",
+        2: "Week 2 - Strategic Alignment & SWOT",
+        3: "Week 3 - Performance Measurement Approaches",
+        4: "Week 4 - Appraisal Methods & Errors",
+        5: "Week 5 - Development, Teams & Coaching",
+        6: "Week 6 - Total Rewards & Fairness",
+        7: "Week 7 - Incentive Theories & Pay Plans",
         8: "Week 8 - Job Evaluation & Pay Structures",
-        9: "Week 9 - Executive Rewards, Incentive Risks & Knowledge",
-        10: "Week 10 - Public-Sector Pay & Retirement Benefits",
-        11: "Week 11 - Reward-System Design & Review",
-        12: "Week 12 - Ethics, Bias & Fair Appraisal",
+        9: "Week 9 - Executive Pay & Incentive Design",
+        10: "Week 10 - Government Pay & Pension",
+        11: "Week 11 - Reward System Design",
+        12: "Week 12 - Ethics in PM & Rewards",
     }
 
+    lines = [clean_text(l) for l in q_text.split("\n")]
     questions = []
+    curr_q = None
+    curr_week = 0
     review_items = []
-    current_q = None
-    current_week = 0
 
-    for page_idx, page in enumerate(doc):
-        blocks = page.get_text("dict")["blocks"]
-        for b in blocks:
-            if "lines" not in b:
-                continue
-            for line in b["lines"]:
-                line_text = "".join(s["text"] for s in line["spans"])
-                is_green = any(s["color"] == 0x1b8b4b for s in line["spans"])
-                has_checkmark = "\x14" in line_text
+    for line in lines:
+        if not line:
+            continue
+        wm = re.match(r"^WEEK\s+(\d+)\s*[-–]\s*(.*)", line, re.IGNORECASE)
+        if wm:
+            curr_week = int(wm.group(1))
+            continue
+        qm = re.match(r"^Q(\d+)\.\s*(.*)", line)
+        if qm:
+            if curr_q:
+                questions.append(curr_q)
+            q_num = int(qm.group(1))
+            curr_q = {
+                "id": f"BANK_A_Q{q_num}",
+                "question_number": q_num,
+                "week": curr_week,
+                "topic": week_titles.get(curr_week, f"Week {curr_week}"),
+                "question": qm.group(2).strip(),
+                "options": {},
+                "curr_opt": None,
+                "correct_answer": ans_dict.get(q_num),
+                "explanation": ""
+            }
+            continue
 
-                cleaned_line = clean_text(line_text)
-                if not cleaned_line:
-                    continue
+        opt_m = re.match(r"^([A-D])\.\s*(.*)", line)
+        if opt_m and curr_q:
+            curr_q["curr_opt"] = opt_m.group(1)
+            curr_q["options"][opt_m.group(1)] = opt_m.group(2).strip()
+            continue
 
-                # Check for week header
-                w_header = re.match(r"^WEEK\s+(\d+)\s*[-–]\s*(.*)", cleaned_line, re.IGNORECASE)
-                if w_header:
-                    current_week = int(w_header.group(1))
-                    continue
+        if curr_q:
+            if curr_q["curr_opt"]:
+                curr_q["options"][curr_q["curr_opt"]] += " " + line
+            else:
+                curr_q["question"] += (" " if curr_q["question"] else "") + line
 
-                # Check question start: Q1. Q2. etc.
-                q_match = re.match(r"^Q(\d+)\.\s*(.*)", cleaned_line)
-                if q_match:
-                    if current_q:
-                        questions.append(current_q)
-                    q_num = int(q_match.group(1))
-                    current_q = {
-                        "id": f"PYQ_Q{q_num}",
-                        "question_number": q_num,
-                        "week": current_week,
-                        "topic": week_titles.get(current_week, f"Week {current_week}"),
-                        "question": q_match.group(2).strip(),
-                        "options": {},
-                        "correct_answer": None,
-                        "page": page_idx + 1,
-                        "_last_opt": None
-                    }
-                    continue
+    if curr_q:
+        questions.append(curr_q)
 
-                if not current_q:
-                    continue
-
-                # Check option start
-                opt_match = re.match(r"^([A-D])\.\s*(.*)", cleaned_line)
-                if opt_match:
-                    opt_letter = opt_match.group(1)
-                    opt_text = opt_match.group(2).strip()
-                    current_q["options"][opt_letter] = opt_text
-                    current_q["_last_opt"] = opt_letter
-                    if is_green or has_checkmark:
-                        current_q["correct_answer"] = opt_letter
-                else:
-                    # Continuation line
-                    if current_q["_last_opt"]:
-                        last_opt = current_q["_last_opt"]
-                        current_q["options"][last_opt] += " " + cleaned_line
-                        if is_green or has_checkmark:
-                            current_q["correct_answer"] = last_opt
-                    else:
-                        current_q["question"] += " " + cleaned_line
-
-    if current_q:
-        questions.append(current_q)
-
-    # Clean internal temporary keys and validate
+    # Clean and validate
     for q in questions:
-        q.pop("_last_opt", None)
+        q.pop("curr_opt", None)
+        q["question"] = clean_text(q["question"])
+        for k in list(q["options"].keys()):
+            q["options"][k] = clean_text(q["options"][k])
+
         if len(q["options"]) != 4:
             review_items.append({
-                "source": "180 MCQ PYQ",
+                "source": "Question Bank A (Important Questions)",
                 "question_num": q["question_number"],
-                "issue": f"Expected 4 options, found {len(q['options'])}: {list(q['options'].keys())}",
+                "issue": f"Expected 4 options, found {len(q['options'])}",
                 "question": q["question"]
             })
         if not q["correct_answer"]:
             review_items.append({
-                "source": "180 MCQ PYQ",
+                "source": "Question Bank A (Important Questions)",
+                "question_num": q["question_number"],
+                "issue": "Missing answer key in key section",
+                "question": q["question"]
+            })
+        elif q["correct_answer"] not in q["options"]:
+            review_items.append({
+                "source": "Question Bank A (Important Questions)",
+                "question_num": q["question_number"],
+                "issue": f"Answer key {q['correct_answer']} not in options",
+                "question": q["question"]
+            })
+
+    return questions, review_items
+
+
+def extract_bank_b_questions(pdf_dir: str):
+    """
+    Extracts Question Bank B (Additional Practice Questions) from bank_b_additional.pdf.
+    Contains 150 questions (Weeks 0-12) with correct answers identified by green text color (#155724) and '\x13'.
+    """
+    pdf_path = os.path.join(pdf_dir, "bank_b_additional.pdf")
+    doc = pymupdf.open(pdf_path)
+
+    week_titles = {
+        0: "Week 0 - Foundations of Performance and Reward Management",
+        1: "Week 1 - The Performance-Management Process",
+        2: "Week 2 - Strategic Planning, SWOT, and SMART Goals",
+        3: "Week 3 - Performance Dimensions, Competencies, and Measurement",
+        4: "Week 4 - Appraisal Methods, Rating Errors, and Implementation",
+        5: "Week 5 - Development, Coaching, Teams, and Recognition",
+        6: "Week 6 - Total Rewards, Fairness, and Engagement",
+        7: "Week 7 - Incentive Plans and Reward Theories",
+        8: "Week 8 - Job Evaluation and Pay Structures",
+        9: "Week 9 - Executive Rewards, Incentive Risks, and Knowledge Workers",
+        10: "Week 10 - Public-Sector Pay and Retirement Benefits",
+        11: "Week 11 - Reward-System Design and Review",
+        12: "Week 12 - Ethics, Bias, and Fair Appraisal",
+    }
+
+    questions = []
+    review_items = []
+    curr_q = None
+    curr_week = 0
+
+    for p_idx in range(2, len(doc)):
+        page = doc[p_idx]
+        blocks = page.get_text("dict")["blocks"]
+        for b in blocks:
+            if "lines" not in b:
+                continue
+            for l in b["lines"]:
+                line_str = "".join(s["text"] for s in l["spans"])
+                has_marker = ("\x13" in line_str) or any(s["color"] == 0x155724 for s in l["spans"])
+                cleaned_line = clean_text(line_str)
+                if not cleaned_line:
+                    continue
+
+                # Header check
+                wm = re.match(r"^WEEK\s+(\d+)\s*[-–]\s*(.*)", cleaned_line, re.IGNORECASE)
+                if wm:
+                    curr_week = int(wm.group(1))
+                    continue
+
+                # Question start check
+                qm = re.match(r"^Q(\d+)\.\s*(.*)", cleaned_line)
+                if qm:
+                    if curr_q:
+                        questions.append(curr_q)
+                    q_num = int(qm.group(1))
+                    curr_q = {
+                        "id": f"BANK_B_Q{q_num}",
+                        "question_number": q_num,
+                        "week": curr_week,
+                        "topic": week_titles.get(curr_week, f"Week {curr_week}"),
+                        "question": qm.group(2).strip(),
+                        "options": {},
+                        "curr_opt": None,
+                        "correct_answer": None,
+                        "explanation": ""
+                    }
+                    continue
+
+                # Option start check
+                opt_m = re.match(r"^([A-D])\.\s*(.*)", cleaned_line)
+                if opt_m and curr_q:
+                    opt_letter = opt_m.group(1)
+                    opt_text = opt_m.group(2).strip()
+                    curr_q["options"][opt_letter] = opt_text
+                    curr_q["curr_opt"] = opt_letter
+                    if has_marker:
+                        curr_q["correct_answer"] = opt_letter
+                    continue
+
+                if curr_q:
+                    if curr_q["curr_opt"]:
+                        curr_q["options"][curr_q["curr_opt"]] += " " + cleaned_line
+                        if has_marker and not curr_q["correct_answer"]:
+                            curr_q["correct_answer"] = curr_q["curr_opt"]
+                    else:
+                        curr_q["question"] += (" " if curr_q["question"] else "") + cleaned_line
+
+    if curr_q:
+        questions.append(curr_q)
+
+    # Clean and validate
+    for q in questions:
+        q.pop("curr_opt", None)
+        q["question"] = clean_text(q["question"])
+        for k in list(q["options"].keys()):
+            q["options"][k] = clean_text(q["options"][k])
+
+        if len(q["options"]) != 4:
+            review_items.append({
+                "source": "Question Bank B (Additional Practice Questions)",
+                "question_num": q["question_number"],
+                "issue": f"Expected 4 options, found {len(q['options'])}",
+                "question": q["question"]
+            })
+        if not q["correct_answer"]:
+            review_items.append({
+                "source": "Question Bank B (Additional Practice Questions)",
                 "question_num": q["question_number"],
                 "issue": "Missing or undetermined correct answer",
+                "question": q["question"]
+            })
+        elif q["correct_answer"] not in q["options"]:
+            review_items.append({
+                "source": "Question Bank B (Additional Practice Questions)",
+                "question_num": q["question_number"],
+                "issue": f"Answer key {q['correct_answer']} not in options",
                 "question": q["question"]
             })
 
@@ -262,21 +386,28 @@ def main():
     print("Extracting Weekly Questions...")
     weekly_questions, weekly_reviews = extract_weekly_questions(pdf_dir)
 
-    print("Extracting 180 PYQ Questions...")
-    pyq_questions, pyq_reviews = extract_pyq_questions(pdf_dir)
+    print("Extracting Question Bank A (Important Questions)...")
+    bank_a_questions, bank_a_reviews = extract_bank_a_questions(pdf_dir)
 
-    all_reviews = weekly_reviews + pyq_reviews
+    print("Extracting Question Bank B (Additional Practice Questions)...")
+    bank_b_questions, bank_b_reviews = extract_bank_b_questions(pdf_dir)
+
+    all_reviews = weekly_reviews + bank_a_reviews + bank_b_reviews
 
     # Save to JSON files
     weekly_file = os.path.join(data_dir, "weekly_questions.json")
-    pyq_file = os.path.join(data_dir, "pyq_questions.json")
+    bank_a_file = os.path.join(data_dir, "bank_a_questions.json")
+    bank_b_file = os.path.join(data_dir, "bank_b_questions.json")
     review_file = os.path.join(data_dir, "review_required.json")
 
     with open(weekly_file, "w", encoding="utf-8") as f:
         json.dump(weekly_questions, f, indent=2, ensure_ascii=False)
 
-    with open(pyq_file, "w", encoding="utf-8") as f:
-        json.dump(pyq_questions, f, indent=2, ensure_ascii=False)
+    with open(bank_a_file, "w", encoding="utf-8") as f:
+        json.dump(bank_a_questions, f, indent=2, ensure_ascii=False)
+
+    with open(bank_b_file, "w", encoding="utf-8") as f:
+        json.dump(bank_b_questions, f, indent=2, ensure_ascii=False)
 
     with open(review_file, "w", encoding="utf-8") as f:
         json.dump(all_reviews, f, indent=2, ensure_ascii=False)
@@ -284,23 +415,20 @@ def main():
     print("\n" + "=" * 60)
     print("EXTRACTION & VERIFICATION SUMMARY REPORT")
     print("=" * 60)
-    print(f"Weekly Questions Extracted: {len(weekly_questions)}")
-    print(f"  Weeks covered: {min(q['week'] for q in weekly_questions)} to {max(q['week'] for q in weekly_questions)} (Total: {len(set(q['week'] for q in weekly_questions))} weeks)")
-    print(f"  Questions per week: 10 each (exact match)")
-    print(f"  Verified correct answers: {sum(1 for q in weekly_questions if q['correct_answer'])} / {len(weekly_questions)}")
-    print(f"  Weekly questions requiring manual review: {len(weekly_reviews)}")
+    print(f"Weekly Questions: {len(weekly_questions)} (Weeks 0-12, 10 each)")
+    print(f"  Verified answers: {sum(1 for q in weekly_questions if q['correct_answer'])} / {len(weekly_questions)}")
+    print(f"  Reviews required: {len(weekly_reviews)}")
 
-    print(f"\nPYQ / Practice Questions Extracted: {len(pyq_questions)}")
-    print(f"  Questions numbered: {min(q['question_number'] for q in pyq_questions)} to {max(q['question_number'] for q in pyq_questions)}")
-    print(f"  Verified correct answers: {sum(1 for q in pyq_questions if q['correct_answer'])} / {len(pyq_questions)}")
-    print(f"  PYQ questions requiring manual review: {len(pyq_reviews)}")
+    print(f"\nQuestion Bank A (Important Questions): {len(bank_a_questions)}")
+    print(f"  Verified answers: {sum(1 for q in bank_a_questions if q['correct_answer'])} / {len(bank_a_questions)}")
+    print(f"  Reviews required: {len(bank_a_reviews)}")
 
-    print(f"\nTotal questions across both banks: {len(weekly_questions) + len(pyq_questions)}")
-    print(f"Total flagged for manual review: {len(all_reviews)}")
-    print(f"Saved to:")
-    print(f"  - {weekly_file}")
-    print(f"  - {pyq_file}")
-    print(f"  - {review_file}")
+    print(f"\nQuestion Bank B (Additional Practice Questions): {len(bank_b_questions)}")
+    print(f"  Verified answers: {sum(1 for q in bank_b_questions if q['correct_answer'])} / {len(bank_b_questions)}")
+    print(f"  Reviews required: {len(bank_b_reviews)}")
+
+    print(f"\nTotal questions across all banks: {len(weekly_questions) + len(bank_a_questions) + len(bank_b_questions)}")
+    print(f"Total manual reviews required: {len(all_reviews)}")
     print("=" * 60)
 
 

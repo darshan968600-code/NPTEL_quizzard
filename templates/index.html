@@ -4,7 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NPTEL Quizzer - Practice Portal</title>
-  <link rel="stylesheet" href="/static/css/style.css?v=2.2">
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('nptel_theme');
+      const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (systemDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="/static/css/style.css?v=3.0">
 </head>
 <body>
   <header class="app-header">
@@ -16,8 +24,11 @@
           <p class="app-subtitle">Performance &amp; Reward Management Practice Portal</p>
         </div>
       </div>
-      <div class="status-badge" title="All questions verified and ready locally">
-        <span class="status-dot"></span> Offline Ready &bull; 310 Questions
+      <div class="header-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle dark/light mode">
+          <span class="theme-icon sun-icon">☀️</span>
+          <span class="theme-icon moon-icon">🌙</span>
+        </button>
       </div>
     </div>
   </header>
@@ -42,29 +53,49 @@
     <section class="stats-overview-grid">
       <div class="stat-card">
         <div class="stat-num">{{ total_weekly }}</div>
-        <div class="stat-label">Weekly Questions (Weeks 0–12)</div>
-        <div class="stat-sub">10 questions per week</div>
+        <div class="stat-label">Weekly Questions</div>
+        <div class="stat-sub">Weeks 0–12 • 10 Qs each</div>
       </div>
       <div class="stat-card">
-        <div class="stat-num">{{ total_pyqs }}</div>
-        <div class="stat-label">PYQ &amp; Practice MCQs</div>
-        <div class="stat-sub">Full curated exam question bank</div>
+        <div class="stat-num">{{ total_important }}</div>
+        <div class="stat-label">Important Questions</div>
+        <div class="stat-sub">Focused exam preparation</div>
       </div>
       <div class="stat-card">
-        <div class="stat-num text-success">100%</div>
-        <div class="stat-label">Verified Answer Keys</div>
-        <div class="stat-sub">0 manual reviews required</div>
+        <div class="stat-num">{{ total_additional }}</div>
+        <div class="stat-label">Additional Practice</div>
+        <div class="stat-sub">Expanded practice coverage</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num text-success">{{ total_combined }}</div>
+        <div class="stat-label">Total Questions</div>
+        <div class="stat-sub">All question banks available</div>
       </div>
     </section>
 
-    <!-- Mode A: Weekly Questions -->
+    <!-- Section 1: Weekly Questions + Featured Combined Practice -->
     <section class="mode-section">
       <div class="section-header">
-        <div class="mode-tag mode-tag-a">MODE A</div>
+        <div class="mode-tag mode-tag-a">NPTEL ASSIGNMENTS</div>
         <h2>NPTEL Weekly Assignment Questions</h2>
-        <p class="section-desc">Practice questions organized week by week. Each week contains 10 authentic assessment questions.</p>
+        <p class="section-desc">Practice week by week or practice all {{ total_weekly }} assessment questions together with shuffle options.</p>
       </div>
 
+      <!-- Prominent Feature: Practice All Questions (Weeks 0-12) -->
+      <div class="featured-practice-card">
+        <div class="featured-card-content">
+          <span class="featured-banner-badge">FEATURED &bull; ALL WEEKS</span>
+          <h3 class="featured-card-title">Practice All Questions</h3>
+          <p class="featured-card-desc">Practise all {{ total_weekly }} assessment questions from Week 0 to Week 12 in one session with options to shuffle questions and answer choices.</p>
+        </div>
+        <div class="featured-card-actions">
+          <button class="btn btn-primary btn-lg" onclick="openCombinedSettingsModal()">
+            ⚡ Practice All Questions ({{ total_weekly }} Qs) &rarr;
+          </button>
+        </div>
+      </div>
+
+      <!-- Week-by-Week Selection Grid -->
       <div class="weeks-grid">
         {% for w in weeks %}
         <div class="week-card" onclick="startWeeklyQuiz({{ w.week }})">
@@ -83,57 +114,130 @@
       </div>
     </section>
 
-    <!-- Mode B: PYQ Practice -->
+    <!-- Section 2: Important Questions -->
     <section class="mode-section">
       <div class="section-header">
-        <div class="mode-tag mode-tag-b">MODE B</div>
-        <h2>Previous Year Questions (PYQs) &amp; Curated Practice</h2>
-        <p class="section-desc">Select the number of questions to practice. Questions are randomly sampled from the 180-question bank with shuffled ordering.</p>
+        <div class="mode-tag mode-tag-b">QUESTION BANK</div>
+        <h2>Important Questions</h2>
+        <p class="section-desc">Practice the important questions selected for focused exam preparation. Select your practice length below.</p>
       </div>
 
-      <div class="pyq-options-grid">
-        <div class="pyq-card" onclick="startPyqQuiz(50)">
-          <div class="pyq-card-icon">⚡</div>
+      <div class="practice-options-grid">
+        <div class="practice-card" onclick="startImportantQuiz(50)">
+          <div class="practice-card-icon">⚡</div>
           <h3>50 Questions</h3>
-          <p class="pyq-meta">Quick practice session</p>
-          <div class="pyq-info">50 distinct questions randomly sampled from all 180 questions.</div>
+          <p class="practice-meta">Quick practice session</p>
+          <div class="practice-info">50 distinct questions randomly sampled from the Important Questions bank.</div>
           <button class="btn btn-primary btn-block">Start 50 Qs</button>
         </div>
 
-        <div class="pyq-card" onclick="startPyqQuiz(100)">
-          <div class="pyq-card-icon">🎯</div>
+        <div class="practice-card" onclick="startImportantQuiz(100)">
+          <div class="practice-card-icon">🎯</div>
           <h3>100 Questions</h3>
-          <p class="pyq-meta">Standard mock exam</p>
-          <div class="pyq-info">100 distinct questions randomly sampled from all 180 questions.</div>
+          <p class="practice-meta">Standard mock exam</p>
+          <div class="practice-info">100 distinct questions randomly sampled from the Important Questions bank.</div>
           <button class="btn btn-primary btn-block">Start 100 Qs</button>
         </div>
 
-        <div class="pyq-card" onclick="startPyqQuiz(150)">
-          <div class="pyq-card-icon">🔥</div>
-          <h3>150 Questions</h3>
-          <p class="pyq-meta">Intensive deep-dive</p>
-          <div class="pyq-info">150 distinct questions randomly sampled from all 180 questions.</div>
-          <button class="btn btn-primary btn-block">Start 150 Qs</button>
+        <div class="practice-card featured" onclick="startImportantQuiz({{ total_important }})">
+          <div class="featured-badge">FULL BANK</div>
+          <div class="practice-card-icon">🏆</div>
+          <h3>{{ total_important }} Questions</h3>
+          <p class="practice-meta">Complete Important bank</p>
+          <div class="practice-info">All {{ total_important }} important questions in randomized practice order. Comprehensive review.</div>
+          <button class="btn btn-success btn-block">Start All {{ total_important }} Qs</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Additional Practice Questions -->
+    <section class="mode-section">
+      <div class="section-header">
+        <div class="mode-tag mode-tag-c">QUESTION BANK</div>
+        <h2>Additional Practice Questions</h2>
+        <p class="section-desc">Expand your preparation with additional practice questions. Select your practice length below.</p>
+      </div>
+
+      <div class="practice-options-grid">
+        <div class="practice-card" onclick="startAdditionalQuiz(50)">
+          <div class="practice-card-icon">⚡</div>
+          <h3>50 Questions</h3>
+          <p class="practice-meta">Quick practice session</p>
+          <div class="practice-info">50 distinct questions randomly sampled from the Additional Practice Questions bank.</div>
+          <button class="btn btn-primary btn-block">Start 50 Qs</button>
         </div>
 
-        <div class="pyq-card featured" onclick="startPyqQuiz(180)">
+        <div class="practice-card" onclick="startAdditionalQuiz(100)">
+          <div class="practice-card-icon">🎯</div>
+          <h3>100 Questions</h3>
+          <p class="practice-meta">Standard mock exam</p>
+          <div class="practice-info">100 distinct questions randomly sampled from the Additional Practice Questions bank.</div>
+          <button class="btn btn-primary btn-block">Start 100 Qs</button>
+        </div>
+
+        <div class="practice-card featured" onclick="startAdditionalQuiz({{ total_additional }})">
           <div class="featured-badge">FULL BANK</div>
-          <div class="pyq-card-icon">🏆</div>
-          <h3>180 Questions</h3>
-          <p class="pyq-meta">Complete question bank</p>
-          <div class="pyq-info">All 180 previous year questions in shuffled order. Comprehensive test.</div>
-          <button class="btn btn-success btn-block">Start All 180 Qs</button>
+          <div class="practice-card-icon">🏆</div>
+          <h3>{{ total_additional }} Questions</h3>
+          <p class="practice-meta">Complete Additional bank</p>
+          <div class="practice-info">All {{ total_additional }} additional practice questions in randomized order. Deep coverage.</div>
+          <button class="btn btn-success btn-block">Start All {{ total_additional }} Qs</button>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Pre-Quiz Settings Modal (For Practice All Questions) -->
+  <div id="combined-settings-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge">WEEKS 0–12 PRACTICE</span>
+          <h3>Practice All Questions</h3>
+          <p class="modal-subtitle">{{ total_weekly }} Questions across Week 0 to Week 12</p>
+        </div>
+        <button class="modal-close-btn" onclick="closeCombinedSettingsModal()" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-intro">Choose your preferences for this practice session:</p>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <label for="setting-shuffle-q" class="setting-label">Shuffle Questions</label>
+            <span class="setting-desc">Randomize the order of questions across Weeks 0–12. When off, follows original Week 0 to Week 12 order.</span>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" id="setting-shuffle-q" checked>
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <label for="setting-shuffle-opt" class="setting-label">Shuffle Answer Options</label>
+            <span class="setting-desc">Randomize option order for each question. Answers remain fully verified and accurately scored.</span>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" id="setting-shuffle-opt" checked>
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeCombinedSettingsModal()">Cancel</button>
+        <button class="btn btn-primary" onclick="confirmStartCombinedQuiz()">Start Quiz &rarr;</button>
+      </div>
+    </div>
+  </div>
+
   <footer class="app-footer">
     <div class="footer-container">
-      <p>NPTEL Quizzer &bull; Offline Localhost Practice Tool &bull; No external APIs or cloud dependencies</p>
+      <p>NPTEL Quizzer &bull; Performance &amp; Reward Management Practice Portal</p>
     </div>
   </footer>
 
-  <script src="/static/js/home.js?v=2.2"></script>
+  <script src="/static/js/home.js?v=3.0"></script>
 </body>
 </html>

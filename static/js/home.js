@@ -1,14 +1,31 @@
 /**
  * NPTEL Quizzer - Homepage Logic
- * Handles session resumption and starting new quizzes
+ * Handles session resumption, theme switching, and starting practice quizzes
  */
 
 const STORAGE_KEY = "nptel_quizzer_state";
+const THEME_KEY = "nptel_theme";
 
 document.addEventListener("DOMContentLoaded", () => {
+  initTheme();
   checkSavedSession();
+  initModalListeners();
 });
 
+/* ================= Theme Toggle ================= */
+function initTheme() {
+  const toggleBtn = document.getElementById("theme-toggle-btn");
+  if (!toggleBtn) return;
+
+  toggleBtn.addEventListener("click", () => {
+    const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem(THEME_KEY, newTheme);
+  });
+}
+
+/* ================= Session Resumption ================= */
 function checkSavedSession() {
   const saved = localStorage.getItem(STORAGE_KEY);
   if (!saved) return;
@@ -50,14 +67,60 @@ function checkSavedSession() {
   }
 }
 
+/* ================= Navigation & Quiz Starters ================= */
 function startWeeklyQuiz(week) {
-  // Clear any existing session to ensure fresh start
   localStorage.removeItem(STORAGE_KEY);
   window.location.href = `/quiz?mode=weekly&week=${week}`;
 }
 
-function startPyqQuiz(count) {
-  // Clear any existing session to ensure fresh start
+function startImportantQuiz(count) {
   localStorage.removeItem(STORAGE_KEY);
-  window.location.href = `/quiz?mode=pyq&count=${count}`;
+  window.location.href = `/quiz?mode=important&count=${count}`;
+}
+
+function startAdditionalQuiz(count) {
+  localStorage.removeItem(STORAGE_KEY);
+  window.location.href = `/quiz?mode=additional&count=${count}`;
+}
+
+/* ================= Combined Practice Settings Modal ================= */
+function openCombinedSettingsModal() {
+  const modal = document.getElementById("combined-settings-modal");
+  if (modal) {
+    modal.style.display = "flex";
+  }
+}
+
+function closeCombinedSettingsModal() {
+  const modal = document.getElementById("combined-settings-modal");
+  if (modal) {
+    modal.style.display = "none";
+  }
+}
+
+function confirmStartCombinedQuiz() {
+  const shuffleQ = document.getElementById("setting-shuffle-q")?.checked ? 1 : 0;
+  const shuffleOpt = document.getElementById("setting-shuffle-opt")?.checked ? 1 : 0;
+
+  localStorage.removeItem(STORAGE_KEY);
+  window.location.href = `/quiz?mode=all&shuffle_q=${shuffleQ}&shuffle_opt=${shuffleOpt}`;
+}
+
+function initModalListeners() {
+  const modal = document.getElementById("combined-settings-modal");
+  if (!modal) return;
+
+  // Close when clicking on backdrop
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      closeCombinedSettingsModal();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.style.display === "flex") {
+      closeCombinedSettingsModal();
+    }
+  });
 }

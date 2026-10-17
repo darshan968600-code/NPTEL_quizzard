@@ -1,0 +1,2342 @@
+[
+  {
+    "id": "BANK_A_Q1",
+    "question_number": 1,
+    "week": 0,
+    "topic": "Week 0 - Introduction to PM & Rewards",
+    "question": "Performance management aligns individual goals primarily with the ______ of an organization.",
+    "options": {
+      "A": "Personal development goals",
+      "B": "Strategic goals",
+      "C": "Team KPIs",
+      "D": "HR department targets"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q2",
+    "question_number": 2,
+    "week": 0,
+    "topic": "Week 0 - Introduction to PM & Rewards",
+    "question": "Which of the following statements about performance management frequency is TRUE?",
+    "options": {
+      "A": "It occurs once a year",
+      "B": "It is a continuous, year-round process",
+      "C": "It happens only at appraisal time",
+      "D": "It is conducted once every two years"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q3",
+    "question_number": 3,
+    "week": 0,
+    "topic": "Week 0 - Introduction to PM & Rewards",
+    "question": "The system of performance management is owned by ______, while performance appraisal is owned by ______.",
+    "options": {
+      "A": "HR Department, Line Managers",
+      "B": "Line Managers, HR Department",
+      "C": "CEO, HR Department",
+      "D": "Line Managers, Development Managers"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q4",
+    "question_number": 4,
+    "week": 0,
+    "topic": "Week 0 - Introduction to PM & Rewards",
+    "question": "Which of the following is a MISQUOTED objective of Performance Management?",
+    "options": {
+      "A": "Managing and improving performance",
+      "B": "Motivating and rewarding but NOT empowering employees",
+      "C": "Ensuring employees do the right things rightly",
+      "D": "Judicious use of resources"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q5",
+    "question_number": 5,
+    "week": 0,
+    "topic": "Week 0 - Introduction to PM & Rewards",
+    "question": "An organization's strategic plan mainly comprises its ______, which are translated into goals and objectives.",
+    "options": {
+      "A": "Vision and mission statements",
+      "B": "Philosophy of survival",
+      "C": "Plan of action",
+      "D": "Financial projections"
+    },
+    "correct_answer": "A",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q6",
+    "question_number": 6,
+    "week": 0,
+    "topic": "Week 0 - Introduction to PM & Rewards",
+    "question": "In modern organizations, rewards can ONLY be monetary. This statement is:",
+    "options": {
+      "A": "True",
+      "B": "False",
+      "C": "True only for private sector",
+      "D": "True only for government employees"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q7",
+    "question_number": 7,
+    "week": 0,
+    "topic": "Week 0 - Introduction to PM & Rewards",
+    "question": "Rating an employee based on first impressions at the start of the review period is called:",
+    "options": {
+      "A": "Recency error",
+      "B": "Contrast error",
+      "C": "Primacy error",
+      "D": "Halo error"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q8",
+    "question_number": 8,
+    "week": 0,
+    "topic": "Week 0 - Introduction to PM & Rewards",
+    "question": "Performance management and reward management share no linkage. This statement is:",
+    "options": {
+      "A": "True",
+      "B": "False",
+      "C": "True in public sector only",
+      "D": "Partially true"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q9",
+    "question_number": 9,
+    "week": 0,
+    "topic": "Week 0 - Introduction to PM & Rewards",
+    "question": "The ______ is designed for people who do not have the benefit of a pension after retirement.",
+    "options": {
+      "A": "New Pension Scheme (NPS)",
+      "B": "Modified Pension Scheme",
+      "C": "Employees' Pension Scheme",
+      "D": "JAL Yojana"
+    },
+    "correct_answer": "A",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q10",
+    "question_number": 10,
+    "week": 0,
+    "topic": "Week 0 - Introduction to PM & Rewards",
+    "question": "Benefits provided to employees OVER AND ABOVE their salaries are called ______ benefits.",
+    "options": {
+      "A": "Non-fringe",
+      "B": "Add-on",
+      "C": "Fringe",
+      "D": "Variable"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q11",
+    "question_number": 11,
+    "week": 0,
+    "topic": "Week 0 - Introduction to PM & Rewards",
+    "question": "Which of the following best describes the role of Line Managers in performance management?",
+    "options": {
+      "A": "They design the appraisal forms",
+      "B": "They own the performance management system",
+      "C": "They set organizational strategy",
+      "D": "They administer salary disbursements"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q12",
+    "question_number": 12,
+    "week": 0,
+    "topic": "Week 0 - Introduction to PM & Rewards",
+    "question": "Which component is NOT typically part of an organization's strategic plan?",
+    "options": {
+      "A": "Mission statement",
+      "B": "Long-term goals",
+      "C": "Employee personal hobbies",
+      "D": "Vision statement"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q13",
+    "question_number": 13,
+    "week": 1,
+    "topic": "Week 1 - PM Process & Reward Basics",
+    "question": "Performance management is BEST described as:",
+    "options": {
+      "A": "An annual salary review process",
+      "B": "A continuous process of managing and improving performance",
+      "C": "A disciplinary mechanism",
+      "D": "Another term for performance appraisal"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q14",
+    "question_number": 14,
+    "week": 1,
+    "topic": "Week 1 - PM Process & Reward Basics",
+    "question": "The key distinction between performance appraisal and performance management is that:",
+    "options": {
+      "A": "Appraisal is more strategic",
+      "B": "Appraisal includes coaching and development",
+      "C": "Appraisal focuses only on evaluation while PM is continuous",
+      "D": "PM occurs only after appraisal"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q15",
+    "question_number": 15,
+    "week": 1,
+    "topic": "Week 1 - PM Process & Reward Basics",
+    "question": "Sales executives being evaluated only on urban targets, while the company's goal is rural expansion, illustrates:",
+    "options": {
+      "A": "Lack of financial incentives",
+      "B": "Poor strategic alignment of goals",
+      "C": "Inadequate supervision",
+      "D": "Excessive employee participation"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q16",
+    "question_number": 16,
+    "week": 1,
+    "topic": "Week 1 - PM Process & Reward Basics",
+    "question": "Discussing expected outcomes, standards, timelines, and competencies at the start of the year represents which stage of PM?",
+    "options": {
+      "A": "Performance review",
+      "B": "Performance execution",
+      "C": "Performance planning",
+      "D": "Performance renewal"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q17",
+    "question_number": 17,
+    "week": 1,
+    "topic": "Week 1 - PM Process & Reward Basics",
+    "question": "An employee tracking progress, coordinating with colleagues, and working toward agreed targets (before the formal review) is in the ______ phase.",
+    "options": {
+      "A": "Performance planning",
+      "B": "Performance assessment",
+      "C": "Performance execution",
+      "D": "Performance renewal"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q18",
+    "question_number": 18,
+    "week": 1,
+    "topic": "Week 1 - PM Process & Reward Basics",
+    "question": "A manager providing constructive guidance to help an employee overcome obstacles BEFORE they affect outcomes demonstrates:",
+    "options": {
+      "A": "Punitive supervision",
+      "B": "Performance ranking",
+      "C": "Continuous feedback and coaching",
+      "D": "Cost control"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q19",
+    "question_number": 19,
+    "week": 1,
+    "topic": "Week 1 - PM Process & Reward Basics",
+    "question": "Allowing employees freedom in completing assignments but requiring them to justify results during reviews reflects:",
+    "options": {
+      "A": "Centralized control",
+      "B": "Empowerment without accountability",
+      "C": "Empowerment with accountability",
+      "D": "Informal supervision"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q20",
+    "question_number": 20,
+    "week": 1,
+    "topic": "Week 1 - PM Process & Reward Basics",
+    "question": "The correct sequence of performance management cycle steps is:",
+    "options": {
+      "A": "Review - Plan - Reward - Monitor",
+      "B": "Plan - Act - Monitor - Review",
+      "C": "Monitor - Reward - Review - Plan",
+      "D": "Act - Evaluate - Promote - Plan"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q21",
+    "question_number": 21,
+    "week": 1,
+    "topic": "Week 1 - PM Process & Reward Basics",
+    "question": "A company that provides salary, recognition certificates, career development, and project leadership opportunities understands that reward management includes:",
+    "options": {
+      "A": "Only monetary benefits",
+      "B": "Both financial and non-financial rewards",
+      "C": "Only promotions",
+      "D": "Rewards unrelated to performance"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q22",
+    "question_number": 22,
+    "week": 1,
+    "topic": "Week 1 - PM Process & Reward Basics",
+    "question": "An employee receives a cash bonus; another gets public recognition and a prestigious leadership program. Which statement is most accurate?",
+    "options": {
+      "A": "Both received financial rewards",
+      "B": "The first received a non-financial reward",
+      "C": "The first received a financial reward; the second received primarily non-financial rewards",
+      "D": "Neither received a reward"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q23",
+    "question_number": 23,
+    "week": 1,
+    "topic": "Week 1 - PM Process & Reward Basics",
+    "question": "Which of the following is an example of a NON-FINANCIAL reward?",
+    "options": {
+      "A": "Annual bonus",
+      "B": "Provident fund contribution",
+      "C": "Public recognition at a company event",
+      "D": "Salary increment"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q24",
+    "question_number": 24,
+    "week": 1,
+    "topic": "Week 1 - PM Process & Reward Basics",
+    "question": "Performance renewal in the PM cycle primarily involves:",
+    "options": {
+      "A": "Setting entirely new unrelated goals",
+      "B": "Learning from the past cycle to improve future performance planning",
+      "C": "Replacing the employee",
+      "D": "Conducting a salary survey"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q25",
+    "question_number": 25,
+    "week": 2,
+    "topic": "Week 2 - Strategic Alignment & SWOT",
+    "question": "Employee performance goals focused only on cost reduction while the company wants to be the top telemedicine provider illustrates a failure of:",
+    "options": {
+      "A": "Job evaluation",
+      "B": "Strategic alignment of performance management",
+      "C": "Employee monitoring",
+      "D": "Workforce downsizing"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q26",
+    "question_number": 26,
+    "week": 2,
+    "topic": "Week 2 - Strategic Alignment & SWOT",
+    "question": "Strategic planning is BEST described as:",
+    "options": {
+      "A": "Focusing primarily on resource allocation",
+      "B": "Determining long-term goals and allocating resources to achieve them",
+      "C": "An annual budgeting exercise",
+      "D": "Concerned mainly with operational efficiency"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q27",
+    "question_number": 27,
+    "week": 2,
+    "topic": "Week 2 - Strategic Alignment & SWOT",
+    "question": "A company with skilled designers and growing consumer demand for sustainable clothing should leverage which SWOT combination?",
+    "options": {
+      "A": "Weakness-Threat",
+      "B": "Weakness-Opportunity",
+      "C": "Strength-Opportunity",
+      "D": "Strength-Threat"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q28",
+    "question_number": 28,
+    "week": 2,
+    "topic": "Week 2 - Strategic Alignment & SWOT",
+    "question": "Outdated machinery combined with technologically advanced new competitors entering the market represents which SWOT pairing?",
+    "options": {
+      "A": "Strength and Opportunity",
+      "B": "Threat and Weakness",
+      "C": "Opportunity and Weakness",
+      "D": "Strength and Threat"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q29",
+    "question_number": 29,
+    "week": 2,
+    "topic": "Week 2 - Strategic Alignment & SWOT",
+    "question": "A vision statement reading 'We hope to do many good things for many people in the future' was rejected because it:",
+    "options": {
+      "A": "Was too specific",
+      "B": "Lacked clarity and inspiration",
+      "C": "Focused too much on customers",
+      "D": "Was measurable"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q30",
+    "question_number": 30,
+    "week": 2,
+    "topic": "Week 2 - Strategic Alignment & SWOT",
+    "question": "Giving performance bonuses ONLY when projects are delivered successfully and on time demonstrates which strategic reward role?",
+    "options": {
+      "A": "Workforce reduction",
+      "B": "Job enrichment",
+      "C": "Reward-performance linkage",
+      "D": "Encouraging absenteeism"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q31",
+    "question_number": 31,
+    "week": 2,
+    "topic": "Week 2 - Strategic Alignment & SWOT",
+    "question": "An automobile company focusing employee reviews on innovation because its strategy is electric vehicle leadership is an example of:",
+    "options": {
+      "A": "Employees being rewarded equally",
+      "B": "Employee behaviour being directed toward strategic priorities",
+      "C": "Avoiding formal evaluations",
+      "D": "Unrelated performance criteria"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q32",
+    "question_number": 32,
+    "week": 2,
+    "topic": "Week 2 - Strategic Alignment & SWOT",
+    "question": "Which of the following is the MOST SMART version of a performance objective?",
+    "options": {
+      "A": "Improve customer satisfaction significantly",
+      "B": "Improve customer satisfaction someday",
+      "C": "Increase customer satisfaction scores from 80% to 90% within 12 months",
+      "D": "Try to make customers happier"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q33",
+    "question_number": 33,
+    "week": 2,
+    "topic": "Week 2 - Strategic Alignment & SWOT",
+    "question": "A company's five-year strategy produced little impact because employee appraisals and rewards remained unchanged. What was the root cause?",
+    "options": {
+      "A": "The strategy was too long-term",
+      "B": "Employees received excessive feedback",
+      "C": "Performance management and reward systems were not aligned with the strategy",
+      "D": "The vision statement was too short"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q34",
+    "question_number": 34,
+    "week": 2,
+    "topic": "Week 2 - Strategic Alignment & SWOT",
+    "question": "Priyanka suggested conducting a SWOT analysis before launching new products, rather than merely imitating competitors, because:",
+    "options": {
+      "A": "Competitors should never be studied",
+      "B": "New products are unrelated to strategy",
+      "C": "Strategic planning should avoid long-term thinking",
+      "D": "SWOT analysis helps understand internal and external factors before strategic decisions"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q35",
+    "question_number": 35,
+    "week": 2,
+    "topic": "Week 2 - Strategic Alignment & SWOT",
+    "question": "In SWOT analysis, 'Opportunities' and 'Threats' are:",
+    "options": {
+      "A": "Internal factors",
+      "B": "External factors",
+      "C": "Financial factors only",
+      "D": "HR-specific factors"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q36",
+    "question_number": 36,
+    "week": 2,
+    "topic": "Week 2 - Strategic Alignment & SWOT",
+    "question": "Which characteristic makes a performance objective 'Achievable' in the SMART framework?",
+    "options": {
+      "A": "It must be time-bound",
+      "B": "It must be realistic given available resources and constraints",
+      "C": "It must be quantifiable",
+      "D": "It must align with market trends"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q37",
+    "question_number": 37,
+    "week": 3,
+    "topic": "Week 3 - Performance Measurement Approaches",
+    "question": "An employee who knows product features perfectly but struggles to present them persuasively to customers lacks:",
+    "options": {
+      "A": "Declarative knowledge",
+      "B": "Motivation",
+      "C": "Procedural knowledge",
+      "D": "Contextual performance"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q38",
+    "question_number": 38,
+    "week": 3,
+    "topic": "Week 3 - Performance Measurement Approaches",
+    "question": "Voluntarily helping new employees, sharing information, and assisting during emergencies (beyond assigned tasks) exemplifies:",
+    "options": {
+      "A": "Task performance",
+      "B": "Technical competence",
+      "C": "Results performance",
+      "D": "Contextual performance"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q39",
+    "question_number": 39,
+    "week": 3,
+    "topic": "Week 3 - Performance Measurement Approaches",
+    "question": "Evaluating store managers solely on annual sales and profitability while ignoring HOW outcomes were achieved uses the ______ approach.",
+    "options": {
+      "A": "Trait approach",
+      "B": "Behaviour approach",
+      "C": "Results approach",
+      "D": "Competency approach"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q40",
+    "question_number": 40,
+    "week": 3,
+    "topic": "Week 3 - Performance Measurement Approaches",
+    "question": "An objective like 'Try to improve customer service as much as possible' is problematic because it:",
+    "options": {
+      "A": "Is too challenging",
+      "B": "Lacks specificity and measurability",
+      "C": "Is not aligned with strategy",
+      "D": "Focuses too much on customers"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q41",
+    "question_number": 41,
+    "week": 3,
+    "topic": "Week 3 - Performance Measurement Approaches",
+    "question": "Capabilities essential for performing a job at an acceptable minimum level are called:",
+    "options": {
+      "A": "Differentiating competencies",
+      "B": "Leadership competencies",
+      "C": "Threshold competencies",
+      "D": "Strategic competencies"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q42",
+    "question_number": 42,
+    "week": 3,
+    "topic": "Week 3 - Performance Measurement Approaches",
+    "question": "Before evaluating employee performance in a department with rising complaints, management should FIRST:",
+    "options": {
+      "A": "Reduce employee incentives",
+      "B": "Replace underperforming employees",
+      "C": "Introduce stricter supervision",
+      "D": "Define clear performance objectives and standards"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q43",
+    "question_number": 43,
+    "week": 3,
+    "topic": "Week 3 - Performance Measurement Approaches",
+    "question": "Rating an employee as outstanding in ALL categories because of one impressive achievement illustrates:",
+    "options": {
+      "A": "Recency error",
+      "B": "Central tendency error",
+      "C": "Halo error",
+      "D": "Contrast error"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q44",
+    "question_number": 44,
+    "week": 3,
+    "topic": "Week 3 - Performance Measurement Approaches",
+    "question": "Evaluating whether project leaders encourage collaboration, communicate effectively, and resolve conflicts uses the ______ approach.",
+    "options": {
+      "A": "Results approach",
+      "B": "Financial approach",
+      "C": "Output approach",
+      "D": "Behaviour approach"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q45",
+    "question_number": 45,
+    "week": 3,
+    "topic": "Week 3 - Performance Measurement Approaches",
+    "question": "Collecting feedback from a supervisor, colleagues, subordinates, and clients to evaluate leadership effectiveness is associated with which advantage?",
+    "options": {
+      "A": "Reduces the need for employee development",
+      "B": "Eliminates all rating errors",
+      "C": "Focuses only on objective results",
+      "D": "Captures performance from multiple perspectives"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q46",
+    "question_number": 46,
+    "week": 3,
+    "topic": "Week 3 - Performance Measurement Approaches",
+    "question": "Communicating the purpose, process, and benefits of a new PMS through workshops before launching it is important because:",
+    "options": {
+      "A": "Communication reduces the need for performance reviews",
+      "B": "Employees should design the system themselves",
+      "C": "Effective communication builds understanding, trust, and acceptance",
+      "D": "Communication is required only for legal compliance"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q47",
+    "question_number": 47,
+    "week": 3,
+    "topic": "Week 3 - Performance Measurement Approaches",
+    "question": "Declarative knowledge in performance management refers to:",
+    "options": {
+      "A": "Knowing how to do a task effectively",
+      "B": "Knowing facts, concepts, and principles relevant to the job",
+      "C": "The ability to motivate others",
+      "D": "Contextual helping behaviour"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q48",
+    "question_number": 48,
+    "week": 3,
+    "topic": "Week 3 - Performance Measurement Approaches",
+    "question": "The 360-degree feedback method is named so because it gathers input from:",
+    "options": {
+      "A": "Three different managers",
+      "B": "All stakeholders surrounding the employee",
+      "C": "Exactly 360 employees",
+      "D": "Six competency dimensions"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q49",
+    "question_number": 49,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods & Errors",
+    "question": "Employees not knowing what was expected of them after PMS implementation, with departments pursuing different priorities, indicates:",
+    "options": {
+      "A": "Employees received insufficient incentives",
+      "B": "Excessive use of technology",
+      "C": "Poor goal setting and lack of strategic clarity",
+      "D": "Too many training programs"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q50",
+    "question_number": 50,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods & Errors",
+    "question": "Mandating that exactly 10% of employees must be rated outstanding, 70% average, and 20% below average uses the ______ method.",
+    "options": {
+      "A": "Critical Incident Method",
+      "B": "BARS Method",
+      "C": "Assessment Centre Method",
+      "D": "Bell Curve Method"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q51",
+    "question_number": 51,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods & Errors",
+    "question": "Jointly deciding performance goals at year-start, reviewing progress together, and evaluating against agreed objectives describes:",
+    "options": {
+      "A": "Forced Ranking",
+      "B": "Management by Objectives (MBO)",
+      "C": "Graphic Rating Scale",
+      "D": "Confidential Reporting"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q52",
+    "question_number": 52,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods & Errors",
+    "question": "Using SMART objectives at year-start but ignoring them during reviews-relying on personal impressions instead-illustrates:",
+    "options": {
+      "A": "Effective performance monitoring",
+      "B": "Alignment between planning and review",
+      "C": "Excessive employee empowerment",
+      "D": "Disconnection between goal-setting and evaluation"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q53",
+    "question_number": 53,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods & Errors",
+    "question": "Shifting from confidential reports (unknown to employees) to a system where employees can view, discuss, and provide feedback on assessments represents:",
+    "options": {
+      "A": "Increased secrecy in appraisals",
+      "B": "Elimination of performance evaluation",
+      "C": "Shift toward transparent and participative appraisal",
+      "D": "Complete replacement of supervisors"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q54",
+    "question_number": 54,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods & Errors",
+    "question": "Developing specific behavioural examples representing poor, average, and excellent performance for each dimension describes which method?",
+    "options": {
+      "A": "Assessment Centre",
+      "B": "Forced Distribution",
+      "C": "Behaviourally Anchored Rating Scales (BARS)",
+      "D": "Essay Method"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q55",
+    "question_number": 55,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods & Errors",
+    "question": "Inviting candidates to participate in business simulations, group discussions, and role plays with trained assessors observing behaviour describes:",
+    "options": {
+      "A": "Bell Curve Method",
+      "B": "Critical Incident Method",
+      "C": "Graphic Rating Scale",
+      "D": "Assessment Centre Method"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q56",
+    "question_number": 56,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods & Errors",
+    "question": "Rating almost every team member as 'Average' to avoid difficult conversations, despite evidence of varied performance, is an example of:",
+    "options": {
+      "A": "Halo Error",
+      "B": "Leniency Error",
+      "C": "Recency Error",
+      "D": "Central Tendency Error"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q57",
+    "question_number": 57,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods & Errors",
+    "question": "The Critical Incident Method of appraisal involves:",
+    "options": {
+      "A": "Rating employees on a forced distribution curve",
+      "B": "Recording specific examples of exceptionally good or poor behaviour",
+      "C": "Comparing employees in pairs",
+      "D": "Using computer simulations to assess competency"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q58",
+    "question_number": 58,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods & Errors",
+    "question": "A major criticism of the Bell Curve (Forced Distribution) Method is that it:",
+    "options": {
+      "A": "Requires too many raters",
+      "B": "Focuses only on non-financial outcomes",
+      "C": "May force artificial rankings that do not reflect actual performance distribution",
+      "D": "Is too simple to administer"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q59",
+    "question_number": 59,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods & Errors",
+    "question": "MBO (Management by Objectives) was originally proposed by:",
+    "options": {
+      "A": "Frederick Herzberg",
+      "B": "Peter Drucker",
+      "C": "Douglas McGregor",
+      "D": "Victor Vroom"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q60",
+    "question_number": 60,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods & Errors",
+    "question": "Which appraisal method is MOST suitable for identifying high-potential candidates for senior leadership roles?",
+    "options": {
+      "A": "Graphic Rating Scale",
+      "B": "Confidential Report",
+      "C": "Assessment Centre Method",
+      "D": "Bell Curve Method"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q61",
+    "question_number": 61,
+    "week": 5,
+    "topic": "Week 5 - Development, Teams & Coaching",
+    "question": "Discussing future career aspirations, skills to develop, and experiences needed for larger responsibilities during an annual review describes:",
+    "options": {
+      "A": "Job evaluation",
+      "B": "Compensation benchmarking",
+      "C": "Workforce planning",
+      "D": "Personal Development Planning"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q62",
+    "question_number": 62,
+    "week": 5,
+    "topic": "Week 5 - Development, Teams & Coaching",
+    "question": "An employee receiving public CEO praise, newsletter features, and an opportunity to present best practices has primarily received:",
+    "options": {
+      "A": "Direct financial reward",
+      "B": "Deferred compensation",
+      "C": "Non-financial reward",
+      "D": "Retirement benefit"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q63",
+    "question_number": 63,
+    "week": 5,
+    "topic": "Week 5 - Development, Teams & Coaching",
+    "question": "A manager meeting a new supervisor weekly to discuss real challenges, provide feedback, and give more challenging work over time is performing:",
+    "options": {
+      "A": "Job rotation",
+      "B": "Coaching",
+      "C": "Assessment centre evaluation",
+      "D": "Performance ranking"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q64",
+    "question_number": 64,
+    "week": 5,
+    "topic": "Week 5 - Development, Teams & Coaching",
+    "question": "Employees from different departments brought together temporarily to complete a project and returning afterwards have formed a ______ team.",
+    "options": {
+      "A": "Work team",
+      "B": "Service team",
+      "C": "Self-managed team",
+      "D": "Project team"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q65",
+    "question_number": 65,
+    "week": 5,
+    "topic": "Week 5 - Development, Teams & Coaching",
+    "question": "Some employees contributing less because they know they will receive the same bonus as everyone else is called:",
+    "options": {
+      "A": "Job enrichment",
+      "B": "Social loafing",
+      "C": "Strategic dialogue",
+      "D": "Competency mapping"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q66",
+    "question_number": 66,
+    "week": 5,
+    "topic": "Week 5 - Development, Teams & Coaching",
+    "question": "Highlighting an employee's achievement publicly and giving her a high-visibility project most likely results in:",
+    "options": {
+      "A": "Reduced employee motivation",
+      "B": "Greater dependence on financial incentives",
+      "C": "Lower team cohesion",
+      "D": "Increased intrinsic motivation and recognition"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q67",
+    "question_number": 67,
+    "week": 5,
+    "topic": "Week 5 - Development, Teams & Coaching",
+    "question": "When a hardworking team member receives the same bonus as a low-contributing colleague, she perceives the system as unfair because:",
+    "options": {
+      "A": "The team was too small",
+      "B": "The project ended successfully",
+      "C": "Rewards were not linked to individual contribution",
+      "D": "Team rewards should always be equal"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q68",
+    "question_number": 68,
+    "week": 5,
+    "topic": "Week 5 - Development, Teams & Coaching",
+    "question": "A bonus split where 70% depends on team performance and 30% on individual contribution primarily achieves:",
+    "options": {
+      "A": "Complete elimination of competition",
+      "B": "Discouragement of teamwork",
+      "C": "Removal of performance evaluation",
+      "D": "Balance between team collaboration and individual accountability"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q69",
+    "question_number": 69,
+    "week": 5,
+    "topic": "Week 5 - Development, Teams & Coaching",
+    "question": "A senior colleague who reviews a newcomer's work, explains mistakes, gives suggestions, and gradually assigns harder tasks is primarily acting as a:",
+    "options": {
+      "A": "Auditor",
+      "B": "Recruiter",
+      "C": "Coach",
+      "D": "Compensation specialist"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q70",
+    "question_number": 70,
+    "week": 5,
+    "topic": "Week 5 - Development, Teams & Coaching",
+    "question": "A manager asking 'Where do you see yourself in 5 years?' and 'What capabilities do you want to develop?' is conducting a:",
+    "options": {
+      "A": "Corrective feedback session",
+      "B": "Technical review meeting",
+      "C": "Disciplinary interview",
+      "D": "Strategic dialogue"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q71",
+    "question_number": 71,
+    "week": 5,
+    "topic": "Week 5 - Development, Teams & Coaching",
+    "question": "Which of the following BEST prevents social loafing in team reward systems?",
+    "options": {
+      "A": "Paying all team members equally",
+      "B": "Including an individual contribution component in the reward",
+      "C": "Eliminating bonuses altogether",
+      "D": "Reducing team size to two members"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q72",
+    "question_number": 72,
+    "week": 5,
+    "topic": "Week 5 - Development, Teams & Coaching",
+    "question": "Personal Development Planning (PDP) primarily focuses on:",
+    "options": {
+      "A": "Immediate salary revision",
+      "B": "Identifying disciplinary actions",
+      "C": "Future growth, skill development, and career aspirations",
+      "D": "Calculating retirement benefits"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q73",
+    "question_number": 73,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards & Fairness",
+    "question": "A company rewarding employees with salary, bonuses, flexible work, learning opportunities, AND recognition is following the ______ philosophy.",
+    "options": {
+      "A": "Performance-related pay",
+      "B": "Piece-rate compensation",
+      "C": "Job evaluation system",
+      "D": "Total Reward approach"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q74",
+    "question_number": 74,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards & Fairness",
+    "question": "An employee declining a higher-salary offer to stay because of flexible hours, career development, and a supportive culture is motivated by:",
+    "options": {
+      "A": "Variable pay",
+      "B": "Procedural justice",
+      "C": "Relational rewards",
+      "D": "Job enlargement"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q75",
+    "question_number": 75,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards & Fairness",
+    "question": "Redesigning rewards so employees who generate successful product ideas receive long-term incentives (to support an innovation strategy) exemplifies:",
+    "options": {
+      "A": "Administrative compensation",
+      "B": "Seniority-based pay",
+      "C": "Strategic Reward Management",
+      "D": "Cost-cutting compensation"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q76",
+    "question_number": 76,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards & Fairness",
+    "question": "Two employees performing similar work discovering unequal pay without justification raises concerns about which reward principle?",
+    "options": {
+      "A": "Transparency",
+      "B": "Equity",
+      "C": "Flexibility",
+      "D": "Teamwork"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q77",
+    "question_number": 77,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards & Fairness",
+    "question": "An employee satisfied with salary but frustrated by limited learning and career growth opportunities is lacking which pillar of the Hay Group engaged performance model?",
+    "options": {
+      "A": "Tangible rewards",
+      "B": "Procedural justice",
+      "C": "Future growth opportunity",
+      "D": "Job evaluation"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q78",
+    "question_number": 78,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards & Fairness",
+    "question": "Providing relocation assistance, housing support, and foreign-service allowance to an employee on international assignment represents:",
+    "options": {
+      "A": "Team reward management",
+      "B": "Competency-based pay",
+      "C": "Gain-sharing",
+      "D": "International reward management"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q79",
+    "question_number": 79,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards & Fairness",
+    "question": "Employees understanding exactly how bonuses are calculated, who decides rewards, and how to appeal unfair decisions reflects ______ in the reward system.",
+    "options": {
+      "A": "Centralization",
+      "B": "Confidentiality",
+      "C": "Transparency",
+      "D": "Standardization"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q80",
+    "question_number": 80,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards & Fairness",
+    "question": "Employees accepting a promotion decision even when not promoted, because the process applied clear documented criteria equally, illustrates:",
+    "options": {
+      "A": "Distributive justice",
+      "B": "External equity",
+      "C": "Procedural justice",
+      "D": "Financial reward"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q81",
+    "question_number": 81,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards & Fairness",
+    "question": "Providing modern tools, safe conditions, skill development, and access to needed information to maintain engagement reflects which Hay Group pillar?",
+    "options": {
+      "A": "Tangible rewards",
+      "B": "Future growth",
+      "C": "Work-life balance",
+      "D": "Enabling environment"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q82",
+    "question_number": 82,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards & Fairness",
+    "question": "The argument that 'fairness requires rewards to reflect contribution and performance' distinguishes equity from:",
+    "options": {
+      "A": "Justice",
+      "B": "Equality",
+      "C": "Transparency",
+      "D": "Benchmarking"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q83",
+    "question_number": 83,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards & Fairness",
+    "question": "Which of the following BEST describes distributive justice in reward management?",
+    "options": {
+      "A": "Fairness in the procedures used to make reward decisions",
+      "B": "Fairness in the actual reward amounts relative to contribution",
+      "C": "Equal pay for all employees regardless of performance",
+      "D": "Transparency about bonus calculation methods"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q84",
+    "question_number": 84,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards & Fairness",
+    "question": "Strategic Reward Management ensures that rewards are aligned with:",
+    "options": {
+      "A": "Only statutory compliance requirements",
+      "B": "The organization's long-term business goals and people strategy",
+      "C": "Competitors' pay structures",
+      "D": "Individual employee preferences exclusively"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q85",
+    "question_number": 85,
+    "week": 7,
+    "topic": "Week 7 - Incentive Theories & Pay Plans",
+    "question": "Paying employees significantly above market rates and observing reduced turnover and increased productivity is explained by:",
+    "options": {
+      "A": "Human Capital Theory",
+      "B": "Equity Theory",
+      "C": "Efficiency Wage Theory",
+      "D": "Reinforcement Theory"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q86",
+    "question_number": 86,
+    "week": 7,
+    "topic": "Week 7 - Incentive Theories & Pay Plans",
+    "question": "Employees sharing savings from productivity-improvement ideas with management is characteristic of which plan?",
+    "options": {
+      "A": "ESOP Plan",
+      "B": "Cafeteria Benefit Plan",
+      "C": "Halsey Plan",
+      "D": "Scanlon Plan"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q87",
+    "question_number": 87,
+    "week": 7,
+    "topic": "Week 7 - Incentive Theories & Pay Plans",
+    "question": "Workers paid entirely by units produced with NO guaranteed minimum wage below a standard mirrors:",
+    "options": {
+      "A": "Rowan Plan",
+      "B": "Halsey Plan",
+      "C": "Gantt Task and Bonus Plan",
+      "D": "Taylor's Differential Piece Rate System"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q88",
+    "question_number": 88,
+    "week": 7,
+    "topic": "Week 7 - Incentive Theories & Pay Plans",
+    "question": "Granting stock options convertible to shares after a few years IF the employee remains with the company aims primarily at:",
+    "options": {
+      "A": "Reducing training costs",
+      "B": "Providing a welfare benefit",
+      "C": "Replacing fixed salaries",
+      "D": "Creating employee ownership and long-term commitment"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q89",
+    "question_number": 89,
+    "week": 7,
+    "topic": "Week 7 - Incentive Theories & Pay Plans",
+    "question": "A fixed salary PLUS additional payment dependent on achieving specific performance targets describes a ______ system.",
+    "options": {
+      "A": "Base pay system",
+      "B": "Seniority pay system",
+      "C": "Contingent pay system",
+      "D": "Equal reward system"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q90",
+    "question_number": 90,
+    "week": 7,
+    "topic": "Week 7 - Incentive Theories & Pay Plans",
+    "question": "A retirement benefit accumulated through mandatory monthly contributions by both employee and employer is the:",
+    "options": {
+      "A": "ESOP",
+      "B": "Performance Bonus",
+      "C": "Retention Allowance",
+      "D": "Provident Fund"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q91",
+    "question_number": 91,
+    "week": 7,
+    "topic": "Week 7 - Incentive Theories & Pay Plans",
+    "question": "Project managers receiving incentives ONLY when predefined client satisfaction, profitability, AND completion targets are met exemplifies:",
+    "options": {
+      "A": "Team-based compensation",
+      "B": "Fixed compensation",
+      "C": "Performance-related pay",
+      "D": "Seniority-based rewards"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q92",
+    "question_number": 92,
+    "week": 7,
+    "topic": "Week 7 - Incentive Theories & Pay Plans",
+    "question": "An employee earning higher compensation because of specialized certifications that enhance productivity is explained by:",
+    "options": {
+      "A": "Equity Theory",
+      "B": "Expectancy Theory",
+      "C": "Human Capital Theory",
+      "D": "Reinforcement Theory"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q93",
+    "question_number": 93,
+    "week": 7,
+    "topic": "Week 7 - Incentive Theories & Pay Plans",
+    "question": "A benefits program where employees choose from options such as health insurance, childcare, education, or travel within a fixed budget is called:",
+    "options": {
+      "A": "Fixed Benefits Plan",
+      "B": "Recognition Scheme",
+      "C": "Gain-Sharing Plan",
+      "D": "Cafeteria (Flex-Fund) Plan"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q94",
+    "question_number": 94,
+    "week": 7,
+    "topic": "Week 7 - Incentive Theories & Pay Plans",
+    "question": "Introducing yoga sessions, mental health counselling, fitness memberships, and health check-ups in response to employee burnout is a ______ initiative.",
+    "options": {
+      "A": "Team pay scheme",
+      "B": "Contingent pay plan",
+      "C": "Wellness program",
+      "D": "Recognition scheme"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q95",
+    "question_number": 95,
+    "week": 7,
+    "topic": "Week 7 - Incentive Theories & Pay Plans",
+    "question": "The Halsey Incentive Plan differs from Taylor's Piece Rate in that it:",
+    "options": {
+      "A": "Pays entirely on output with no minimum guarantee",
+      "B": "Shares time saved between the worker and employer",
+      "C": "Links pay to educational qualifications",
+      "D": "Applies only to managerial roles"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q96",
+    "question_number": 96,
+    "week": 7,
+    "topic": "Week 7 - Incentive Theories & Pay Plans",
+    "question": "ESOPs (Employee Stock Ownership Plans) primarily align employee interests with:",
+    "options": {
+      "A": "Trade unions",
+      "B": "Government regulators",
+      "C": "Long-term company shareholder value",
+      "D": "Competitor benchmarks"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q97",
+    "question_number": 97,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "Two jobs with different responsibilities placed in the same pay grade only because of similar titles resulted in dissatisfaction due to failure to:",
+    "options": {
+      "A": "Conduct market rate analysis",
+      "B": "Introduce broad-banding",
+      "C": "Evaluate the relative worth of jobs",
+      "D": "Implement performance-related pay"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q98",
+    "question_number": 98,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "CNC operators commanding significantly higher wages because competitors aggressively recruit from the same labour pool is explained by:",
+    "options": {
+      "A": "Agency Theory",
+      "B": "Equity Theory",
+      "C": "Expectancy Theory",
+      "D": "Classical Economic Theory"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q99",
+    "question_number": 99,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "Identifying compensable factors (knowledge, problem-solving, responsibility, working conditions), assigning weights, and scoring jobs uses the ______ method.",
+    "options": {
+      "A": "Job Ranking Method",
+      "B": "Paired Comparison Method",
+      "C": "Job Classification Method",
+      "D": "Point-Factor Method"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q100",
+    "question_number": 100,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "Linking executive compensation to long-term stock performance to prevent short-term focus is supported by:",
+    "options": {
+      "A": "Human Capital Theory",
+      "B": "Labour Theory of Value",
+      "C": "Agency Theory",
+      "D": "Reinforcement Theory"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q101",
+    "question_number": 101,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "In Point-Factor job evaluation, defining compensable factors before assigning scores is critical because it:",
+    "options": {
+      "A": "Determines market salary levels",
+      "B": "Establishes the factors against which jobs will be assessed",
+      "C": "Assigns employees to grades",
+      "D": "Eliminates external wage comparisons"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q102",
+    "question_number": 102,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "Evaluating a new unique role by comparing it with existing already-graded internal roles uses ______ technique.",
+    "options": {
+      "A": "Market Pricing",
+      "B": "External Benchmarking",
+      "C": "Competency Mapping",
+      "D": "Internal Benchmarking"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q103",
+    "question_number": 103,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "Replacing 18 pay grades with 5 wide salary bands to give managers greater flexibility is called a ______.",
+    "options": {
+      "A": "Narrow-Graded Structure",
+      "B": "Job Family Structure",
+      "C": "Spot Salary Structure",
+      "D": "Broad-Banded Structure"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q104",
+    "question_number": 104,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "Discovering that internal software architects earn 15% below industry median and recommending salary adjustments is called:",
+    "options": {
+      "A": "Internal Equity Analysis",
+      "B": "Job Ranking",
+      "C": "Market Rate Analysis",
+      "D": "Job Classification"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q105",
+    "question_number": 105,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "Placing two jobs with different titles in the same grade because they require similar responsibility and expertise uses:",
+    "options": {
+      "A": "Role-to-Role Matching",
+      "B": "Forced Ranking",
+      "C": "Job Matching",
+      "D": "Role-to-Grade Analytical Matching"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q106",
+    "question_number": 106,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "Preferring detailed duty and responsibility descriptions over job titles when matching compensation survey data is better because:",
+    "options": {
+      "A": "Job titles always reflect pay grades",
+      "B": "Market surveys require legal compliance",
+      "C": "Job descriptions provide a more accurate basis for comparison than titles alone",
+      "D": "Equal pay legislation prohibits title comparisons"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q107",
+    "question_number": 107,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "The Job Ranking method of job evaluation is BEST described as:",
+    "options": {
+      "A": "Assigning point scores to compensable factors",
+      "B": "Ranking jobs from highest to lowest worth in a non-analytical way",
+      "C": "Grouping jobs into predetermined grades",
+      "D": "Comparing jobs against market benchmarks"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q108",
+    "question_number": 108,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "A pay structure with many narrow grades (e.g., 20+ grades) typically offers:",
+    "options": {
+      "A": "High flexibility for lateral moves",
+      "B": "Clear promotion steps and defined career progression",
+      "C": "Minimal administrative burden",
+      "D": "Broad ranges that accommodate diverse roles"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q109",
+    "question_number": 109,
+    "week": 9,
+    "topic": "Week 9 - Executive Pay & Incentive Design",
+    "question": "Linking CEO compensation to long-term stock performance to prevent excessive short-term focus is most strongly supported by:",
+    "options": {
+      "A": "Human Capital Theory",
+      "B": "Equity Theory",
+      "C": "Agency Theory",
+      "D": "Reinforcement Theory"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q110",
+    "question_number": 110,
+    "week": 9,
+    "topic": "Week 9 - Executive Pay & Incentive Design",
+    "question": "A very large compensation gap between CEO and other VPs, intended to motivate ambitious leaders to perform better, is explained by:",
+    "options": {
+      "A": "Efficiency Wage Theory",
+      "B": "Equity Theory",
+      "C": "Human Capital Theory",
+      "D": "Tournament Theory"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q111",
+    "question_number": 111,
+    "week": 9,
+    "topic": "Week 9 - Executive Pay & Incentive Design",
+    "question": "Of the following pay components, which MOST directly aligns a CFO's interests with shareholders?",
+    "options": {
+      "A": "Basic Salary",
+      "B": "Pension Benefits",
+      "C": "Allowances",
+      "D": "Stock Options"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q112",
+    "question_number": 112,
+    "week": 9,
+    "topic": "Week 9 - Executive Pay & Incentive Design",
+    "question": "A CEO approving risky short-term investments to maximize a bonus tied entirely to short-term profits is an example of:",
+    "options": {
+      "A": "Wage Compression",
+      "B": "Procedural Justice",
+      "C": "Broad-Banding",
+      "D": "Moral Hazard"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q113",
+    "question_number": 113,
+    "week": 9,
+    "topic": "Week 9 - Executive Pay & Incentive Design",
+    "question": "A sales representative receiving NO fixed salary and being paid entirely as a percentage of sales uses a ______ arrangement.",
+    "options": {
+      "A": "Salary Plus Bonus",
+      "B": "Salary Plus Commission",
+      "C": "Profit Sharing Plan",
+      "D": "Commission-Only Plan"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q114",
+    "question_number": 114,
+    "week": 9,
+    "topic": "Week 9 - Executive Pay & Incentive Design",
+    "question": "Rewarding customer service staff only on calls handled per day, leading to rushed interactions and increased complaints, illustrates that:",
+    "options": {
+      "A": "Individual incentives always improve service quality",
+      "B": "Reward systems can unintentionally encourage undesirable behaviours",
+      "C": "Salary-based rewards eliminate performance problems",
+      "D": "Customer service staff should not receive incentives"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q115",
+    "question_number": 115,
+    "week": 9,
+    "topic": "Week 9 - Executive Pay & Incentive Design",
+    "question": "According to Tampoe's framework, which characteristic BEST reflects a key motivator for knowledge workers?",
+    "options": {
+      "A": "Piece-rate earnings",
+      "B": "Physical effort rewards",
+      "C": "Autonomy and personal growth",
+      "D": "Attendance-based incentives"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q116",
+    "question_number": 116,
+    "week": 9,
+    "topic": "Week 9 - Executive Pay & Incentive Design",
+    "question": "Machine operators in a Payment-by-Results (PBR) scheme focusing on quantity and causing quality defects illustrates a ______ of PBR.",
+    "options": {
+      "A": "Reduced productivity",
+      "B": "Excessive job security",
+      "C": "Quality deterioration due to output focus",
+      "D": "Lack of employee motivation"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q117",
+    "question_number": 117,
+    "week": 9,
+    "topic": "Week 9 - Executive Pay & Incentive Design",
+    "question": "Employees perceiving their output-based reward as unfair due to machine breakdowns (beyond their control) relates to:",
+    "options": {
+      "A": "Employees preferring fixed salaries in all situations",
+      "B": "Production targets being exceeded",
+      "C": "PBR increasing transparency",
+      "D": "Rewards being influenced by factors beyond employee control"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q118",
+    "question_number": 118,
+    "week": 9,
+    "topic": "Week 9 - Executive Pay & Incentive Design",
+    "question": "The BEST reward design for relationship managers who need to increase sales AND maintain long-term client relationships is:",
+    "options": {
+      "A": "Commission based solely on sales volume",
+      "B": "Fixed salary only",
+      "C": "Salary plus bonus linked to both sales and customer satisfaction measures",
+      "D": "Seniority-based increments only"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q119",
+    "question_number": 119,
+    "week": 9,
+    "topic": "Week 9 - Executive Pay & Incentive Design",
+    "question": "Agency Theory primarily addresses the conflict of interest between:",
+    "options": {
+      "A": "Employees and trade unions",
+      "B": "Principals (shareholders) and agents (executives)",
+      "C": "HR department and line managers",
+      "D": "Government regulators and corporations"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q120",
+    "question_number": 120,
+    "week": 9,
+    "topic": "Week 9 - Executive Pay & Incentive Design",
+    "question": "The concept of 'Moral Hazard' in executive reward management occurs when:",
+    "options": {
+      "A": "An executive refuses a performance bonus",
+      "B": "An executive takes excessive risks because the downside is borne by others",
+      "C": "Pay transparency is introduced in an organization",
+      "D": "Stock options are granted to all employees"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q121",
+    "question_number": 121,
+    "week": 10,
+    "topic": "Week 10 - Government Pay & Pension",
+    "question": "The minimum basic pay recommended under the 7th Central Pay Commission of India was:",
+    "options": {
+      "A": "Rs. 15,000",
+      "B": "Rs. 21,000",
+      "C": "Rs. 25,000",
+      "D": "Rs. 18,000"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q122",
+    "question_number": 122,
+    "week": 10,
+    "topic": "Week 10 - Government Pay & Pension",
+    "question": "Multiplying an employee's existing pay by a uniform factor to place it in the new 7th CPC pay matrix is called the:",
+    "options": {
+      "A": "Dearness Allowance",
+      "B": "Risk and Hardship Index",
+      "C": "Fitment Factor",
+      "D": "Pension Multiplier"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q123",
+    "question_number": 123,
+    "week": 10,
+    "topic": "Week 10 - Government Pay & Pension",
+    "question": "A pension plan where the payout is predetermined based on years of service and final salary is called a ______ scheme.",
+    "options": {
+      "A": "Defined Contribution Scheme",
+      "B": "Hybrid Pension Scheme",
+      "C": "Market-Linked Pension Scheme",
+      "D": "Defined Benefit Scheme"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q124",
+    "question_number": 124,
+    "week": 10,
+    "topic": "Week 10 - Government Pay & Pension",
+    "question": "The government's employer contribution to NPS accounts was increased TO 14% FROM:",
+    "options": {
+      "A": "8%",
+      "B": "10%",
+      "C": "12%",
+      "D": "15%"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q125",
+    "question_number": 125,
+    "week": 10,
+    "topic": "Week 10 - Government Pay & Pension",
+    "question": "The approved annual increment rate under the 7th Pay Commission is:",
+    "options": {
+      "A": "2%",
+      "B": "2.5%",
+      "C": "4%",
+      "D": "3%"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q126",
+    "question_number": 126,
+    "week": 10,
+    "topic": "Week 10 - Government Pay & Pension",
+    "question": "Under the Atal Pension Yojana (APY), the MAXIMUM assured monthly pension available is:",
+    "options": {
+      "A": "Rs. 2,000",
+      "B": "Rs. 3,000",
+      "C": "Rs. 4,000",
+      "D": "Rs. 5,000"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q127",
+    "question_number": 127,
+    "week": 10,
+    "topic": "Week 10 - Government Pay & Pension",
+    "question": "Special allowances for employees in dangerous or difficult working conditions (under 7th CPC) are governed by the:",
+    "options": {
+      "A": "Pay Rationalization Matrix",
+      "B": "Compensation Adjustment Grid",
+      "C": "Occupational Exposure Index",
+      "D": "Risk and Hardship Matrix"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q128",
+    "question_number": 128,
+    "week": 10,
+    "topic": "Week 10 - Government Pay & Pension",
+    "question": "The regulatory authority that supervises pension fund managers and NPS compliance is:",
+    "options": {
+      "A": "RBI",
+      "B": "SEBI",
+      "C": "IRDAI",
+      "D": "PFRDA"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q129",
+    "question_number": 129,
+    "week": 10,
+    "topic": "Week 10 - Government Pay & Pension",
+    "question": "An NPS account that allows flexible deposits and withdrawals for short-term financial needs is the:",
+    "options": {
+      "A": "EPF Account",
+      "B": "PRAN Plus Account",
+      "C": "NPS Tier II Account",
+      "D": "CGEGIS Account"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q130",
+    "question_number": 130,
+    "week": 10,
+    "topic": "Week 10 - Government Pay & Pension",
+    "question": "The CORRECT distinction between defined benefit and defined contribution pension plans is:",
+    "options": {
+      "A": "Defined contribution plans guarantee pension; defined benefit depends on market performance",
+      "B": "Both plans provide identical benefits",
+      "C": "Defined benefit plans guarantee pension; defined contribution depends on contributions and investment returns",
+      "D": "Only government employees can join defined contribution plans"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q131",
+    "question_number": 131,
+    "week": 10,
+    "topic": "Week 10 - Government Pay & Pension",
+    "question": "NPS Tier I account is primarily characterized by:",
+    "options": {
+      "A": "Free withdrawal at any time",
+      "B": "Restrictions on withdrawal until retirement",
+      "C": "Investment only in government bonds",
+      "D": "No employer contribution"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q132",
+    "question_number": 132,
+    "week": 10,
+    "topic": "Week 10 - Government Pay & Pension",
+    "question": "Dearness Allowance (DA) in government pay is primarily linked to:",
+    "options": {
+      "A": "Employee seniority",
+      "B": "Inflation and changes in the Consumer Price Index",
+      "C": "Annual performance ratings",
+      "D": "Geographic posting location"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q133",
+    "question_number": 133,
+    "week": 11,
+    "topic": "Week 11 - Reward System Design",
+    "question": "Redesigning rewards to include health benefits, career development, flexible work, and recognition (beyond salary) reflects the ______ philosophy.",
+    "options": {
+      "A": "Market Pricing Approach",
+      "B": "Job Evaluation Approach",
+      "C": "Broad-Banding Approach",
+      "D": "Total Rewards Approach"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q134",
+    "question_number": 134,
+    "week": 11,
+    "topic": "Week 11 - Reward System Design",
+    "question": "The argument that a reward system should NOT be left unchanged for 10 years is valid because:",
+    "options": {
+      "A": "Reward systems are legally required to change annually",
+      "B": "External consultants require periodic projects",
+      "C": "Reward systems must evolve with changing business strategies and workforce needs",
+      "D": "Reward systems should only change when employees demand it"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q135",
+    "question_number": 135,
+    "week": 11,
+    "topic": "Week 11 - Reward System Design",
+    "question": "An HR Director spending time defining what the organization wants the reward system to ACHIEVE before discussing pay structures is focusing on:",
+    "options": {
+      "A": "Pilot Testing",
+      "B": "Market Benchmarking",
+      "C": "Job Evaluation",
+      "D": "Setting Reward Objectives"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q136",
+    "question_number": 136,
+    "week": 11,
+    "topic": "Week 11 - Reward System Design",
+    "question": "Comparing current reward practices with leading organizations to identify gaps describes:",
+    "options": {
+      "A": "Forced Distribution",
+      "B": "Job Ranking",
+      "C": "Evidence-Based Reward Development",
+      "D": "Broad-Banding"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q137",
+    "question_number": 137,
+    "week": 11,
+    "topic": "Week 11 - Reward System Design",
+    "question": "Conducting a small-scale trial of a redesigned reward system in one department before full rollout is called:",
+    "options": {
+      "A": "Workforce Downsizing",
+      "B": "Job Rotation",
+      "C": "Pay Compression",
+      "D": "Pilot Testing"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q138",
+    "question_number": 138,
+    "week": 11,
+    "topic": "Week 11 - Reward System Design",
+    "question": "When an employee's salary is significantly ABOVE the maximum of her pay grade and future increases are frozen, this is called:",
+    "options": {
+      "A": "Green-Circling",
+      "B": "Broad-Banding",
+      "C": "Red-Circling",
+      "D": "Market Pricing"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q139",
+    "question_number": 139,
+    "week": 11,
+    "topic": "Week 11 - Reward System Design",
+    "question": "When a market supplement given during a talent shortage is no longer justified (because supply has normalized), the organization should:",
+    "options": {
+      "A": "Continue it permanently",
+      "B": "Increase it annually",
+      "C": "Review and potentially remove it if no longer justified",
+      "D": "Convert it into pension benefits"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q140",
+    "question_number": 140,
+    "week": 11,
+    "topic": "Week 11 - Reward System Design",
+    "question": "Providing different reward packages to sales staff, software developers, and senior managers based on their distinct roles reflects:",
+    "options": {
+      "A": "Internal Benchmarking",
+      "B": "Equal Pay",
+      "C": "Pay Compression",
+      "D": "Segmentation"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q141",
+    "question_number": 141,
+    "week": 11,
+    "topic": "Week 11 - Reward System Design",
+    "question": "An employee earning Rs. 72,000/month when the grade midpoint is Rs. 60,000 has a compa-ratio above 100%, indicating:",
+    "options": {
+      "A": "The employee is paid below policy rate",
+      "B": "The employee is paid exactly at the midpoint",
+      "C": "The employee is paid above the policy midpoint",
+      "D": "The employee has reached retirement eligibility"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q142",
+    "question_number": 142,
+    "week": 11,
+    "topic": "Week 11 - Reward System Design",
+    "question": "Deliberately paying 10% above industry average to attract and retain top talent describes the organization's:",
+    "options": {
+      "A": "Job Evaluation",
+      "B": "Compa-Ratio",
+      "C": "Red-Circling",
+      "D": "Pay Posture"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q143",
+    "question_number": 143,
+    "week": 11,
+    "topic": "Week 11 - Reward System Design",
+    "question": "Green-Circling in pay management refers to a situation where:",
+    "options": {
+      "A": "An employee's pay is above the maximum of the grade",
+      "B": "An employee's pay is below the minimum of the grade",
+      "C": "An employee receives a market supplement",
+      "D": "All employees receive the same percentage increment"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q144",
+    "question_number": 144,
+    "week": 11,
+    "topic": "Week 11 - Reward System Design",
+    "question": "Pay Compression occurs when:",
+    "options": {
+      "A": "Senior employees earn significantly more than juniors",
+      "B": "Pay differences between job levels or seniority are very small",
+      "C": "The pay range for a grade is very wide",
+      "D": "Annual increments are frozen for all employees"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q145",
+    "question_number": 145,
+    "week": 12,
+    "topic": "Week 12 - Ethics in PM & Rewards",
+    "question": "An HR Director pressured to select a poorly performing family member for a position faces the ethical issue of:",
+    "options": {
+      "A": "Job Evaluation Error",
+      "B": "Market Rate Analysis",
+      "C": "Performance Benchmarking",
+      "D": "Nepotism and Conflict of Interest"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q146",
+    "question_number": 146,
+    "week": 12,
+    "topic": "Week 12 - Ethics in PM & Rewards",
+    "question": "A dean introducing research grants, committee leadership, recognition, and academic decision participation (due to budget constraints) aims to:",
+    "options": {
+      "A": "Reduce teaching workload entirely",
+      "B": "Replace performance appraisal systems",
+      "C": "Eliminate compensation concerns permanently",
+      "D": "Increase engagement through non-financial rewards"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q147",
+    "question_number": 147,
+    "week": 12,
+    "topic": "Week 12 - Ethics in PM & Rewards",
+    "question": "According to Kantian ethics, which employee is viewed more favorably: one who met targets through misleading customers, or one who missed targets but acted ethically?",
+    "options": {
+      "A": "The one who achieved targets regardless of methods",
+      "B": "Both equally",
+      "C": "Neither employee",
+      "D": "The one whose actions were guided by ethical intentions and duty"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q148",
+    "question_number": 148,
+    "week": 12,
+    "topic": "Week 12 - Ethics in PM & Rewards",
+    "question": "Rating an employee highly across all dimensions because she is confident and articulate (with limited evidence) is ethically problematic because it:",
+    "options": {
+      "A": "Is too objective",
+      "B": "Uses quantitative indicators",
+      "C": "Relies on subjective judgments that may introduce bias",
+      "D": "Focuses on results"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q149",
+    "question_number": 149,
+    "week": 12,
+    "topic": "Week 12 - Ethics in PM & Rewards",
+    "question": "The difficulty in fairly comparing nurses who comfort patients versus those completing measurable tasks arises because, according to Velasquez:",
+    "options": {
+      "A": "Performance appraisal systems are unnecessary",
+      "B": "Employees should not be evaluated",
+      "C": "Only quantitative outcomes matter",
+      "D": "Human performance is difficult to measure objectively in all dimensions"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q150",
+    "question_number": 150,
+    "week": 12,
+    "topic": "Week 12 - Ethics in PM & Rewards",
+    "question": "Evaluating sales staff with objective figures but research scientists with highly subjective judgments, causing cross-department comparisons, creates the concern of:",
+    "options": {
+      "A": "Higher profitability",
+      "B": "Increased innovation",
+      "C": "Reduced turnover",
+      "D": "Unfair comparisons across employees"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q151",
+    "question_number": 151,
+    "week": 12,
+    "topic": "Week 12 - Ethics in PM & Rewards",
+    "question": "An employee receiving a poor appraisal and being refused an explanation or any appeal mechanism is missing the ethical safeguard of:",
+    "options": {
+      "A": "Job Evaluation",
+      "B": "Market Benchmarking",
+      "C": "Broad-Banding",
+      "D": "Grievance and Review Mechanism"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q152",
+    "question_number": 152,
+    "week": 12,
+    "topic": "Week 12 - Ethics in PM & Rewards",
+    "question": "Forming a committee of managers, employees, and union representatives to discuss evaluation criteria before system implementation reflects:",
+    "options": {
+      "A": "Centralized Authority",
+      "B": "Confidential Appraisal",
+      "C": "Stakeholder Involvement",
+      "D": "Forced Distribution"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q153",
+    "question_number": 153,
+    "week": 12,
+    "topic": "Week 12 - Ethics in PM & Rewards",
+    "question": "Which metric would be LEAST appropriate as a PRIMARY faculty performance indicator in a university?",
+    "options": {
+      "A": "Research publications",
+      "B": "Student feedback",
+      "C": "Teaching effectiveness measures",
+      "D": "Number of personal complaints made by colleagues"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q154",
+    "question_number": 154,
+    "week": 12,
+    "topic": "Week 12 - Ethics in PM & Rewards",
+    "question": "Employees ending calls quickly (reducing satisfaction and relationships) because only call volume is measured highlights:",
+    "options": {
+      "A": "Quantitative metrics are always superior",
+      "B": "Customer satisfaction is irrelevant",
+      "C": "Employees should not be rewarded",
+      "D": "Sole reliance on quantitative measures can ignore important qualitative outcomes"
+    },
+    "correct_answer": "D",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q155",
+    "question_number": 155,
+    "week": 12,
+    "topic": "Week 12 - Ethics in PM & Rewards",
+    "question": "Kantian ethics in reward management emphasizes:",
+    "options": {
+      "A": "Consequentialist outcomes only",
+      "B": "Acting out of duty and moral principle, regardless of outcome",
+      "C": "Maximizing shareholder value",
+      "D": "Following statutory minimums exactly"
+    },
+    "correct_answer": "B",
+    "explanation": ""
+  },
+  {
+    "id": "BANK_A_Q156",
+    "question_number": 156,
+    "week": 12,
+    "topic": "Week 12 - Ethics in PM & Rewards",
+    "question": "Which of the following BEST prevents ethical bias in performance appraisals?",
+    "options": {
+      "A": "Having a single assessor for all employees",
+      "B": "Keeping all appraisal results confidential",
+      "C": "Using structured, criteria-based assessment with transparency and appeal mechanisms",
+      "D": "Evaluating employees only on financial metrics"
+    },
+    "correct_answer": "C",
+    "explanation": ""
+  }
+]

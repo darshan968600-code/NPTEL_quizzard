@@ -1,23 +1,31 @@
 /**
  * NPTEL Quizzer - Comprehensive Quiz Engine
- * Supports Mode A (Weekly) and Mode B (PYQ)
+ * Supports:
+ * - Weekly Assessment Mode (10 questions/week)
+ * - Important Questions Bank (50, 100, full bank)
+ * - Additional Practice Questions Bank (50, 100, full bank)
+ * - Combined Practice Mode (All questions with Question & Option shuffling)
+ *
  * Features:
- * - Immediate option selection without premature answer reveal
- * - Two-step Next: Check Answer -> Next Question
+ * - Option shuffling with stable original-key mapping for 100% accurate grading
+ * - Instant evaluation on option click with 1-second auto-advance
+ * - Right-hand navigator grid with green/red/grey state and active border
  * - Re-attempt capability with accurate non-duplicate scoring
- * - Right-hand navigator grid with green/red/grey state and blue active border
- * - Previous/Next and non-sequential jump navigation
- * - Full localStorage persistence across page reloads
+ * - LocalStorage persistence across page reloads
  * - Comprehensive results screen with interactive review filters
+ * - Light and Dark theme support
  */
 
 const STORAGE_KEY = "nptel_quizzer_state";
+const THEME_KEY = "nptel_theme";
 
 let quizState = {
-  mode: "weekly", // "weekly" or "pyq"
+  mode: "weekly", // "weekly", "important", "additional", "all"
   week: 0,
   requestedCount: 10,
   modeTitle: "Quiz",
+  shuffleQuestions: false,
+  shuffleOptions: false,
   questions: [],
   currentIndex: 0,
   isFinished: false,
@@ -35,9 +43,24 @@ function clearAutoAdvance() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  initTheme();
   initQuiz();
 });
 
+/* ================= Theme Management ================= */
+function initTheme() {
+  const toggleBtn = document.getElementById("theme-toggle-btn");
+  if (!toggleBtn) return;
+
+  toggleBtn.addEventListener("click", () => {
+    const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem(THEME_KEY, newTheme);
+  });
+}
+
+/* ================= Quiz Initialization ================= */
 async function initQuiz() {
   const urlParams = new URLSearchParams(window.location.search);
   const resume = urlParams.get("resume");
@@ -61,14 +84,21 @@ async function initQuiz() {
     }
   }
 
-  // If not resuming, load fresh quiz from server
+  // Load fresh quiz from server
   const mode = urlParams.get("mode") || "weekly";
   const week = parseInt(urlParams.get("week") || "0", 10);
   const count = parseInt(urlParams.get("count") || "50", 10);
+  const shuffleQParam = urlParams.get("shuffle_q");
+  const shuffleOptParam = urlParams.get("shuffle_opt");
+
+  const shuffleQuestions = shuffleQParam === null ? (mode === "all") : (shuffleQParam === "1" || shuffleQParam === "true");
+  const shuffleOptions = shuffleOptParam === null ? (mode === "all") : (shuffleOptParam === "1" || shuffleOptParam === "true");
 
   quizState.mode = mode;
   quizState.week = week;
   quizState.requestedCount = count;
+  quizState.shuffleQuestions = shuffleQuestions;
+  quizState.shuffleOptions = shuffleOptions;
   quizState.currentIndex = 0;
   quizState.isFinished = false;
   quizState.score = 0;
@@ -79,9 +109,19 @@ async function initQuiz() {
     if (mode === "weekly") {
       apiUrl = `/api/questions/weekly/${week}`;
       quizState.modeTitle = `Week ${week} Assessment`;
+    } else if (mode === "important") {
+      apiUrl = `/api/questions/important?count=${count}`;
+      quizState.modeTitle = `Important Questions (${count} Questions)`;
+    } else if (mode === "additional") {
+      apiUrl = `/api/questions/additional?count=${count}`;
+      quizState.modeTitle = `Additional Practice Questions (${count} Questions)`;
+    } else if (mode === "all") {
+      apiUrl = `/api/questions/all?shuffle_q=${shuffleQuestions ? 1 : 0}`;
+      quizState.modeTitle = `Practice All Questions`;
     } else {
-      apiUrl = `/api/questions/pyq?count=${count}`;
-      quizState.modeTitle = `PYQ Practice (${count} Questions)`;
+      // Fallback
+      apiUrl = `/api/questions/weekly/0`;
+      quizState.modeTitle = `Week 0 Assessment`;
     }
 
     const res = await fetch(apiUrl);
@@ -93,21 +133,51 @@ async function initQuiz() {
       return;
     }
 
-    // Initialize question state structure
-    quizState.questions = data.questions.map((q, idx) => ({
-      index: idx,
-      id: q.id,
-      questionNumber: q.question_number || (idx + 1),
-      week: q.week,
-      topic: q.topic || q.week_label || `Week ${q.week}`,
-      question: q.question,
-      options: q.options,
-      correctAnswer: q.correct_answer,
-      explanation: q.explanation || "",
-      selectedAnswer: null,
-      evaluated: false,
-      isCorrect: null
-    }));
+    if (mode === "all") {
+      quizState.modeTitle = `Practice All Questions (${data.total} Questions)`;
+    } else if (count >= data.total && (mode === "important" || mode === "additional")) {
+      quizState.modeTitle = `${data.mode_title} (Full Bank • ${data.total} Qs)`;
+    }
+
+    // Initialize questions with option mapping
+    quizState.questions = data.questions.map((q, idx) => {
+      const origKeys = Object.keys(q.options).sort();
+      let displayOptions = [];
+
+      if (shuffleOptions) {
+        // Randomize the order of options while assigning visual keys A, B, C, D
+        const shuffledOrigKeys = [...origKeys].sort(() => Math.random() - 0.5);
+        displayOptions = shuffledOrigKeys.map((origKey, i) => ({
+          visualKey: String.fromCharCode(65 + i), // A, B, C, D
+          origKey: origKey,
+          text: q.options[origKey]
+        }));
+      } else {
+        // Standard non-shuffled A, B, C, D
+        displayOptions = origKeys.map(k => ({
+          visualKey: k,
+          origKey: k,
+          text: q.options[k]
+        }));
+      }
+
+      return {
+        index: idx,
+        id: q.id,
+        questionNumber: q.question_number || (idx + 1),
+        week: q.week,
+        topic: q.topic || q.week_label || `Week ${q.week}`,
+        question: q.question,
+        options: q.options,
+        displayOptions: displayOptions,
+        correctAnswer: q.correct_answer, // Original key: e.g. "B"
+        explanation: q.explanation || "",
+        selectedAnswer: null, // Stores chosen origKey
+        selectedVisualKey: null, // Stores chosen visualKey
+        evaluated: false,
+        isCorrect: null
+      };
+    });
 
     saveState();
     renderQuizHeader();
@@ -125,20 +195,30 @@ function saveState() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(quizState));
 }
 
+/* ================= Header Rendering ================= */
 function renderQuizHeader() {
   const titleEl = document.getElementById("quiz-title");
   const subEl = document.getElementById("quiz-subtitle");
 
   titleEl.textContent = quizState.modeTitle;
+  const total = quizState.questions.length;
+
   if (quizState.mode === "weekly") {
-    subEl.textContent = "NPTEL Performance & Reward Management • 10 Questions";
+    subEl.textContent = `NPTEL Performance & Reward Management • ${total} Questions`;
+  } else if (quizState.mode === "important") {
+    subEl.textContent = `Focused Exam Preparation • ${total} Questions`;
+  } else if (quizState.mode === "additional") {
+    subEl.textContent = `Expanded Practice Questions • ${total} Questions`;
+  } else if (quizState.mode === "all") {
+    subEl.textContent = `NPTEL Performance & Reward Management • All ${total} Questions (Weeks 0–12)`;
   } else {
-    subEl.textContent = `Randomized Practice • ${quizState.questions.length} Questions from 180 MCQ Bank`;
+    subEl.textContent = `Practice Quiz • ${total} Questions`;
   }
 
-  document.getElementById("nav-count-label").textContent = `${quizState.questions.length} Questions`;
+  document.getElementById("nav-count-label").textContent = `${total} Questions`;
 }
 
+/* ================= Question Rendering ================= */
 function renderQuestion() {
   const q = quizState.questions[quizState.currentIndex];
   if (!q) return;
@@ -174,35 +254,45 @@ function renderQuestion() {
   const container = document.getElementById("options-container");
   container.innerHTML = "";
 
-  const optKeys = Object.keys(q.options).sort();
-  optKeys.forEach(key => {
-    const optText = q.options[key];
+  // Use displayOptions (handles shuffling cleanly)
+  const optionsList = q.displayOptions || Object.keys(q.options).sort().map(k => ({
+    visualKey: k,
+    origKey: k,
+    text: q.options[k]
+  }));
+
+  // Find correct visual key for feedback
+  const correctOption = optionsList.find(opt => opt.origKey === q.correctAnswer);
+  const correctVisualKey = correctOption ? correctOption.visualKey : q.correctAnswer;
+
+  optionsList.forEach(opt => {
     const item = document.createElement("div");
     item.className = "option-item";
-    item.dataset.key = key;
+    item.dataset.visualKey = opt.visualKey;
+    item.dataset.origKey = opt.origKey;
 
     // Apply classes based on state
-    if (q.selectedAnswer === key) {
+    if (q.selectedAnswer === opt.origKey) {
       item.classList.add("selected");
     }
 
     if (q.evaluated) {
       item.classList.add("evaluated");
-      if (key === q.correctAnswer) {
+      if (opt.origKey === q.correctAnswer) {
         item.classList.add("eval-correct");
       }
-      if (q.selectedAnswer === key && !q.isCorrect) {
+      if (q.selectedAnswer === opt.origKey && !q.isCorrect) {
         item.classList.add("eval-wrong-selected");
       }
     }
 
     item.innerHTML = `
-      <div class="option-badge">${key}</div>
-      <div class="option-text">${escapeHtml(optText)}</div>
+      <div class="option-badge">${opt.visualKey}</div>
+      <div class="option-text">${escapeHtml(opt.text)}</div>
     `;
 
-    // Click handler for option
-    item.onclick = () => selectOption(key);
+    // Click handler passes visualKey
+    item.onclick = () => selectVisualOption(opt.visualKey);
     container.appendChild(item);
   });
 
@@ -218,12 +308,16 @@ function renderQuestion() {
       fbBanner.className = "feedback-banner correct";
       fbIcon.textContent = "✓";
       fbTitle.textContent = "Correct! Well done.";
-      fbText.textContent = q.explanation ? `Explanation: ${q.explanation}` : `Option ${q.correctAnswer} is the correct answer.`;
+      fbText.textContent = q.explanation 
+        ? `Explanation: ${q.explanation}` 
+        : `Option ${correctVisualKey} is the correct answer.`;
     } else {
       fbBanner.className = "feedback-banner incorrect";
       fbIcon.textContent = "✗";
       fbTitle.textContent = "Incorrect.";
-      fbText.textContent = `You selected (${q.selectedAnswer}). The correct answer is Option ${q.correctAnswer}: "${q.options[q.correctAnswer]}".` + 
+      const chosenVisual = q.selectedVisualKey || q.selectedAnswer;
+      const correctText = correctOption ? correctOption.text : q.options[q.correctAnswer];
+      fbText.textContent = `You selected (${chosenVisual}). The correct answer is Option ${correctVisualKey}: "${correctText}".` + 
         (q.explanation ? ` (${q.explanation})` : "");
     }
   } else {
@@ -237,7 +331,8 @@ function renderQuestion() {
   updateNavigatorActiveBox();
 }
 
-function selectOption(key) {
+/* ================= Option Selection & Evaluation ================= */
+function selectVisualOption(visualKey) {
   clearAutoAdvance();
   const q = quizState.questions[quizState.currentIndex];
   if (!q) return;
@@ -245,10 +340,20 @@ function selectOption(key) {
   const total = quizState.questions.length;
   const isLast = quizState.currentIndex === total - 1;
 
-  // Record and immediately evaluate
-  q.selectedAnswer = key;
+  // Lookup the original key mapped to this visual key
+  let origKey = visualKey;
+  if (q.displayOptions) {
+    const match = q.displayOptions.find(opt => opt.visualKey === visualKey);
+    if (match) {
+      origKey = match.origKey;
+    }
+  }
+
+  // Record and evaluate
+  q.selectedVisualKey = visualKey;
+  q.selectedAnswer = origKey;
   q.evaluated = true;
-  q.isCorrect = (key === q.correctAnswer);
+  q.isCorrect = (origKey === q.correctAnswer);
 
   recalculateScore();
   saveState();
@@ -291,7 +396,7 @@ function updateButtons() {
   const prevBtn = document.getElementById("btn-prev-q");
   prevBtn.disabled = quizState.currentIndex === 0;
 
-  // Skip Button (no Next button - only Skip or auto-advance)
+  // Skip / Finish Button
   const skipBtn = document.getElementById("btn-action-primary");
   if (isLast) {
     skipBtn.textContent = autoAdvanceTimer ? "Finish Now ✓" : "Finish Quiz \u2192";
@@ -341,6 +446,7 @@ function updateScoreChips() {
   document.getElementById("mini-unanswered").textContent = unansweredCount;
 }
 
+/* ================= Question Navigator ================= */
 function renderNavigator() {
   const grid = document.getElementById("nav-grid");
   grid.innerHTML = "";
@@ -407,6 +513,7 @@ function goToQuestion(idx) {
   renderQuestion();
 }
 
+/* ================= Quiz Completion & Results ================= */
 function finishQuiz() {
   clearAutoAdvance();
   const unansweredCount = quizState.questions.filter(q => !q.evaluated).length;
@@ -460,6 +567,7 @@ function showResultsView() {
   populateReviewList("all");
 }
 
+/* ================= Review Panel ================= */
 function populateReviewList(filter = "all") {
   const container = document.getElementById("review-list");
   container.innerHTML = "";
@@ -486,22 +594,31 @@ function populateReviewList(filter = "all") {
     const card = document.createElement("div");
     card.className = `review-item-card ${statusClass}`;
 
+    const optionsList = q.displayOptions || Object.keys(q.options).sort().map(k => ({
+      visualKey: k,
+      origKey: k,
+      text: q.options[k]
+    }));
+
     let optHtml = "";
-    Object.keys(q.options).sort().forEach(k => {
+    optionsList.forEach(opt => {
       let optClass = "";
-      if (k === q.correctAnswer) {
+      const isActualCorrect = (opt.origKey === q.correctAnswer);
+      const isUserChoice = (opt.origKey === q.selectedAnswer);
+
+      if (isActualCorrect) {
         optClass = "actual-correct";
       }
-      if (q.selectedAnswer === k) {
+      if (isUserChoice) {
         optClass = q.isCorrect ? "user-correct" : "user-wrong";
       }
 
       optHtml += `
         <div class="review-opt ${optClass}">
-          <strong>${k}.</strong> ${escapeHtml(q.options[k])}
-          ${k === q.correctAnswer ? " <span class='text-success font-bold'>[Correct Key]</span>" : ""}
-          ${q.selectedAnswer === k && !q.isCorrect ? " <span class='text-danger font-bold'>[Your Choice]</span>" : ""}
-          ${q.selectedAnswer === k && q.isCorrect ? " <span class='text-success font-bold'>[Your Choice ✓]</span>" : ""}
+          <strong>${opt.visualKey}.</strong> ${escapeHtml(opt.text)}
+          ${isActualCorrect ? " <span class='text-success font-bold'>[Correct Key]</span>" : ""}
+          ${isUserChoice && !q.isCorrect ? " <span class='text-danger font-bold'>[Your Choice]</span>" : ""}
+          ${isUserChoice && q.isCorrect ? " <span class='text-success font-bold'>[Your Choice ✓]</span>" : ""}
         </div>
       `;
     });
@@ -524,6 +641,7 @@ function populateReviewList(filter = "all") {
   }
 }
 
+/* ================= Event Listeners & Shortcuts ================= */
 function setupEventListeners() {
   document.getElementById("btn-prev-q").onclick = () => {
     clearAutoAdvance();
@@ -558,9 +676,9 @@ function setupEventListeners() {
   document.getElementById("btn-restart-quiz").onclick = () => {
     clearAutoAdvance();
     if (confirm("Restart this quiz? Your current answers will be cleared.")) {
-      // Reset question state
       quizState.questions.forEach(q => {
         q.selectedAnswer = null;
+        q.selectedVisualKey = null;
         q.evaluated = false;
         q.isCorrect = null;
       });
@@ -586,8 +704,8 @@ function setupEventListeners() {
     };
   });
 
-  // Home link confirmation if in progress
-  document.getElementById("btn-home-link").onclick = (e) => {
+  // Home link confirmation
+  document.getElementById("btn-home-link").onclick = () => {
     clearAutoAdvance();
   };
 
@@ -599,18 +717,18 @@ function setupEventListeners() {
     const key = e.key.toUpperCase();
     if (["A", "B", "C", "D"].includes(key)) {
       const q = quizState.questions[quizState.currentIndex];
-      if (q && q.options && q.options[key]) {
-        selectOption(key);
+      if (q && q.displayOptions) {
+        const opt = q.displayOptions.find(o => o.visualKey === key);
+        if (opt) {
+          selectVisualOption(key);
+        }
+      } else if (q && q.options && q.options[key]) {
+        selectVisualOption(key);
       }
     } else if (["1", "2", "3", "4"].includes(e.key)) {
-      const q = quizState.questions[quizState.currentIndex];
-      if (q && q.options) {
-        const optKeys = Object.keys(q.options).sort();
-        const numIdx = parseInt(e.key, 10) - 1;
-        if (optKeys[numIdx]) {
-          selectOption(optKeys[numIdx]);
-        }
-      }
+      const numIdx = parseInt(e.key, 10) - 1;
+      const visualKey = String.fromCharCode(65 + numIdx);
+      selectVisualOption(visualKey);
     } else if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
       handleSkipAction();

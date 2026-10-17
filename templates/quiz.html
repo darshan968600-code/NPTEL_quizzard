@@ -4,7 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz Session - NPTEL Quizzer</title>
-  <link rel="stylesheet" href="/static/css/style.css?v=2.2">
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('nptel_theme');
+      const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (systemDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="/static/css/style.css?v=3.0">
 </head>
 <body class="quiz-body">
   <!-- Top Navigation Header -->
@@ -25,6 +33,10 @@
           Score: <span id="chip-score" class="score-val">0</span> / <span id="chip-total">0</span>
           (<span id="chip-pct">0%</span>)
         </div>
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle dark/light mode">
+          <span class="theme-icon sun-icon">☀️</span>
+          <span class="theme-icon moon-icon">🌙</span>
+        </button>
         <button id="btn-finish-early" class="btn btn-sm btn-outline-danger" title="Finish and see results now">
           Finish Quiz
         </button>
@@ -89,7 +101,7 @@
       <aside class="navigator-panel">
         <div class="navigator-header">
           <h3>Question Navigator</h3>
-          <span id="nav-count-label" class="nav-count-badge">10 Questions</span>
+          <span id="nav-count-label" class="nav-count-badge">Questions</span>
         </div>
 
         <!-- Color Legend -->
@@ -186,6 +198,6 @@
     </div>
   </main>
 
-  <script src="/static/js/quiz.js?v=2.2"></script>
+  <script src="/static/js/quiz.js?v=3.0"></script>
 </body>
 </html>
