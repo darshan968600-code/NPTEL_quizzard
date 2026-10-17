@@ -1,0 +1,2702 @@
+[
+  {
+    "id": "PYQ_Q1",
+    "question_number": 1,
+    "week": 0,
+    "topic": "Week 0 - Introduction to Performance & Reward Management",
+    "question": "Performance management aligns individual goals primarily with the ______ of an organization.",
+    "options": {
+      "A": "Personal development goals",
+      "B": "Strategic goals",
+      "C": "Team KPIs",
+      "D": "HR department targets"
+    },
+    "correct_answer": "B",
+    "page": 1
+  },
+  {
+    "id": "PYQ_Q2",
+    "question_number": 2,
+    "week": 0,
+    "topic": "Week 0 - Introduction to Performance & Reward Management",
+    "question": "Which of the following statements about performance management frequency is TRUE?",
+    "options": {
+      "A": "It occurs once a year",
+      "B": "It is a continuous, year-round process",
+      "C": "It happens only at appraisal time",
+      "D": "It is conducted once every two years"
+    },
+    "correct_answer": "B",
+    "page": 1
+  },
+  {
+    "id": "PYQ_Q3",
+    "question_number": 3,
+    "week": 0,
+    "topic": "Week 0 - Introduction to Performance & Reward Management",
+    "question": "The system of performance management is owned by ______, while performance appraisal is owned by ______.",
+    "options": {
+      "A": "HR Department, Line Managers",
+      "B": "Line Managers, HR Department",
+      "C": "CEO, HR Department",
+      "D": "Line Managers, Development Managers"
+    },
+    "correct_answer": "B",
+    "page": 1
+  },
+  {
+    "id": "PYQ_Q4",
+    "question_number": 4,
+    "week": 0,
+    "topic": "Week 0 - Introduction to Performance & Reward Management",
+    "question": "Which item most directly provides the broad direction from which organizational goals and objectives are developed?",
+    "options": {
+      "A": "The annual attendance register",
+      "B": "A list of individual salary increments",
+      "C": "A ranking of current employees",
+      "D": "The vision and mission statements"
+    },
+    "correct_answer": "D",
+    "page": 1
+  },
+  {
+    "id": "PYQ_Q5",
+    "question_number": 5,
+    "week": 0,
+    "topic": "Week 0 - Introduction to Performance & Reward Management",
+    "question": "Which practice best reflects the meaning of performance management?",
+    "options": {
+      "A": "Ranking employees without discussing expected outcomes",
+      "B": "Holding one meeting to decide bonuses",
+      "C": "Continuously planning, supporting, monitoring, and improving performance",
+      "D": "Recording mistakes only after the year ends"
+    },
+    "correct_answer": "C",
+    "page": 2
+  },
+  {
+    "id": "PYQ_Q6",
+    "question_number": 6,
+    "week": 0,
+    "topic": "Week 0 - Introduction to Performance & Reward Management",
+    "question": "In modern organizations, rewards can ONLY be monetary. This statement is:",
+    "options": {
+      "A": "True",
+      "B": "False",
+      "C": "True only for private sector",
+      "D": "True only for government employees"
+    },
+    "correct_answer": "B",
+    "page": 2
+  },
+  {
+    "id": "PYQ_Q7",
+    "question_number": 7,
+    "week": 0,
+    "topic": "Week 0 - Introduction to Performance & Reward Management",
+    "question": "During appraisal, a supervisor gives an employee an unusually high rating because their first meeting months earlier went exceptionally well. Which error is most likely?",
+    "options": {
+      "A": "Contrast error",
+      "B": "Primacy error",
+      "C": "Central-tendency error",
+      "D": "Recency error"
+    },
+    "correct_answer": "B",
+    "page": 2
+  },
+  {
+    "id": "PYQ_Q8",
+    "question_number": 8,
+    "week": 0,
+    "topic": "Week 0 - Introduction to Performance & Reward Management",
+    "question": "Benefits provided to employees OVER AND ABOVE their salaries are called ______ benefits.",
+    "options": {
+      "A": "Non-fringe",
+      "B": "Add-on",
+      "C": "Fringe",
+      "D": "Variable"
+    },
+    "correct_answer": "C",
+    "page": 2
+  },
+  {
+    "id": "PYQ_Q9",
+    "question_number": 9,
+    "week": 0,
+    "topic": "Week 0 - Introduction to Performance & Reward Management",
+    "question": "Why should performance management and reward management be designed together?",
+    "options": {
+      "A": "To ensure rewards reinforce valued performance and strategic priorities",
+      "B": "To prevent managers from giving feedback",
+      "C": "To make each department use unrelated goals",
+      "D": "To remove all non-financial rewards"
+    },
+    "correct_answer": "A",
+    "page": 2
+  },
+  {
+    "id": "PYQ_Q10",
+    "question_number": 10,
+    "week": 0,
+    "topic": "Week 0 - Introduction to Performance & Reward Management",
+    "question": "The ______ is designed for people who do not have the benefit of a pension after retirement.",
+    "options": {
+      "A": "New Pension Scheme (NPS)",
+      "B": "Modified Pension Scheme",
+      "C": "Employees' Pension Scheme",
+      "D": "JAL Yojana"
+    },
+    "correct_answer": "A",
+    "page": 2
+  },
+  {
+    "id": "PYQ_Q11",
+    "question_number": 11,
+    "week": 0,
+    "topic": "Week 0 - Introduction to Performance & Reward Management",
+    "question": "Which objective is strongest for evaluating whether an employee has improved customer response time?",
+    "options": {
+      "A": "Reduce average first-response time from 12 hours to 6 hours by the end of the quarter",
+      "B": "Become better at customer service",
+      "C": "Try to respond faster whenever possible",
+      "D": "Focus more on customers"
+    },
+    "correct_answer": "A",
+    "page": 3
+  },
+  {
+    "id": "PYQ_Q12",
+    "question_number": 12,
+    "week": 0,
+    "topic": "Week 0 - Introduction to Performance & Reward Management",
+    "question": "A department achieves its individual targets, but those targets do not support the company's stated expansion priority. What is the central weakness?",
+    "options": {
+      "A": "Poor alignment between goals and strategy",
+      "B": "Overuse of contextual performance",
+      "C": "Excessive transparency",
+      "D": "Too much employee development"
+    },
+    "correct_answer": "A",
+    "page": 3
+  },
+  {
+    "id": "PYQ_Q13",
+    "question_number": 13,
+    "week": 0,
+    "topic": "Week 0 - Introduction to Performance & Reward Management",
+    "question": "Which of the following is a MISQUOTED objective of Performance Management?",
+    "options": {
+      "A": "Managing and improving performance",
+      "B": "Motivating and rewarding but NOT empowering employees",
+      "C": "Ensuring employees do the right things rightly",
+      "D": "Judicious use of resources"
+    },
+    "correct_answer": "B",
+    "page": 3
+  },
+  {
+    "id": "PYQ_Q14",
+    "question_number": 14,
+    "week": 0,
+    "topic": "Week 0 - Introduction to Performance & Reward Management",
+    "question": "Which component is NOT typically part of an organization's strategic plan?",
+    "options": {
+      "A": "Mission statement",
+      "B": "Long-term goals",
+      "C": "Employee personal hobbies",
+      "D": "Vision statement"
+    },
+    "correct_answer": "C",
+    "page": 3
+  },
+  {
+    "id": "PYQ_Q15",
+    "question_number": 15,
+    "week": 1,
+    "topic": "Week 1 - The Performance-Management Process",
+    "question": "At the start of the cycle, a manager and employee agree on expected outcomes, standards, skills, and support needed. Which stage is this?",
+    "options": {
+      "A": "Performance review",
+      "B": "Performance renewal",
+      "C": "Performance execution",
+      "D": "Performance planning"
+    },
+    "correct_answer": "D",
+    "page": 3
+  },
+  {
+    "id": "PYQ_Q16",
+    "question_number": 16,
+    "week": 1,
+    "topic": "Week 1 - The Performance-Management Process",
+    "question": "During the quarter, an employee works toward agreed objectives, coordinates with colleagues, and records progress. Which stage is most directly represented?",
+    "options": {
+      "A": "Performance renewal",
+      "B": "Job evaluation",
+      "C": "Performance execution",
+      "D": "Performance planning"
+    },
+    "correct_answer": "C",
+    "page": 4
+  },
+  {
+    "id": "PYQ_Q17",
+    "question_number": 17,
+    "week": 1,
+    "topic": "Week 1 - The Performance-Management Process",
+    "question": "A manager notices a project slipping and discusses corrective steps with the employee before the deadline. Which practice is most evident?",
+    "options": {
+      "A": "External benchmarking",
+      "B": "Continuous feedback and coaching",
+      "C": "Red-circling",
+      "D": "Forced distribution"
+    },
+    "correct_answer": "B",
+    "page": 4
+  },
+  {
+    "id": "PYQ_Q18",
+    "question_number": 18,
+    "week": 1,
+    "topic": "Week 1 - The Performance-Management Process",
+    "question": "Which sequence best represents the performance management cycle?",
+    "options": {
+      "A": "Monitor - promote - plan - select",
+      "B": "Review - reward - plan - punish",
+      "C": "Plan - act - monitor - review",
+      "D": "Reward - dismiss - rank - recruit"
+    },
+    "correct_answer": "C",
+    "page": 4
+  },
+  {
+    "id": "PYQ_Q19",
+    "question_number": 19,
+    "week": 1,
+    "topic": "Week 1 - The Performance-Management Process",
+    "question": "An employee can choose how to complete an assignment but must explain results and deviations from the agreed target. This illustrates:",
+    "options": {
+      "A": "Empowerment with accountability",
+      "B": "Unstructured appraisal",
+      "C": "Centralized control",
+      "D": "Empowerment without accountability"
+    },
+    "correct_answer": "A",
+    "page": 4
+  },
+  {
+    "id": "PYQ_Q20",
+    "question_number": 20,
+    "week": 1,
+    "topic": "Week 1 - The Performance-Management Process",
+    "question": "What best distinguishes performance management from a standalone annual appraisal?",
+    "options": {
+      "A": "It avoids objective-setting",
+      "B": "It occurs only after a pay decision",
+      "C": "It is a continuous process linked to improvement",
+      "D": "It relies solely on employee self-ratings"
+    },
+    "correct_answer": "C",
+    "page": 4
+  },
+  {
+    "id": "PYQ_Q21",
+    "question_number": 21,
+    "week": 1,
+    "topic": "Week 1 - The Performance-Management Process",
+    "question": "An annual review identifies a skill gap and sets a development action for the next cycle. Which element of the process is being emphasized?",
+    "options": {
+      "A": "Forced ranking",
+      "B": "Market pricing",
+      "C": "Pension administration",
+      "D": "Performance renewal and development"
+    },
+    "correct_answer": "D",
+    "page": 5
+  },
+  {
+    "id": "PYQ_Q22",
+    "question_number": 22,
+    "week": 1,
+    "topic": "Week 1 - The Performance-Management Process",
+    "question": "An organization wants employees to understand why a new performance system is being introduced before launch. Which action is most suitable?",
+    "options": {
+      "A": "Replace manager conversations with a single rating form",
+      "B": "Launch it quietly and explain it only after complaints",
+      "C": "Keep criteria confidential from all employees",
+      "D": "Use workshops and clear communication about purpose and process"
+    },
+    "correct_answer": "D",
+    "page": 5
+  },
+  {
+    "id": "PYQ_Q23",
+    "question_number": 23,
+    "week": 1,
+    "topic": "Week 1 - The Performance-Management Process",
+    "question": "A manager records only final results but never clarifies expected standards at the beginning. Which process element is most obviously missing?",
+    "options": {
+      "A": "Market benchmarking",
+      "B": "Retirement benefits",
+      "C": "Performance planning",
+      "D": "Employee segmentation"
+    },
+    "correct_answer": "C",
+    "page": 5
+  },
+  {
+    "id": "PYQ_Q24",
+    "question_number": 24,
+    "week": 1,
+    "topic": "Week 1 - The Performance-Management Process",
+    "question": "Which scenario best indicates that feedback is developmental rather than merely punitive?",
+    "options": {
+      "A": "A manager offers specific guidance and agrees on steps to improve",
+      "B": "An employee is ranked without evidence",
+      "C": "A bonus is withheld without explanation",
+      "D": "A supervisor lists errors and ends the meeting"
+    },
+    "correct_answer": "A",
+    "page": 5
+  },
+  {
+    "id": "PYQ_Q25",
+    "question_number": 25,
+    "week": 1,
+    "topic": "Week 1 - The Performance-Management Process",
+    "question": "A formal appraisal is conducted every March, but managers discuss neither progress nor difficulties during the year. What is the key limitation?",
+    "options": {
+      "A": "It automatically aligns all goals with strategy",
+      "B": "It overemphasizes periodic evaluation and neglects continuous management",
+      "C": "It confuses job evaluation with market analysis",
+      "D": "It provides too much continuous feedback"
+    },
+    "correct_answer": "B",
+    "page": 5
+  },
+  {
+    "id": "PYQ_Q26",
+    "question_number": 26,
+    "week": 1,
+    "topic": "Week 1 - The Performance-Management Process",
+    "question": "Which combination is most likely to make employee goals actionable?",
+    "options": {
+      "A": "A list of rewards with no performance criteria",
+      "B": "Clear outcomes, standards, timelines, and required support",
+      "C": "A rating scale without role expectations",
+      "D": "Broad aspirations with no standards"
+    },
+    "correct_answer": "B",
+    "page": 6
+  },
+  {
+    "id": "PYQ_Q27",
+    "question_number": 27,
+    "week": 1,
+    "topic": "Week 1 - The Performance-Management Process",
+    "question": "The key distinction between performance appraisal and performance management is that:",
+    "options": {
+      "A": "Appraisal is more strategic",
+      "B": "Appraisal includes coaching and development",
+      "C": "Appraisal focuses only on evaluation while PM is continuous",
+      "D": "PM occurs only after appraisal"
+    },
+    "correct_answer": "C",
+    "page": 6
+  },
+  {
+    "id": "PYQ_Q28",
+    "question_number": 28,
+    "week": 1,
+    "topic": "Week 1 - The Performance-Management Process",
+    "question": "An employee receives a cash bonus; another gets public recognition and a prestigious leadership program. Which statement is most accurate?",
+    "options": {
+      "A": "Both received financial rewards",
+      "B": "The first received a non-financial reward",
+      "C": "The first received a financial reward; the second received primarily non-financial rewards",
+      "D": "Neither received a reward"
+    },
+    "correct_answer": "C",
+    "page": 6
+  },
+  {
+    "id": "PYQ_Q29",
+    "question_number": 29,
+    "week": 2,
+    "topic": "Week 2 - Strategic Planning, SWOT & SMART Goals",
+    "question": "A hospital's strategy prioritizes faster rural access, but nurses are assessed only on paperwork completion. What is the primary problem?",
+    "options": {
+      "A": "Too much internal benchmarking",
+      "B": "Overuse of pension benefits",
+      "C": "Excessive pay transparency",
+      "D": "Poor strategic alignment of performance goals"
+    },
+    "correct_answer": "D",
+    "page": 6
+  },
+  {
+    "id": "PYQ_Q30",
+    "question_number": 30,
+    "week": 2,
+    "topic": "Week 2 - Strategic Planning, SWOT & SMART Goals",
+    "question": "Strategic planning is BEST described as:",
+    "options": {
+      "A": "Focusing primarily on resource allocation",
+      "B": "Determining long-term goals and allocating resources to achieve them",
+      "C": "An annual budgeting exercise",
+      "D": "Concerned mainly with operational efficiency"
+    },
+    "correct_answer": "B",
+    "page": 6
+  },
+  {
+    "id": "PYQ_Q31",
+    "question_number": 31,
+    "week": 2,
+    "topic": "Week 2 - Strategic Planning, SWOT & SMART Goals",
+    "question": "A company has strong designers and a respected quality reputation. Demand for sustainable clothing is rising, and the company plans to use its strengths to meet that demand. Which SWOT pairing is this?",
+    "options": {
+      "A": "Weakness-opportunity",
+      "B": "Weakness-threat",
+      "C": "Strength-opportunity",
+      "D": "Strength-threat"
+    },
+    "correct_answer": "C",
+    "page": 7
+  },
+  {
+    "id": "PYQ_Q32",
+    "question_number": 32,
+    "week": 2,
+    "topic": "Week 2 - Strategic Planning, SWOT & SMART Goals",
+    "question": "Outdated machinery combined with technologically advanced new competitors entering the market represents which SWOT pairing?",
+    "options": {
+      "A": "Strength and Opportunity",
+      "B": "Threat and Weakness",
+      "C": "Opportunity and Weakness",
+      "D": "Strength and Threat"
+    },
+    "correct_answer": "B",
+    "page": 7
+  },
+  {
+    "id": "PYQ_Q33",
+    "question_number": 33,
+    "week": 2,
+    "topic": "Week 2 - Strategic Planning, SWOT & SMART Goals",
+    "question": "A proposed vision reads, 'We will do many good things someday.' What is its main weakness?",
+    "options": {
+      "A": "It links too closely to strategy",
+      "B": "It is overly specific",
+      "C": "It lacks clarity and inspirational direction",
+      "D": "It is too measurable"
+    },
+    "correct_answer": "C",
+    "page": 7
+  },
+  {
+    "id": "PYQ_Q34",
+    "question_number": 34,
+    "week": 2,
+    "topic": "Week 2 - Strategic Planning, SWOT & SMART Goals",
+    "question": "Which objective best follows SMART goal-setting principles?",
+    "options": {
+      "A": "Improve quality as much as possible",
+      "B": "Become the best service team",
+      "C": "Try to reduce delays soon",
+      "D": "Increase on-time delivery from 82% to 95% by 31 March"
+    },
+    "correct_answer": "D",
+    "page": 7
+  },
+  {
+    "id": "PYQ_Q35",
+    "question_number": 35,
+    "week": 2,
+    "topic": "Week 2 - Strategic Planning, SWOT & SMART Goals",
+    "question": "A firm announces an innovation strategy but continues to reward employees solely for reducing short-term costs. What is the likely consequence?",
+    "options": {
+      "A": "External threats become internal strengths",
+      "B": "Reward systems reinforce innovation automatically",
+      "C": "The reward and performance systems may work against the strategy",
+      "D": "The strategy becomes measurable by default"
+    },
+    "correct_answer": "C",
+    "page": 7
+  },
+  {
+    "id": "PYQ_Q36",
+    "question_number": 36,
+    "week": 2,
+    "topic": "Week 2 - Strategic Planning, SWOT & SMART Goals",
+    "question": "Which measure best converts the strategic aim 'improve customer experience' into an assessable objective?",
+    "options": {
+      "A": "Increase satisfaction survey results from 80% to 90% within 12 months",
+      "B": "Ensure staff think positively",
+      "C": "Make customers happier",
+      "D": "Encourage better service"
+    },
+    "correct_answer": "A",
+    "page": 8
+  },
+  {
+    "id": "PYQ_Q37",
+    "question_number": 37,
+    "week": 2,
+    "topic": "Week 2 - Strategic Planning, SWOT & SMART Goals",
+    "question": "A manager proposes copying a competitor's new product without analysing the firm's capabilities or market conditions. What is the strongest critique?",
+    "options": {
+      "A": "SWOT analysis applies only to employees",
+      "B": "Product launches cannot form part of strategy",
+      "C": "Strategic decisions should follow analysis of internal and external factors",
+      "D": "Competitors should never be observed"
+    },
+    "correct_answer": "C",
+    "page": 8
+  },
+  {
+    "id": "PYQ_Q38",
+    "question_number": 38,
+    "week": 2,
+    "topic": "Week 2 - Strategic Planning, SWOT & SMART Goals",
+    "question": "In SWOT analysis, 'Opportunities' and 'Threats' are:",
+    "options": {
+      "A": "Internal factors",
+      "B": "External factors",
+      "C": "Financial factors only",
+      "D": "HR-specific factors"
+    },
+    "correct_answer": "B",
+    "page": 8
+  },
+  {
+    "id": "PYQ_Q39",
+    "question_number": 39,
+    "week": 2,
+    "topic": "Week 2 - Strategic Planning, SWOT & SMART Goals",
+    "question": "A company's departmental targets are measurable, but several targets encourage behaviour contrary to the company's long-term direction. What should be corrected first?",
+    "options": {
+      "A": "Align the measures with strategy",
+      "B": "Stop communicating the vision",
+      "C": "Replace all goals with equal rewards",
+      "D": "Remove all measures"
+    },
+    "correct_answer": "A",
+    "page": 8
+  },
+  {
+    "id": "PYQ_Q40",
+    "question_number": 40,
+    "week": 2,
+    "topic": "Week 2 - Strategic Planning, SWOT & SMART Goals",
+    "question": "Which sequence is most logical when translating strategy into employee objectives?",
+    "options": {
+      "A": "Set long-term direction, define goals, then translate them into measurable role objectives",
+      "B": "Choose bonuses before identifying goals",
+      "C": "Rank employees before setting standards",
+      "D": "Choose ratings, then invent a vision"
+    },
+    "correct_answer": "A",
+    "page": 8
+  },
+  {
+    "id": "PYQ_Q41",
+    "question_number": 41,
+    "week": 2,
+    "topic": "Week 2 - Strategic Planning, SWOT & SMART Goals",
+    "question": "Which characteristic makes a performance objective 'Achievable' in the SMART framework?",
+    "options": {
+      "A": "It must be time-bound",
+      "B": "It must be realistic given available resources and constraints",
+      "C": "It must be quantifiable",
+      "D": "It must align with market trends"
+    },
+    "correct_answer": "B",
+    "page": 9
+  },
+  {
+    "id": "PYQ_Q42",
+    "question_number": 42,
+    "week": 2,
+    "topic": "Week 2 - Strategic Planning, SWOT & SMART Goals",
+    "question": "An automobile company focusing employee reviews on innovation because its strategy is electric vehicle leadership is an example of:",
+    "options": {
+      "A": "Employees being rewarded equally",
+      "B": "Employee behaviour being directed toward strategic priorities",
+      "C": "Avoiding formal evaluations",
+      "D": "Unrelated performance criteria"
+    },
+    "correct_answer": "B",
+    "page": 9
+  },
+  {
+    "id": "PYQ_Q43",
+    "question_number": 43,
+    "week": 3,
+    "topic": "Week 3 - Performance Dimensions, Competencies & Measurement",
+    "question": "An engineer knows the product specifications but struggles to apply them persuasively during a client demonstration. Which performance component is most likely weak?",
+    "options": {
+      "A": "Pension contribution",
+      "B": "Contextual reward",
+      "C": "Declarative knowledge",
+      "D": "Procedural knowledge"
+    },
+    "correct_answer": "D",
+    "page": 9
+  },
+  {
+    "id": "PYQ_Q44",
+    "question_number": 44,
+    "week": 3,
+    "topic": "Week 3 - Performance Dimensions, Competencies & Measurement",
+    "question": "An employee completes assigned reports and also voluntarily helps new colleagues and supports teammates during a crisis. The additional activities illustrate:",
+    "options": {
+      "A": "Market analysis",
+      "B": "Only task performance",
+      "C": "Job grading",
+      "D": "Contextual performance"
+    },
+    "correct_answer": "D",
+    "page": 9
+  },
+  {
+    "id": "PYQ_Q45",
+    "question_number": 45,
+    "week": 3,
+    "topic": "Week 3 - Performance Dimensions, Competencies & Measurement",
+    "question": "A firm evaluates sales managers only by sales growth and profit, not by how they achieved them. Which measurement approach is being used?",
+    "options": {
+      "A": "Competency approach",
+      "B": "Results approach",
+      "C": "Trait approach",
+      "D": "Behaviour approach"
+    },
+    "correct_answer": "B",
+    "page": 9
+  },
+  {
+    "id": "PYQ_Q46",
+    "question_number": 46,
+    "week": 3,
+    "topic": "Week 3 - Performance Dimensions, Competencies & Measurement",
+    "question": "A target says, 'Be more committed to service,' with no indicator or deadline. What is the main defect?",
+    "options": {
+      "A": "It creates an enabling environment",
+      "B": "It lacks specificity and measurability",
+      "C": "It is necessarily a results measure",
+      "D": "It is too measurable"
+    },
+    "correct_answer": "B",
+    "page": 10
+  },
+  {
+    "id": "PYQ_Q47",
+    "question_number": 47,
+    "week": 3,
+    "topic": "Week 3 - Performance Dimensions, Competencies & Measurement",
+    "question": "Capabilities essential for performing a job at an acceptable minimum level are called:",
+    "options": {
+      "A": "Differentiating competencies",
+      "B": "Leadership competencies",
+      "C": "Threshold competencies",
+      "D": "Strategic competencies"
+    },
+    "correct_answer": "C",
+    "page": 10
+  },
+  {
+    "id": "PYQ_Q48",
+    "question_number": 48,
+    "week": 3,
+    "topic": "Week 3 - Performance Dimensions, Competencies & Measurement",
+    "question": "Two employees meet their task targets, but one routinely shares knowledge and supports team members. Which measure captures this difference?",
+    "options": {
+      "A": "Contextual-performance evidence",
+      "B": "Only the output total",
+      "C": "Job ranking",
+      "D": "Compa-ratio"
+    },
+    "correct_answer": "A",
+    "page": 10
+  },
+  {
+    "id": "PYQ_Q49",
+    "question_number": 49,
+    "week": 3,
+    "topic": "Week 3 - Performance Dimensions, Competencies & Measurement",
+    "question": "To evaluate whether supervisors resolve conflict constructively and coach their teams, which approach is most directly suited?",
+    "options": {
+      "A": "Results-only approach",
+      "B": "Behaviour approach",
+      "C": "Market-rate analysis",
+      "D": "Pension approach"
+    },
+    "correct_answer": "B",
+    "page": 10
+  },
+  {
+    "id": "PYQ_Q50",
+    "question_number": 50,
+    "week": 3,
+    "topic": "Week 3 - Performance Dimensions, Competencies & Measurement",
+    "question": "A performance system gathers evidence about employees' knowledge, skills, and ability to carry out work-related behaviours. This is closest to a:",
+    "options": {
+      "A": "Defined-benefit scheme",
+      "B": "Commission-only plan",
+      "C": "Competency approach",
+      "D": "Forced distribution"
+    },
+    "correct_answer": "C",
+    "page": 10
+  },
+  {
+    "id": "PYQ_Q51",
+    "question_number": 51,
+    "week": 3,
+    "topic": "Week 3 - Performance Dimensions, Competencies & Measurement",
+    "question": "An organization gathers a supervisor's, peers', subordinates', and clients' feedback about a manager. The key strength of this method is that it:",
+    "options": {
+      "A": "Removes the need for development",
+      "B": "Eliminates all bias",
+      "C": "Measures only numerical results",
+      "D": "Captures performance from multiple perspectives"
+    },
+    "correct_answer": "D",
+    "page": 11
+  },
+  {
+    "id": "PYQ_Q52",
+    "question_number": 52,
+    "week": 3,
+    "topic": "Week 3 - Performance Dimensions, Competencies & Measurement",
+    "question": "A company has no published standards, but managers are asked to rate employee performance consistently. What should be done before rating?",
+    "options": {
+      "A": "Use only informal impressions",
+      "B": "Introduce a forced ranking immediately",
+      "C": "Define clear performance objectives and standards",
+      "D": "Tie every rating to salary without discussion"
+    },
+    "correct_answer": "C",
+    "page": 11
+  },
+  {
+    "id": "PYQ_Q53",
+    "question_number": 53,
+    "week": 3,
+    "topic": "Week 3 - Performance Dimensions, Competencies & Measurement",
+    "question": "An employee is rated highly in communication, punctuality, teamwork, and documentation because one presentation impressed the manager. Which error is most likely?",
+    "options": {
+      "A": "Contrast error",
+      "B": "Central tendency",
+      "C": "Halo error",
+      "D": "Primacy error"
+    },
+    "correct_answer": "C",
+    "page": 11
+  },
+  {
+    "id": "PYQ_Q54",
+    "question_number": 54,
+    "week": 3,
+    "topic": "Week 3 - Performance Dimensions, Competencies & Measurement",
+    "question": "Declarative knowledge in performance management refers to:",
+    "options": {
+      "A": "Knowing how to do a task effectively",
+      "B": "Knowing facts, concepts, and principles relevant to the job",
+      "C": "The ability to motivate others",
+      "D": "Contextual helping behaviour"
+    },
+    "correct_answer": "B",
+    "page": 11
+  },
+  {
+    "id": "PYQ_Q55",
+    "question_number": 55,
+    "week": 3,
+    "topic": "Week 3 - Performance Dimensions, Competencies & Measurement",
+    "question": "The 360-degree feedback method is named so because it gathers input from:",
+    "options": {
+      "A": "Three different managers",
+      "B": "All stakeholders surrounding the employee",
+      "C": "Exactly 360 employees",
+      "D": "Six competency dimensions"
+    },
+    "correct_answer": "B",
+    "page": 11
+  },
+  {
+    "id": "PYQ_Q56",
+    "question_number": 56,
+    "week": 3,
+    "topic": "Week 3 - Performance Dimensions, Competencies & Measurement",
+    "question": "Why are role-specific indicators preferable to a single generic measure for every position?",
+    "options": {
+      "A": "They reflect the distinct outputs and behaviours relevant to each role",
+      "B": "They eliminate the need for standards",
+      "C": "They ensure employees receive the same rating",
+      "D": "They prioritize personal popularity over evidence"
+    },
+    "correct_answer": "A",
+    "page": 12
+  },
+  {
+    "id": "PYQ_Q57",
+    "question_number": 57,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods, Rating Errors & Implementation",
+    "question": "A company requires approximately 10% of staff to be rated outstanding, 70% average, and 20% below average regardless of actual performance. Which method is being used?",
+    "options": {
+      "A": "Critical incident method",
+      "B": "Bell Curve / Forced distribution",
+      "C": "BARS",
+      "D": "Management by Objectives"
+    },
+    "correct_answer": "B",
+    "page": 12
+  },
+  {
+    "id": "PYQ_Q58",
+    "question_number": 58,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods, Rating Errors & Implementation",
+    "question": "A manager and employee jointly agree on goals and later assess results against those goals. Which appraisal philosophy is this?",
+    "options": {
+      "A": "Management by Objectives (MBO)",
+      "B": "Forced ranking",
+      "C": "Graphic rating scale",
+      "D": "Confidential reporting"
+    },
+    "correct_answer": "A",
+    "page": 12
+  },
+  {
+    "id": "PYQ_Q59",
+    "question_number": 59,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods, Rating Errors & Implementation",
+    "question": "A bank creates concrete behavioural examples for poor, acceptable, and excellent performance on each dimension. Which method is this?",
+    "options": {
+      "A": "Market Rate Analysis",
+      "B": "Essay Method",
+      "C": "Behaviourally Anchored Rating Scales (BARS)",
+      "D": "Bell Curve Method"
+    },
+    "correct_answer": "C",
+    "page": 12
+  },
+  {
+    "id": "PYQ_Q60",
+    "question_number": 60,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods, Rating Errors & Implementation",
+    "question": "Candidates for a leadership role complete simulations, role plays, and group discussions observed by trained assessors. Which technique is being used?",
+    "options": {
+      "A": "Assessment Centre Method",
+      "B": "Central tendency rating",
+      "C": "Compa-ratio analysis",
+      "D": "Job ranking only"
+    },
+    "correct_answer": "A",
+    "page": 12
+  },
+  {
+    "id": "PYQ_Q61",
+    "question_number": 61,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods, Rating Errors & Implementation",
+    "question": "A supervisor gives nearly everyone an average score to avoid difficult conversations, including exceptional and poor performers. Which error is this?",
+    "options": {
+      "A": "Recency error",
+      "B": "Leniency error",
+      "C": "Central tendency error",
+      "D": "Halo error"
+    },
+    "correct_answer": "C",
+    "page": 13
+  },
+  {
+    "id": "PYQ_Q62",
+    "question_number": 62,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods, Rating Errors & Implementation",
+    "question": "A supervisor inflates ratings for most employees regardless of evidence. Which rating error is most evident?",
+    "options": {
+      "A": "Contrast error",
+      "B": "Primacy error",
+      "C": "Strictness error",
+      "D": "Leniency error"
+    },
+    "correct_answer": "D",
+    "page": 13
+  },
+  {
+    "id": "PYQ_Q63",
+    "question_number": 63,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods, Rating Errors & Implementation",
+    "question": "An assessor allows a very recent incident to dominate the entire annual rating. This is:",
+    "options": {
+      "A": "Recency error",
+      "B": "Central tendency error",
+      "C": "Primacy error",
+      "D": "Halo error"
+    },
+    "correct_answer": "A",
+    "page": 13
+  },
+  {
+    "id": "PYQ_Q64",
+    "question_number": 64,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods, Rating Errors & Implementation",
+    "question": "A manager compares each employee with the last person assessed rather than using common standards. Which error may result?",
+    "options": {
+      "A": "Contrast error",
+      "B": "Leniency error",
+      "C": "Central tendency error",
+      "D": "Primacy error"
+    },
+    "correct_answer": "A",
+    "page": 13
+  },
+  {
+    "id": "PYQ_Q65",
+    "question_number": 65,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods, Rating Errors & Implementation",
+    "question": "An employee's annual targets are ignored in the final review, which is based on the manager's general impression. Which implementation flaw is illustrated?",
+    "options": {
+      "A": "Effective strategic alignment",
+      "B": "Excessive transparency",
+      "C": "Disconnection between goal setting and evaluation",
+      "D": "Too much job analysis"
+    },
+    "correct_answer": "C",
+    "page": 13
+  },
+  {
+    "id": "PYQ_Q66",
+    "question_number": 66,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods, Rating Errors & Implementation",
+    "question": "Which method is most directly based on recording specific examples of effective or ineffective job behaviour?",
+    "options": {
+      "A": "Critical Incident Method",
+      "B": "Broad-banding",
+      "C": "Point-Factor Method",
+      "D": "Cafeteria Plan"
+    },
+    "correct_answer": "A",
+    "page": 14
+  },
+  {
+    "id": "PYQ_Q67",
+    "question_number": 67,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods, Rating Errors & Implementation",
+    "question": "Why might a well-designed performance system still fail after launch?",
+    "options": {
+      "A": "It uses any measurable objective",
+      "B": "It always includes too much feedback",
+      "C": "Employees do not understand expectations and departments apply inconsistent criteria",
+      "D": "Managers communicate the system too clearly"
+    },
+    "correct_answer": "C",
+    "page": 14
+  },
+  {
+    "id": "PYQ_Q68",
+    "question_number": 68,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods, Rating Errors & Implementation",
+    "question": "What is the strongest reason to communicate a new appraisal system before putting it into operation?",
+    "options": {
+      "A": "Communication removes the need for evidence",
+      "B": "It builds understanding, trust, and acceptance",
+      "C": "It makes objective-setting unnecessary",
+      "D": "It guarantees everyone receives a high rating"
+    },
+    "correct_answer": "B",
+    "page": 14
+  },
+  {
+    "id": "PYQ_Q69",
+    "question_number": 69,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods, Rating Errors & Implementation",
+    "question": "MBO (Management by Objectives) was originally proposed by:",
+    "options": {
+      "A": "Frederick Herzberg",
+      "B": "Peter Drucker",
+      "C": "Douglas McGregor",
+      "D": "Victor Vroom"
+    },
+    "correct_answer": "B",
+    "page": 14
+  },
+  {
+    "id": "PYQ_Q70",
+    "question_number": 70,
+    "week": 4,
+    "topic": "Week 4 - Appraisal Methods, Rating Errors & Implementation",
+    "question": "A major criticism of the Bell Curve (Forced Distribution) Method is that it:",
+    "options": {
+      "A": "Requires too many raters",
+      "B": "Focuses only on non-financial outcomes",
+      "C": "May force artificial rankings that do not reflect actual performance distribution",
+      "D": "Is too simple to administer"
+    },
+    "correct_answer": "C",
+    "page": 14
+  },
+  {
+    "id": "PYQ_Q71",
+    "question_number": 71,
+    "week": 5,
+    "topic": "Week 5 - Development, Coaching, Teams & Recognition",
+    "question": "A performance meeting discusses an employee's future career aspirations, skills to build, and experiences needed for greater responsibility. Which activity is this?",
+    "options": {
+      "A": "Personal Development Planning",
+      "B": "Forced distribution",
+      "C": "Commission calculation",
+      "D": "Job classification"
+    },
+    "correct_answer": "A",
+    "page": 15
+  },
+  {
+    "id": "PYQ_Q72",
+    "question_number": 72,
+    "week": 5,
+    "topic": "Week 5 - Development, Coaching, Teams & Recognition",
+    "question": "A manager meets a newly promoted supervisor weekly to discuss real problems, provide feedback, and improve on-the-job leadership. This is:",
+    "options": {
+      "A": "Market pricing",
+      "B": "Forced ranking",
+      "C": "Job evaluation",
+      "D": "Coaching"
+    },
+    "correct_answer": "D",
+    "page": 15
+  },
+  {
+    "id": "PYQ_Q73",
+    "question_number": 73,
+    "week": 5,
+    "topic": "Week 5 - Development, Coaching, Teams & Recognition",
+    "question": "A senior colleague explains experience, offers advice, and gradually increases a new employee's confidence and responsibility. What role is most directly described?",
+    "options": {
+      "A": "Coach",
+      "B": "Compensation specialist",
+      "C": "Recruiter",
+      "D": "Auditor"
+    },
+    "correct_answer": "A",
+    "page": 15
+  },
+  {
+    "id": "PYQ_Q74",
+    "question_number": 74,
+    "week": 5,
+    "topic": "Week 5 - Development, Coaching, Teams & Recognition",
+    "question": "Employees from finance, production, logistics, and marketing are temporarily assembled to deliver a six-month initiative and then return to their departments. This is a:",
+    "options": {
+      "A": "Project team",
+      "B": "Service team",
+      "C": "Self-managed team",
+      "D": "Permanent work team"
+    },
+    "correct_answer": "A",
+    "page": 15
+  },
+  {
+    "id": "PYQ_Q75",
+    "question_number": 75,
+    "week": 5,
+    "topic": "Week 5 - Development, Coaching, Teams & Recognition",
+    "question": "Every team member receives an identical bonus even when contributions differ, and some reduce their effort. This behaviour is known as:",
+    "options": {
+      "A": "Competency mapping",
+      "B": "Social loafing",
+      "C": "Job enlargement",
+      "D": "Strategic dialogue"
+    },
+    "correct_answer": "B",
+    "page": 15
+  },
+  {
+    "id": "PYQ_Q76",
+    "question_number": 76,
+    "week": 5,
+    "topic": "Week 5 - Development, Coaching, Teams & Recognition",
+    "question": "A project bonus is split between team results and each member's contribution. What is the main design advantage?",
+    "options": {
+      "A": "It discourages cooperation",
+      "B": "It balances collaboration and individual accountability",
+      "C": "It eliminates the need for goals",
+      "D": "It removes all performance differences"
+    },
+    "correct_answer": "B",
+    "page": 16
+  },
+  {
+    "id": "PYQ_Q77",
+    "question_number": 77,
+    "week": 5,
+    "topic": "Week 5 - Development, Coaching, Teams & Recognition",
+    "question": "A manager publicly recognizes an employee's successful handling of a difficult client and offers a high-visibility assignment. This most directly provides:",
+    "options": {
+      "A": "Non-financial recognition and development opportunity",
+      "B": "A job-evaluation score",
+      "C": "Only a pension benefit",
+      "D": "A market supplement"
+    },
+    "correct_answer": "A",
+    "page": 16
+  },
+  {
+    "id": "PYQ_Q78",
+    "question_number": 78,
+    "week": 5,
+    "topic": "Week 5 - Development, Coaching, Teams & Recognition",
+    "question": "Why can equal team bonuses sometimes be viewed as unfair by high contributors?",
+    "options": {
+      "A": "Bonuses must always be seniority-based",
+      "B": "Teamwork should never be rewarded",
+      "C": "The reward may not reflect differences in individual contribution",
+      "D": "Successful projects have no value"
+    },
+    "correct_answer": "C",
+    "page": 16
+  },
+  {
+    "id": "PYQ_Q79",
+    "question_number": 79,
+    "week": 5,
+    "topic": "Week 5 - Development, Coaching, Teams & Recognition",
+    "question": "A manager asking 'Where do you see yourself in 5 years?' and 'What capabilities do you want to develop?' is conducting a:",
+    "options": {
+      "A": "Corrective feedback session",
+      "B": "Technical review meeting",
+      "C": "Disciplinary interview",
+      "D": "Strategic dialogue"
+    },
+    "correct_answer": "D",
+    "page": 16
+  },
+  {
+    "id": "PYQ_Q80",
+    "question_number": 80,
+    "week": 5,
+    "topic": "Week 5 - Development, Coaching, Teams & Recognition",
+    "question": "A development plan identifies a skill gap but no action, owner, or follow-up date. What is the main weakness?",
+    "options": {
+      "A": "It contains too many measurable targets",
+      "B": "It lacks actionable development steps and follow-up",
+      "C": "It overuses team reward",
+      "D": "It is too evidence-based"
+    },
+    "correct_answer": "B",
+    "page": 16
+  },
+  {
+    "id": "PYQ_Q81",
+    "question_number": 81,
+    "week": 5,
+    "topic": "Week 5 - Development, Coaching, Teams & Recognition",
+    "question": "Which of the following BEST prevents social loafing in team reward systems?",
+    "options": {
+      "A": "Paying all team members equally",
+      "B": "Including an individual contribution component in the reward",
+      "C": "Eliminating bonuses altogether",
+      "D": "Reducing team size to two members"
+    },
+    "correct_answer": "B",
+    "page": 17
+  },
+  {
+    "id": "PYQ_Q82",
+    "question_number": 82,
+    "week": 5,
+    "topic": "Week 5 - Development, Coaching, Teams & Recognition",
+    "question": "Personal Development Planning (PDP) primarily focuses on:",
+    "options": {
+      "A": "Immediate salary revision",
+      "B": "Identifying disciplinary actions",
+      "C": "Future growth, skill development, and career aspirations",
+      "D": "Calculating retirement benefits"
+    },
+    "correct_answer": "C",
+    "page": 17
+  },
+  {
+    "id": "PYQ_Q83",
+    "question_number": 83,
+    "week": 5,
+    "topic": "Week 5 - Development, Coaching, Teams & Recognition",
+    "question": "An organization assigns an employee a stretch task and then schedules regular feedback to build a capability identified in the development discussion. Which purpose is most directly served?",
+    "options": {
+      "A": "External salary benchmarking",
+      "B": "Job classification",
+      "C": "Forced ranking",
+      "D": "Skill development through coaching"
+    },
+    "correct_answer": "D",
+    "page": 17
+  },
+  {
+    "id": "PYQ_Q84",
+    "question_number": 84,
+    "week": 5,
+    "topic": "Week 5 - Development, Coaching, Teams & Recognition",
+    "question": "An employee receiving public CEO praise, newsletter features, and an opportunity to present best practices has primarily received:",
+    "options": {
+      "A": "Direct financial reward",
+      "B": "Deferred compensation",
+      "C": "Non-financial reward",
+      "D": "Retirement benefit"
+    },
+    "correct_answer": "C",
+    "page": 17
+  },
+  {
+    "id": "PYQ_Q85",
+    "question_number": 85,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards, Fairness & Engagement",
+    "question": "An employee receives salary, bonus, insurance, flexibility, learning opportunities, and recognition. Which philosophy best describes this package?",
+    "options": {
+      "A": "Piece-rate system",
+      "B": "Forced distribution",
+      "C": "Total Reward approach",
+      "D": "Job-ranking method"
+    },
+    "correct_answer": "C",
+    "page": 17
+  },
+  {
+    "id": "PYQ_Q86",
+    "question_number": 86,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards, Fairness & Engagement",
+    "question": "An employee stays with an employer despite a slightly higher external salary because of meaningful work, flexibility, supportive culture, and growth. These are best described as:",
+    "options": {
+      "A": "Pension multipliers",
+      "B": "Only direct financial rewards",
+      "C": "Job evaluation points",
+      "D": "Relational rewards"
+    },
+    "correct_answer": "D",
+    "page": 18
+  },
+  {
+    "id": "PYQ_Q87",
+    "question_number": 87,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards, Fairness & Engagement",
+    "question": "A company ties long-term incentives and recognition to its innovation strategy. This is an example of:",
+    "options": {
+      "A": "Seniority-only pay",
+      "B": "Confidential reporting",
+      "C": "Job classification",
+      "D": "Strategic Reward Management"
+    },
+    "correct_answer": "D",
+    "page": 18
+  },
+  {
+    "id": "PYQ_Q88",
+    "question_number": 88,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards, Fairness & Engagement",
+    "question": "Two jobs with similar responsibilities and effort receive substantially different pay without a clear reason. Which principle is most directly questioned?",
+    "options": {
+      "A": "Efficiency wage",
+      "B": "Segmentation",
+      "C": "Equity",
+      "D": "Broad-banding"
+    },
+    "correct_answer": "C",
+    "page": 18
+  },
+  {
+    "id": "PYQ_Q89",
+    "question_number": 89,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards, Fairness & Engagement",
+    "question": "Employees understand how bonus decisions are made and how to appeal them. Which feature is most visible?",
+    "options": {
+      "A": "Forced distribution",
+      "B": "Transparency",
+      "C": "Pay secrecy",
+      "D": "Confidentiality"
+    },
+    "correct_answer": "B",
+    "page": 18
+  },
+  {
+    "id": "PYQ_Q90",
+    "question_number": 90,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards, Fairness & Engagement",
+    "question": "Promotion decisions follow documented rules applied consistently to all employees. People who are not promoted still believe the process was fair. This reflects:",
+    "options": {
+      "A": "Moral hazard",
+      "B": "Procedural justice",
+      "C": "Piece-rate pay",
+      "D": "Distributive justice only"
+    },
+    "correct_answer": "B",
+    "page": 18
+  },
+  {
+    "id": "PYQ_Q91",
+    "question_number": 91,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards, Fairness & Engagement",
+    "question": "An employee receives an outcome they consider disappointing but believes the decision process was consistent and unbiased. Which distinction is important?",
+    "options": {
+      "A": "Transparency requires equal pay for all jobs",
+      "B": "Fair process always guarantees a preferred outcome",
+      "C": "Equity means the outcome must be identical",
+      "D": "Procedural fairness can be perceived separately from the outcome"
+    },
+    "correct_answer": "D",
+    "page": 19
+  },
+  {
+    "id": "PYQ_Q92",
+    "question_number": 92,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards, Fairness & Engagement",
+    "question": "An employee is satisfied with pay but frustrated by limited training, learning, and career progression. In the Hay Group model, which pillar is weakest?",
+    "options": {
+      "A": "Work-life balance",
+      "B": "Tangible rewards",
+      "C": "Future growth opportunity",
+      "D": "Enabling environment"
+    },
+    "correct_answer": "C",
+    "page": 19
+  },
+  {
+    "id": "PYQ_Q93",
+    "question_number": 93,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards, Fairness & Engagement",
+    "question": "A company gives staff safe working conditions, effective tools, and information needed to do their jobs. Which Hay Group pillar is emphasized?",
+    "options": {
+      "A": "Tangible rewards",
+      "B": "Future growth",
+      "C": "Tournament rewards",
+      "D": "Enabling environment"
+    },
+    "correct_answer": "D",
+    "page": 19
+  },
+  {
+    "id": "PYQ_Q94",
+    "question_number": 94,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards, Fairness & Engagement",
+    "question": "A manager argues that fairness means giving everyone exactly the same salary regardless of role or contribution. What is the best response?",
+    "options": {
+      "A": "Fairness may require rewards to reflect contribution and performance",
+      "B": "Performance should never influence rewards",
+      "C": "Equality and equity are always identical",
+      "D": "Pay decisions should be hidden"
+    },
+    "correct_answer": "A",
+    "page": 19
+  },
+  {
+    "id": "PYQ_Q95",
+    "question_number": 95,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards, Fairness & Engagement",
+    "question": "A specialist is assigned overseas for two years and receives relocation, housing, and education support in addition to salary. Which area is involved?",
+    "options": {
+      "A": "International reward management",
+      "B": "Cafeteria plan only",
+      "C": "Central tendency",
+      "D": "Job ranking"
+    },
+    "correct_answer": "A",
+    "page": 19
+  },
+  {
+    "id": "PYQ_Q96",
+    "question_number": 96,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards, Fairness & Engagement",
+    "question": "Employees view a pay outcome as fair because it reflects contribution, and they also trust the consistent process used to decide it. Which combination is most relevant?",
+    "options": {
+      "A": "Pay posture and compa-ratio",
+      "B": "Moral hazard and tournament theory",
+      "C": "Equity and procedural justice",
+      "D": "Task and contextual performance"
+    },
+    "correct_answer": "C",
+    "page": 20
+  },
+  {
+    "id": "PYQ_Q97",
+    "question_number": 97,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards, Fairness & Engagement",
+    "question": "Which of the following BEST describes distributive justice in reward management?",
+    "options": {
+      "A": "Fairness in the procedures used to make reward decisions",
+      "B": "Fairness in the actual reward amounts relative to contribution",
+      "C": "Equal pay for all employees regardless of performance",
+      "D": "Transparency about bonus calculation methods"
+    },
+    "correct_answer": "B",
+    "page": 20
+  },
+  {
+    "id": "PYQ_Q98",
+    "question_number": 98,
+    "week": 6,
+    "topic": "Week 6 - Total Rewards, Fairness & Engagement",
+    "question": "Strategic Reward Management ensures that rewards are aligned with:",
+    "options": {
+      "A": "Only statutory compliance requirements",
+      "B": "The organization's long-term business goals and people strategy",
+      "C": "Competitors' pay structures",
+      "D": "Individual employee preferences exclusively"
+    },
+    "correct_answer": "B",
+    "page": 20
+  },
+  {
+    "id": "PYQ_Q99",
+    "question_number": 99,
+    "week": 7,
+    "topic": "Week 7 - Incentive Plans & Reward Theories",
+    "question": "A company pays above-market wages and later sees lower turnover, higher productivity, and less absenteeism. Which theory best explains the intended effect?",
+    "options": {
+      "A": "Classical Economic Theory",
+      "B": "Efficiency Wage Theory",
+      "C": "Tournament Theory",
+      "D": "Agency Theory"
+    },
+    "correct_answer": "B",
+    "page": 20
+  },
+  {
+    "id": "PYQ_Q100",
+    "question_number": 100,
+    "week": 7,
+    "topic": "Week 7 - Incentive Plans & Reward Theories",
+    "question": "Employees share in savings generated by suggestions that improve productivity and reduce waste. Which plan is the closest match?",
+    "options": {
+      "A": "Scanlon Plan",
+      "B": "ESOP only",
+      "C": "Defined-benefit plan",
+      "D": "Cafeteria plan"
+    },
+    "correct_answer": "A",
+    "page": 20
+  },
+  {
+    "id": "PYQ_Q101",
+    "question_number": 101,
+    "week": 7,
+    "topic": "Week 7 - Incentive Plans & Reward Theories",
+    "question": "Workers receive different piece rates depending on whether they meet a defined production standard. Which incentive system is most closely associated?",
+    "options": {
+      "A": "Taylor's Differential Piece Rate System",
+      "B": "Wellness program",
+      "C": "Point-Factor Method",
+      "D": "Broad-banding"
+    },
+    "correct_answer": "A",
+    "page": 21
+  },
+  {
+    "id": "PYQ_Q102",
+    "question_number": 102,
+    "week": 7,
+    "topic": "Week 7 - Incentive Plans & Reward Theories",
+    "question": "A startup grants stock options that vest after several years of service. The intended purpose is primarily to:",
+    "options": {
+      "A": "Avoid measuring performance forever",
+      "B": "Create employee ownership and longer-term commitment",
+      "C": "Replace all fixed salary immediately",
+      "D": "Provide short-term meal allowances"
+    },
+    "correct_answer": "B",
+    "page": 21
+  },
+  {
+    "id": "PYQ_Q103",
+    "question_number": 103,
+    "week": 7,
+    "topic": "Week 7 - Incentive Plans & Reward Theories",
+    "question": "An employee's extra payment depends on reaching specified performance targets. Which reward arrangement does this describe?",
+    "options": {
+      "A": "Fixed pay only",
+      "B": "Seniority-only pay",
+      "C": "Contingent pay",
+      "D": "Equal reward regardless of results"
+    },
+    "correct_answer": "C",
+    "page": 21
+  },
+  {
+    "id": "PYQ_Q104",
+    "question_number": 104,
+    "week": 7,
+    "topic": "Week 7 - Incentive Plans & Reward Theories",
+    "question": "Both employer and employee make contributions that accumulate toward a retirement benefit. Which option best matches?",
+    "options": {
+      "A": "Provident Fund",
+      "B": "Recognition award",
+      "C": "Performance bonus",
+      "D": "Stock option"
+    },
+    "correct_answer": "A",
+    "page": 21
+  },
+  {
+    "id": "PYQ_Q105",
+    "question_number": 105,
+    "week": 7,
+    "topic": "Week 7 - Incentive Plans & Reward Theories",
+    "question": "A manager earns incentives only when predefined quality, client satisfaction, and completion targets are met. Which principle is most evident?",
+    "options": {
+      "A": "Seniority-only reward",
+      "B": "Performance-related pay",
+      "C": "Equal pay regardless of result",
+      "D": "Fixed compensation"
+    },
+    "correct_answer": "B",
+    "page": 21
+  },
+  {
+    "id": "PYQ_Q106",
+    "question_number": 106,
+    "week": 7,
+    "topic": "Week 7 - Incentive Plans & Reward Theories",
+    "question": "An employee earns more because specialized certifications and analytical skills increase productivity. Which theory best explains the role of skill investment?",
+    "options": {
+      "A": "Agency Theory",
+      "B": "Reinforcement Theory",
+      "C": "Tournament Theory",
+      "D": "Human Capital Theory"
+    },
+    "correct_answer": "D",
+    "page": 22
+  },
+  {
+    "id": "PYQ_Q107",
+    "question_number": 107,
+    "week": 7,
+    "topic": "Week 7 - Incentive Plans & Reward Theories",
+    "question": "Staff receive a fixed benefits budget and choose between health cover, childcare, education assistance, or travel benefits. This is a:",
+    "options": {
+      "A": "Bell Curve",
+      "B": "Scanlon Plan",
+      "C": "Cafeteria / Flex-Fund Plan",
+      "D": "Taylor differential piece rate"
+    },
+    "correct_answer": "C",
+    "page": 22
+  },
+  {
+    "id": "PYQ_Q108",
+    "question_number": 108,
+    "week": 7,
+    "topic": "Week 7 - Incentive Plans & Reward Theories",
+    "question": "An employer introduces fitness memberships, counselling, and preventive health checks to address employee stress. This is a:",
+    "options": {
+      "A": "Job evaluation method",
+      "B": "Contingent pay plan",
+      "C": "Wellness program",
+      "D": "Market supplement"
+    },
+    "correct_answer": "C",
+    "page": 22
+  },
+  {
+    "id": "PYQ_Q109",
+    "question_number": 109,
+    "week": 7,
+    "topic": "Week 7 - Incentive Plans & Reward Theories",
+    "question": "Which is the most likely risk of making production quantity the only determinant of earnings?",
+    "options": {
+      "A": "Workers may prioritize output at the expense of quality",
+      "B": "Quality automatically improves",
+      "C": "Machine breakdowns cease to matter",
+      "D": "All employees become equally productive"
+    },
+    "correct_answer": "A",
+    "page": 22
+  },
+  {
+    "id": "PYQ_Q110",
+    "question_number": 110,
+    "week": 7,
+    "topic": "Week 7 - Incentive Plans & Reward Theories",
+    "question": "ESOPs (Employee Stock Ownership Plans) primarily align employee interests with:",
+    "options": {
+      "A": "Trade unions",
+      "B": "Government regulators",
+      "C": "Long-term company shareholder value",
+      "D": "Competitor benchmarks"
+    },
+    "correct_answer": "C",
+    "page": 22
+  },
+  {
+    "id": "PYQ_Q111",
+    "question_number": 111,
+    "week": 7,
+    "topic": "Week 7 - Incentive Plans & Reward Theories",
+    "question": "The Halsey Incentive Plan differs from Taylor's Piece Rate in that it:",
+    "options": {
+      "A": "Pays entirely on output with no minimum guarantee",
+      "B": "Shares time saved between the worker and employer",
+      "C": "Links pay to educational qualifications",
+      "D": "Applies only to managerial roles"
+    },
+    "correct_answer": "B",
+    "page": 23
+  },
+  {
+    "id": "PYQ_Q112",
+    "question_number": 112,
+    "week": 7,
+    "topic": "Week 7 - Incentive Plans & Reward Theories",
+    "question": "The Gantt Task and Bonus Plan rewards workers who meet or exceed standard output with:",
+    "options": {
+      "A": "A flat piece rate only",
+      "B": "A higher piece rate plus a bonus percentage on top",
+      "C": "Only time-based wages regardless of output",
+      "D": "Stock options vesting after one year"
+    },
+    "correct_answer": "B",
+    "page": 23
+  },
+  {
+    "id": "PYQ_Q113",
+    "question_number": 113,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "Two jobs with very different responsibility and financial accountability are placed in the same grade solely because their titles sound similar. What fundamental step has been missed?",
+    "options": {
+      "A": "Calculating a bonus tax",
+      "B": "Applying a recency correction",
+      "C": "Introducing a wellness program",
+      "D": "Evaluating the relative worth of the jobs"
+    },
+    "correct_answer": "D",
+    "page": 23
+  },
+  {
+    "id": "PYQ_Q114",
+    "question_number": 114,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "Wages for a hard-to-find occupation rise because competing employers are recruiting aggressively from the same labour pool. Which explanation matches?",
+    "options": {
+      "A": "Kantian ethics",
+      "B": "Agency Theory only",
+      "C": "Central Tendency Theory",
+      "D": "Classical Economic Theory"
+    },
+    "correct_answer": "D",
+    "page": 23
+  },
+  {
+    "id": "PYQ_Q115",
+    "question_number": 115,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "An HR team weights knowledge, problem-solving, responsibility, and working conditions, then scores each job. Which method is this?",
+    "options": {
+      "A": "Simple ranking",
+      "B": "Point-Factor Method",
+      "C": "Graphic rating scale",
+      "D": "Assessment centre"
+    },
+    "correct_answer": "B",
+    "page": 23
+  },
+  {
+    "id": "PYQ_Q116",
+    "question_number": 116,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "Shareholders introduce stock-based executive compensation to discourage leaders from focusing only on personal short-term gains. Which theory supports the design?",
+    "options": {
+      "A": "Human Capital Theory only",
+      "B": "Efficiency Wage Theory",
+      "C": "Classical Economic Theory",
+      "D": "Agency Theory"
+    },
+    "correct_answer": "D",
+    "page": 24
+  },
+  {
+    "id": "PYQ_Q117",
+    "question_number": 117,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "Before scoring jobs with a point-factor system, why must an organization define compensable factors?",
+    "options": {
+      "A": "They replace market data entirely",
+      "B": "They establish the dimensions against which job value will be assessed",
+      "C": "They determine every employee's annual bonus directly",
+      "D": "They eliminate the need for job descriptions"
+    },
+    "correct_answer": "B",
+    "page": 24
+  },
+  {
+    "id": "PYQ_Q118",
+    "question_number": 118,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "A newly created role is compared with existing roles already evaluated internally. Which technique is being used?",
+    "options": {
+      "A": "Critical incident method",
+      "B": "Forced distribution",
+      "C": "External market pricing only",
+      "D": "Internal benchmarking"
+    },
+    "correct_answer": "D",
+    "page": 24
+  },
+  {
+    "id": "PYQ_Q119",
+    "question_number": 119,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "An organization replaces 18 narrow grades with five broad salary bands to give managers greater flexibility. What structure is this?",
+    "options": {
+      "A": "Piece-rate structure",
+      "B": "Commission-only structure",
+      "C": "Narrow-graded structure",
+      "D": "Broad-banded structure"
+    },
+    "correct_answer": "D",
+    "page": 24
+  },
+  {
+    "id": "PYQ_Q120",
+    "question_number": 120,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "A compensation survey shows that software architects are paid below the industry median. HR proposes adjusting salary ranges. This is:",
+    "options": {
+      "A": "Market Rate Analysis",
+      "B": "Job rotation",
+      "C": "Performance execution",
+      "D": "Halo correction"
+    },
+    "correct_answer": "A",
+    "page": 24
+  },
+  {
+    "id": "PYQ_Q121",
+    "question_number": 121,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "A job is matched to standardized grade descriptions based on its responsibilities and required expertise. Which method is closest?",
+    "options": {
+      "A": "Bell Curve Method",
+      "B": "Role-to-role matching only",
+      "C": "Forced ranking",
+      "D": "Role-to-Grade Analytical Matching"
+    },
+    "correct_answer": "D",
+    "page": 25
+  },
+  {
+    "id": "PYQ_Q122",
+    "question_number": 122,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "Why should survey jobs be compared using duties, responsibilities, and reporting relationships rather than titles alone?",
+    "options": {
+      "A": "Descriptions remove the need to check market data",
+      "B": "Titles determine performance ratings",
+      "C": "Titles have exactly the same meaning in every organization",
+      "D": "Job descriptions give a more accurate basis for comparison"
+    },
+    "correct_answer": "D",
+    "page": 25
+  },
+  {
+    "id": "PYQ_Q123",
+    "question_number": 123,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "The Job Ranking method of job evaluation is BEST described as:",
+    "options": {
+      "A": "Assigning point scores to compensable factors",
+      "B": "Ranking jobs from highest to lowest worth in a non-analytical way",
+      "C": "Grouping jobs into predetermined grades",
+      "D": "Comparing jobs against market benchmarks"
+    },
+    "correct_answer": "B",
+    "page": 25
+  },
+  {
+    "id": "PYQ_Q124",
+    "question_number": 124,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "A pay structure with many narrow grades (e.g., 20+ grades) typically offers:",
+    "options": {
+      "A": "High flexibility for lateral moves",
+      "B": "Clear promotion steps and defined career progression",
+      "C": "Minimal administrative burden",
+      "D": "Broad ranges that accommodate diverse roles"
+    },
+    "correct_answer": "B",
+    "page": 25
+  },
+  {
+    "id": "PYQ_Q125",
+    "question_number": 125,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "A point-factor evaluation assigns values to job factors and combines them into a total score. What is this score intended to indicate?",
+    "options": {
+      "A": "The employee's personality",
+      "B": "The relative worth of the job within the evaluation framework",
+      "C": "The latest month's sales result",
+      "D": "The employee's retirement age"
+    },
+    "correct_answer": "B",
+    "page": 25
+  },
+  {
+    "id": "PYQ_Q126",
+    "question_number": 126,
+    "week": 8,
+    "topic": "Week 8 - Job Evaluation & Pay Structures",
+    "question": "A 'Job Family Structure' groups jobs with similar characteristics into families, each with its own pay range. The PRIMARY advantage of this over a single universal grading structure is:",
+    "options": {
+      "A": "It eliminates the need for market surveys",
+      "B": "It allows pay ranges to better reflect the distinct market rates and career paths of different job families",
+      "C": "It guarantees equal pay across all job families",
+      "D": "It removes the need for job evaluation entirely WORKERS"
+    },
+    "correct_answer": "B",
+    "page": 26
+  },
+  {
+    "id": "PYQ_Q127",
+    "question_number": 127,
+    "week": 9,
+    "topic": "Week 9 - Executive Rewards, Incentive Risks & Knowledge",
+    "question": "A board links substantial CEO pay to long-term stock performance to reduce focus on short-term profit at the expense of sustainability. Which theory most strongly supports this?",
+    "options": {
+      "A": "Classical Economic Theory only",
+      "B": "Agency Theory",
+      "C": "Central Tendency Theory",
+      "D": "Procedural justice only"
+    },
+    "correct_answer": "B",
+    "page": 26
+  },
+  {
+    "id": "PYQ_Q128",
+    "question_number": 128,
+    "week": 9,
+    "topic": "Week 9 - Executive Rewards, Incentive Risks & Knowledge",
+    "question": "Senior executives compete for a CEO role because the winner receives a very large compensation increase. Which theory best explains the motivational structure?",
+    "options": {
+      "A": "Human Capital Theory",
+      "B": "Kantian ethics",
+      "C": "Efficiency Wage Theory",
+      "D": "Tournament Theory"
+    },
+    "correct_answer": "D",
+    "page": 26
+  },
+  {
+    "id": "PYQ_Q129",
+    "question_number": 129,
+    "week": 9,
+    "topic": "Week 9 - Executive Rewards, Incentive Risks & Knowledge",
+    "question": "Which component of a senior executive's package most directly links personal wealth to long-term shareholder value?",
+    "options": {
+      "A": "Stock options",
+      "B": "Fixed meal benefit",
+      "C": "Basic salary",
+      "D": "Routine allowance"
+    },
+    "correct_answer": "A",
+    "page": 26
+  },
+  {
+    "id": "PYQ_Q130",
+    "question_number": 130,
+    "week": 9,
+    "topic": "Week 9 - Executive Rewards, Incentive Risks & Knowledge",
+    "question": "A CEO pursues high-risk investments because the immediate bonus is based entirely on short-term profit, while later losses fall on the company. What concern does this illustrate?",
+    "options": {
+      "A": "Compa-ratio",
+      "B": "Broad-banding",
+      "C": "Procedural justice",
+      "D": "Moral hazard"
+    },
+    "correct_answer": "D",
+    "page": 27
+  },
+  {
+    "id": "PYQ_Q131",
+    "question_number": 131,
+    "week": 9,
+    "topic": "Week 9 - Executive Rewards, Incentive Risks & Knowledge",
+    "question": "A sales representative is paid only a percentage of the value of sales and receives no fixed salary. Which arrangement is used?",
+    "options": {
+      "A": "Salary plus bonus",
+      "B": "Profit-sharing plan",
+      "C": "Defined-benefit plan",
+      "D": "Commission-only plan"
+    },
+    "correct_answer": "D",
+    "page": 27
+  },
+  {
+    "id": "PYQ_Q132",
+    "question_number": 132,
+    "week": 9,
+    "topic": "Week 9 - Executive Rewards, Incentive Risks & Knowledge",
+    "question": "A call centre rewards only the number of calls handled. Employees shorten conversations and customer satisfaction declines. What lesson is clearest?",
+    "options": {
+      "A": "Customer outcomes should never be measured",
+      "B": "Reward measures can unintentionally encourage undesirable behaviour",
+      "C": "Quantity targets always capture total performance",
+      "D": "Fixed salaries eliminate every service issue"
+    },
+    "correct_answer": "B",
+    "page": 27
+  },
+  {
+    "id": "PYQ_Q133",
+    "question_number": 133,
+    "week": 9,
+    "topic": "Week 9 - Executive Rewards, Incentive Risks & Knowledge",
+    "question": "A knowledge worker values intellectual freedom, challenging assignments, and opportunities to learn more than piece-rate payments. Which motivators are most relevant?",
+    "options": {
+      "A": "Autonomy and personal growth",
+      "B": "Attendance bonuses only",
+      "C": "Fixed output quotas only",
+      "D": "Physical-effort incentives"
+    },
+    "correct_answer": "A",
+    "page": 27
+  },
+  {
+    "id": "PYQ_Q134",
+    "question_number": 134,
+    "week": 9,
+    "topic": "Week 9 - Executive Rewards, Incentive Risks & Knowledge",
+    "question": "A payment-by-results scheme increases output but also increases defective products. What is the common drawback illustrated?",
+    "options": {
+      "A": "Excessive pension security",
+      "B": "Quality deterioration due to output focus",
+      "C": "Guaranteed improvement in teamwork",
+      "D": "Reduced transparency in every case"
+    },
+    "correct_answer": "B",
+    "page": 27
+  },
+  {
+    "id": "PYQ_Q135",
+    "question_number": 135,
+    "week": 9,
+    "topic": "Week 9 - Executive Rewards, Incentive Risks & Knowledge",
+    "question": "Workers miss targets because a machine breakdown and shortage of raw materials reduce output despite diligent effort. Why might an output-based reward be viewed as unfair?",
+    "options": {
+      "A": "Workers should never have performance targets",
+      "B": "Rewards are influenced by factors beyond employee control",
+      "C": "The company has eliminated all external risks",
+      "D": "Output-based rewards always pay the same amount"
+    },
+    "correct_answer": "B",
+    "page": 28
+  },
+  {
+    "id": "PYQ_Q136",
+    "question_number": 136,
+    "week": 9,
+    "topic": "Week 9 - Executive Rewards, Incentive Risks & Knowledge",
+    "question": "A bank wants relationship managers to increase sales without damaging customer satisfaction or long-term client relationships. Which plan is best?",
+    "options": {
+      "A": "Salary plus bonus tied to both sales and customer satisfaction",
+      "B": "Commission based only on sales volume",
+      "C": "Fixed salary with no performance measures",
+      "D": "Seniority increases only"
+    },
+    "correct_answer": "A",
+    "page": 28
+  },
+  {
+    "id": "PYQ_Q137",
+    "question_number": 137,
+    "week": 9,
+    "topic": "Week 9 - Executive Rewards, Incentive Risks & Knowledge",
+    "question": "What is a central design safeguard when introducing executive incentives?",
+    "options": {
+      "A": "Reward short-term outcomes only",
+      "B": "Consider longer-term outcomes and the risks created by the chosen measures",
+      "C": "Avoid defining performance conditions",
+      "D": "Make rewards unrelated to company objectives"
+    },
+    "correct_answer": "B",
+    "page": 28
+  },
+  {
+    "id": "PYQ_Q138",
+    "question_number": 138,
+    "week": 9,
+    "topic": "Week 9 - Executive Rewards, Incentive Risks & Knowledge",
+    "question": "Agency Theory primarily addresses the conflict of interest between:",
+    "options": {
+      "A": "Employees and trade unions",
+      "B": "Principals (shareholders) and agents (executives)",
+      "C": "HR department and line managers",
+      "D": "Government regulators and corporations"
+    },
+    "correct_answer": "B",
+    "page": 28
+  },
+  {
+    "id": "PYQ_Q139",
+    "question_number": 139,
+    "week": 9,
+    "topic": "Week 9 - Executive Rewards, Incentive Risks & Knowledge",
+    "question": "The concept of 'Moral Hazard' in executive reward management occurs when:",
+    "options": {
+      "A": "An executive refuses a performance bonus",
+      "B": "An executive takes excessive risks because the downside is borne by others",
+      "C": "Pay transparency is introduced in an organization",
+      "D": "Stock options are granted to all employees"
+    },
+    "correct_answer": "B",
+    "page": 28
+  },
+  {
+    "id": "PYQ_Q140",
+    "question_number": 140,
+    "week": 10,
+    "topic": "Week 10 - Public-Sector Pay & Retirement Benefits",
+    "question": "The minimum basic pay recommended under the 7th Central Pay Commission of India was:",
+    "options": {
+      "A": "Rs. 25,000",
+      "B": "Rs. 21,000",
+      "C": "Rs. 15,000",
+      "D": "Rs. 18,000"
+    },
+    "correct_answer": "D",
+    "page": 29
+  },
+  {
+    "id": "PYQ_Q141",
+    "question_number": 141,
+    "week": 10,
+    "topic": "Week 10 - Public-Sector Pay & Retirement Benefits",
+    "question": "Multiplying an employee's existing pay by a uniform factor to place it in the new 7th CPC pay matrix is called the:",
+    "options": {
+      "A": "Pension Multiplier",
+      "B": "Risk and Hardship Index",
+      "C": "Fitment Factor",
+      "D": "Dearness Allowance"
+    },
+    "correct_answer": "C",
+    "page": 29
+  },
+  {
+    "id": "PYQ_Q142",
+    "question_number": 142,
+    "week": 10,
+    "topic": "Week 10 - Public-Sector Pay & Retirement Benefits",
+    "question": "Under Plan A, the pension is predetermined by service and final salary. Under Plan B, retirement income depends on contributions and investment returns. Plan A is a:",
+    "options": {
+      "A": "Cafeteria benefits plan",
+      "B": "Defined Benefit Scheme",
+      "C": "Market-linked contribution account",
+      "D": "Defined Contribution Scheme"
+    },
+    "correct_answer": "B",
+    "page": 29
+  },
+  {
+    "id": "PYQ_Q143",
+    "question_number": 143,
+    "week": 10,
+    "topic": "Week 10 - Public-Sector Pay & Retirement Benefits",
+    "question": "The government's employer contribution to NPS accounts was increased TO 14% FROM:",
+    "options": {
+      "A": "8%",
+      "B": "10%",
+      "C": "12%",
+      "D": "15%"
+    },
+    "correct_answer": "B",
+    "page": 29
+  },
+  {
+    "id": "PYQ_Q144",
+    "question_number": 144,
+    "week": 10,
+    "topic": "Week 10 - Public-Sector Pay & Retirement Benefits",
+    "question": "The approved annual increment rate under the 7th Pay Commission is:",
+    "options": {
+      "A": "2%",
+      "B": "2.5%",
+      "C": "4%",
+      "D": "3%"
+    },
+    "correct_answer": "D",
+    "page": 29
+  },
+  {
+    "id": "PYQ_Q145",
+    "question_number": 145,
+    "week": 10,
+    "topic": "Week 10 - Public-Sector Pay & Retirement Benefits",
+    "question": "Under the Atal Pension Yojana (APY), the MAXIMUM assured monthly pension available is:",
+    "options": {
+      "A": "Rs. 2,000",
+      "B": "Rs. 3,000",
+      "C": "Rs. 4,000",
+      "D": "Rs. 5,000"
+    },
+    "correct_answer": "D",
+    "page": 30
+  },
+  {
+    "id": "PYQ_Q146",
+    "question_number": 146,
+    "week": 10,
+    "topic": "Week 10 - Public-Sector Pay & Retirement Benefits",
+    "question": "Special allowances for employees in dangerous or difficult working conditions (under 7th CPC) are governed by the:",
+    "options": {
+      "A": "Pay Rationalization Matrix",
+      "B": "Risk and Hardship Matrix",
+      "C": "Compensation Adjustment Grid",
+      "D": "Occupational Exposure Index"
+    },
+    "correct_answer": "B",
+    "page": 30
+  },
+  {
+    "id": "PYQ_Q147",
+    "question_number": 147,
+    "week": 10,
+    "topic": "Week 10 - Public-Sector Pay & Retirement Benefits",
+    "question": "The regulatory authority that supervises pension fund managers and NPS compliance is:",
+    "options": {
+      "A": "RBI",
+      "B": "SEBI",
+      "C": "IRDAI",
+      "D": "PFRDA"
+    },
+    "correct_answer": "D",
+    "page": 30
+  },
+  {
+    "id": "PYQ_Q148",
+    "question_number": 148,
+    "week": 10,
+    "topic": "Week 10 - Public-Sector Pay & Retirement Benefits",
+    "question": "An NPS account that allows flexible deposits and withdrawals for short-term financial needs is the:",
+    "options": {
+      "A": "EPF Account",
+      "B": "PRAN Plus Account",
+      "C": "NPS Tier II Account",
+      "D": "CGEGIS Account"
+    },
+    "correct_answer": "C",
+    "page": 30
+  },
+  {
+    "id": "PYQ_Q149",
+    "question_number": 149,
+    "week": 10,
+    "topic": "Week 10 - Public-Sector Pay & Retirement Benefits",
+    "question": "The CORRECT distinction between defined benefit and defined contribution pension plans is:",
+    "options": {
+      "A": "Defined contribution plans guarantee pension; defined benefit depends on market performance",
+      "B": "Both plans provide identical benefits",
+      "C": "Defined benefit plans guarantee pension; defined contribution depends on contributions and investment returns",
+      "D": "Only government employees can join defined contribution plans"
+    },
+    "correct_answer": "C",
+    "page": 30
+  },
+  {
+    "id": "PYQ_Q150",
+    "question_number": 150,
+    "week": 10,
+    "topic": "Week 10 - Public-Sector Pay & Retirement Benefits",
+    "question": "NPS Tier I account is primarily characterized by:",
+    "options": {
+      "A": "Free withdrawal at any time",
+      "B": "Restrictions on withdrawal until retirement",
+      "C": "Investment only in government bonds",
+      "D": "No employer contribution"
+    },
+    "correct_answer": "B",
+    "page": 31
+  },
+  {
+    "id": "PYQ_Q151",
+    "question_number": 151,
+    "week": 10,
+    "topic": "Week 10 - Public-Sector Pay & Retirement Benefits",
+    "question": "Dearness Allowance (DA) in government pay is primarily linked to:",
+    "options": {
+      "A": "Employee seniority",
+      "B": "Inflation and changes in the Consumer Price Index",
+      "C": "Annual performance ratings",
+      "D": "Geographic posting location"
+    },
+    "correct_answer": "B",
+    "page": 31
+  },
+  {
+    "id": "PYQ_Q152",
+    "question_number": 152,
+    "week": 10,
+    "topic": "Week 10 - Public-Sector Pay & Retirement Benefits",
+    "question": "Why is it important to distinguish a pension scheme's guaranteed benefit from a contribution-based account?",
+    "options": {
+      "A": "They have identical risk allocation",
+      "B": "The employee's retirement outcome and exposure to investment performance differ",
+      "C": "It determines the employee's appraisal rating",
+      "D": "It eliminates the need to contribute"
+    },
+    "correct_answer": "B",
+    "page": 31
+  },
+  {
+    "id": "PYQ_Q153",
+    "question_number": 153,
+    "week": 11,
+    "topic": "Week 11 - Reward-System Design & Review",
+    "question": "A reward system includes salary, benefits, flexibility, recognition, and career development rather than focusing on pay increases alone. Which philosophy is this?",
+    "options": {
+      "A": "Total Rewards Approach",
+      "B": "Job Evaluation Approach",
+      "C": "Broad-Banding Approach",
+      "D": "Market Pricing Approach"
+    },
+    "correct_answer": "A",
+    "page": 31
+  },
+  {
+    "id": "PYQ_Q154",
+    "question_number": 154,
+    "week": 11,
+    "topic": "Week 11 - Reward-System Design & Review",
+    "question": "Why should an organization periodically review a reward system instead of leaving it unchanged for a decade?",
+    "options": {
+      "A": "Employee preferences never change",
+      "B": "Reviewing pay eliminates strategy",
+      "C": "Reward systems must evolve with business strategy and workforce needs",
+      "D": "The law requires every reward system to change each year"
+    },
+    "correct_answer": "C",
+    "page": 31
+  },
+  {
+    "id": "PYQ_Q155",
+    "question_number": 155,
+    "week": 11,
+    "topic": "Week 11 - Reward-System Design & Review",
+    "question": "Before deciding pay ranges, HR identifies what the reward system should accomplish. Which development step is this?",
+    "options": {
+      "A": "Market benchmarking",
+      "B": "Pilot testing",
+      "C": "Red-circling",
+      "D": "Setting reward objectives"
+    },
+    "correct_answer": "D",
+    "page": 32
+  },
+  {
+    "id": "PYQ_Q156",
+    "question_number": 156,
+    "week": 11,
+    "topic": "Week 11 - Reward-System Design & Review",
+    "question": "An organization compares its reward practices with leading industry organizations to identify gaps. Which approach is being used?",
+    "options": {
+      "A": "Forced distribution",
+      "B": "Evidence-based reward development / benchmarking",
+      "C": "Central tendency",
+      "D": "Job rotation"
+    },
+    "correct_answer": "B",
+    "page": 32
+  },
+  {
+    "id": "PYQ_Q157",
+    "question_number": 157,
+    "week": 11,
+    "topic": "Week 11 - Reward-System Design & Review",
+    "question": "Before a full rollout, HR tests a redesigned reward system in one department, gathers feedback, and makes adjustments. This is:",
+    "options": {
+      "A": "Pilot testing",
+      "B": "Job classification",
+      "C": "Red-circling",
+      "D": "Commission-only reward"
+    },
+    "correct_answer": "A",
+    "page": 32
+  },
+  {
+    "id": "PYQ_Q158",
+    "question_number": 158,
+    "week": 11,
+    "topic": "Week 11 - Reward-System Design & Review",
+    "question": "An employee's salary is above the maximum of the assigned pay range, so future increases are frozen while the range catches up. Which practice is this?",
+    "options": {
+      "A": "Green-circling",
+      "B": "Internal benchmarking",
+      "C": "Red-circling",
+      "D": "Broad-banding"
+    },
+    "correct_answer": "C",
+    "page": 32
+  },
+  {
+    "id": "PYQ_Q159",
+    "question_number": 159,
+    "week": 11,
+    "topic": "Week 11 - Reward-System Design & Review",
+    "question": "A market supplement was introduced during a talent shortage. The market later stabilizes. What should the employer consider?",
+    "options": {
+      "A": "Review and potentially remove it if no longer justified",
+      "B": "Keep it forever regardless of circumstances",
+      "C": "Convert it into a performance rating",
+      "D": "Automatically double it"
+    },
+    "correct_answer": "A",
+    "page": 32
+  },
+  {
+    "id": "PYQ_Q160",
+    "question_number": 160,
+    "week": 11,
+    "topic": "Week 11 - Reward-System Design & Review",
+    "question": "Sales staff receive commission, developers receive innovation bonuses, and executives receive long-term incentives. Which principle is this?",
+    "options": {
+      "A": "Segmentation",
+      "B": "Equal pay for all roles",
+      "C": "Job ranking",
+      "D": "Central tendency"
+    },
+    "correct_answer": "A",
+    "page": 33
+  },
+  {
+    "id": "PYQ_Q161",
+    "question_number": 161,
+    "week": 11,
+    "topic": "Week 11 - Reward-System Design & Review",
+    "question": "An employee earns Rs. 72,000 monthly and the salary grade midpoint is Rs. 60,000. What does the compa-ratio indicate?",
+    "options": {
+      "A": "The employee has reached retirement age",
+      "B": "The employee is above the policy midpoint",
+      "C": "The employee is exactly at the midpoint",
+      "D": "The employee is below the midpoint"
+    },
+    "correct_answer": "B",
+    "page": 33
+  },
+  {
+    "id": "PYQ_Q162",
+    "question_number": 162,
+    "week": 11,
+    "topic": "Week 11 - Reward-System Design & Review",
+    "question": "An organization deliberately pays approximately 10% above the industry average to attract and retain scarce talent. Which concept is being described?",
+    "options": {
+      "A": "Compa-ratio",
+      "B": "Pay posture",
+      "C": "Red-circling",
+      "D": "Job evaluation"
+    },
+    "correct_answer": "B",
+    "page": 33
+  },
+  {
+    "id": "PYQ_Q163",
+    "question_number": 163,
+    "week": 11,
+    "topic": "Week 11 - Reward-System Design & Review",
+    "question": "Green-Circling in pay management refers to a situation where:",
+    "options": {
+      "A": "An employee's pay is above the maximum of the grade",
+      "B": "An employee's pay is below the minimum of the grade",
+      "C": "An employee receives a market supplement",
+      "D": "All employees receive the same percentage increment"
+    },
+    "correct_answer": "B",
+    "page": 33
+  },
+  {
+    "id": "PYQ_Q164",
+    "question_number": 164,
+    "week": 11,
+    "topic": "Week 11 - Reward-System Design & Review",
+    "question": "Pay Compression occurs when:",
+    "options": {
+      "A": "Senior employees earn significantly more than juniors",
+      "B": "Pay differences between job levels or seniority are very small",
+      "C": "The pay range for a grade is very wide",
+      "D": "Annual increments are frozen for all employees"
+    },
+    "correct_answer": "B",
+    "page": 33
+  },
+  {
+    "id": "PYQ_Q165",
+    "question_number": 165,
+    "week": 11,
+    "topic": "Week 11 - Reward-System Design & Review",
+    "question": "Which sequence is most sensible when developing a reward system?",
+    "options": {
+      "A": "Make benefits identical without evaluating employee needs",
+      "B": "Choose salary ranges before knowing the purpose",
+      "C": "Set objectives, gather evidence/benchmark, design and pilot, then review",
+      "D": "Roll out immediately, define goals later, then ignore feedback"
+    },
+    "correct_answer": "C",
+    "page": 34
+  },
+  {
+    "id": "PYQ_Q166",
+    "question_number": 166,
+    "week": 11,
+    "topic": "Week 11 - Reward-System Design & Review",
+    "question": "A 'Spot Salary' pay structure assigns each job a single fixed pay rate with no range or grade band. The MAIN drawback of this approach compared to a range-based structure is that:",
+    "options": {
+      "A": "It gives managers too much flexibility in pay decisions",
+      "B": "It offers no progression within role to reward growing competence or performance",
+      "C": "It eliminates the need for job evaluation",
+      "D": "It automatically aligns pay with market rates"
+    },
+    "correct_answer": "B",
+    "page": 34
+  },
+  {
+    "id": "PYQ_Q167",
+    "question_number": 167,
+    "week": 12,
+    "topic": "Week 12 - Ethics, Bias & Fair Appraisal",
+    "question": "An HR director faces pressure to hire a relative despite weak interview performance. What is the primary ethical issue?",
+    "options": {
+      "A": "Job classification",
+      "B": "Broad-banding",
+      "C": "Market-rate analysis",
+      "D": "Nepotism and conflict of interest"
+    },
+    "correct_answer": "D",
+    "page": 34
+  },
+  {
+    "id": "PYQ_Q168",
+    "question_number": 168,
+    "week": 12,
+    "topic": "Week 12 - Ethics, Bias & Fair Appraisal",
+    "question": "A university cannot significantly increase salaries, so it offers research grants, leadership opportunities, recognition, and participation in decisions. What is the principal aim?",
+    "options": {
+      "A": "Reduce academic standards",
+      "B": "Replace performance appraisal permanently",
+      "C": "Increase engagement through non-financial rewards",
+      "D": "Eliminate every concern about pay"
+    },
+    "correct_answer": "C",
+    "page": 34
+  },
+  {
+    "id": "PYQ_Q169",
+    "question_number": 169,
+    "week": 12,
+    "topic": "Week 12 - Ethics, Bias & Fair Appraisal",
+    "question": "An employee meets a target by misleading customers, while another misses it but acts honestly. Under the Kantian approach, which employee's actions are favoured?",
+    "options": {
+      "A": "The one who achieves the target by any means",
+      "B": "The one guided by ethical intention and duty",
+      "C": "Both are identical because only output matters",
+      "D": "Neither, because intentions are irrelevant"
+    },
+    "correct_answer": "B",
+    "page": 34
+  },
+  {
+    "id": "PYQ_Q170",
+    "question_number": 170,
+    "week": 12,
+    "topic": "Week 12 - Ethics, Bias & Fair Appraisal",
+    "question": "A supervisor rates an employee highly in every dimension because the employee is confident and articulate, despite little evidence about other tasks. Why is this problematic?",
+    "options": {
+      "A": "Subjective impression may create appraisal bias",
+      "B": "It relies on employee feedback",
+      "C": "It uses too much objective evidence",
+      "D": "It measures too many results"
+    },
+    "correct_answer": "A",
+    "page": 35
+  },
+  {
+    "id": "PYQ_Q171",
+    "question_number": 171,
+    "week": 12,
+    "topic": "Week 12 - Ethics, Bias & Fair Appraisal",
+    "question": "One nurse's contribution is comforting patients; another's is completing measurable tasks quickly. Why can a fair overall comparison be difficult?",
+    "options": {
+      "A": "All work should be evaluated only by quantity",
+      "B": "Performance appraisal has no purpose",
+      "C": "Non-measurable work has no value",
+      "D": "Human performance has dimensions that may be difficult to measure objectively"
+    },
+    "correct_answer": "D",
+    "page": 35
+  },
+  {
+    "id": "PYQ_Q172",
+    "question_number": 172,
+    "week": 12,
+    "topic": "Week 12 - Ethics, Bias & Fair Appraisal",
+    "question": "Research scientists and sales staff are rated using very different methods, then compared directly for promotion without considering those differences. Which ethical concern is most likely?",
+    "options": {
+      "A": "Reduced subjectivity",
+      "B": "Unfair comparisons across employees",
+      "C": "Improved procedural justice",
+      "D": "Higher quality of evidence"
+    },
+    "correct_answer": "B",
+    "page": 35
+  },
+  {
+    "id": "PYQ_Q173",
+    "question_number": 173,
+    "week": 12,
+    "topic": "Week 12 - Ethics, Bias & Fair Appraisal",
+    "question": "After a poor rating, an employee cannot see the evidence or challenge factual errors because management offers no appeal. Which safeguard is missing?",
+    "options": {
+      "A": "Grievance and review mechanism",
+      "B": "Pay posture",
+      "C": "Market benchmarking",
+      "D": "Point-factor evaluation"
+    },
+    "correct_answer": "A",
+    "page": 35
+  },
+  {
+    "id": "PYQ_Q174",
+    "question_number": 174,
+    "week": 12,
+    "topic": "Week 12 - Ethics, Bias & Fair Appraisal",
+    "question": "A company asks managers, employees, and union representatives to help shape performance criteria before implementation. Which principle does this illustrate?",
+    "options": {
+      "A": "Forced distribution",
+      "B": "Centralized authority",
+      "C": "Confidential appraisal",
+      "D": "Stakeholder involvement"
+    },
+    "correct_answer": "D",
+    "page": 35
+  },
+  {
+    "id": "PYQ_Q175",
+    "question_number": 175,
+    "week": 12,
+    "topic": "Week 12 - Ethics, Bias & Fair Appraisal",
+    "question": "Which indicator would be LEAST appropriate as a primary measure of university faculty performance?",
+    "options": {
+      "A": "Student feedback",
+      "B": "Teaching effectiveness measures",
+      "C": "Number of personal complaints made by colleagues",
+      "D": "Research publications"
+    },
+    "correct_answer": "C",
+    "page": 36
+  },
+  {
+    "id": "PYQ_Q176",
+    "question_number": 176,
+    "week": 12,
+    "topic": "Week 12 - Ethics, Bias & Fair Appraisal",
+    "question": "A call centre rewards employees only for calls handled per day. Employees end calls quickly and customer satisfaction declines. What is the main ethical or measurement concern?",
+    "options": {
+      "A": "Customer satisfaction should not matter",
+      "B": "A single quantitative metric can ignore important qualitative outcomes",
+      "C": "No employee should be rewarded",
+      "D": "Quantitative measures are always superior"
+    },
+    "correct_answer": "B",
+    "page": 36
+  },
+  {
+    "id": "PYQ_Q177",
+    "question_number": 177,
+    "week": 12,
+    "topic": "Week 12 - Ethics, Bias & Fair Appraisal",
+    "question": "A manager has a personal relationship with one appraisal candidate and does not disclose it, despite participating in the decision. What is the best ethical response?",
+    "options": {
+      "A": "Increase the candidate's score to avoid disagreement",
+      "B": "Continue without documentation",
+      "C": "Remove all performance standards",
+      "D": "Disclose the conflict and use an impartial review process"
+    },
+    "correct_answer": "D",
+    "page": 36
+  },
+  {
+    "id": "PYQ_Q178",
+    "question_number": 178,
+    "week": 12,
+    "topic": "Week 12 - Ethics, Bias & Fair Appraisal",
+    "question": "Kantian ethics in reward management emphasizes:",
+    "options": {
+      "A": "Consequentialist outcomes only",
+      "B": "Acting out of duty and moral principle, regardless of outcome",
+      "C": "Maximizing shareholder value",
+      "D": "Following statutory minimums exactly"
+    },
+    "correct_answer": "B",
+    "page": 36
+  },
+  {
+    "id": "PYQ_Q179",
+    "question_number": 179,
+    "week": 12,
+    "topic": "Week 12 - Ethics, Bias & Fair Appraisal",
+    "question": "Which of the following BEST prevents ethical bias in performance appraisals?",
+    "options": {
+      "A": "Having a single assessor for all employees",
+      "B": "Keeping all appraisal results confidential",
+      "C": "Using structured, criteria-based assessment with transparency and appeal mechanisms",
+      "D": "Evaluating employees only on financial metrics"
+    },
+    "correct_answer": "C",
+    "page": 36
+  },
+  {
+    "id": "PYQ_Q180",
+    "question_number": 180,
+    "week": 12,
+    "topic": "Week 12 - Ethics, Bias & Fair Appraisal",
+    "question": "An organization implements a 'cooling-off period' that prevents appraisers from rating employees immediately after a significant incident, positive or negative. This policy primarily aims to reduce:",
+    "options": {
+      "A": "The overall cost of the appraisal process",
+      "B": "Both recency error and primacy error that distort annual ratings",
+      "C": "The need for 360-degree feedback",
+      "D": "Procedural justice concerns about pay"
+    },
+    "correct_answer": "B",
+    "page": 37
+  }
+]

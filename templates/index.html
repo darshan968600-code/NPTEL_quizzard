@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NPTEL Quizzer - Practice Portal</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <span class="logo-badge">NPTEL</span>
+        <div>
+          <h1 class="app-title">NPTEL Quizzer</h1>
+          <p class="app-subtitle">Performance &amp; Reward Management Practice Portal</p>
+        </div>
+      </div>
+      <div class="status-badge" title="All questions verified and ready locally">
+        <span class="status-dot"></span> Offline Ready &bull; 310 Questions
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Active Quiz Banner (Shows if there is a saved quiz in localStorage) -->
+    <section id="resume-banner" class="resume-card" style="display: none;">
+      <div class="resume-info">
+        <div class="resume-icon">⏱️</div>
+        <div>
+          <h3 id="resume-title">Resume Ongoing Quiz</h3>
+          <p id="resume-desc">You have an unfinished quiz in progress.</p>
+        </div>
+      </div>
+      <div class="resume-actions">
+        <button id="btn-resume-quiz" class="btn btn-primary">Resume Quiz</button>
+        <button id="btn-discard-quiz" class="btn btn-outline-danger">Discard</button>
+      </div>
+    </section>
+
+    <!-- Overview Stats Bar -->
+    <section class="stats-overview-grid">
+      <div class="stat-card">
+        <div class="stat-num">{{ total_weekly }}</div>
+        <div class="stat-label">Weekly Questions (Weeks 0–12)</div>
+        <div class="stat-sub">10 questions per week</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">{{ total_pyqs }}</div>
+        <div class="stat-label">PYQ &amp; Practice MCQs</div>
+        <div class="stat-sub">Full curated exam question bank</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num text-success">100%</div>
+        <div class="stat-label">Verified Answer Keys</div>
+        <div class="stat-sub">0 manual reviews required</div>
+      </div>
+    </section>
+
+    <!-- Mode A: Weekly Questions -->
+    <section class="mode-section">
+      <div class="section-header">
+        <div class="mode-tag mode-tag-a">MODE A</div>
+        <h2>NPTEL Weekly Assignment Questions</h2>
+        <p class="section-desc">Practice questions organized week by week. Each week contains 10 authentic assessment questions.</p>
+      </div>
+
+      <div class="weeks-grid">
+        {% for w in weeks %}
+        <div class="week-card" onclick="startWeeklyQuiz({{ w.week }})">
+          <div class="week-card-header">
+            <span class="week-badge">{{ w.label }}</span>
+            <span class="q-count-badge">{{ w.count }} Questions</span>
+          </div>
+          <div class="week-card-body">
+            <p class="week-preview">{{ w.first_q }}</p>
+          </div>
+          <div class="week-card-footer">
+            <span class="start-btn-text">Start Week {{ w.week }} &rarr;</span>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Mode B: PYQ Practice -->
+    <section class="mode-section">
+      <div class="section-header">
+        <div class="mode-tag mode-tag-b">MODE B</div>
+        <h2>Previous Year Questions (PYQs) &amp; Curated Practice</h2>
+        <p class="section-desc">Select the number of questions to practice. Questions are randomly sampled from the 180-question bank with shuffled ordering.</p>
+      </div>
+
+      <div class="pyq-options-grid">
+        <div class="pyq-card" onclick="startPyqQuiz(50)">
+          <div class="pyq-card-icon">⚡</div>
+          <h3>50 Questions</h3>
+          <p class="pyq-meta">Quick practice session</p>
+          <div class="pyq-info">50 distinct questions randomly sampled from all 180 questions.</div>
+          <button class="btn btn-primary btn-block">Start 50 Qs</button>
+        </div>
+
+        <div class="pyq-card" onclick="startPyqQuiz(100)">
+          <div class="pyq-card-icon">🎯</div>
+          <h3>100 Questions</h3>
+          <p class="pyq-meta">Standard mock exam</p>
+          <div class="pyq-info">100 distinct questions randomly sampled from all 180 questions.</div>
+          <button class="btn btn-primary btn-block">Start 100 Qs</button>
+        </div>
+
+        <div class="pyq-card" onclick="startPyqQuiz(150)">
+          <div class="pyq-card-icon">🔥</div>
+          <h3>150 Questions</h3>
+          <p class="pyq-meta">Intensive deep-dive</p>
+          <div class="pyq-info">150 distinct questions randomly sampled from all 180 questions.</div>
+          <button class="btn btn-primary btn-block">Start 150 Qs</button>
+        </div>
+
+        <div class="pyq-card featured" onclick="startPyqQuiz(180)">
+          <div class="featured-badge">FULL BANK</div>
+          <div class="pyq-card-icon">🏆</div>
+          <h3>180 Questions</h3>
+          <p class="pyq-meta">Complete question bank</p>
+          <div class="pyq-info">All 180 previous year questions in shuffled order. Comprehensive test.</div>
+          <button class="btn btn-success btn-block">Start All 180 Qs</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-container">
+      <p>NPTEL Quizzer &bull; Offline Localhost Practice Tool &bull; No external APIs or cloud dependencies</p>
+    </div>
+  </footer>
+
+  <script src="/static/js/home.js"></script>
+</body>
+</html>

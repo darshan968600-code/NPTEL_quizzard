@@ -1,0 +1,1946 @@
+[
+  {
+    "id": "W0_Q1",
+    "week": 0,
+    "week_label": "Week 0",
+    "question_number": 1,
+    "question": "Performance management aims at aligning the goals of an individual with the",
+    "options": {
+      "A": "Team goals, an individual is working in",
+      "B": "Strategic goals of an organization",
+      "C": "Career goals of an individual",
+      "D": "None of the above"
+    },
+    "correct_answer": "B",
+    "explanation": "Strategic goals of an organization"
+  },
+  {
+    "id": "W0_Q2",
+    "week": 0,
+    "week_label": "Week 0",
+    "question_number": 2,
+    "question": "State whether the following is True or False: Performance management occurs once or twice a year.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "correct_answer": "B",
+    "explanation": "False"
+  },
+  {
+    "id": "W0_Q3",
+    "week": 0,
+    "week_label": "Week 0",
+    "question_number": 3,
+    "question": "While the system of performance management is owned by ______, the system of performance appraisal is owned by ______.",
+    "options": {
+      "A": "HR Department, Line Managers",
+      "B": "Line Managers, HR Department",
+      "C": "HR Department, Development managers",
+      "D": "Development managers, Line Managers"
+    },
+    "correct_answer": "B",
+    "explanation": "Line Managers, HR Department"
+  },
+  {
+    "id": "W0_Q4",
+    "week": 0,
+    "week_label": "Week 0",
+    "question_number": 4,
+    "question": "Which of the mentioned below is misquoted objective of Performance Management?",
+    "options": {
+      "A": "Motivating and rewarding employees but not empowering (Statement 1)",
+      "B": "Making sure employees not only do right things but also do things right (Statement 2)",
+      "C": "Managing and improving performance (Statement 3)",
+      "D": "Best and judicious use of resources (Statement 4)"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement 1 is misquoted"
+  },
+  {
+    "id": "W0_Q5",
+    "week": 0,
+    "week_label": "Week 0",
+    "question_number": 5,
+    "question": "An organization's strategic plan mainly comprises an organization's ______, which are further translated into goals and objectives.",
+    "options": {
+      "A": "Vision and mission statements",
+      "B": "Philosophy of survival",
+      "C": "Plan of action",
+      "D": "None of the above"
+    },
+    "correct_answer": "A",
+    "explanation": "Vision and mission statements"
+  },
+  {
+    "id": "W0_Q6",
+    "week": 0,
+    "week_label": "Week 0",
+    "question_number": 6,
+    "question": "State whether the following is True or False: As far as modern-day organizations are concerned rewards can only be monetary.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "correct_answer": "B",
+    "explanation": "False"
+  },
+  {
+    "id": "W0_Q7",
+    "week": 0,
+    "week_label": "Week 0",
+    "question_number": 7,
+    "question": "______ occurs when an employee is rated on the basis of the first few interactions only, may be on the basis of initial interaction that took place at the beginning of the performance review.",
+    "options": {
+      "A": "Recency error",
+      "B": "Primacy error",
+      "C": "Contrast error",
+      "D": "None of the above"
+    },
+    "correct_answer": "B",
+    "explanation": "Primacy error"
+  },
+  {
+    "id": "W0_Q8",
+    "week": 0,
+    "week_label": "Week 0",
+    "question_number": 8,
+    "question": "State whether the following is True or False: Performance management shares no linkage with reward management. It is a stand-alone process in all possible ways.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "correct_answer": "B",
+    "explanation": "False"
+  },
+  {
+    "id": "W0_Q9",
+    "week": 0,
+    "week_label": "Week 0",
+    "question_number": 9,
+    "question": "______ is for those people who basically do not have the benefit of pension after retirement from service.",
+    "options": {
+      "A": "New Pension Scheme",
+      "B": "JAL Yojana",
+      "C": "Modified Pension Scheme",
+      "D": "None of the above"
+    },
+    "correct_answer": "A",
+    "explanation": "New Pension Scheme"
+  },
+  {
+    "id": "W0_Q10",
+    "week": 0,
+    "week_label": "Week 0",
+    "question_number": 10,
+    "question": "______ benefits are provided to employees over and above their salaries.",
+    "options": {
+      "A": "Non-fringe",
+      "B": "Fringe",
+      "C": "Add-on",
+      "D": "All of the above"
+    },
+    "correct_answer": "B",
+    "explanation": "Fringe"
+  },
+  {
+    "id": "W1_Q1",
+    "week": 1,
+    "week_label": "Week 1",
+    "question_number": 1,
+    "question": "After joining a hospital in Bhubaneswar, Dr. Aditi noticed that her supervisor met her regularly throughout the year to discuss goals, progress, challenges, and development needs. At the end of the year, there was also a formal review meeting. Aditi remarked, \"I thought performance management was only about annual evaluation, but this seems much broader.\" Which statement best explains Aditi's observation?",
+    "options": {
+      "A": "Performance management focuses only on salary decisions",
+      "B": "Performance management is a continuous process of managing and improving performance",
+      "C": "Performance management is mainly a disciplinary system",
+      "D": "Performance management is another name for performance appraisal"
+    },
+    "correct_answer": "B",
+    "explanation": "Performance management is a continuous process of managing and"
+  },
+  {
+    "id": "W1_Q2",
+    "week": 1,
+    "week_label": "Week 1",
+    "question_number": 2,
+    "question": "Rohan's company conducts a formal evaluation every March. Apart from this annual meeting, managers rarely discuss performance with employees during the year. When the HR Head reviewed the system, she commented that the organization was doing appraisal but not true performance management. Why did she make this statement?",
+    "options": {
+      "A": "Appraisal focuses only on evaluation, while performance management is continuous.",
+      "B": "Appraisal is more strategic than performance management.",
+      "C": "Appraisal includes coaching and development.",
+      "D": "Performance management occurs only after appraisal."
+    },
+    "correct_answer": "A",
+    "explanation": "Appraisal focuses only on evaluation, while performance"
+  },
+  {
+    "id": "W1_Q3",
+    "week": 1,
+    "week_label": "Week 1",
+    "question_number": 3,
+    "question": "A consumer goods company wants to increase its presence in rural markets. However, during review meetings, Priya discovers that most sales executives are being evaluated only on urban sales figures. Although employees achieve their targets, the organizational objective remains unmet. What is the most likely reason?",
+    "options": {
+      "A": "Lack of financial incentives",
+      "B": "Poor strategic alignment of goals",
+      "C": "Excessive employee participation",
+      "D": "Inadequate supervision"
+    },
+    "correct_answer": "B",
+    "explanation": "Poor strategic alignment of goals"
+  },
+  {
+    "id": "W1_Q4",
+    "week": 1,
+    "week_label": "Week 1",
+    "question_number": 4,
+    "question": "At the start of the financial year, Neha and her manager discuss expected outcomes, performance standards, timelines, and required competencies. They also identify training programs that may be needed during the year. Which stage of the performance management process is represented?",
+    "options": {
+      "A": "Performance review",
+      "B": "Performance execution",
+      "C": "Performance planning",
+      "D": "Performance renewal"
+    },
+    "correct_answer": "C",
+    "explanation": "Performance planning"
+  },
+  {
+    "id": "W1_Q5",
+    "week": 1,
+    "week_label": "Week 1",
+    "question_number": 5,
+    "question": "Six months after setting his objectives, Arjun regularly tracks progress, coordinates with colleagues, updates stakeholders, and works toward achieving agreed targets. He has not yet reached the formal review stage. Which phase of the performance management process is Arjun currently experiencing?",
+    "options": {
+      "A": "Performance planning",
+      "B": "Performance execution",
+      "C": "Performance assessment",
+      "D": "Performance renewal"
+    },
+    "correct_answer": "B",
+    "explanation": "Performance execution"
+  },
+  {
+    "id": "W1_Q6",
+    "week": 1,
+    "week_label": "Week 1",
+    "question_number": 6,
+    "question": "During a project, Meera frequently approaches her manager for suggestions. Her manager provides constructive guidance and discusses ways to overcome obstacles before they affect performance outcomes. Which element of effective performance management is being demonstrated?",
+    "options": {
+      "A": "Continuous feedback and coaching",
+      "B": "Performance ranking",
+      "C": "Punitive supervision",
+      "D": "Cost control"
+    },
+    "correct_answer": "A",
+    "explanation": "Continuous feedback and coaching"
+  },
+  {
+    "id": "W1_Q7",
+    "week": 1,
+    "week_label": "Week 1",
+    "question_number": 7,
+    "question": "A consulting firm allows employees considerable freedom in deciding how to complete assignments. However, each employee must explain results during review meetings and justify deviations from agreed objectives. This approach best reflects:",
+    "options": {
+      "A": "Centralized control",
+      "B": "Empowerment without accountability",
+      "C": "Empowerment with accountability",
+      "D": "Informal supervision"
+    },
+    "correct_answer": "C",
+    "explanation": "Empowerment with accountability"
+  },
+  {
+    "id": "W1_Q8",
+    "week": 1,
+    "week_label": "Week 1",
+    "question_number": 8,
+    "question": "At Sunrise Technologies, managers first establish objectives, then employees work toward them, progress is tracked periodically, and finally outcomes are reviewed to identify improvements for the next cycle. Which sequence most closely resembles this approach?",
+    "options": {
+      "A": "Plan - Act - Monitor - Review",
+      "B": "Review - Plan - Reward - Monitor",
+      "C": "Monitor - Reward - Review - Plan",
+      "D": "Act - Evaluate - Promote - Plan"
+    },
+    "correct_answer": "A",
+    "explanation": "Plan - Act - Monitor - Review"
+  },
+  {
+    "id": "W1_Q9",
+    "week": 1,
+    "week_label": "Week 1",
+    "question_number": 9,
+    "question": "An engineering company redesigned its employee reward system. Besides salary, employees receive recognition certificates, career development opportunities, and chances to lead important projects. Which statement best describes the organization's understanding of reward management?[cite: 35, 36]",
+    "options": {
+      "A": "Rewards consist only of monetary benefits",
+      "B": "Reward management includes both financial and non-financial rewards",
+      "C": "Rewards should be unrelated to performance",
+      "D": "Reward systems focus only on promotions."
+    },
+    "correct_answer": "B",
+    "explanation": "Reward management includes both financial and non-financial"
+  },
+  {
+    "id": "W1_Q10",
+    "week": 1,
+    "week_label": "Week 1",
+    "question_number": 10,
+    "question": "Shreya and Kunal both performed exceptionally well. Shreya received a cash bonus, while Kunal was publicly recognized by the CEO during the annual meeting and given an opportunity to attend a prestigious leadership program. Which statement is most accurate?",
+    "options": {
+      "A": "Both employees received financial rewards.",
+      "B": "Shreya received a non-financial reward, while Kunal received a financial reward.",
+      "C": "Shreya received a financial reward, while Kunal received primarily non-financial rewards.",
+      "D": "Neither employee received a reward."
+    },
+    "correct_answer": "C",
+    "explanation": "Shreya received a financial reward, while Kunal received primarily"
+  },
+  {
+    "id": "W2_Q1",
+    "week": 2,
+    "week_label": "Week 2",
+    "question_number": 1,
+    "question": "Aarav became the HR Manager of a fast-growing healthcare startup. During a strategy meeting, the CEO announced that the company wanted to become the most trusted telemedicine provider in Eastern India within five years. However, Aarav noticed that employee performance goals were still focused only on reducing administrative costs. Aarav argued that unless employee goals support the company's long-term aspiration, the strategy may fail. Which concept is Aarav emphasizing?",
+    "options": {
+      "A": "Job evaluation",
+      "B": "Strategic alignment of performance management",
+      "C": "Employee monitoring",
+      "D": "Workforce downsizing"
+    },
+    "correct_answer": "B",
+    "explanation": "Strategic alignment of performance management"
+  },
+  {
+    "id": "W2_Q2",
+    "week": 2,
+    "week_label": "Week 2",
+    "question_number": 2,
+    "question": "Neha and Sayan were discussing their company's annual planning exercise. Neha suggested that the firm should first decide how much money it wants to spend next year. Sayan disagreed and said, \"We must first decide where the organization wants to go and then allocate resources accordingly.\" Which understanding of strategic planning is reflected in Sayan's statement?",
+    "options": {
+      "A": "Strategic planning focuses on employee rewards.",
+      "B": "Strategic planning begins with resource allocation only.",
+      "C": "Strategic planning involves determining long-term goals and allocating resources to achieve them.",
+      "D": "Strategic planning is mainly concerned with operational efficiency."
+    },
+    "correct_answer": "C",
+    "explanation": "Strategic planning involves determining long-term goals and"
+  },
+  {
+    "id": "W2_Q3",
+    "week": 2,
+    "week_label": "Week 2",
+    "question_number": 3,
+    "question": "Ritika works in a textile company that has highly skilled designers and a strong reputation for quality. Recently, consumer demand for sustainable clothing has increased significantly. During a strategic review, Ritika suggested that the company should capitalize on this trend. Which SWOT combination is illustrated?",
+    "options": {
+      "A": "Weakness-Threat",
+      "B": "Strength-Threat",
+      "C": "Weakness-Opportunity",
+      "D": "Strength-Opportunity"
+    },
+    "correct_answer": "D",
+    "explanation": "Strength-Opportunity"
+  },
+  {
+    "id": "W2_Q4",
+    "week": 2,
+    "week_label": "Week 2",
+    "question_number": 4,
+    "question": "During a planning workshop, Aditya pointed out that his company's manufacturing equipment had become outdated. Meanwhile, several technologically advanced competitors had entered the market. Which SWOT combination best describes the company's situation?",
+    "options": {
+      "A": "Threat and Weakness",
+      "B": "Opportunity and Strength",
+      "C": "Opportunity and Weakness",
+      "D": "Strength and Opportunity"
+    },
+    "correct_answer": "A",
+    "explanation": "Threat and Weakness"
+  },
+  {
+    "id": "W2_Q5",
+    "week": 2,
+    "week_label": "Week 2",
+    "question_number": 5,
+    "question": "Megha was asked to draft a vision statement for her organization. Her first draft read: \"We hope to do many good things for many people in the future.\" The CEO rejected it, stating that employees would struggle to understand or be inspired by it. What was the primary weakness of Megha's vision statement?",
+    "options": {
+      "A": "It was too specific.",
+      "B": "It lacked clarity and inspiration.",
+      "C": "It focused on customers.",
+      "D": "It was measurable."
+    },
+    "correct_answer": "B",
+    "explanation": "It lacked clarity and inspiration."
+  },
+  {
+    "id": "W2_Q6",
+    "week": 2,
+    "week_label": "Week 2",
+    "question_number": 6,
+    "question": "Karan manages a software development team. To improve project completion rates, he introduced a system where team members receive performance bonuses only when projects are delivered successfully and on time. Which strategic role of reward management is most evident?",
+    "options": {
+      "A": "Encouraging absenteeism",
+      "B": "Reward-performance linkage",
+      "C": "Workforce reduction",
+      "D": "Job enrichment"
+    },
+    "correct_answer": "B",
+    "explanation": "Reward-performance linkage"
+  },
+  {
+    "id": "W2_Q7",
+    "week": 2,
+    "week_label": "Week 2",
+    "question_number": 7,
+    "question": "At an automobile company, employee performance reviews focus heavily on innovation because the firm's strategic objective is to become a leader in electric vehicles. Employees who contribute new ideas receive special recognition and incentives. Why is this an example of strategic performance management?",
+    "options": {
+      "A": "Employees are rewarded equally.",
+      "B": "Performance criteria are unrelated to strategy.",
+      "C": "Employee behaviour is being directed toward strategic priorities.",
+      "D": "The organization is avoiding formal evaluations."
+    },
+    "correct_answer": "C",
+    "explanation": "Employee behaviour is being directed toward strategic priorities."
+  },
+  {
+    "id": "W2_Q8",
+    "week": 2,
+    "week_label": "Week 2",
+    "question_number": 8,
+    "question": "Sohini was given the following objective: \"Improve customer satisfaction significantly.\" She argued that the objective would be difficult to evaluate because different managers might interpret it differently. Which revision would make the objective SMART?",
+    "options": {
+      "A": "Improve customer satisfaction someday.",
+      "B": "Improve customer satisfaction whenever possible.",
+      "C": "Increase customer satisfaction scores from 80% to 90% within the next 12 months.",
+      "D": "Try to make customers happier."
+    },
+    "correct_answer": "C",
+    "explanation": "Increase customer satisfaction scores from 80% to 90% within the"
+  },
+  {
+    "id": "W2_Q9",
+    "week": 2,
+    "week_label": "Week 2",
+    "question_number": 9,
+    "question": "A pharmaceutical company developed an ambitious five-year strategy. However, employee appraisals, rewards, and departmental objectives remained unchanged. Two years later, management realized that the strategy had produced very little impact. What was the most likely reason?",
+    "options": {
+      "A": "The strategy was too long-term.",
+      "B": "Performance management and reward systems were not aligned with the strategy.",
+      "C": "Employees received excessive feedback.",
+      "D": "The vision statement was too short."
+    },
+    "correct_answer": "B",
+    "explanation": "Performance management and reward systems were not aligned"
+  },
+  {
+    "id": "W2_Q10",
+    "week": 2,
+    "week_label": "Week 2",
+    "question_number": 10,
+    "question": "Aniket, Priyanka, and Sreya were part of a strategic planning committee. Aniket proposed launching several new products immediately because competitors were doing so. Priyanka suggested first understanding the organization's strengths, weaknesses, opportunities, and threats. Sreya supported Priyanka, arguing that strategic decisions should be based on environmental analysis rather than imitation. Why did Priyanka's approach represent better strategic planning?",
+    "options": {
+      "A": "SWOT analysis helps understand internal and external factors before making strategic decisions.",
+      "B": "Competitors should never be studied.",
+      "C": "New products are unrelated to strategy.",
+      "D": "Strategic planning should avoid long-term thinking."
+    },
+    "correct_answer": "A",
+    "explanation": "SWOT analysis helps understand internal and external factors"
+  },
+  {
+    "id": "W3_Q1",
+    "week": 3,
+    "week_label": "Week 3",
+    "question_number": 1,
+    "question": "Ritwik joined a pharmaceutical company as a medical representative. He knows all the details about the company's products and can explain their features perfectly during training sessions. However, when meeting doctors, he struggles to present the information persuasively and often fails to close discussions effectively. Which component of performance appears to be lacking?",
+    "options": {
+      "A": "Declarative knowledge",
+      "B": "Procedural knowledge",
+      "C": "Motivation",
+      "D": "Contextual performance"
+    },
+    "correct_answer": "B",
+    "explanation": "Procedural knowledge"
+  },
+  {
+    "id": "W3_Q2",
+    "week": 3,
+    "week_label": "Week 3",
+    "question_number": 2,
+    "question": "At a manufacturing company, Priyanka always completes her assigned tasks on time. In addition, she voluntarily helps new employees understand work procedures, shares useful information with colleagues, and frequently assists her team during emergencies. Which aspect of performance is best illustrated by Priyanka's additional activities?",
+    "options": {
+      "A": "Task performance",
+      "B": "Technical competence",
+      "C": "Contextual performance",
+      "D": "Results performance"
+    },
+    "correct_answer": "C",
+    "explanation": "Contextual performance"
+  },
+  {
+    "id": "W3_Q3",
+    "week": 3,
+    "week_label": "Week 3",
+    "question_number": 3,
+    "question": "A retail chain evaluates store managers solely on annual sales growth and profitability. The company deliberately avoids assessing how managers achieve those outcomes. Which performance measurement approach is being used?",
+    "options": {
+      "A": "Trait approach",
+      "B": "Behaviour approach",
+      "C": "Results approach",
+      "D": "Competency approach"
+    },
+    "correct_answer": "C",
+    "explanation": "Results approach"
+  },
+  {
+    "id": "W3_Q4",
+    "week": 3,
+    "week_label": "Week 3",
+    "question_number": 4,
+    "question": "Megha's manager gives her the objective: \"Try to improve customer service as much as possible.\" Megha is unsure how success will be measured because the objective lacks specific targets and timelines. What is the primary problem with this objective?",
+    "options": {
+      "A": "It is too challenging.",
+      "B": "It is not aligned with strategy.",
+      "C": "It lacks specificity and measurability.",
+      "D": "It focuses on customers."
+    },
+    "correct_answer": "C",
+    "explanation": "It lacks specificity and measurability."
+  },
+  {
+    "id": "W3_Q5",
+    "week": 3,
+    "week_label": "Week 3",
+    "question_number": 5,
+    "question": "A hospital is recruiting nurses. During selection, applicants must demonstrate that they can accurately record patient information and follow basic treatment protocols. These capabilities are considered essential for performing the job at an acceptable level. These capabilities are best described as:",
+    "options": {
+      "A": "Differentiating competencies",
+      "B": "Leadership competencies",
+      "C": "Threshold competencies",
+      "D": "Strategic competencies"
+    },
+    "correct_answer": "C",
+    "explanation": "Threshold competencies"
+  },
+  {
+    "id": "W3_Q6",
+    "week": 3,
+    "week_label": "Week 3",
+    "question_number": 6,
+    "question": "A customer service department has been receiving increasing numbers of complaints. During an internal review, Ayan discovers that employees have never been given clear service standards or measurable targets. Before evaluating employee performance, what should management do first?",
+    "options": {
+      "A": "Reduce employee incentives",
+      "B": "Introduce stricter supervision",
+      "C": "Define clear performance objectives and standards",
+      "D": "Replace underperforming employees"
+    },
+    "correct_answer": "C",
+    "explanation": "Define clear performance objectives and standards"
+  },
+  {
+    "id": "W3_Q7",
+    "week": 3,
+    "week_label": "Week 3",
+    "question_number": 7,
+    "question": "Sreya supervises four analysts. One of them, Nikhil, recently developed an innovative dashboard that impressed senior management. During the annual appraisal, Sreya rated Nikhil as outstanding in every category, including teamwork, communication, punctuality, and documentation quality, even though evidence suggested average performance in some areas. Which rating error is most likely influencing Sreya's evaluation?",
+    "options": {
+      "A": "Recency error",
+      "B": "Halo error",
+      "C": "Central tendency error",
+      "D": "Contrast error"
+    },
+    "correct_answer": "B",
+    "explanation": "Halo error"
+  },
+  {
+    "id": "W3_Q8",
+    "week": 3,
+    "week_label": "Week 3",
+    "question_number": 8,
+    "question": "An IT company wants to evaluate whether project leaders encourage collaboration, communicate effectively, resolve conflicts, and support team members throughout projects. Which measurement approach would be most suitable?",
+    "options": {
+      "A": "Results approach",
+      "B": "Behaviour approach",
+      "C": "Financial approach",
+      "D": "Output approach"
+    },
+    "correct_answer": "B",
+    "explanation": "Behaviour approach"
+  },
+  {
+    "id": "W3_Q9",
+    "week": 3,
+    "week_label": "Week 3",
+    "question_number": 9,
+    "question": "When evaluating Kavya's leadership effectiveness, the organization collects feedback from her supervisor, colleagues, subordinates, and major clients. Which advantage is most directly associated with this approach?",
+    "options": {
+      "A": "It reduces the need for employee development.",
+      "B": "It captures performance from multiple perspectives.",
+      "C": "It focuses only on objective results.",
+      "D": "It eliminates all rating errors."
+    },
+    "correct_answer": "B",
+    "explanation": "It captures performance from multiple perspectives."
+  },
+  {
+    "id": "W3_Q10",
+    "week": 3,
+    "week_label": "Week 3",
+    "question_number": 10,
+    "question": "Rahul is leading the implementation of a new performance management system. His colleague Ananya suggests launching the system immediately and explaining it to employees later. Rahul disagrees and insists that managers first communicate the purpose, process, and benefits of the new system through workshops and discussions. Why is Rahul's approach more appropriate?",
+    "options": {
+      "A": "Employees should design the entire system themselves.",
+      "B": "Communication reduces the need for performance reviews.",
+      "C": "Effective communication builds understanding, trust, and acceptance of the system.",
+      "D": "Communication is required only for legal compliance."
+    },
+    "correct_answer": "C",
+    "explanation": "Effective communication builds understanding, trust, and"
+  },
+  {
+    "id": "W4_Q1",
+    "week": 4,
+    "week_label": "Week 4",
+    "question_number": 1,
+    "question": "A manufacturing company spent six months designing a sophisticated Performance Management System. However, after implementation, employees complained that they did not understand what was expected of them. Different departments were pursuing different priorities, and managers used different criteria to evaluate performance. What is the most likely reason for the failure of the PMS?",
+    "options": {
+      "A": "Employees received insufficient incentives",
+      "B": "Poor goal setting and lack of strategic clarity",
+      "C": "Excessive use of technology",
+      "D": "Too many training programs"
+    },
+    "correct_answer": "B",
+    "explanation": "Poor goal setting and lack of strategic clarity"
+  },
+  {
+    "id": "W4_Q2",
+    "week": 4,
+    "week_label": "Week 4",
+    "question_number": 2,
+    "question": "At a consulting firm, managers are instructed that approximately 10% of employees must be rated as outstanding, 70% as average performers, and 20% as below average, regardless of actual performance levels. Which appraisal approach is the company using?",
+    "options": {
+      "A": "Critical Incident Method",
+      "B": "Bell Curve Method",
+      "C": "BARS Method",
+      "D": "Assessment Centre Method"
+    },
+    "correct_answer": "B",
+    "explanation": "Bell Curve Method"
+  },
+  {
+    "id": "W4_Q3",
+    "week": 4,
+    "week_label": "Week 4",
+    "question_number": 3,
+    "question": "At the beginning of the year, Aditi and her manager jointly decide performance goals. Throughout the year they review progress together, and at year-end performance is evaluated against the agreed objectives. Which appraisal philosophy is being applied?",
+    "options": {
+      "A": "Forced Ranking",
+      "B": "Management by Objectives (MBO)",
+      "C": "Graphic Rating Scale",
+      "D": "Confidential Reporting"
+    },
+    "correct_answer": "B",
+    "explanation": "Management by Objectives (MBO)"
+  },
+  {
+    "id": "W4_Q4",
+    "week": 4,
+    "week_label": "Week 4",
+    "question_number": 4,
+    "question": "At the beginning of the year, Aditi and her manager jointly decide performance goals. Throughout the year they review progress together, and at year-end performance is evaluated against the agreed objectives. Which appraisal philosophy is being applied? (Note: Question duplicated in source)",
+    "options": {
+      "A": "Forced Ranking",
+      "B": "Management by Objectives (MBO)",
+      "C": "Graphic Rating Scale",
+      "D": "Confidential Reporting"
+    },
+    "correct_answer": "B",
+    "explanation": "Management by Objectives (MBO)"
+  },
+  {
+    "id": "W4_Q5",
+    "week": 4,
+    "week_label": "Week 4",
+    "question_number": 5,
+    "question": "At the beginning of the year, Aditi and her manager jointly decide performance goals. Throughout the year they review progress together, and at year-end performance is evaluated against the agreed objectives. Which appraisal philosophy is being applied? (Note: Question duplicated in source)[cite: 25, 26]",
+    "options": {
+      "A": "Forced Ranking",
+      "B": "Management by Objectives (MBO)",
+      "C": "Graphic Rating Scale",
+      "D": "Confidential Reporting"
+    },
+    "correct_answer": "B",
+    "explanation": "Management by Objectives (MBO)"
+  },
+  {
+    "id": "W4_Q6",
+    "week": 4,
+    "week_label": "Week 4",
+    "question_number": 6,
+    "question": "A software company spends considerable effort defining SMART objectives at the start of the year. However, during performance reviews, managers ignore those objectives and rely entirely on personal impressions to rate employees. Which implementation problem is illustrated?",
+    "options": {
+      "A": "Effective performance monitoring",
+      "B": "Alignment between planning and review",
+      "C": "Disconnection between goal-setting and evaluation",
+      "D": "Excessive employee empowerment"
+    },
+    "correct_answer": "C",
+    "explanation": "Disconnection between goal-setting and evaluation"
+  },
+  {
+    "id": "W4_Q7",
+    "week": 4,
+    "week_label": "Week 4",
+    "question_number": 7,
+    "question": "Ananya works in a government-owned enterprise. Earlier, performance reports were confidential, and employees rarely knew how they had been assessed. Under a new system employees can view their assessments, discuss ratings with supervisors, and provide feedback before reports are finalized. What major change does this new system represent?",
+    "options": {
+      "A": "Increased secrecy in appraisals",
+      "B": "Shift toward transparent and participative appraisal",
+      "C": "Elimination of performance evaluation",
+      "D": "Complete replacement of supervisors"
+    },
+    "correct_answer": "B",
+    "explanation": "Shift toward transparent and participative appraisal"
+  },
+  {
+    "id": "W4_Q8",
+    "week": 4,
+    "week_label": "Week 4",
+    "question_number": 8,
+    "question": "A bank wants to evaluate branch managers. For each performance dimension, HR develops specific behavioural examples representing poor, average, and excellent performance. Evaluators use these examples while assigning ratings. Which appraisal method is being used?",
+    "options": {
+      "A": "Assessment Centre",
+      "B": "Behaviourally Anchored Rating Scales (BARS)",
+      "C": "Forced Distribution",
+      "D": "Essay Method"
+    },
+    "correct_answer": "B",
+    "explanation": "Behaviourally Anchored Rating Scales (BARS)"
+  },
+  {
+    "id": "W4_Q9",
+    "week": 4,
+    "week_label": "Week 4",
+    "question_number": 9,
+    "question": "Before promoting managers to senior leadership positions, a company invites candidates to participate in business simulations, group discussions, role plays, and case analyses. Trained assessors observe and evaluate behaviour throughout these exercises. Which appraisal technique is being used?[cite: 26, 27]",
+    "options": {
+      "A": "Assessment Centre Method",
+      "B": "Bell Curve Method",
+      "C": "Critical Incident Method",
+      "D": "Graphic Rating Scale"
+    },
+    "correct_answer": "A",
+    "explanation": "Assessment Centre Method"
+  },
+  {
+    "id": "W4_Q10",
+    "week": 4,
+    "week_label": "Week 4",
+    "question_number": 10,
+    "question": "Sourav manages a team of eight engineers. One of them, Naina, consistently delivers exceptional work, solves complex technical problems, and is widely recognized for her contributions. During appraisal discussions, however, Sourav gives almost every team member a rating of \"Average\" because he wants to avoid difficult conversations and maintain harmony within the team. Which rating error is most evident?",
+    "options": {
+      "A": "Halo Error",
+      "B": "Leniency Error",
+      "C": "Central Tendency Error",
+      "D": "Recency Error"
+    },
+    "correct_answer": "C",
+    "explanation": "Central Tendency Error"
+  },
+  {
+    "id": "W5_Q1",
+    "week": 5,
+    "week_label": "Week 5",
+    "question_number": 1,
+    "question": "Ananya works in a pharmaceutical company. During her annual review, her manager does not focus only on current performance. Instead, they discuss future career aspirations, skills she would like to develop, training opportunities, and experiences that could prepare her for larger responsibilities. Which activity is most clearly being undertaken?",
+    "options": {
+      "A": "Job evaluation",
+      "B": "Personal Development Planning",
+      "C": "Workforce planning",
+      "D": "Compensation benchmarking"
+    },
+    "correct_answer": "B",
+    "explanation": "Personal Development Planning"
+  },
+  {
+    "id": "W5_Q2",
+    "week": 5,
+    "week_label": "Week 5",
+    "question_number": 2,
+    "question": "Rahul exceeded his sales targets for three consecutive quarters. During the annual meeting, the CEO publicly praised his contribution, featured his achievements in the company newsletter, and invited him to present best practices to other teams. What type of reward has Rahul primarily received?",
+    "options": {
+      "A": "Direct financial reward",
+      "B": "Deferred compensation",
+      "C": "Non-financial reward",
+      "D": "Retirement benefit"
+    },
+    "correct_answer": "C",
+    "explanation": "Non-financial reward"
+  },
+  {
+    "id": "W5_Q3",
+    "week": 5,
+    "week_label": "Week 5",
+    "question_number": 3,
+    "question": "Megha has recently been promoted to a supervisory role. Instead of sending her to a one-time training workshop, her manager meets her every week, discusses real workplace challenges, provides feedback, and helps her improve her leadership skills while she performs her job. Which developmental approach is being used?",
+    "options": {
+      "A": "Job rotation",
+      "B": "Coaching",
+      "C": "Assessment centre",
+      "D": "Performance ranking"
+    },
+    "correct_answer": "B",
+    "explanation": "Coaching"
+  },
+  {
+    "id": "W5_Q4",
+    "week": 5,
+    "week_label": "Week 5",
+    "question_number": 4,
+    "question": "A consumer goods company launches a six-month initiative to introduce an eco-friendly product line. Employees from marketing, finance, production, and logistics are temporarily brought together to complete the project and will return to their original departments after completion. What type of team has been formed?",
+    "options": {
+      "A": "Work team",
+      "B": "Service team",
+      "C": "Project team",
+      "D": "Self-managed team"
+    },
+    "correct_answer": "C",
+    "explanation": "Project team"
+  },
+  {
+    "id": "W5_Q5",
+    "week": 5,
+    "week_label": "Week 5",
+    "question_number": 5,
+    "question": "Arjun manages a team of five analysts. At the end of the year, every team member receives the same performance bonus, regardless of individual effort. Over time, Arjun notices that some employees contribute less because they know they will receive the same reward as everyone else. Which problem is most likely occurring?",
+    "options": {
+      "A": "Job enrichment",
+      "B": "Strategic dialogue",
+      "C": "Social loafing",
+      "D": "Competency mapping"
+    },
+    "correct_answer": "C",
+    "explanation": "Social loafing"
+  },
+  {
+    "id": "W5_Q6",
+    "week": 5,
+    "week_label": "Week 5",
+    "question_number": 6,
+    "question": "Sreya successfully handled a difficult client crisis that prevented the loss of a major account. During the monthly town hall meeting, her manager highlighted her achievement and invited her to lead a high-visibility client project. What is the most likely impact of this reward?",
+    "options": {
+      "A": "Reduced employee motivation",
+      "B": "Increased intrinsic motivation and recognition",
+      "C": "Lower team cohesion",
+      "D": "Greater dependence on financial incentives"
+    },
+    "correct_answer": "B",
+    "explanation": "Increased intrinsic motivation and recognition"
+  },
+  {
+    "id": "W5_Q7",
+    "week": 5,
+    "week_label": "Week 5",
+    "question_number": 7,
+    "question": "Mainak's software development team consists of Naina, Riddhi, and Arka. Naina consistently works late to solve technical problems, while Arka contributes much less. When the project succeeds, everyone receives exactly the same bonus. Why might Naina perceive the reward system as unfair?",
+    "options": {
+      "A": "The team was too small.",
+      "B": "Rewards were not linked to individual contribution.",
+      "C": "The project ended successfully.",
+      "D": "Team rewards should always be equal."
+    },
+    "correct_answer": "B",
+    "explanation": "Rewards were not linked to individual contribution."
+  },
+  {
+    "id": "W5_Q8",
+    "week": 5,
+    "week_label": "Week 5",
+    "question_number": 8,
+    "question": "At a consulting firm, project bonuses are distributed using two components: 70% depends on team performance and 30% depends on each member's individual contribution. What is the main advantage of this approach?",
+    "options": {
+      "A": "It completely eliminates competition.",
+      "B": "It discourages teamwork.",
+      "C": "It balances team collaboration with individual accountability.",
+      "D": "It removes the need for performance evaluation."
+    },
+    "correct_answer": "C",
+    "explanation": "It balances team collaboration with individual accountability."
+  },
+  {
+    "id": "W5_Q9",
+    "week": 5,
+    "week_label": "Week 5",
+    "question_number": 9,
+    "question": "Sayan has recently joined a technology company. Whenever he encounters difficulties, his senior colleague Jiko reviews his work, explains mistakes, provides suggestions, and gradually gives him more challenging assignments as his confidence improves. Jiko is primarily performing the role of:[cite: 23, 24]",
+    "options": {
+      "A": "Auditor",
+      "B": "Coach",
+      "C": "Recruiter",
+      "D": "Compensation specialist"
+    },
+    "correct_answer": "B",
+    "explanation": "Coach"
+  },
+  {
+    "id": "W5_Q10",
+    "week": 5,
+    "week_label": "Week 5",
+    "question_number": 10,
+    "question": "During a career discussion, Priyanka's manager asks questions such as: \"Where do you see yourself in five years?\", \"What kind of work gives you the greatest sense of purpose?\", \"What capabilities would you like to develop for your future career?\" What type of conversation is taking place?",
+    "options": {
+      "A": "Corrective feedback session",
+      "B": "Technical review meeting",
+      "C": "Strategic dialogue",
+      "D": "Disciplinary interview"
+    },
+    "correct_answer": "C",
+    "explanation": "Strategic dialogue"
+  },
+  {
+    "id": "W6_Q1",
+    "week": 6,
+    "week_label": "Week 6",
+    "question_number": 1,
+    "question": "Riddhi works for a multinational IT company. Apart from her salary, she receives performance bonuses, health insurance, flexible work arrangements, learning opportunities, and recognition from senior leaders. During a discussion, she remarks that the organization seems to reward employees in many different ways, not just through pay. Which reward philosophy is most evident?",
+    "options": {
+      "A": "Performance-related pay",
+      "B": "Total Reward approach",
+      "C": "Job evaluation system",
+      "D": "Piece-rate compensation"
+    },
+    "correct_answer": "B",
+    "explanation": "Total Reward approach"
+  },
+  {
+    "id": "W6_Q2",
+    "week": 6,
+    "week_label": "Week 6",
+    "question_number": 2,
+    "question": "Aarav recently received a promotion offer from a competitor. Although the competitor offered a slightly higher salary, he decided to stay because his current employer provided flexible working hours, career development opportunities, meaningful work, and a supportive culture. Which concept best explains Aarav's decision?",
+    "options": {
+      "A": "Variable pay",
+      "B": "Procedural justice",
+      "C": "Relational rewards",
+      "D": "Job enlargement"
+    },
+    "correct_answer": "C",
+    "explanation": "Relational rewards"
+  },
+  {
+    "id": "W6_Q3",
+    "week": 6,
+    "week_label": "Week 6",
+    "question_number": 3,
+    "question": "A pharmaceutical company wants to become a leader in innovation over the next five years. To support this goal, the HR department redesigns rewards so that employees who generate successful product ideas receive long-term incentives and recognition. This is an example of:",
+    "options": {
+      "A": "Administrative compensation",
+      "B": "Strategic Reward Management",
+      "C": "Seniority-based pay",
+      "D": "Cost-cutting compensation"
+    },
+    "correct_answer": "B",
+    "explanation": "Strategic Reward Management"
+  },
+  {
+    "id": "W6_Q4",
+    "week": 6,
+    "week_label": "Week 6",
+    "question_number": 4,
+    "question": "Megha and Aniket work in different departments but perform jobs requiring similar skills, responsibilities, and effort. Megha discovers that Aniket receives significantly higher pay without any clear justification. She begins to feel dissatisfied and questions the fairness of the reward system. Which principle is most directly being challenged?",
+    "options": {
+      "A": "Transparency",
+      "B": "Flexibility",
+      "C": "Equity",
+      "D": "Teamwork"
+    },
+    "correct_answer": "C",
+    "explanation": "Equity"
+  },
+  {
+    "id": "W6_Q5",
+    "week": 6,
+    "week_label": "Week 6",
+    "question_number": 5,
+    "question": "During an employee survey, Priyanka reports that she is satisfied with her salary but feels frustrated because the company provides limited opportunities for learning, career growth, and meaningful work. According to the Hay Group model of engaged performance, which pillar is most clearly lacking?",
+    "options": {
+      "A": "Tangible rewards",
+      "B": "Future growth opportunity",
+      "C": "Procedural justice",
+      "D": "Job evaluation"
+    },
+    "correct_answer": "B",
+    "explanation": "Future growth opportunity"
+  },
+  {
+    "id": "W6_Q6",
+    "week": 6,
+    "week_label": "Week 6",
+    "question_number": 6,
+    "question": "A multinational company assigns Sayan from India to lead a project in Germany for two years. The organization provides relocation assistance, housing support, education benefits for his children, and a foreign-service allowance in addition to his regular salary. Which area of reward management does this scenario best represent?",
+    "options": {
+      "A": "Team reward management",
+      "B": "International reward management",
+      "C": "Competency-based pay",
+      "D": "Gain-sharing"
+    },
+    "correct_answer": "B",
+    "explanation": "International reward management"
+  },
+  {
+    "id": "W6_Q7",
+    "week": 6,
+    "week_label": "Week 6",
+    "question_number": 7,
+    "question": "At a large engineering firm, employees understand exactly how bonuses are calculated, who makes reward decisions, and how they can appeal if they believe a decision is unfair. Which characteristic of the reward system is most evident?",
+    "options": {
+      "A": "Centralization",
+      "B": "Transparency",
+      "C": "Confidentiality",
+      "D": "Standardization"
+    },
+    "correct_answer": "B",
+    "explanation": "Transparency"
+  },
+  {
+    "id": "W6_Q8",
+    "week": 6,
+    "week_label": "Week 6",
+    "question_number": 8,
+    "question": "Naina leads a team where promotion decisions are made using clearly documented criteria that apply equally to all employees. Even employees who are not promoted generally accept the decisions because they believe the process was fair. Which principle is illustrated?",
+    "options": {
+      "A": "Distributive justice",
+      "B": "Procedural justice",
+      "C": "External equity",
+      "D": "Financial reward"
+    },
+    "correct_answer": "B",
+    "explanation": "Procedural justice"
+  },
+  {
+    "id": "W6_Q9",
+    "week": 6,
+    "week_label": "Week 6",
+    "question_number": 9,
+    "question": "A technology company provides employees with modern tools, safe working conditions, skill development opportunities, and access to information needed to perform effectively. Management believes these factors are essential for maintaining employee engagement. According to the Hay Group model, which pillar is being emphasized?",
+    "options": {
+      "A": "Tangible rewards",
+      "B": "Future growth",
+      "C": "Enabling environment",
+      "D": "Work-life balance"
+    },
+    "correct_answer": "C",
+    "explanation": "Enabling environment"
+  },
+  {
+    "id": "W6_Q10",
+    "week": 6,
+    "week_label": "Week 6",
+    "question_number": 10,
+    "question": "During a review of compensation policies, Arka suggests paying everyone exactly the same salary to avoid complaints about fairness. Riddhi disagrees, arguing that fairness does not necessarily mean equality. Which statement best supports Riddhi's position?",
+    "options": {
+      "A": "Fair reward systems should ignore performance differences.",
+      "B": "Equality and equity always mean the same thing.",
+      "C": "Fairness requires rewards to reflect contribution and performance.",
+      "D": "Transparency is more important than performance."
+    },
+    "correct_answer": "C",
+    "explanation": "Fairness requires rewards to reflect contribution and performance."
+  },
+  {
+    "id": "W7_Q1",
+    "week": 7,
+    "week_label": "Week 7",
+    "question_number": 1,
+    "question": "A manufacturing company was facing high employee turnover despite paying industry- average wages. The HR Director, Priyanka, proposed paying employees significantly above market rates. Within a year, turnover declined, productivity increased, and absenteeism fell. Which theory best explains this outcome?",
+    "options": {
+      "A": "Human Capital Theory",
+      "B": "Equity Theory",
+      "C": "Efficiency Wage Theory",
+      "D": "Reinforcement Theory"
+    },
+    "correct_answer": "C",
+    "explanation": "Efficiency Wage Theory"
+  },
+  {
+    "id": "W7_Q2",
+    "week": 7,
+    "week_label": "Week 7",
+    "question_number": 2,
+    "question": "Arka works in an automobile manufacturing plant. Management introduced a scheme under which employees receive a share of the savings generated when workers suggest ideas that improve productivity or reduce waste. Employees now actively participate in problem-solving meetings. Which reward plan is being used?",
+    "options": {
+      "A": "ESOP Plan",
+      "B": "Scanlon Plan",
+      "C": "Cafeteria Benefit Plan",
+      "D": "Halsey Plan"
+    },
+    "correct_answer": "B",
+    "explanation": "Scanlon Plan"
+  },
+  {
+    "id": "W7_Q3",
+    "week": 7,
+    "week_label": "Week 7",
+    "question_number": 3,
+    "question": "At a textile factory, workers are paid entirely according to the number of units produced. Employees who fail to achieve the expected standard receive no guaranteed minimum wage. Which incentive plan most closely resembles this arrangement?",
+    "options": {
+      "A": "Rowan Plan",
+      "B": "Halsey Plan",
+      "C": "Taylor's Differential Piece Rate System",
+      "D": "Gantt Task and Bonus Plan"
+    },
+    "correct_answer": "C",
+    "explanation": "Taylor's Differential Piece Rate System"
+  },
+  {
+    "id": "W7_Q4",
+    "week": 7,
+    "week_label": "Week 7",
+    "question_number": 4,
+    "question": "Riddhi joins a fast-growing technology startup. Instead of offering a large cash bonus, the company grants her stock options that can be converted to company shares after a few years if she remains with the organization. What is the primary objective of this reward?",
+    "options": {
+      "A": "Reducing training costs",
+      "B": "Providing a welfare benefit",
+      "C": "Creating employee ownership and long-term commitment",
+      "D": "Replacing fixed salaries"
+    },
+    "correct_answer": "C",
+    "explanation": "Creating employee ownership and long-term commitment"
+  },
+  {
+    "id": "W7_Q5",
+    "week": 7,
+    "week_label": "Week 7",
+    "question_number": 5,
+    "question": "Naina's annual compensation package consists of a fixed salary plus an additional payment that depends on achieving specific performance targets. Employees who exceed expectations receive higher rewards. What type of reward arrangement is being used?",
+    "options": {
+      "A": "Base pay system",
+      "B": "Contingent pay system",
+      "C": "Seniority pay system",
+      "D": "Equal reward system"
+    },
+    "correct_answer": "B",
+    "explanation": "Contingent pay system"
+  },
+  {
+    "id": "W7_Q6",
+    "week": 7,
+    "week_label": "Week 7",
+    "question_number": 6,
+    "question": "Sayan recently left his organization after 20 years of service. During the exit process, he received a retirement benefit accumulated through mandatory monthly contributions made by both him and his employer throughout his career. Which benefit is being described?",
+    "options": {
+      "A": "ESOP",
+      "B": "Provident Fund",
+      "C": "Performance Bonus",
+      "D": "Retention Allowance"
+    },
+    "correct_answer": "B",
+    "explanation": "Provident Fund"
+  },
+  {
+    "id": "W7_Q7",
+    "week": 7,
+    "week_label": "Week 7",
+    "question_number": 7,
+    "question": "A consulting firm introduces a bonus scheme in which project managers receive incentives only when they achieve predefined client satisfaction, profitability, and project completion targets. Which reward principle is most evident?",
+    "options": {
+      "A": "Team-based compensation",
+      "B": "Performance-related pay",
+      "C": "Fixed compensation",
+      "D": "Seniority-based rewards"
+    },
+    "correct_answer": "B",
+    "explanation": "Performance-related pay"
+  },
+  {
+    "id": "W7_Q8",
+    "week": 7,
+    "week_label": "Week 7",
+    "question_number": 8,
+    "question": "Ananya and Megha perform similar jobs and generate similar results. However, Ananya receives higher compensation because she possesses specialized certifications and advanced analytical skills that significantly enhance her productivity. Which theory best explains this difference?",
+    "options": {
+      "A": "Equity Theory",
+      "B": "Expectancy Theory",
+      "C": "Human Capital Theory",
+      "D": "Reinforcement Theory"
+    },
+    "correct_answer": "C",
+    "explanation": "Human Capital Theory"
+  },
+  {
+    "id": "W7_Q9",
+    "week": 7,
+    "week_label": "Week 7",
+    "question_number": 9,
+    "question": "A company introduces a flexible benefits program. Employees receive a fixed benefit budget and can choose among options such as additional health insurance, childcare support, education assistance, or travel benefits based on personal needs. Which reward approach is being used?",
+    "options": {
+      "A": "Fixed Benefits Plan",
+      "B": "Recognition Scheme",
+      "C": "Cafeteria (Flex-Fund) Plan",
+      "D": "Gain-Sharing Plan"
+    },
+    "correct_answer": "C",
+    "explanation": "Cafeteria (Flex-Fund) Plan"
+  },
+  {
+    "id": "W7_Q10",
+    "week": 7,
+    "week_label": "Week 7",
+    "question_number": 10,
+    "question": "Mainak's organization notices rising levels of employee stress and burnout. In response, the company introduces yoga sessions, mental health counselling, fitness memberships, and preventive health check-ups. Which type of reward initiative is this?",
+    "options": {
+      "A": "Team pay scheme",
+      "B": "Wellness program",
+      "C": "Contingent pay plan",
+      "D": "Recognition scheme"
+    },
+    "correct_answer": "B",
+    "explanation": "Wellness program"
+  },
+  {
+    "id": "W8_Q1",
+    "week": 8,
+    "week_label": "Week 8",
+    "question_number": 1,
+    "question": "A rapidly growing healthcare organization discovered that two department managers were performing jobs with very different levels of responsibility, decision-making authority, and financial accountability. However, both positions were placed in the same pay grade because they had similar job titles. Employee dissatisfaction soon followed. What was the most fundamental mistake made by the organization?",
+    "options": {
+      "A": "Failure to conduct market rate analysis",
+      "B": "Failure to evaluate the relative worth of jobs",
+      "C": "Failure to introduce broad-banding",
+      "D": "Failure to implement performance-related pay"
+    },
+    "correct_answer": "B",
+    "explanation": "Failure to evaluate the relative worth of jobs"
+  },
+  {
+    "id": "W8_Q2",
+    "week": 8,
+    "week_label": "Week 8",
+    "question_number": 2,
+    "question": "Priyanka is designing a compensation structure for a new manufacturing firm. She notices that experienced CNC machine operators are receiving significantly higher salaries than before because several competing firms are recruiting aggressively from the same labor pool. Which theory best explains the increase in wages?",
+    "options": {
+      "A": "Agency Theory",
+      "B": "Equity Theory",
+      "C": "Classical Economic Theory",
+      "D": "Expectancy Theory"
+    },
+    "correct_answer": "C",
+    "explanation": "Classical Economic Theory"
+  },
+  {
+    "id": "W8_Q3",
+    "week": 8,
+    "week_label": "Week 8",
+    "question_number": 3,
+    "question": "While evaluating jobs, Riddhi identifies four compensable factors: knowledge, problem- solving, responsibility, and working conditions. Each factor is assigned a weight and numerical score before jobs are evaluated. Which job evaluation method is she using?",
+    "options": {
+      "A": "Job Ranking Method",
+      "B": "Paired Comparison Method",
+      "C": "Point-Factor Method",
+      "D": "Job Classification Method"
+    },
+    "correct_answer": "C",
+    "explanation": "Point-Factor Method"
+  },
+  {
+    "id": "W8_Q4",
+    "week": 8,
+    "week_label": "Week 8",
+    "question_number": 4,
+    "question": "The shareholders of a technology company believe that senior executives are focusing on short-term personal gains rather than long-term organizational success. To address this issue, the board introduces stock-based compensation linked to future company performance. Which theory best supports this decision?",
+    "options": {
+      "A": "Human Capital Theory",
+      "B": "Agency Theory",
+      "C": "Labour Theory of Value",
+      "D": "Reinforcement Theory"
+    },
+    "correct_answer": "B",
+    "explanation": "Agency Theory"
+  },
+  {
+    "id": "W8_Q5",
+    "week": 8,
+    "week_label": "Week 8",
+    "question_number": 5,
+    "question": "An HR team has decided to use the Point-Factor Method to evaluate jobs. Before assigning any points, the team spends considerable time identifying factors such as skill requirements, responsibility levels, and effort involved. Why is this step critical?",
+    "options": {
+      "A": "It determines market salary levels.",
+      "B": "It establishes the compensable factors against which jobs will be assessed.",
+      "C": "It assigns employees to grades.",
+      "D": "It eliminates external wage comparisons."
+    },
+    "correct_answer": "B",
+    "explanation": "It establishes the compensable factors against which jobs will be"
+  },
+  {
+    "id": "W8_Q6",
+    "week": 8,
+    "week_label": "Week 8",
+    "question_number": 6,
+    "question": "Arka is evaluating a newly created role of \"Digital Transformation Manager\". Since the position is unique, he compares it with several existing organizational roles that have already been evaluated and graded. Which technique is Arka applying?",
+    "options": {
+      "A": "Market Pricing",
+      "B": "External Benchmarking",
+      "C": "Internal Benchmarking",
+      "D": "Competency Mapping"
+    },
+    "correct_answer": "C",
+    "explanation": "Internal Benchmarking"
+  },
+  {
+    "id": "W8_Q7",
+    "week": 8,
+    "week_label": "Week 8",
+    "question_number": 7,
+    "question": "A multinational company replaces its 18 pay grades with only 5 wide salary bands. Managers now have greater flexibility to reward employees without requiring promotions every time compensation increases. Which pay structure has been adopted?",
+    "options": {
+      "A": "Narrow-Graded Structure",
+      "B": "Job Family Structure",
+      "C": "Broad-Banded Structure",
+      "D": "Spot Salary Structure"
+    },
+    "correct_answer": "C",
+    "explanation": "Broad-Banded Structure"
+  },
+  {
+    "id": "W8_Q8",
+    "week": 8,
+    "week_label": "Week 8",
+    "question_number": 8,
+    "question": "Sayani conducts a compensation survey and discovers that software architects in her organization earn 15% less than the industry median. She recommends adjusting salary ranges to improve attraction and retention. What HR activity is she performing?",
+    "options": {
+      "A": "Internal Equity Analysis",
+      "B": "Job Ranking",
+      "C": "Market Rate Analysis",
+      "D": "Job Classification"
+    },
+    "correct_answer": "C",
+    "explanation": "Market Rate Analysis"
+  },
+  {
+    "id": "W8_Q9",
+    "week": 8,
+    "week_label": "Week 8",
+    "question_number": 9,
+    "question": "A large bank evaluates jobs by comparing detailed job profiles with standardized grade descriptions. Two jobs with different titles are placed in the same grade because they require similar levels of responsibility and expertise. Which evaluation approach is being used?[cite: 14, 15]",
+    "options": {
+      "A": "Role-to-Role Matching",
+      "B": "Forced Ranking",
+      "C": "Role-to-Grade Analytical Matching",
+      "D": "Job Matching"
+    },
+    "correct_answer": "C",
+    "explanation": "Role-to-Grade Analytical Matching"
+  },
+  {
+    "id": "W8_Q10",
+    "week": 8,
+    "week_label": "Week 8",
+    "question_number": 10,
+    "question": "Naina is analyzing compensation survey data. She notices that the title \"Business Analyst\" is used very differently across companies. Instead of relying on titles, she studies concise descriptions of duties, responsibilities, and reporting relationships before matching jobs. Why is this approach preferable?",
+    "options": {
+      "A": "Job titles always reflect pay grades.",
+      "B": "Job descriptions provide a more accurate basis for comparison than titles alone.",
+      "C": "Market surveys require legal compliance.",
+      "D": "Equal pay legislation prohibits title comparisons."
+    },
+    "correct_answer": "B",
+    "explanation": "Job descriptions provide a more accurate basis for comparison"
+  },
+  {
+    "id": "W9_Q1",
+    "week": 9,
+    "week_label": "Week 9",
+    "question_number": 1,
+    "question": "The board of a large pharmaceutical company was concerned that its CEO was focusing excessively on short-term profits while ignoring long-term innovation and sustainability. To address this, the board linked a substantial portion of the CEO's compensation to the company's long-term stock performance. Which theory most strongly supports this decision?",
+    "options": {
+      "A": "Human Capital Theory",
+      "B": "Agency Theory",
+      "C": "Equity Theory",
+      "D": "Reinforcement Theory"
+    },
+    "correct_answer": "B",
+    "explanation": "Agency Theory"
+  },
+  {
+    "id": "W9_Q2",
+    "week": 9,
+    "week_label": "Week 9",
+    "question_number": 2,
+    "question": "At a multinational company, senior vice presidents compete intensely for promotion to the role of Chief Executive Officer. The compensation difference between the CEO and other executives is extremely large, and management believes this motivates ambitious leaders to perform better. Which theory best explains this reward philosophy?",
+    "options": {
+      "A": "Efficiency Wage Theory",
+      "B": "Equity Theory",
+      "C": "Tournament Theory",
+      "D": "Human Capital Theory"
+    },
+    "correct_answer": "C",
+    "explanation": "Tournament Theory"
+  },
+  {
+    "id": "W9_Q3",
+    "week": 9,
+    "week_label": "Week 9",
+    "question_number": 3,
+    "question": "Riddhi has recently been appointed Chief Financial Officer of a listed company. Her compensation package includes a fixed salary, annual performance bonus, pension benefits, and stock options that vest after three years. Which component is most directly intended to align her interests with shareholders?",
+    "options": {
+      "A": "Basic Salary",
+      "B": "Pension Benefits",
+      "C": "Stock Options",
+      "D": "Allowances"
+    },
+    "correct_answer": "C",
+    "explanation": "Stock Options"
+  },
+  {
+    "id": "W9_Q4",
+    "week": 9,
+    "week_label": "Week 9",
+    "question_number": 4,
+    "question": "Aniket is the CEO of a financial services company. His annual bonus depends entirely on short-term profit targets. To maximize his reward, he approves several high-risk investments that generate immediate profits but later expose the company to substantial losses. Which concern is most clearly illustrated?",
+    "options": {
+      "A": "Wage Compression",
+      "B": "Procedural Justice",
+      "C": "Moral Hazard",
+      "D": "Broad-Banding"
+    },
+    "correct_answer": "C",
+    "explanation": "Moral Hazard"
+  },
+  {
+    "id": "W9_Q5",
+    "week": 9,
+    "week_label": "Week 9",
+    "question_number": 5,
+    "question": "Naina works as a sales representative for a medical equipment company. She receives no fixed salary and is paid entirely as a percentage of the value of products she sells. Which reward arrangement is being used?",
+    "options": {
+      "A": "Salary Plus Bonus",
+      "B": "Salary Plus Commission",
+      "C": "Commission-Only Plan",
+      "D": "Profit Sharing Plan"
+    },
+    "correct_answer": "C",
+    "explanation": "Commission-Only Plan"
+  },
+  {
+    "id": "W9_Q6",
+    "week": 9,
+    "week_label": "Week 9",
+    "question_number": 6,
+    "question": "Arka manages a customer service team. Initially, employees were rewarded only for the number of calls handled per day. While productivity increased, customer complaints also increased because employees rushed through interactions. What lesson does this scenario most strongly illustrate?",
+    "options": {
+      "A": "Individual incentives always improve service quality.",
+      "B": "Reward systems can unintentionally encourage undesirable behaviours.",
+      "C": "Customer service staff should not receive incentives.",
+      "D": "Salary-based rewards eliminate performance problems."
+    },
+    "correct_answer": "B",
+    "explanation": "Reward systems can unintentionally encourage undesirable"
+  },
+  {
+    "id": "W9_Q7",
+    "week": 9,
+    "week_label": "Week 9",
+    "question_number": 7,
+    "question": "Priyanka is a data scientist who values challenging assignments, intellectual freedom, opportunities to learn new technologies, and the ability to influence important decisions. She is less concerned about overtime payments or manual work incentives. According to Tampoe's framework, which characteristic best reflects a key motivator for knowledge workers?",
+    "options": {
+      "A": "Piece-rate earnings",
+      "B": "Physical effort rewards",
+      "C": "Autonomy and personal growth",
+      "D": "Attendance-based incentives"
+    },
+    "correct_answer": "C",
+    "explanation": "Autonomy and personal growth"
+  },
+  {
+    "id": "W9_Q8",
+    "week": 9,
+    "week_label": "Week 9",
+    "question_number": 8,
+    "question": "A manufacturing company introduces a Payment-by-Results (PBR) scheme for machine operators. Workers who produce more units receive higher earnings. However, employers begin focusing on quantity rather than quality, leading to increased defects. What is a common drawback of PBR highlighted here?",
+    "options": {
+      "A": "Reduced productivity",
+      "B": "Excessive job security",
+      "C": "Quality deterioration due to output focus",
+      "D": "Lack of employee motivation"
+    },
+    "correct_answer": "C",
+    "explanation": "Quality deterioration due to output focus"
+  },
+  {
+    "id": "W9_Q9",
+    "week": 9,
+    "week_label": "Week 9",
+    "question_number": 9,
+    "question": "Sayan works in a factory where earnings depend largely on production output. During one month, machine breakdowns and raw material shortages significantly reduce production, even though employees work diligently. Why might employees perceive the reward system as unfair?",
+    "options": {
+      "A": "Employees prefer fixed salaries in all situations.",
+      "B": "Rewards are influenced by factors beyond employee control.",
+      "C": "Payment-by-results increases transparency.",
+      "D": "Production targets were exceeded."
+    },
+    "correct_answer": "B",
+    "explanation": "Rewards are influenced by factors beyond employee control.[cite:"
+  },
+  {
+    "id": "W9_Q10",
+    "week": 9,
+    "week_label": "Week 9",
+    "question_number": 10,
+    "question": "Mainak is redesigning rewards for a team of relationship managers in a bank. He wants employees to increase sales while maintaining high customer satisfaction and long-term client relationships. Which reward design would best achieve this objective?",
+    "options": {
+      "A": "Commission based solely on sales volume",
+      "B": "Fixed salary only",
+      "C": "Salary plus bonus linked to both sales and customer satisfaction measures",
+      "D": "Seniority-based increments only"
+    },
+    "correct_answer": "C",
+    "explanation": "Salary plus bonus linked to both sales and customer satisfaction"
+  },
+  {
+    "id": "W10_Q1",
+    "week": 10,
+    "week_label": "Week 10",
+    "question_number": 1,
+    "question": "Aniket recently joined a central government organization. During an orientation session, he learned that the minimum basic pay recommended under the 7th Central Pay Commission was determined using a scientific formula intended to ensure a reasonable standard of living. What was the minimum pay recommended?",
+    "options": {
+      "A": "15,000",
+      "B": "18,000",
+      "C": "21,000",
+      "D": "25,000"
+    },
+    "correct_answer": "B",
+    "explanation": "18,000"
+  },
+  {
+    "id": "W10_Q2",
+    "week": 10,
+    "week_label": "Week 10",
+    "question_number": 2,
+    "question": "Riddhi's basic pay under the 6th Pay Commission was 25,000. While explaining the transition to the 7th Pay Commission, the HR department informed employees that existing pay would be multiplied by a uniform factor before being placed in the new pay matrix. Which concept is being referred to?",
+    "options": {
+      "A": "Dearness Allowance",
+      "B": "Risk and Hardship Index",
+      "C": "Fitment Factor",
+      "D": "Pension Multiplier"
+    },
+    "correct_answer": "C",
+    "explanation": "Fitment Factor"
+  },
+  {
+    "id": "W10_Q3",
+    "week": 10,
+    "week_label": "Week 10",
+    "question_number": 3,
+    "question": "Sayan is comparing two retirement plans. Under Plan A, his pension amount is predetermined based on years of service and final salary. Under Plan B, his retirement income depends on contributions and investment performance. Which type of pension plan is Plan A?",
+    "options": {
+      "A": "Defined Contribution Scheme",
+      "B": "Hybrid Pension Scheme",
+      "C": "Defined Benefit Scheme",
+      "D": "Market-Linked Pension Scheme"
+    },
+    "correct_answer": "C",
+    "explanation": "Defined Benefit Scheme"
+  },
+  {
+    "id": "W10_Q4",
+    "week": 10,
+    "week_label": "Week 10",
+    "question_number": 4,
+    "question": "Priyanka joined central government service after 2004 and contributes regularly to the National Pension System (NPS). During a workshop, she learns that the government's contribution to employee NPS accounts was increased to strengthen retirement security. From what percentage was the employer contribution increased to 14%?",
+    "options": {
+      "A": "8%",
+      "B": "10%",
+      "C": "12%",
+      "D": "15%"
+    },
+    "correct_answer": "B",
+    "explanation": "10%"
+  },
+  {
+    "id": "W10_Q5",
+    "week": 10,
+    "week_label": "Week 10",
+    "question_number": 5,
+    "question": "During a discussion on compensation policy, Arka learns that annual increments under the 7th Pay Commission continue to follow the same percentage that existed previously. What is the approved annual increment rate?",
+    "options": {
+      "A": "2%",
+      "B": "2.5%",
+      "C": "3%",
+      "D": "4%"
+    },
+    "correct_answer": "C",
+    "explanation": "3%"
+  },
+  {
+    "id": "W10_Q6",
+    "week": 10,
+    "week_label": "Week 10",
+    "question_number": 6,
+    "question": "Naina works in the private sector and wants a government-backed pension scheme that guarantees a fixed monthly pension after retirement. She is willing to contribute regularly during her working years. Under the Atal Pension Yojana (APY), what is the maximum assured monthly pension available?",
+    "options": {
+      "A": "2,000",
+      "B": "3,000",
+      "C": "4,000",
+      "D": "5,000"
+    },
+    "correct_answer": "D",
+    "explanation": "5,000"
+  },
+  {
+    "id": "W10_Q7",
+    "week": 10,
+    "week_label": "Week 10",
+    "question_number": 7,
+    "question": "A team of employees posted in highly dangerous and difficult working conditions receives special allowances. The HR department explains that these allowances are determined using a framework introduced by the 7th Pay Commission. Which framework governs such allowances?",
+    "options": {
+      "A": "Pay Rationalization Matrix",
+      "B": "Compensation Adjustment Grid",
+      "C": "Risk and Hardship Matrix",
+      "D": "Occupational Exposure Index"
+    },
+    "correct_answer": "C",
+    "explanation": "Risk and Hardship Matrix"
+  },
+  {
+    "id": "W10_Q8",
+    "week": 10,
+    "week_label": "Week 10",
+    "question_number": 8,
+    "question": "Megha wants to invest in the National Pension System but is curious about which authority supervises pension fund managers, subscriber interests, and regulatory compliance. Which institution regulates NPS?",
+    "options": {
+      "A": "RBI",
+      "B": "SEBI",
+      "C": "IRDAI",
+      "D": "PFRDA"
+    },
+    "correct_answer": "D",
+    "explanation": "PFRDA"
+  },
+  {
+    "id": "W10_Q9",
+    "week": 10,
+    "week_label": "Week 10",
+    "question_number": 9,
+    "question": "After opening an NPS Tier I account, Mainak realizes he may occasionally need access to funds for short-term financial requirements. His financial advisor suggests opening another NPS account that allows flexible deposits and withdrawals. Which account should he open?[cite: 8, 9]",
+    "options": {
+      "A": "EPF Account",
+      "B": "PRAN Plus Account",
+      "C": "NPS Tier II Account",
+      "D": "CGEGIS Account"
+    },
+    "correct_answer": "C",
+    "explanation": "NPS Tier II Account"
+  },
+  {
+    "id": "W10_Q10",
+    "week": 10,
+    "week_label": "Week 10",
+    "question_number": 10,
+    "question": "Riddhi and Sreejita are discussing retirement plans. Riddhi says, \"My pension amount is guaranteed regardless of market performance.\" Sreejita replies, \"My retirement income will depend on how much I contribute and how the investments perform over time.\" Which statement correctly describes the difference?",
+    "options": {
+      "A": "Defined benefit plans guarantee pension; defined contribution plans depend on accumulated contributions and investment returns.",
+      "B": "Defined contribution plans guarantee pension; defined benefit plans depend on market performance.",
+      "C": "Both plans provide identical retirement benefits.",
+      "D": "Only government employees can join defined contribution plans."
+    },
+    "correct_answer": "A",
+    "explanation": "Defined benefit plans guarantee pension; defined contribution"
+  },
+  {
+    "id": "W11_Q1",
+    "week": 11,
+    "week_label": "Week 11",
+    "question_number": 1,
+    "question": "A rapidly expanding technology company wanted to redesign its reward system. Instead of focusing only on salary increases, HR included health benefits, career development opportunities, flexible work arrangements, and employee recognition programs. Which reward philosophy is the company adopting?",
+    "options": {
+      "A": "Market Pricing Approach",
+      "B": "Job Evaluation Approach",
+      "C": "Total Rewards Approach",
+      "D": "Broad-Banding Approach"
+    },
+    "correct_answer": "C",
+    "explanation": "Total Rewards Approach"
+  },
+  {
+    "id": "W11_Q2",
+    "week": 11,
+    "week_label": "Week 11",
+    "question_number": 2,
+    "question": "After introducing a new reward system, Arka suggested that the organization should not review it for at least ten years because frequent changes create unnecessary work. However, Priyanka disagreed. Why is Priyanka's view more appropriate?",
+    "options": {
+      "A": "Reward systems should only change when employees demand it.",
+      "B": "Reward systems must evolve with changing business strategies and workforce needs.",
+      "C": "Reward systems are legally required to change every year.",
+      "D": "External consultants require periodic projects."
+    },
+    "correct_answer": "B",
+    "explanation": "Reward systems must evolve with changing business strategies and"
+  },
+  {
+    "id": "W11_Q3",
+    "week": 11,
+    "week_label": "Week 11",
+    "question_number": 3,
+    "question": "A newly appointed HR Director at Zenith Ltd. was asked to design a reward system from scratch. Before discussing pay structures or benefits, she spent time defining what the organization wanted the reward system to achieve. What development stage is she focusing on?",
+    "options": {
+      "A": "Pilot Testing",
+      "B": "Market Benchmarking",
+      "C": "Setting Reward Objectives",
+      "D": "Job Evaluation"
+    },
+    "correct_answer": "C",
+    "explanation": "Setting Reward Objectives"
+  },
+  {
+    "id": "W11_Q4",
+    "week": 11,
+    "week_label": "Week 11",
+    "question_number": 4,
+    "question": "Riddhi is evaluating her organization's current reward practices. She compares them with leading organizations in the industry and identifies several areas where the company is lagging behind. Which approach is she applying?",
+    "options": {
+      "A": "Forced Distribution",
+      "B": "Evidence-Based Reward Development",
+      "C": "Job Ranking",
+      "D": "Broad-Banding"
+    },
+    "correct_answer": "B",
+    "explanation": "Evidence-Based Reward Development"
+  },
+  {
+    "id": "W11_Q5",
+    "week": 11,
+    "week_label": "Week 11",
+    "question_number": 5,
+    "question": "Before implementing a redesigned reward system, Mainak conducts a small-scale trial in one department, communicates the purpose of the changes, and gathers employee feedback. Which implementation activity is most evident in this scenario?",
+    "options": {
+      "A": "Workforce Downsizing",
+      "B": "Pilot Testing",
+      "C": "Job Rotation",
+      "D": "Pay Compression"
+    },
+    "correct_answer": "B",
+    "explanation": "Pilot Testing"
+  },
+  {
+    "id": "W11_Q6",
+    "week": 11,
+    "week_label": "Week 11",
+    "question_number": 6,
+    "question": "Following a compensation restructuring exercise, Naina's salary remains significantly above the maximum pay level assigned to her job grade. Management decides to freeze future salary increases until the pay range catches up. Which practice is being applied?",
+    "options": {
+      "A": "Green-Circling",
+      "B": "Broad-Banding",
+      "C": "Red-Circling",
+      "D": "Market Pricing"
+    },
+    "correct_answer": "C",
+    "explanation": "Red-Circling"
+  },
+  {
+    "id": "W11_Q7",
+    "week": 11,
+    "week_label": "Week 11",
+    "question_number": 7,
+    "question": "A consulting firm hired Sreejita, a cybersecurity specialist, during a severe talent shortage. To attract her, the company offered an additional market supplement. Two years later, the labor market stabilized and many qualified professionals became available. According to sound reward management principles, what should the organization consider?",
+    "options": {
+      "A": "Continue the supplement permanently.",
+      "B": "Increase the supplement annually.",
+      "C": "Review and potentially remove the supplement if no longer justified.",
+      "D": "Convert the supplement into pension benefits."
+    },
+    "correct_answer": "C",
+    "explanation": "Review and potentially remove the supplement if no longer justified."
+  },
+  {
+    "id": "W11_Q8",
+    "week": 11,
+    "week_label": "Week 11",
+    "question_number": 8,
+    "question": "An organization provides different reward packages to different groups of employees. Sales staff receive commission plans, software developers receive innovation bonuses, and senior managers receive long-term incentive plans. Which reward management principle is being applied?",
+    "options": {
+      "A": "Internal Benchmarking",
+      "B": "Segmentation",
+      "C": "Equal Pay",
+      "D": "Pay Compression"
+    },
+    "correct_answer": "B",
+    "explanation": "Segmentation"
+  },
+  {
+    "id": "W11_Q9",
+    "week": 11,
+    "week_label": "Week 11",
+    "question_number": 9,
+    "question": "Arka earns 72,000 per month, while the midpoint salary for his grade is 60,000. HR calculates his compa-ratio to assess his position relative to the pay structure. What does a compa- ratio above 100% indicate?[cite: 5, 6]",
+    "options": {
+      "A": "The employee is paid below policy rate.",
+      "B": "The employee is paid exactly at the midpoint.",
+      "C": "The employee is paid above the policy midpoint.",
+      "D": "The employee has reached retirement eligibility."
+    },
+    "correct_answer": "C",
+    "explanation": "The employee is paid above the policy midpoint."
+  },
+  {
+    "id": "W11_Q10",
+    "week": 11,
+    "week_label": "Week 11",
+    "question_number": 10,
+    "question": "While reviewing compensation strategy, Priyanka states, \"Our organization deliberately pays around 10% above industry average because we want to attract and retain top talent.\" Which reward concept is Priyanka describing?",
+    "options": {
+      "A": "Job Evaluation",
+      "B": "Compa-Ratio",
+      "C": "Pay Posture",
+      "D": "Red-Circling"
+    },
+    "correct_answer": "C",
+    "explanation": "Pay Posture"
+  },
+  {
+    "id": "W12_Q1",
+    "week": 12,
+    "week_label": "Week 12",
+    "question_number": 1,
+    "question": "Riddhi is the HR Director of a leading consulting firm. During campus recruitment, she discovers that her cousin, Arka, has applied for a position. Although Arka performs poorly in the interview, several family members expect her to ensure his selection. What is the primary ethical issue Riddhi is facing?",
+    "options": {
+      "A": "Job Evaluation Error",
+      "B": "Market Rate Analysis",
+      "C": "Nepotism and Conflict of Interest",
+      "D": "Performance Benchmarking"
+    },
+    "correct_answer": "C",
+    "explanation": "Nepotism and Conflict of Interest"
+  },
+  {
+    "id": "W12_Q2",
+    "week": 12,
+    "week_label": "Week 12",
+    "question_number": 2,
+    "question": "A state university cannot significantly increase the salaries of its contractual faculty due to budget constraints. Instead, Dean Priyanka introduces research grants, committee leadership opportunities, public recognition, and participation in important academic decisions. What is the primary purpose of these initiatives?",
+    "options": {
+      "A": "Reduce teaching workload entirely",
+      "B": "Replace performance appraisal systems",
+      "C": "Increase engagement through non-financial rewards",
+      "D": "Eliminate compensation concerns permanently"
+    },
+    "correct_answer": "C",
+    "explanation": "Increase engagement through non-financial rewards"
+  },
+  {
+    "id": "W12_Q3",
+    "week": 12,
+    "week_label": "Week 12",
+    "question_number": 3,
+    "question": "During annual performance reviews, Mainak notices that one employee failed to achieve targets because she spent significant time helping struggling colleagues and maintaining ethical standards. Another employee met targets by misleading customers. According to Kantian ethics, which employee's behavior would be viewed more favorably?",
+    "options": {
+      "A": "The employee who achieved targets regardless of methods.",
+      "B": "The employee whose actions were guided by ethical intentions and duty.",
+      "C": "Both employees equally.",
+      "D": "Neither employee."
+    },
+    "correct_answer": "B",
+    "explanation": "The employee whose actions were guided by ethical intentions and"
+  },
+  {
+    "id": "W12_Q4",
+    "week": 12,
+    "week_label": "Week 12",
+    "question_number": 4,
+    "question": "Sayan rates Naina highly because she is confident, friendly, and articulate. As a result, he assumes she must also be highly competent in every aspect of her job, despite limited evidence. Why is this appraisal approach ethically problematic?",
+    "options": {
+      "A": "It is too objective.",
+      "B": "It relies on subjective judgments that may introduce bias.",
+      "C": "It uses quantitative indicators.",
+      "D": "It focuses on results."
+    },
+    "correct_answer": "B",
+    "explanation": "It relies on subjective judgments that may introduce bias."
+  },
+  {
+    "id": "W12_Q5",
+    "week": 12,
+    "week_label": "Week 12",
+    "question_number": 5,
+    "question": "A hospital administrator is evaluating nurses. Some nurses spend considerable time comforting patients and supporting families, while others focus primarily on completing measurable tasks. The administrator struggles to compare overall performance fairly. According to Velasquez, why do such appraisal challenges arise?",
+    "options": {
+      "A": "Human performance is difficult to measure objectively in all dimensions.",
+      "B": "Performance appraisal systems are unnecessary.",
+      "C": "Employees should not be evaluated.",
+      "D": "Only quantitative outcomes matter."
+    },
+    "correct_answer": "A",
+    "explanation": "Human performance is difficult to measure objectively in all"
+  },
+  {
+    "id": "W12_Q6",
+    "week": 12,
+    "week_label": "Week 12",
+    "question_number": 6,
+    "question": "An organization evaluates sales staff using objective sales figures but evaluates research scientists using highly subjective managerial judgments. Employees begin comparing ratings across departments and questioning promotion decisions. What ethical concern is most likely to emerge?",
+    "options": {
+      "A": "Higher profitability",
+      "B": "Unfair comparisons across employees",
+      "C": "Increased innovation",
+      "D": "Reduced turnover"
+    },
+    "correct_answer": "B",
+    "explanation": "Unfair comparisons across employees"
+  },
+  {
+    "id": "W12_Q7",
+    "week": 12,
+    "week_label": "Week 12",
+    "question_number": 7,
+    "question": "After receiving a poor appraisal rating, Megha requests an explanation and an opportunity to challenge factual inaccuracies. However, management refuses to discuss the decision and provides no appeal mechanism. Which ethical safeguard is missing?",
+    "options": {
+      "A": "Job Evaluation",
+      "B": "Grievance and Review Mechanism",
+      "C": "Market Benchmarking",
+      "D": "Broad-Banding"
+    },
+    "correct_answer": "B",
+    "explanation": "Grievance and Review Mechanism"
+  },
+  {
+    "id": "W12_Q8",
+    "week": 12,
+    "week_label": "Week 12",
+    "question_number": 8,
+    "question": "Before implementing a new performance management system, Priyanka forms a committee consisting of managers, employees, and union representatives to discuss evaluation criteria and feedback mechanisms. Which principle is most strongly reflected?",
+    "options": {
+      "A": "Centralized Authority",
+      "B": "Confidential Appraisal",
+      "C": "Stakeholder Involvement",
+      "D": "Forced Distribution"
+    },
+    "correct_answer": "C",
+    "explanation": "Stakeholder Involvement"
+  },
+  {
+    "id": "W12_Q9",
+    "week": 12,
+    "week_label": "Week 12",
+    "question_number": 9,
+    "question": "A university is designing a performance appraisal system for faculty members. Which measure would be least appropriate as a primary performance indicator?[cite: 2, 3]",
+    "options": {
+      "A": "Research publications",
+      "B": "Student feedback",
+      "C": "Teaching effectiveness measures",
+      "D": "Number of personal complaints made by colleagues"
+    },
+    "correct_answer": "D",
+    "explanation": "Number of personal complaints made by colleagues"
+  },
+  {
+    "id": "W12_Q10",
+    "week": 12,
+    "week_label": "Week 12",
+    "question_number": 10,
+    "question": "At a customer service company, managers evaluate employees exclusively on the number of calls handled per day. Employees begin ending calls quickly, resulting in lower customer satisfaction and weaker relationships. What ethical concern does this situation highlight?",
+    "options": {
+      "A": "Quantitative metrics are always superior.",
+      "B": "Sole reliance on quantitative measures can ignore important qualitative outcomes.",
+      "C": "Customer satisfaction is irrelevant.",
+      "D": "Employees should not be rewarded."
+    },
+    "correct_answer": "B",
+    "explanation": "Sole reliance on quantitative measures can ignore important"
+  }
+]

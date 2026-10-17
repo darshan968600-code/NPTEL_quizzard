@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Session - NPTEL Quizzer</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="quiz-body">
+  <!-- Top Navigation Header -->
+  <header class="quiz-header">
+    <div class="quiz-header-container">
+      <div class="quiz-header-left">
+        <a href="/" id="btn-home-link" class="home-link" title="Return to Home">
+          &larr; Home
+        </a>
+        <div class="quiz-title-group">
+          <h1 id="quiz-title" class="quiz-title">Loading Quiz...</h1>
+          <span id="quiz-subtitle" class="quiz-subtitle">Mode</span>
+        </div>
+      </div>
+
+      <div class="quiz-header-right">
+        <div class="score-chip" title="Live score of evaluated questions">
+          Score: <span id="chip-score" class="score-val">0</span> / <span id="chip-total">0</span>
+          (<span id="chip-pct">0%</span>)
+        </div>
+        <button id="btn-finish-early" class="btn btn-sm btn-outline-danger" title="Finish and see results now">
+          Finish Quiz
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Progress Bar Container -->
+  <div class="progress-bar-wrap">
+    <div id="quiz-progress-bar" class="progress-bar-fill" style="width: 0%;"></div>
+  </div>
+
+  <main class="quiz-main-container">
+    <!-- Active Quiz Area -->
+    <div id="active-quiz-view" class="quiz-layout">
+      <!-- Left Column: Question Area -->
+      <section class="question-panel">
+        <div class="question-meta-bar">
+          <div class="meta-left">
+            <span id="q-counter" class="q-counter-pill">Question 1 of 10</span>
+            <span id="q-topic-tag" class="q-topic-tag">General</span>
+          </div>
+          <div class="meta-right">
+            <span id="eval-status-pill" class="status-pill status-unanswered">Unanswered</span>
+          </div>
+        </div>
+
+        <!-- Question Statement -->
+        <div class="question-statement-box">
+          <h2 id="q-statement" class="q-statement-text">Loading question statement...</h2>
+        </div>
+
+        <!-- Options Container -->
+        <div id="options-container" class="options-container">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+        <!-- Feedback & Explanation Banner -->
+        <div id="feedback-banner" class="feedback-banner" style="display: none;">
+          <div class="feedback-icon" id="feedback-icon">✓</div>
+          <div class="feedback-body">
+            <div id="feedback-title" class="feedback-title">Correct!</div>
+            <div id="feedback-text" class="feedback-text"></div>
+          </div>
+        </div>
+
+        <!-- Question Action Buttons -->
+        <div class="question-actions-bar">
+          <button id="btn-prev-q" class="btn btn-secondary" disabled>
+            &larr; Previous
+          </button>
+          
+          <div class="action-btn-right">
+            <button id="btn-action-primary" class="btn btn-primary">
+              Next &rarr;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Column: Navigation Grid Panel -->
+      <aside class="navigator-panel">
+        <div class="navigator-header">
+          <h3>Question Navigator</h3>
+          <span id="nav-count-label" class="nav-count-badge">10 Questions</span>
+        </div>
+
+        <!-- Color Legend -->
+        <div class="nav-legend">
+          <div class="legend-item"><span class="legend-dot dot-correct"></span> Correct</div>
+          <div class="legend-item"><span class="legend-dot dot-incorrect"></span> Incorrect</div>
+          <div class="legend-item"><span class="legend-dot dot-unanswered"></span> Unanswered</div>
+          <div class="legend-item"><span class="legend-dot dot-active"></span> Current</div>
+        </div>
+
+        <!-- Scrollable Grid of Numbered Boxes -->
+        <div id="nav-grid" class="nav-grid">
+          <!-- Filled dynamically by JavaScript -->
+        </div>
+
+        <!-- Quick Summary Mini-Stats -->
+        <div class="nav-summary-stats">
+          <div class="mini-stat"><span id="mini-correct" class="text-success font-bold">0</span> Correct</div>
+          <div class="mini-stat"><span id="mini-incorrect" class="text-danger font-bold">0</span> Wrong</div>
+          <div class="mini-stat"><span id="mini-unanswered" class="text-muted font-bold">0</span> Left</div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Quiz Results Screen (Hidden initially) -->
+    <div id="results-view" class="results-layout" style="display: none;">
+      <div class="results-card">
+        <div class="results-header">
+          <div id="results-badge-icon" class="results-trophy">🎉</div>
+          <h2 id="results-title">Quiz Completed!</h2>
+          <p id="results-subtitle" class="results-subtitle">Here is how you performed on this practice quiz</p>
+        </div>
+
+        <!-- Big Score Display -->
+        <div class="results-score-box">
+          <div class="score-ring">
+            <div id="res-score-pct" class="score-pct-text">0%</div>
+            <div class="score-subtext">Accuracy</div>
+          </div>
+          <div class="score-fraction">
+            Score: <strong id="res-score-num">0</strong> / <span id="res-score-denom">0</span>
+          </div>
+        </div>
+
+        <!-- Metrics Grid -->
+        <div class="results-stats-grid">
+          <div class="res-stat-box">
+            <div class="res-stat-val" id="res-total">0</div>
+            <div class="res-stat-label">Total Questions</div>
+          </div>
+          <div class="res-stat-box stat-box-correct">
+            <div class="res-stat-val text-success" id="res-correct">0</div>
+            <div class="res-stat-label">Correct Answers</div>
+          </div>
+          <div class="res-stat-box stat-box-incorrect">
+            <div class="res-stat-val text-danger" id="res-incorrect">0</div>
+            <div class="res-stat-label">Incorrect Answers</div>
+          </div>
+          <div class="res-stat-box stat-box-unanswered">
+            <div class="res-stat-val text-muted" id="res-unanswered">0</div>
+            <div class="res-stat-label">Unanswered</div>
+          </div>
+        </div>
+
+        <!-- Results Actions -->
+        <div class="results-action-buttons">
+          <button id="btn-toggle-review" class="btn btn-primary">
+            📝 Review Answers
+          </button>
+          <button id="btn-restart-quiz" class="btn btn-secondary">
+            🔄 Restart Quiz
+          </button>
+          <a href="/" class="btn btn-outline">
+            🏠 Return to Home
+          </a>
+        </div>
+
+        <!-- Comprehensive Review Panel (Toggled on button click) -->
+        <div id="review-panel" class="review-panel" style="display: none;">
+          <div class="review-panel-header">
+            <h3>Detailed Question Breakdown</h3>
+            <div class="review-filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="wrong">Wrong Only</button>
+              <button class="filter-btn" data-filter="unanswered">Unanswered</button>
+              <button class="filter-btn" data-filter="correct">Correct</button>
+            </div>
+          </div>
+          <div id="review-list" class="review-list">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/static/js/quiz.js"></script>
+</body>
+</html>
