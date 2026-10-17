@@ -258,18 +258,18 @@ function selectOption(key) {
   updateNavigatorBox(quizState.currentIndex);
   updateScoreChips();
 
-  // Append 2-second countdown note in feedback banner
+  // Append 1-second countdown note in feedback banner
   const fbText = document.getElementById("feedback-text");
   if (fbText) {
     const note = document.createElement("div");
     note.className = "auto-advance-note";
     note.textContent = isLast 
-      ? "Finishing quiz in 2 seconds..." 
-      : "Moving to next question in 2 seconds...";
+      ? "Finishing quiz in 1s..." 
+      : "Moving to next question in 1s...";
     fbText.appendChild(note);
   }
 
-  // Start 2-second auto-advance
+  // Start 1-second auto-advance
   autoAdvanceTimer = setTimeout(() => {
     autoAdvanceTimer = null;
     if (isLast) {
@@ -277,7 +277,7 @@ function selectOption(key) {
     } else {
       goToQuestion(quizState.currentIndex + 1);
     }
-  }, 2000);
+  }, 1000);
 
   updateButtons();
 }
